@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisioForge.Libs</name>
+    </assembly>
+    <members>
+        <member name="T:VisioForge.Libs.PlatformHelper">
+            <summary>
+            Platform helper.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsWindows">
+            <summary>
+            Returns true if running on Windows, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsLinux">
+            <summary>
+            Returns true if running on Linux, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsLinuxDesktop">
+            <summary>
+            Returns true if running on Linux desktop, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsMac">
+            <summary>
+            Returns true if running on macOS, false otherwise
+            </summary>
+        </member>
+        <member name="M:VisioForge.Libs.SerilogAdds.Observable.ObservableLoggerConfigurationExtensions.Observers(Serilog.Configuration.LoggerSinkConfiguration,System.Action{System.IObservable{Serilog.Events.LogEvent}},Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)">
+            <summary>
+            Write events to Rx observers.
+            </summary>
+            <param name="sinkConfiguration">Logger sink configuration.</param>
+            <param name="configureObservers">An action that provides an observable
+            to which observers can subscribe.</param>
+            <param name="restrictedToMinimumLevel">The minimum level for
+            events passed through the sink. Ignored when <paramref name="levelSwitch"/> is specified.</param>
+            <param name="levelSwitch">A switch allowing the pass-through minimum level
+            to be changed at runtime.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.Name">
+            <summary>
+            Gets or sets name. (BSTR)
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.Width">
+            <summary>
+            Gets or sets width.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.Height">
+            <summary>
+            Gets or sets height.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.FrameRate">
+            <summary>
+            Gets or sets frame rate.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.Mode">
+            <summary>
+            Gets or sets mode.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.Decklink.VFDeckLinkVideoMode.PixelFormat">
+            <summary>
+            gets or sets pixel format.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Libs.Decklink.DecklinkVideoFormatsLibrary">
+            <summary>
+            Decklink video formats library.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION">
+            <summary>
+            Describes an audio jack.
+            </summary>
+            <remarks>
+            MSDN Reference: http://msdn.microsoft.com/en-us/library/dd316543.aspx
+            </remarks>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.ChannelMapping">
+            <summary>
+            Specifies the mapping of the two audio channels in a stereo jack to speaker positions.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.Color">
+            <summary>
+            The jack color.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.ConnectionType">
+            <summary>
+            The connection type.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.GeoLocation">
+            <summary>
+            The geometric location of the jack.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.GenLocation">
+            <summary>
+            The general location of the jack.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.PortConnection">
+            <summary>
+            The type of port represented by the jack.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION.IsConnected">
+            <summary>
+            Indicates whether an endpoint device is plugged into the jack, if supported by the adapter.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION2">
+            <summary>
+            Describes an audio jack.
+            </summary>
+            <remarks>
+            MSDN Reference: http://msdn.microsoft.com/en-us/library/dd316545.aspx
+            </remarks>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION2.DeviceStateInfo">
+            <summary>
+            Reserved for future use.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Libs.NAudio.VisioForge.KSJACK_DESCRIPTION2.JackCapabilities">
+            <summary>
+            Stores the audio jack's capabilities.
+            </summary>
+            <remarks>
+            From Ksmedia.h, the available flags for this are:
+            1. JACKDESC2_PRESENCE_DETECT_CAPABILITY (0x00000001)
+            2. JACKDESC2_DYNAMIC_FORMAT_CHANGE_CAPABILITY (0x00000002) 
+            </remarks>
+        </member>
+        <member name="P:VisioForge.Libs.NDI.Source.Address">
+            <summary>
+            Gets or sets address.
+            </summary>
+        </member>
+        <member name="M:Gst.IntRange.ToArray">
+            <summary>
+            Converts to array.
+            </summary>
+            <returns>System.Int32[].</returns>
+        </member>
+        <member name="M:GLib.Opaque.DisposeManagedResources">
+            <summary>
+            Disposes the managed resources.
+            This method is intended to be overriden.
+            </summary>
+        </member>
+        <member name="M:GLib.Opaque.DisposeUnmanagedResources">
+            <summary>
+            Disposes the unmanaged resources.
+            This method is intended to be overriden.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,2642 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisioForge.Core.UI.WinForms</name>
+    </assembly>
+    <members>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook">
+            <summary>
+            Class GlobalKeyboardHook.
+            </summary>
+        </member>
+        <member name="E:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardPressed">
+            <summary>
+            Occurs when [keyboard pressed].
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.#ctor(System.Windows.Forms.Keys[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook"/> class.
+            </summary>
+            <param name="registeredKeys">Keys that should trigger logging. Pass null for full logging.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.Dispose">
+            <summary>
+            Disposes this instance.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook._windowsHookHandle">
+            <summary>
+            The windows hook handle.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook._user32LibraryHandle">
+            <summary>
+            The user32 library handle.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook._hookProc">
+            <summary>
+            The hook proc.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.HookProc">
+            <summary>
+            Delegate HookProc.
+            </summary>
+            <param name="nCode">The n code.</param>
+            <param name="wParam">The w parameter.</param>
+            <param name="lParam">The l parameter.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LoadLibrary(System.String)">
+            <summary>
+            Loads the library.
+            </summary>
+            <param name="lpFileName">Name of the lp file.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.FreeLibrary(System.IntPtr)">
+            <summary>
+            Frees the library.
+            </summary>
+            <param name="hModule">The h module.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.SetWindowsHookEx(System.Int32,VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.HookProc,System.IntPtr,System.Int32)">
+            <summary>
+            The SetWindowsHookEx function installs an application-defined hook procedure into a hook chain.
+            You would install a hook procedure to monitor the system for certain types of events. These events are
+            associated either with a specific thread or with all threads in the same desktop as the calling thread.
+            </summary>
+            <param name="idHook">hook type.</param>
+            <param name="lpfn">hook procedure.</param>
+            <param name="hMod">handle to application instance.</param>
+            <param name="dwThreadId">thread identifier.</param>
+            <returns>If the function succeeds, the return value is the handle to the hook procedure.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.UnhookWindowsHookEx(System.IntPtr)">
+            <summary>
+            The UnhookWindowsHookEx function removes a hook procedure installed in a hook chain by the SetWindowsHookEx function.
+            </summary>
+            <param name="hHook">The hook.</param>
+            <returns>If the function succeeds, the return value is true.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.CallNextHookEx(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            The CallNextHookEx function passes the hook information to the next hook procedure in the current hook chain.
+            A hook procedure can call this function either before or after processing the hook information.
+            </summary>
+            <param name="hHook">handle to current hook.</param>
+            <param name="code">hook code passed to hook procedure.</param>
+            <param name="wParam">W value passed to hook procedure.</param>
+            <param name="lParam">L value passed to hook procedure.</param>
+            <returns>If the function succeeds, the return value is true.</returns>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent">
+            <summary>
+            Struct LowLevelKeyboardInputEvent.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.VirtualCode">
+            <summary>
+            A virtual-key code. The code must be a value in the range 1 to 254.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.Key">
+            <summary>
+            Gets the VirtualCode converted to typeof(Keys) for higher usability.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.HardwareScanCode">
+            <summary>
+            A hardware scan code for the key.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.Flags">
+            <summary>
+            The extended-key flag, event-injected Flags, context code, and transition-state flag. This member is specified as follows. An application can use the following values to test the keystroke Flags. Testing LLKHF_INJECTED (bit 4) will tell you whether the event was injected. If it was, then testing LLKHF_LOWER_IL_INJECTED (bit 1) will tell you whether or not the event was injected from a process running at lower integrity level.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.TimeStamp">
+            <summary>
+            The time stamp stamp for this message, equivalent to what GetMessageTime would return for this message.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent.AdditionalInformation">
+            <summary>
+            Additional information associated with the message.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.WH_KEYBOARD_LL">
+            <summary>
+            The wh keyboard ll.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState">
+            <summary>
+            Enum KeyboardState.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState.KeyDown">
+            <summary>
+            The key down.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState.KeyUp">
+            <summary>
+            The key up.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState.SysKeyDown">
+            <summary>
+            The system key down.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState.SysKeyUp">
+            <summary>
+            The system key up.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.RegisteredKeys">
+            <summary>
+            Gets the registered keys.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KfAltdown">
+            <summary>
+            The kf altdown.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LlkhfAltdown">
+            <summary>
+            The LLKHF altdown.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardProc(System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Lows the level keyboard proc.
+            </summary>
+            <param name="nCode">The n code.</param>
+            <param name="wParam">The w parameter.</param>
+            <param name="lParam">The l parameter.</param>
+            <returns>IntPtr.</returns>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHookEventArgs">
+            <summary>
+            Class GlobalKeyboardHookEventArgs.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHookEventArgs.KeyboardState">
+            <summary>
+            Gets the state of the keyboard.
+            </summary>
+            <value>The state of the keyboard.</value>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHookEventArgs.KeyboardData">
+            <summary>
+            Gets the keyboard data.
+            </summary>
+            <value>The keyboard data.</value>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHookEventArgs.#ctor(VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.LowLevelKeyboardInputEvent,VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHook.KeyboardState)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.GlobalKeyboardHookEventArgs"/> class.
+            </summary>
+            <param name="keyboardData">The keyboard data.</param>
+            <param name="keyboardState">State of the keyboard.</param>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.LogDialog">
+            <summary>
+            Class LogDialog.
+            Implements the <see cref="T:System.Windows.Forms.Form" />.
+            </summary>
+            <seealso cref="T:System.Windows.Forms.Form" />
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.LogDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.AddToLog(VisioForge.Core.Types.Events.ErrorsEventArgs)">
+            <summary>
+            Adds to log.
+            </summary>
+            <param name="args">The <see cref="T:VisioForge.Core.Types.Events.ErrorsEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.AddToLog(System.String)">
+            <summary>
+            Adds to log.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.ClearLog">
+            <summary>
+            Clears the log.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.LogDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog">
+            <summary>
+            AVI settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.#ctor(System.String[],System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog"/> class.
+            </summary>
+            <param name="videoCodecs">
+            Video codecs.
+            </param>
+            <param name="audioCodecs">
+            Audio codecs.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.#ctor(VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.#ctor(VisioForge.Core.VideoEdit.VideoEditCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.LoadSettings(VisioForge.Core.Types.Output.AVIOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="aviOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.SaveSettings(VisioForge.Core.Types.Output.AVIOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="aviOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MKVv1Output)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mkvOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MKVv1Output@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mkvOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.cbAudioCodecs_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Audio codec combobox.
+            </summary>
+            <param name="sender">
+            Sender object.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.cbVideoCodecs_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Video codec combobox event.
+            </summary>
+            <param name="sender">
+            Sender object.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.AVISettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog">
+            <summary>
+            Custom format settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.#ctor(System.String[],System.String[],System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog"/> class.
+            </summary>
+            <param name="videoCodecs">
+            Video codecs.
+            </param>
+            <param name="audioCodecs">
+            Audio codecs.
+            </param>
+            <param name="dsFilters">
+            Filters.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.#ctor(VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.#ctor(VisioForge.Core.VideoEdit.VideoEditCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.DirectCaptureMP4Output)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.DirectCaptureMP4Output@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.DirectCaptureCustomOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.DirectCaptureCustomOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.CustomOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="customOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.CustomOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="customOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.CustomFormatSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog">
+            <summary>
+            DV settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.DVOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="dvOutput">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.DVOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="dvOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.DVSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog">
+            <summary>
+            FFMPEG.exe settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.LoadSettings(VisioForge.Core.Types.Output.FFMPEGEXEOutput)">
+            <summary>
+            Loads FFMPEG EXE settings.
+            </summary>
+            <param name="ffmpegOutput">
+            FFMPEG settings.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.SaveSettings(VisioForge.Core.Types.Output.FFMPEGEXEOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="ffmpegOutput">
+            Output settings.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGEXESettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog">
+            <summary>
+            FFMPEG settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.FFMPEGOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="ffmpegOutput">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.FFMPEGOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="ffmpegOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FFMPEGSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog">
+            <summary>
+            FLAC settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.FLACOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="flacOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.FLACOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="flacOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.FLACSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog">
+            <summary>
+            GIF settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.AnimatedGIFOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="gifOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.AnimatedGIFOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="gifOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.GIFSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog">
+            <summary>
+            HW encoders output settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.#ctor(VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog"/> class.
+            </summary>
+            <param name="mode">
+            Mode.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MPEGTSOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mpegTSOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MPEGTSOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mpegTSOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MP4HWOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MP4HWOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MKVv2Output)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MKVv2Output@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MOVOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MOVOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWEncodersOutputSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode">
+            <summary>
+            HW settings dialog mode.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode.Default">
+            <summary>
+            Default.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode.MP4">
+            <summary>
+            MP4.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode.MKV">
+            <summary>
+            MKV.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode.MPEGTS">
+            <summary>
+            MPEG-TS.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.HWSettingsDialogMode.MOV">
+            <summary>
+            Apple MOV.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog">
+            <summary>
+            M4A settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.LoadSettings(VisioForge.Core.Types.Output.M4AOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="m4aOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.SaveSettings(VisioForge.Core.Types.Output.M4AOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="m4aOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.M4ASettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog">
+            <summary>
+            MP3 settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MP3Output)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mp3Output">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MP3Output@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mp3Output">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP3SettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog">
+            <summary>
+            MP4 settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.SaveSettings(VisioForge.Core.Types.Output.MP4Output@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.LoadSettings(VisioForge.Core.Types.Output.MP4Output)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.ConvertHexStringToByteArray(System.String)">
+            <summary>
+            Converts HEX string to byte array.
+            </summary>
+            <param name="hexString">
+            HEX string.
+            </param>
+            <returns>
+            Byte array.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.ConvertByteArrayToHexString(System.Byte[])">
+            <summary>
+            Converts byte array to hex string.
+            </summary>
+            <param name="ba">
+            Byte array.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.MP4SettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog">
+            <summary>
+            Ogg Vorbis settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.OGGVorbisOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="oggVorbisOutput">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.OGGVorbisOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="oggVorbisOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OggVorbisSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager">
+            <summary>
+            Output format manager.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.ShowDialog(VisioForge.Core.Types.VideoCapture.VideoCaptureOutputFormat,System.Windows.Forms.IWin32Window,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Shows dialog.
+            </summary>
+            <param name="format">
+            Format.
+            </param>
+            <param name="parent">
+            Parent.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMP3Output(VisioForge.Core.Types.Output.MP3Output@)">
+            <summary>
+            Sets MP3 output.
+            </summary>
+            <param name="mp3Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMP4Output(VisioForge.Core.Types.Output.MP4Output@)">
+            <summary>
+            Sets MP4 output.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetFFMPEGEXEOutput(VisioForge.Core.Types.Output.FFMPEGEXEOutput@)">
+            <summary>
+            Sets FFMPEG.exe output.
+            </summary>
+            <param name="ffmpegOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetWMVOutput(VisioForge.Core.Types.Output.WMVOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets WMV output.
+            </summary>
+            <param name="wmvOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetWMAOutput(VisioForge.Core.Types.Output.WMAOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets WMA output.
+            </summary>
+            <param name="wmaOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetACMOutput(VisioForge.Core.Types.Output.ACMOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets ACM output.
+            </summary>
+            <param name="acmOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetWebMOutput(VisioForge.Core.Types.Output.WebMOutput@)">
+            <summary>
+            Set WebM output.
+            </summary>
+            <param name="webmOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetFFMPEGOutput(VisioForge.Core.Types.Output.FFMPEGOutput@)">
+            <summary>
+            Sets FFMPEG output.
+            </summary>
+            <param name="ffmpegOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetFLACOutput(VisioForge.Core.Types.Output.FLACOutput@)">
+            <summary>
+            Sets FLAC output.
+            </summary>
+            <param name="flacOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMP4HWOutput(VisioForge.Core.Types.Output.MP4HWOutput@)">
+            <summary>
+            Sets MP4 HW output.
+            </summary>
+            <param name="mp4Output">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMOVOutput(VisioForge.Core.Types.Output.MOVOutput@)">
+            <summary>
+            Sets MOV output.
+            </summary>
+            <param name="movOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMPEGTSOutput(VisioForge.Core.Types.Output.MPEGTSOutput@)">
+            <summary>
+            Sets MPEG-TS output.
+            </summary>
+            <param name="tsOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMKVv2Output(VisioForge.Core.Types.Output.MKVv2Output@)">
+            <summary>
+            Sets MKV v2 output.
+            </summary>
+            <param name="mkvOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetSpeexOutput(VisioForge.Core.Types.Output.SpeexOutput@)">
+            <summary>
+            Sets Speex output.
+            </summary>
+            <param name="speexOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetM4AOutput(VisioForge.Core.Types.Output.M4AOutput@)">
+            <summary>
+            Sets M4A output.
+            </summary>
+            <param name="m4aOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetGIFOutput(VisioForge.Core.Types.Output.AnimatedGIFOutput@)">
+            <summary>
+            Sets GIF output.
+            </summary>
+            <param name="gifOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetDirectCaptureCustomOutput(VisioForge.Core.Types.Output.DirectCaptureCustomOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets DirectCapture custom output.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetDirectCaptureCustomOutput(VisioForge.Core.Types.Output.DirectCaptureMP4Output@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets DirectCapture custom output.
+            </summary>
+            <param name="directCaptureOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetCustomOutput(VisioForge.Core.Types.Output.CustomOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets custom output.
+            </summary>
+            <param name="customOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetDVOutput(VisioForge.Core.Types.Output.DVOutput@)">
+            <summary>
+            Sets DV output.
+            </summary>
+            <param name="dvOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetAVIOutput(VisioForge.Core.Types.Output.AVIOutput@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets AVI output.
+            </summary>
+            <param name="aviOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetMKVOutput(VisioForge.Core.Types.Output.MKVv1Output@,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Sets MKV output.
+            </summary>
+            <param name="mkvOutput">
+            Output.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.SetOGGOutput(VisioForge.Core.Types.Output.OGGVorbisOutput@)">
+            <summary>
+            Sets OGG output.
+            </summary>
+            <param name="oggVorbisOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.FillSettings(VisioForge.Core.Types.VideoCapture.VideoCaptureOutputFormat,VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Fill settings.
+            </summary>
+            <param name="format">
+            Format.
+            </param>
+            <param name="core">
+            Core.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.ReleaseUnmanagedResources">
+            <summary>
+            Release unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.Dispose(System.Boolean)">
+            <summary>
+            Dispose.
+            </summary>
+            <param name="disposing">
+            Is disposing.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.Dispose">
+            <summary>
+            Dispose.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.OutputFormatManager"/> class.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog">
+            <summary>
+            PCM settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog"/> class.
+            </summary>
+            <param name="audioCodecs">
+            Audio codecs.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.#ctor(VisioForge.Core.VideoCapture.VideoCaptureCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.#ctor(VisioForge.Core.VideoEdit.VideoEditCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog"/> class.
+            </summary>
+            <param name="core">The core.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.ACMOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="acmOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.ACMOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="acmOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.PCMSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog">
+            <summary>
+            Speex settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.SpeexOutput@)">
+            <summary>
+            Saves setings.
+            </summary>
+            <param name="speexOutput">
+            Output.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.SpeexOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="speexOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.SpeexSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog">
+            <summary>
+            WebM settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.WebMOutput)">
+            <summary>
+            Loads settings.
+            </summary>
+            <param name="webmOutput">
+            Output.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.WebMOutput@)">
+            <summary>
+            Saves settings.
+            </summary>
+            <param name="webmOutput">
+            Output.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WebMSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog">
+            <summary>
+            WMV settings dialog.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.WMA">
+            <summary>
+            Gets or sets a value indicating whether WMA output will be used.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.#ctor(VisioForge.Core.VideoCapture.IVideoCaptureCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog"/> class.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.#ctor(VisioForge.Core.VideoEdit.IVideoEditCore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog"/> class.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.btSelectWM_Click(System.Object,System.EventArgs)">
+            <summary>
+            Selects WM profile.
+            </summary>
+            <param name="sender">
+            Sender object.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.WMAOutput@)">
+            <summary>
+            Fills WMA settings.
+            </summary>
+            <param name="wmaOutput">
+            WMA settings.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.LoadSettings(VisioForge.Core.Types.Output.WMAOutput)">
+            <summary>
+            Loads WMA settings.
+            </summary>
+            <param name="wmaOutput">
+            WMA settings.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.SaveSettings(VisioForge.Core.Types.Output.WMVOutput@)">
+            <summary>
+            Fills WMV settings.
+            </summary>
+            <param name="wmvOutput">
+            WMV settings.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.OutputFormats.WMVSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog">
+            <summary>
+            Image logo settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.Attach(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Attaches video effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.Fill(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Fills video effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoCapture.IVideoCaptureCore)">
+            <summary>
+            Generates effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoEdit.IVideoEditCore)">
+            <summary>
+            Generates effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.MediaPlayer.IMediaPlayerCore)">
+            <summary>
+            Generates effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.ImageLogoSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog">
+            <summary>
+            IVideoEffectsSettingsDialog interface.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog.Attach(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Attaches effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog.Fill(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Fills effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoEdit.IVideoEditCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoCapture.IVideoCaptureCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.IVideoEffectsSettingsDialog.GenerateNewEffectName(VisioForge.Core.MediaPlayer.IMediaPlayerCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog">
+            <summary>
+            Text logo settings dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.Attach(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Attaches video effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+            <exception cref="T:System.ArgumentOutOfRangeException">
+            ArgumentOutOfRangeException.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.Fill(VisioForge.Core.Types.VideoEffects.IVideoEffect)">
+            <summary>
+            Fills effect.
+            </summary>
+            <param name="effect">
+            Effect.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoCapture.IVideoCaptureCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.MediaPlayer.IMediaPlayerCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.GenerateNewEffectName(VisioForge.Core.VideoEdit.IVideoEditCore)">
+            <summary>
+            Generates new effect name.
+            </summary>
+            <param name="core">
+            Core.
+            </param>
+            <returns>
+            Returns <see cref="T:System.String"/>.
+            </returns>
+            <exception cref="T:System.Exception">
+            Exception.
+            </exception>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.VideoEffects.TextLogoSettingsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm">
+            <summary>
+            The window capture form.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.MoveByMouseDown">
+            <summary>
+            Gets or sets a value indicating whether window moved by mouse button down.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.DefaultBorderColor">
+            <summary>
+            Gets or sets default border color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.InfoLabel">
+            <summary>
+            Gets info label.
+            </summary>
+        </member>
+        <member name="E:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.OnCaptureHotkey">
+            <summary>
+            OnCaptureHotkey event.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.CapturedWindowText">
+            <summary>
+            Gets capture window text.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.CapturedWindowHandle">
+            <summary>
+            Gets captured window handle.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.UpdateLocation(System.Drawing.Rectangle)">
+            <summary>
+            Updates location.
+            </summary>
+            <param name="rect">
+            Rectangle.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.StartCapture">
+            <summary>
+            Starts capture.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.StopCapture">
+            <summary>
+            Stops capture.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.Dialogs.WindowCaptureForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.PeakMeterControl.MyResourceNamespace">
+            <summary>
+            Fake resource namespace.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.PeakMeterCtrl">
+            <summary>
+            Peakmeter control.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.PeakMeterCtrl"/> class.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.MeterStyle">
+            <summary>
+            Gets or sets meter style.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ShowGrid">
+            <summary>
+            Gets or sets a value indicating whether grid is enabled.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColoredGrid">
+            <summary>
+            Gets or sets a value indicating whether grid is colored.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.GridColor">
+            <summary>
+            Gets or sets grid color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorNormal">
+            <summary>
+            Gets or sets normal color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorMedium">
+            <summary>
+            Gets or sets medium color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorHigh">
+            <summary>
+            Gets or sets high color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorNormalBack">
+            <summary>
+            Gets or sets normal back color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorMediumBack">
+            <summary>
+            Gets or sets medium back color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ColorHighBack">
+            <summary>
+            Gets or sets high back color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.BandsCount">
+            <summary>
+            Gets or sets bands count.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.LEDCount">
+            <summary>
+            Gets or sets LED count.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.FalloffSpeed">
+            <summary>
+            Gets or sets falloff speed.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.FalloffEffect">
+            <summary>
+            Gets or sets a value indicating whether falloff effect is enabled.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.FalloffColor">
+            <summary>
+            Gets or sets falloff color.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.PeakMeterCtrl.IsActive">
+            <summary>
+            Gets a value indicating whether peakmeter is active.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.Start(System.Int32)">
+            <summary>
+            Start animation.
+            </summary>
+            <param name="delay">Delay.</param>
+            <returns>Returns <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.Stop">
+            <summary>
+            Stop animation.
+            </summary>
+            <returns>Returns <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.SetMeterBands(System.Int32,System.Int32)">
+            <summary>
+            Set number of LED bands.
+            </summary>
+            <param name="bandsCount">Number of bands.</param>
+            <param name="ledCount">Number of LED per bands.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.SetRange(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Set range info.
+            </summary>
+            <param name="minRangeVal">Min Range.</param>
+            <param name="medRangeVal">Medium Range.</param>
+            <param name="maxRangeVal">High Range.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.Clear">
+            <summary>
+            Clears values.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.SetData(System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Set meter band value.
+            </summary>
+            <param name="arrayValue">Array value for the bands.</param>
+            <param name="offset">Starting offset position.</param>
+            <param name="size">Number of values to set.</param>
+            <returns>Returns <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.DarkenColor(System.Drawing.Color,System.Byte)">
+            <summary>
+            Make a color darker.
+            </summary>
+            <param name="color">Color to darken.</param>
+            <param name="darkenBy">Value to decrease by.</param>
+            <returns>Returns <see cref="T:System.Drawing.Color"/>.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.LightenColor(System.Drawing.Color,System.Byte)">
+            <summary>
+            Make a color lighter.
+            </summary>
+            <param name="color">Color.</param>
+            <param name="lightenBy">Lighten by.</param>
+            <returns>
+            Returns <see cref="T:System.Drawing.Color"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.InRange(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Checks is in range.
+            </summary>
+            <param name="value">Value.</param>
+            <param name="rangeMin">Min range.</param>
+            <param name="rangeMax">Max range.</param>
+            <returns>Returns <see cref="T:System.Boolean"/>.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.ResetControl">
+            <summary>
+            Resets control.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.StartAnimation(System.Int32)">
+            <summary>
+            Starts animation.
+            </summary>
+            <param name="period">
+            Period.
+            </param>
+            <returns>
+            Returns <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.StopAnimation">
+            <summary>
+            Stops animation.
+            </summary>
+            <returns>
+            Returns <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.OnHandleDestroyed(System.EventArgs)">
+            <summary>
+            On handle destroyed event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.OnBackColorChanged(System.EventArgs)">
+            <summary>
+            On backcolor changed event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            On paint event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.TimerCallback(System.Object)">
+            <summary>
+            Timer callback.
+            </summary>
+            <param name="thisObject">
+            Self.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.DrawHorzBand(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Draws horizon bands.
+            </summary>
+            <param name="g">
+            Graphics.
+            </param>
+            <param name="rect">
+            Rectangle.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.DrawVertBand(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            Draws vertical band.
+            </summary>
+            <param name="g">
+            Graphics.
+            </param>
+            <param name="rect">
+            Rectangle.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterCtrl.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.PeakMeterCtrl.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.PeakMeterData">
+            <summary>
+            Peak meter data.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterData.Value">
+            <summary>
+            Value.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterData.Falloff">
+            <summary>
+            Falloff.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterData.Speed">
+            <summary>
+            Speed.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.PeakMeterStyle">
+            <summary>
+            Peak meter style.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterStyle.Horizontal">
+            <summary>
+            Horizontal.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.PeakMeterStyle.Vertical">
+            <summary>
+            Vertical.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.VideoView">
+            <summary>
+            VideoView control for WinForms.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._customPictureBox">
+            <summary>
+            The custom picture box.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._logDialog">
+            <summary>
+            The log dialog.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._parent">
+            <summary>
+            Parent.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._mediaPlayerCore">
+            <summary>
+            The media player core.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._videoRendererCore">
+            <summary>
+            The video renderer core.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._videoRenderer">
+            <summary>
+            The video renderer.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._drawStatusOverride">
+            <summary>
+            The draw status override.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._drawStatusDisable">
+            <summary>
+            The draw status disable.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VideoView._statusOverlay">
+            <summary>
+            Status overlay.
+            </summary>
+        </member>
+        <member name="E:VisioForge.Core.UI.WinForms.VideoView.PropertyChanged">
+            <summary>
+            Property changed event.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.OnPropertyChanged(System.String)">
+            <summary>
+            OnPropertyChanged API.
+            </summary>
+            <param name="propertyName">
+            Property name.
+            </param>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VideoView.StatusOverlay">
+            <summary>
+            Gets or sets status overlay that is active after Start/StartAsync call but before actual video streaming. The overlay can be used for IP cameras connection progress.
+            Use <see cref="T:VisioForge.Core.Types.TextStatusOverlay"/> to configure text overlay.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.VideoView"/> class. 
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.Finalize">
+            <summary>
+            Finalizes an instance of the <see cref="T:VisioForge.Core.UI.WinForms.VideoView"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.GetUIEngine">
+            <summary>
+            Gets UI engine.
+            </summary>
+            <returns>
+            Returns <see cref="T:VisioForge.Core.Types.VideoViewUIEngine"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.Attach(VisioForge.Core.Types.IMPVCVECore)">
+            <summary>
+            Attaches parent.
+            </summary>
+            <param name="parent">
+            Parent.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.Detach(VisioForge.Core.Types.IMPVCVECore)">
+            <summary>
+            Detaches parent.
+            </summary>
+            <param name="parent">Parent.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.InvokeVideoRendererUpdate">
+            <summary>
+            Invokes VideoRendererUpdate().
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.InvokeStart">
+            <summary>
+            Invokes Start().
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.InvokeStartComplete">
+            <summary>
+            Invokes Start(), complete.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.InvokeStop">
+            <summary>
+            Invokes Stop().
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.GetHandle">
+            <summary>
+            Gets window handle.
+            </summary>
+            <returns>
+            Returns <see cref="T:System.IntPtr"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.DrawStatusOverlay(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Draws status overlay.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            OnPaint override.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.Dispose(System.Boolean)">
+            <summary>
+            Dispose.
+            </summary>
+            <param name="disposing">
+            Disposing parameter.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.GetSize">
+            <summary>
+            Gets size.
+            </summary>
+            <returns>
+            Return <see cref="T:VisioForge.Core.Types.Size"/>.
+            </returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.SetHandle(System.IntPtr)">
+            <summary>
+            Sets the handle. Not implemented.
+            </summary>
+            <param name="handle">The handle.</param>
+            <exception cref="T:System.NotImplementedException">Not implemented.</exception>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ClearUI">
+            <summary>
+            Clears the UI.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.LogDialogError(System.String)">
+            <summary>
+            Logs the error in a custom dialog.
+            </summary>
+            <param name="msg">The message.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.LogDialogClose">
+            <summary>
+            Closes logs dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.LogDialogClear">
+            <summary>
+            Clears logs dialog.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ShowMessage(System.String)">
+            <summary>
+            Shows the message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns>MessageBoxResult.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ShowMessageEx(System.String,System.String,VisioForge.Core.Types.MessageBoxDialogButtons)">
+            <summary>
+            Shows the message.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="caption">The caption.</param>
+            <param name="buttons">The buttons.</param>
+            <returns>MessageBoxResult.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ShowMessageEx_(System.String,System.String,VisioForge.Core.Types.MessageBoxDialogButtons)">
+            <summary>
+            Shows the message (implementation).
+            </summary>
+            <param name="message">The message.</param>
+            <param name="caption">The caption.</param>
+            <param name="buttons">The buttons.</param>
+            <returns>MessageBoxResult.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PaintHandler(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paint event handler.
+            </summary>
+            <param name="sender">
+            Sender.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ResizeMoveHandler(System.Object,System.EventArgs)">
+            <summary>
+            Resize and move event handler.
+            </summary>
+            <param name="sender">
+            Sender.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.DisplayChangedHandler(System.Object,System.EventArgs)">
+            <summary>
+            Display changes handler.
+            </summary>
+            <param name="sender">
+            Sender.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.AddHandlers">
+            <summary>
+            Adds video handlers.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.RemoveHandlers">
+            <summary>
+            Remove handlers.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.MouseMoveHandler(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Mouse move handler.
+            </summary>
+            <param name="sender">
+            Sender object.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.MouseMoveHandlerDVD(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Mouse move handler DVD.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.MouseDownHandler(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Mouse down handler.
+            </summary>
+            <param name="sender">
+            Sender object.
+            </param>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.MouseDownHandlerDVD(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Mouse down handler DVD.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.ResizeRoundTo(System.Int32)">
+            <summary>
+            Resizes the VideoView round to value.
+            </summary>
+            <param name="round">The value.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.CallRefresh">
+            <summary>
+            Calls the refresh.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.CallInvoke(System.Delegate,System.Object[])">
+            <summary>
+            Calls the Invoke.
+            </summary>
+            <param name="method">The method.</param>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.GetIsHandleCreated">
+            <summary>
+            Gets the is handle created.
+            </summary>
+            <returns><c>true</c> if the handle is created, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.GetInvokeRequired">
+            <summary>
+            Gets the invoke required.
+            </summary>
+            <returns><c>true</c> if the invoke is required, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxCreate(System.Int32,System.Int32)">
+            <summary>
+            Create the PictureBox.
+            </summary>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxCreateIntl(System.Int32,System.Int32)">
+            <summary>
+            Create the PictureBox.
+            </summary>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxDestroy">
+            <summary>
+            Destroys the PictureBox.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxDestroyIntl">
+            <summary>
+            Destroys the PictureBox.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxSetImage(System.Drawing.Bitmap)">
+            <summary>
+            Set the image on PictureBox.
+            </summary>
+            <param name="image">The image.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxGetImage">
+            <summary>
+            Gets the PictureBox image.
+            </summary>
+            <returns>Bitmap.</returns>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VideoView.PictureBoxExists">
+            <summary>
+            Is the PictureBox exists.
+            </summary>
+            <returns><c>true</c> if exists, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter">
+            <summary>
+            Windows Forms volume meter.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter"/> class. 
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.OnForeColorChanged(System.EventArgs)">
+            <summary>
+            OnForeColorChanged event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.amplitude">
+            <summary>
+            Amplitude.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.Amplitude">
+            <summary>
+            Gets or sets current value.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.MinDb">
+            <summary>
+            Gets or sets minimum decibels.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.MaxDb">
+            <summary>
+            Gets or sets maximum decibels.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.Orientation">
+            <summary>
+            Gets or sets meter orientation.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.Boost">
+            <summary>
+            Gets or sets boost value.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the volume meter.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.Clear">
+            <summary>
+            Clears and refreshes control.
+            </summary>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.VolumeMeter.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter">
+            <summary>
+            Windows Forms control for painting audio waveforms.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.Clear">
+            <summary>
+            Clears and refreshes control.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.OnResize(System.EventArgs)">
+            <summary>
+            On Resize event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.OnForeColorChanged(System.EventArgs)">
+            <summary>
+            On ForeColorChanged event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="P:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.Boost">
+            <summary>
+            Gets or sets boost value. Range is 0.0 - 5.0.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.AddMax(System.Single)">
+            <summary>
+            Adds meter max value.
+            </summary>
+            <param name="maxSample">
+            Sample value.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            OnPaint event.
+            </summary>
+            <param name="e">
+            Event args.
+            </param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.GetSample(System.Int32)">
+            <summary>
+            Gets sample.
+            </summary>
+            <param name="index">
+            Item index.
+            </param>
+            <returns>
+            Returns sample.
+            </returns>
+        </member>
+        <member name="F:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:VisioForge.Core.UI.WinForms.VolumeMeterPro.WaveformPainter.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:VisioForge.Core.UI.ScreenExtensions">
+            <summary>
+            Screen extensions.
+            </summary>
+        </member>
+        <member name="M:VisioForge.Core.UI.ScreenExtensions.GetDpi(System.Windows.Forms.Screen,VisioForge.Core.Types.DpiType,System.UInt32@,System.UInt32@)">
+            <summary>
+            Gets DPI.
+            </summary>
+            <param name="screen">
+            Screen.
+            </param>
+            <param name="dpiType">
+            DPI type.
+            </param>
+            <param name="dpiX">
+            DPI X.
+            </param>
+            <param name="dpiY">
+            DPI Y.
+            </param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisioForge.DotNet.VideoEdit</name>
+    </assembly>
+    <members>
+        <member name="M:VisioForge.DotNet.VideoEdit.VideoEditCoreX.#ctor(Android.App.Activity,VisioForge.Core.Types.IVideoView)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.DotNet.VideoEdit.VideoEditCoreX"/> class.
+            </summary>
+        </member>
+        <member name="M:VisioForge.DotNet.VideoEdit.VideoEditCoreX.#ctor(Android.App.Activity)">
+            <summary>
+            Initializes a new instance of the <see cref="T:VisioForge.DotNet.VideoEdit.VideoEditCoreX"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VisioForge.Libs</name>
+    </assembly>
+    <members>
+        <member name="T:VisioForge.Libs.PlatformHelper">
+            <summary>
+            Platform helper.
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsWindows">
+            <summary>
+            Returns true if running on Windows, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsLinux">
+            <summary>
+            Returns true if running on Linux, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsLinuxDesktop">
+            <summary>
+            Returns true if running on Linux desktop, false otherwise
+            </summary>
+        </member>
+        <member name="P:VisioForge.Libs.PlatformHelper.IsMac">
+            <summary>
+            Returns true if running on macOS, false otherwise
+            </summary>
+        </member>
+        <member name="M:VisioForge.Libs.SerilogAdds.Observable.ObservableLoggerConfigurationExtensions.Observers(Serilog.Configuration.LoggerSinkConfiguration,System.Action{System.IObservable{Serilog.Events.LogEvent}},Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)">
+            <summary>
+            Write events to Rx observers.
+            </summary>
+            <param name="sinkConfiguration">Logger sink configuration.</param>
+            <param name="configureObservers">An action that provides an observable
+            to which observers can subscribe.</param>
+            <param name="restrictedToMinimumLevel">The minimum level for
+            events passed through the sink. Ignored when <paramref name="levelSwitch"/> is specified.</param>
+            <param name="levelSwitch">A switch allowing the pass-through minimum level
+            to be changed at runtime.</param>
+            <returns>Configuration object allowing method chaining.</returns>
+        </member>
+        <member name="M:Gst.IntRange.ToArray">
+            <summary>
+            Converts to array.
+            </summary>
+            <returns>System.Int32[].</returns>
+        </member>
+        <member name="M:GLib.Opaque.DisposeManagedResources">
+            <summary>
+            Disposes the managed resources.
+            This method is intended to be overriden.
+            </summary>
+        </member>
+        <member name="M:GLib.Opaque.DisposeUnmanagedResources">
+            <summary>
+            Disposes the unmanaged resources.
+            This method is intended to be overriden.
+            </summary>
+        </member>
+    </members>
+</doc>
