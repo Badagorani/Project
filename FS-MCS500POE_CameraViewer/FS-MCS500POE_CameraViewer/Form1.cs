@@ -30,7 +30,7 @@ namespace FS_MCS500POE_CameraViewer
 	{
 		private const int Camera_Count = 3;
 		public delegate void PaintDelegate(PictureBox pb_cam, Bitmap bmp, Mutex mutex);
-		Property pp;
+		Property property;
 
 		private CameraControl[] m_Camera = null;
 		private Mutex[] m_mutexImage = null;
@@ -120,7 +120,7 @@ namespace FS_MCS500POE_CameraViewer
 					m_Camera[index].Start();
 				}
 				ListAdd();
-				pp = new Property(this);
+				property = new Property(this);
 			}
 			catch (Exception ex)
 			{
@@ -523,19 +523,19 @@ namespace FS_MCS500POE_CameraViewer
 		#region 설정 정보창 오픈
 		private void PropertyLocationSettings()
 		{
-			if(pp != null)
+			if(property != null)
 			{
-				pp.Height = this.Height;
-				pp.StartPosition = FormStartPosition.Manual;
+				property.Height = this.Height;
+				property.StartPosition = FormStartPosition.Manual;
 				Point ParentPoint = this.Location;
-				pp.Location = new Point(ParentPoint.X + this.Width, ParentPoint.Y);
+				property.Location = new Point(ParentPoint.X + this.Width, ParentPoint.Y);
 			}
 		}
 		private void PropertyShow()
 		{
 			PropertyLocationSettings();
-			pp.Show();
-			pp.BringToFront();
+			property.Show();
+			property.BringToFront();
 		}
 		#endregion
 
@@ -576,9 +576,12 @@ namespace FS_MCS500POE_CameraViewer
 		#region 폼 닫기
 		private void Form1_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			pp.Hide();
+			if(property != null)
+			{
+				property.Hide();
+				property.XmlEndSave(property.property_setting, property.property_setting.GetType());
+			}
 			this.Hide();
-			pp.XmlSave();
 			//Viewer_Thread.ViewSetting(NowSelectedCamNo, IsViewing);
 			//Camera_Setting.DestroyCamera();
 			for (int index = 0; index < Camera_Count; index++)
