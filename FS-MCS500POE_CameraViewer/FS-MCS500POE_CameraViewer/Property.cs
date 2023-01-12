@@ -89,6 +89,7 @@ namespace FS_MCS500POE_CameraViewer
 				XmlSerializer xs = new XmlSerializer(type);
 				xs.Serialize(wr, obj, ns);
 			}
+			SetIPAddress();
 			XmlLoad();
 			propertyGrid1.SelectedObject = property_setting;
 		}
@@ -112,44 +113,26 @@ namespace FS_MCS500POE_CameraViewer
 					property_setting = (Property_Setting)serializer.Deserialize(reader);
 					property_setting.m_sStartTime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분 ss초");
 					property_setting.m_sEndTime = "";
+					property_setting.m_sCamera1_DeviceIP = form.Camera1IP;
+					property_setting.m_sCamera2_DeviceIP = form.Camera2IP;
+					property_setting.m_sCamera3_DeviceIP = form.Camera3IP;
 				}
 			}
 			catch (Exception ex)
 			{
 				//Console.WriteLine($"An exception occurred from {MethodBase.GetCurrentMethod().Name}", ex);
-				form.ShowMessage("오류", "예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "주의");
+				form.ShowMessage("오류", $"예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "주의");
 			}
+		}
+		public void SetIPAddress()
+		{
+			form.Camera1IP = property_setting.m_sCamera1_DeviceIP;
+			form.Camera2IP = property_setting.m_sCamera2_DeviceIP;
+			form.Camera3IP = property_setting.m_sCamera3_DeviceIP;
 		}
 	}
 	public class Property_Setting
 	{
-		Form1 form;
-		public Property_Setting()
-		{
-			// 여기서 xml 문서를 읽어와야 한다!!
-			//XmlLoad();
-		}
-		public void XmlLoad()
-		{
-			XmlDocument xmlFile = new XmlDocument();
-			xmlFile.Load(@"../../xml\Settings.xml");
-
-			XmlNodeList nodes = xmlFile.SelectNodes("/전체/사용자_정보");
-			foreach(XmlNode node in nodes)
-			{
-				m_sUser = node.SelectSingleNode("사용자_이름").InnerText;
-				if (m_sUser.Equals("홍길동")) m_sPermission = "관리자";
-				else m_sPermission = "일반 유저";
-				m_sStartTime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분 ss초");
-			}
-			nodes = xmlFile.SelectNodes("/전체/카메라_정보");
-			foreach (XmlNode node in nodes)
-			{
-				m_sCamera1_DeviceIP = form.Camera1IP;
-				m_sCamera2_DeviceIP = form.Camera2IP;
-				m_sCamera3_DeviceIP = form.Camera3IP;
-			}
-		}
 		//[Category("카테고리 없으면 기타로 들어감"), DisplayName("왼쪽의 이름"), Description("맨밑에 설명")]
 		public string m_sUser;
 		[Category("\t사용자 정보"), DisplayName("이름"), Description("사용자의 성함")]

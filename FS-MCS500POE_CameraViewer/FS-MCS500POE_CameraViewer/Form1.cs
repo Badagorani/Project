@@ -70,17 +70,17 @@ namespace FS_MCS500POE_CameraViewer
 		public string Camera1IP
 		{
 			get { return m_Camera[0].GevDeviceIPAddress.ToString(); }
-			set {  }
+			set { m_Camera[0].SetDeviceIPAddress = value; }
 		}
 		public string Camera2IP
 		{
 			get { return m_Camera[1].GevDeviceIPAddress.ToString(); }
-			set { }
+			set { m_Camera[1].SetDeviceIPAddress = value; }
 		}
 		public string Camera3IP
 		{
 			get { return m_Camera[2].GevDeviceIPAddress.ToString(); }
-			set { }
+			set { m_Camera[2].SetDeviceIPAddress = value; }
 		}
 		private void Form1_Shown(object sender, EventArgs e)
 		{
