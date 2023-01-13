@@ -76,20 +76,18 @@ namespace OMRON_Camera_Control
         }
         private void open()
         {
-            //if (m_Camera_device == null) throw new Exception("The device is not created.");
+            try
+			{
+                m_Camera_lastBuffer = CStApiDotNet.CreateStImageBuffer();
+                m_Camera_lastBuffer.CreateBuffer((uint)Width, (uint)Height, (eStPixelFormatNamingConvention)Enum.Parse(typeof(eStPixelFormatNamingConvention), PixelFormat));
 
-            m_Camera_lastBuffer = CStApiDotNet.CreateStImageBuffer();
-            m_Camera_lastBuffer.CreateBuffer((uint)Width, (uint)Height, (eStPixelFormatNamingConvention)Enum.Parse(typeof(eStPixelFormatNamingConvention), PixelFormat));
-
-            m_Camera_lastColorBuffer = CStApiDotNet.CreateStImageBuffer();
-            m_Camera_lastColorBuffer.CreateBuffer((uint)Width, (uint)Height, eStPixelFormatNamingConvention.RGB8);
-
-            //m_Camera_RotateBuffer = CStApiDotNet.CreateStImageBuffer();
-            //m_Camera_RotateBuffer.CreateBuffer((uint)Height, (uint)Width, (eStPixelFormatNamingConvention)Enum.Parse(typeof(eStPixelFormatNamingConvention), PixelFormat));
-
-            //m_Camera_ReverseBuffer = CStApiDotNet.CreateStImageBuffer();
-            //m_Camera_ReverseBuffer.CreateBuffer((uint)Width, (uint)Height, (eStPixelFormatNamingConvention)Enum.Parse(typeof(eStPixelFormatNamingConvention), PixelFormat));
-
+                m_Camera_lastColorBuffer = CStApiDotNet.CreateStImageBuffer();
+                m_Camera_lastColorBuffer.CreateBuffer((uint)Width, (uint)Height, eStPixelFormatNamingConvention.RGB8);
+            }
+            catch(Exception ex)
+			{
+                form.ShowMessage("오류", "카메라 오픈에 실패하였습니다!\n" + ex.Message, "경고");
+            }
         }
         public void Close()
         {
@@ -135,8 +133,8 @@ namespace OMRON_Camera_Control
         {
             try
             {
-                m_Camera_device.AcquisitionStop();
-                m_Camera_DataStream.StopAcquisition();
+                if (m_Camera_device != null) m_Camera_device.AcquisitionStop();
+                if (m_Camera_DataStream != null) m_Camera_DataStream.StopAcquisition();
             }
             catch (Exception ex)
             {
@@ -251,6 +249,7 @@ namespace OMRON_Camera_Control
         }
         public void SetIP(string ipvalue)
 		{
+            if (ipvalue.Equals(GevDeviceIPAddress.ToString())) return;
             CStApiAutoInit now_Cmaera_api = m_Cmaera_api;
             CStSystem now_Camera_system = m_Camera_system;
             CStDevice now_Camera_device = m_Camera_device;
@@ -270,26 +269,20 @@ namespace OMRON_Camera_Control
                 throw new RuntimeException("There is no device.");
             }
             INodeMap nodeMap = iInterface.GetIStPort().GetINodeMap();
+            //INodeMap nodeMap = m_Camera_device.GetLocalIStPort().GetINodeMap();
 
             // 호스트 측의 IP 주소를 표시합니다
             IInteger nodeGevInterfaceSubnetIPAddress = nodeMap.GetNode<IInteger>("GevInterfaceSubnetIPAddress");
-            //Console.WriteLine("Interface IP Address=" + nodeGevInterfaceSubnetIPAddress.ToString());
 
             // 호스트 측의 서브넷 마스크를 표시합니다
             IInteger nodeGevInterfaceSubnetMask = nodeMap.GetNode<IInteger>("GevInterfaceSubnetMask");
-            //Console.WriteLine("Interface Subnet Mask=" + nodeGevInterfaceSubnetMask.ToString());
-
-            // 첫 번째 카메라를 선택합니다
-            //const uint deviceSelectorValue = 0;
-            //IInteger nodeDeviceSelector = nodeMap.GetNode<IInteger>("DeviceSelector");
-            //nodeDeviceSelector.Value = deviceSelectorValue;
 
             // 카메라의 현재 IP 주소를 표시합니다
             IInteger nodeGevDeviceIPAddress = nodeMap.GetNode<IInteger>("GevDeviceIPAddress");
             //Console.WriteLine("Device IP Address=" + nodeGevDeviceIPAddress.ToString());
 
             // 카메라의 현재 서브넷 마스크를 표시합니다
-            IInteger nodeGevDeviceSubnetMask = nodeMap.GetNode<IInteger>("GevDeviceSubnetMask");
+            //IInteger nodeGevDeviceSubnetMask = nodeMap.GetNode<IInteger>("GevDeviceSubnetMask");
             //Console.WriteLine("Device Subnet Mask=" + nodeGevDeviceSubnetMask.ToString());
 
             IPAddress ipaddr;
@@ -308,6 +301,7 @@ namespace OMRON_Camera_Control
             // 호스트와 카메라의 서브넷 주소가 일치하고 카메라의 호스트와 IP 주소가 서로 다른지 확인합니다
             if (((interfaceIPAddress & subnetMask) == (newDeviceIPAddress & subnetMask)) && (interfaceIPAddress != newDeviceIPAddress))
             {
+                //m_Camera_device.GetLocalIStPort().GetINodeMap().GetNode<IInteger>("GevDeviceIPAddress").Value = newDeviceIPAddress;
                 // 카메라의 새 IP 주소를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
                 IInteger nodeGevDeviceForceIPAddress = nodeMap.GetNode<IInteger>("GevDeviceForceIPAddress");
                 nodeGevDeviceForceIPAddress.Value = newDeviceIPAddress;
@@ -315,8 +309,11 @@ namespace OMRON_Camera_Control
                 // 카메라의 새 서브넷 마스크를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
                 IInteger nodeGevDeviceForceSubnetMask = nodeMap.GetNode<IInteger>("GevDeviceForceSubnetMask");
                 nodeGevDeviceForceSubnetMask.Value = subnetMask;
-
+                
                 // 카메라 설정을 업데이트합니다
+                iInterface.GetIStDeviceInfo((uint)form.NowSelectedCamNo - 1);
+                form.m_thread[form.NowSelectedCamNo - 1].Interrupt();
+                //form.m_thread[form.NowSelectedCamNo - 1].Abort();
                 Stop();
                 Close();
                 ICommand nodeGevDeviceForceIP = nodeMap.GetNode<ICommand>("GevDeviceForceIP");
@@ -331,7 +328,9 @@ namespace OMRON_Camera_Control
             m_Camera_device = now_Camera_device;
             m_Camera_DataStream = now_Camera_DataStream;
             CameraOpen();
+            SetEnableImageCallback(true);
             Start();
+            //form.m_thread[form.NowSelectedCamNo - 1].Start();
         }
         public EventWaitHandle HandleGrabDone
         {

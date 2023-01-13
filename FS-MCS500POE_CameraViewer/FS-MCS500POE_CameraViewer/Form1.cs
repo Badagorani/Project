@@ -33,10 +33,10 @@ namespace FS_MCS500POE_CameraViewer
 		Property property;
 
 		private CameraControl[] m_Camera = null;
-		private Mutex[] m_mutexImage = null;
-		private Bitmap[] m_bitmap = null;
-		private Thread[] m_thread = null;
-		private bool[] m_isWork = null;
+		public Mutex[] m_mutexImage = null;
+		public Bitmap[] m_bitmap = null;
+		public Thread[] m_thread = null;
+		public bool[] m_isWork = null;
 		VideoFileWriter videoFileWriter = null;
 		List<AxTimelineAxLib.AxTimelineControl> TimelineList = new List<AxTimelineAxLib.AxTimelineControl>();
 		List<Button> TimelineAddButtons = new List<Button>();
@@ -45,9 +45,10 @@ namespace FS_MCS500POE_CameraViewer
 		List<Button> TimelineStopButtons = new List<Button>();
 		List<Button> TimelineDeleteButtons = new List<Button>();
 		#region 상태
-		short NowSelectedCamNo = 1;
-		short PastSelectedCamNo = 0;
-		bool IsRecord = false;
+		public short NowSelectedCamNo = 1;
+		public short PastSelectedCamNo = 0;
+		public bool IsRecord = false;
+		public object[] lParameters;
 		#endregion
 		public Form1()
 		{
@@ -92,7 +93,8 @@ namespace FS_MCS500POE_CameraViewer
 					if (!m_Camera[index].IsOpened)
 					{
 						ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!", "경고");
-						this.Close();
+						//this.Close();
+						return;
 					}
 
 					long width = 0, height = 0;
@@ -103,7 +105,7 @@ namespace FS_MCS500POE_CameraViewer
 					string model = "", serial = "";
 					model = m_Camera[index].DeviceModelName;
 					serial = m_Camera[index].DeviceSerialNumber;
-					object[] lParameters = new object[] { this };
+					lParameters = new object[] { this };
 
 					//Callback Registered
 					m_Camera[index].SetEnableImageCallback(true);
