@@ -25,6 +25,7 @@ namespace OMRON_Camera_Control
         public IStImageBuffer m_Camera_RotateBuffer = null;
         public IStImageBuffer m_Camera_ReverseBuffer = null;
         private EventWaitHandle m_Camera_grabDone = null;
+        public int CameraIndex;
 
         public CameraControl(Form1 form)
         {
@@ -250,27 +251,27 @@ namespace OMRON_Camera_Control
         public void SetIP(string ipvalue)
 		{
             if (ipvalue.Equals(GevDeviceIPAddress.ToString())) return;
+            //while (true)
+            //{
+            //    if (form.m_thread[CameraIndex].ThreadState != System.Threading.ThreadState.WaitSleepJoin)
+            //    {
+            //        form.m_thread[CameraIndex].Interrupt();
+            //        break;
+            //    }
+            //}
             CStApiAutoInit now_Cmaera_api = m_Cmaera_api;
             CStSystem now_Camera_system = m_Camera_system;
             CStDevice now_Camera_device = m_Camera_device;
             CStDataStream now_Camera_DataStream = m_Camera_DataStream;
-            IStInterface iInterface = null;
-
-            for (uint i = 0; i < m_Camera_system.InterfaceCount; i++)
-            {
-                if (0 < m_Camera_system.GetIStInterface(i).DeviceCount)
-                {
-                    iInterface = m_Camera_system.GetIStInterface(i);
-                    break;
-                }
-            }
+            IStInterface iInterface = m_Camera_system.GetIStInterface(0);
             if (iInterface == null)
             {
-                throw new RuntimeException("There is no device.");
+                form.ShowMessage("오류", "인터페이스를 읽어오는데 실패했습니다!\n카메라의 IP를 바꿀 수 없습니다!\n", "주의");
+                return;
             }
             INodeMap nodeMap = iInterface.GetIStPort().GetINodeMap();
+            nodeMap.GetNode<IInteger>("DeviceSelector").Value = CameraIndex;
             //INodeMap nodeMap = m_Camera_device.GetLocalIStPort().GetINodeMap();
-
             // 호스트 측의 IP 주소를 표시합니다
             IInteger nodeGevInterfaceSubnetIPAddress = nodeMap.GetNode<IInteger>("GevInterfaceSubnetIPAddress");
 
@@ -278,7 +279,7 @@ namespace OMRON_Camera_Control
             IInteger nodeGevInterfaceSubnetMask = nodeMap.GetNode<IInteger>("GevInterfaceSubnetMask");
 
             // 카메라의 현재 IP 주소를 표시합니다
-            IInteger nodeGevDeviceIPAddress = nodeMap.GetNode<IInteger>("GevDeviceIPAddress");
+            //IInteger nodeGevDeviceIPAddress = nodeMap.GetNode<IInteger>("GevDeviceIPAddress");
             //Console.WriteLine("Device IP Address=" + nodeGevDeviceIPAddress.ToString());
 
             // 카메라의 현재 서브넷 마스크를 표시합니다
@@ -286,7 +287,11 @@ namespace OMRON_Camera_Control
             //Console.WriteLine("Device Subnet Mask=" + nodeGevDeviceSubnetMask.ToString());
 
             IPAddress ipaddr;
-            IPAddress.TryParse(ipvalue.Trim(), out ipaddr);
+            if (!IPAddress.TryParse(ipvalue.Trim(), out ipaddr))
+            {
+                form.ShowMessage("오류", "잘못된 IP 주소입니다!\n", "주의");
+                return;
+            }
 
             // 새 IP 주소 문자열을 32비트 숫자로 변환합니다
             byte[] bytes = ipaddr.GetAddressBytes();
@@ -301,27 +306,33 @@ namespace OMRON_Camera_Control
             // 호스트와 카메라의 서브넷 주소가 일치하고 카메라의 호스트와 IP 주소가 서로 다른지 확인합니다
             if (((interfaceIPAddress & subnetMask) == (newDeviceIPAddress & subnetMask)) && (interfaceIPAddress != newDeviceIPAddress))
             {
-                //m_Camera_device.GetLocalIStPort().GetINodeMap().GetNode<IInteger>("GevDeviceIPAddress").Value = newDeviceIPAddress;
-                // 카메라의 새 IP 주소를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
-                IInteger nodeGevDeviceForceIPAddress = nodeMap.GetNode<IInteger>("GevDeviceForceIPAddress");
-                nodeGevDeviceForceIPAddress.Value = newDeviceIPAddress;
-
-                // 카메라의 새 서브넷 마스크를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
-                IInteger nodeGevDeviceForceSubnetMask = nodeMap.GetNode<IInteger>("GevDeviceForceSubnetMask");
-                nodeGevDeviceForceSubnetMask.Value = subnetMask;
-                
-                // 카메라 설정을 업데이트합니다
-                iInterface.GetIStDeviceInfo((uint)form.NowSelectedCamNo - 1);
-                form.m_thread[form.NowSelectedCamNo - 1].Interrupt();
-                //form.m_thread[form.NowSelectedCamNo - 1].Abort();
                 Stop();
                 Close();
+                //m_Camera_device.GetLocalIStPort().GetINodeMap().GetNode<IInteger>("GevDeviceIPAddress").Value = newDeviceIPAddress;
+                // 카메라의 새 IP 주소를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
+                IInteger NowIPAddress = nodeMap.GetNode<IInteger>("GevDeviceForceIPAddressReg");
+                NowIPAddress.Value = newDeviceIPAddress;
+
+                // 카메라의 새 서브넷 마스크를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
+                //IInteger nodeGevDeviceForceSubnetMask = nodeMap.GetNode<IInteger>("GevDeviceForceSubnetMask");
+                //nodeGevDeviceForceSubnetMask.Value = subnetMask;
+
+                // 카메라 설정을 업데이트합니다
                 ICommand nodeGevDeviceForceIP = nodeMap.GetNode<ICommand>("GevDeviceForceIP");
                 nodeGevDeviceForceIP.Execute();
+                //for (uint i = 0; i < 30; ++i)
+                //{
+                //    m_Camera_device = CreateStDeviceByIPAddress();
+                //    if (m_Camera_device != null)
+                //    {
+                //        break;
+                //    }
+                //}
             }
             else
             {
                 form.ShowMessage("오류", "잘못된 IP입니다!", "주의");
+                return;
             }
             m_Cmaera_api = now_Cmaera_api;
             m_Camera_system = now_Camera_system;
@@ -379,6 +390,10 @@ namespace OMRON_Camera_Control
         public string SetDeviceIPAddress
 		{
             set { SetIP(value); }
+		}
+        public int SetCameraIndex
+		{
+			set { CameraIndex = value; }
 		}
     }
 }

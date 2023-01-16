@@ -105,6 +105,7 @@ namespace FS_MCS500POE_CameraViewer
 					string model = "", serial = "";
 					model = m_Camera[index].DeviceModelName;
 					serial = m_Camera[index].DeviceSerialNumber;
+					m_Camera[index].SetCameraIndex = index;
 					lParameters = new object[] { this };
 
 					//Callback Registered

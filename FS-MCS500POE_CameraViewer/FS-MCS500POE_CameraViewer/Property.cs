@@ -72,6 +72,7 @@ namespace FS_MCS500POE_CameraViewer
 
 			//xmlFile.Save(@"../../xml\Settings.xml");
 
+			SetIPAddress();
 			string strLocalFolder = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf("\\"));
 			string strXMLFile = String.Empty;
 
@@ -89,7 +90,6 @@ namespace FS_MCS500POE_CameraViewer
 				XmlSerializer xs = new XmlSerializer(type);
 				xs.Serialize(wr, obj, ns);
 			}
-			SetIPAddress();
 			XmlLoad();
 			propertyGrid1.SelectedObject = property_setting;
 		}
