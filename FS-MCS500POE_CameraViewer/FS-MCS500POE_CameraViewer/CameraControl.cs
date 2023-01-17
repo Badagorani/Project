@@ -307,7 +307,18 @@ namespace OMRON_Camera_Control
             if (((interfaceIPAddress & subnetMask) == (newDeviceIPAddress & subnetMask)) && (interfaceIPAddress != newDeviceIPAddress))
             {
                 Stop();
-                Close();
+                if (m_Camera_DataStream != null)
+                {
+                    m_Camera_DataStream.Dispose();
+                    m_Camera_DataStream = null;
+                }
+
+                if (m_Camera_device != null)
+                {
+                    m_Camera_device.Dispose();
+                    m_Camera_device = null;
+                }
+                //Close();
                 //m_Camera_device.GetLocalIStPort().GetINodeMap().GetNode<IInteger>("GevDeviceIPAddress").Value = newDeviceIPAddress;
                 // 카메라의 새 IP 주소를 지정합니다 이 시점에서 카메라 설정은 업데이트되지 않습니다
                 IInteger NowIPAddress = nodeMap.GetNode<IInteger>("GevDeviceForceIPAddressReg");
@@ -320,14 +331,6 @@ namespace OMRON_Camera_Control
                 // 카메라 설정을 업데이트합니다
                 ICommand nodeGevDeviceForceIP = nodeMap.GetNode<ICommand>("GevDeviceForceIP");
                 nodeGevDeviceForceIP.Execute();
-                //for (uint i = 0; i < 30; ++i)
-                //{
-                //    m_Camera_device = CreateStDeviceByIPAddress();
-                //    if (m_Camera_device != null)
-                //    {
-                //        break;
-                //    }
-                //}
             }
             else
             {

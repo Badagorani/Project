@@ -93,7 +93,7 @@ namespace FS_MCS500POE_CameraViewer
 					if (!m_Camera[index].IsOpened)
 					{
 						ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!", "경고");
-						//this.Close();
+						this.Close();
 						return;
 					}
 
