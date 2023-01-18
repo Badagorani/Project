@@ -548,7 +548,7 @@ namespace FS_MCS500POE_CameraViewer
 		/// </summary>
 		/// <param name="Content">내용</param>
 		/// <param name="Title">제목</param>
-		/// <param name="UseIcon">아이콘 알림, 주의, 경고, 질문</param>
+		/// <param name="UseIcon">아이콘 알림❕, 주의❗, 경고❌, 질문❔</param>
 		public void ShowMessage(string Title, string Content, string UseIcon = "")
 		{
 			MessageBoxIcon messageBoxIcon;

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Property_Setting>
   <m_sUser>홍길동</m_sUser>
-  <m_sStartTime>2023년 01월 17일 11시 28분 24초</m_sStartTime>
-  <m_sEndTime />
-  <m_sCamera1_DeviceIP>169.254.95.187</m_sCamera1_DeviceIP>
-  <m_sCamera2_DeviceIP>169.254.94.185</m_sCamera2_DeviceIP>
-  <m_sCamera3_DeviceIP>169.254.89.184</m_sCamera3_DeviceIP>
+  <m_sStartTime>2023년 01월 18일 16시 46분 30초</m_sStartTime>
+  <m_sEndTime>2023년 01월 18일 17시 55분 28초</m_sEndTime>
+  <m_sCamera1_DeviceIP>169.254.89.184</m_sCamera1_DeviceIP>
+  <m_sCamera2_DeviceIP>169.254.94.183</m_sCamera2_DeviceIP>
+  <m_sCamera3_DeviceIP>169.254.95.181</m_sCamera3_DeviceIP>
   <m_MotorDriverComPort>COM3</m_MotorDriverComPort>
   <m_BatteryComPort>COM1</m_BatteryComPort>
   <m_RMS_ServerIP>192.168.0.25</m_RMS_ServerIP>
   <m_DrivingVelocity>356700</m_DrivingVelocity>
   <m_SteeringVelocity>123</m_SteeringVelocity>
   <User>홍길동</User>
-  <Camera1_DeviceIP>169.254.95.187</Camera1_DeviceIP>
-  <Camera2_DeviceIP>169.254.94.185</Camera2_DeviceIP>
-  <Camera3_DeviceIP>169.254.89.184</Camera3_DeviceIP>
+  <Camera1_DeviceIP>169.254.89.184</Camera1_DeviceIP>
+  <Camera2_DeviceIP>169.254.94.183</Camera2_DeviceIP>
+  <Camera3_DeviceIP>169.254.95.181</Camera3_DeviceIP>
   <MotorDriverComPort>COM3</MotorDriverComPort>
   <BatteryComPort>COM1</BatteryComPort>
   <RMS_ServerIP>192.168.0.25</RMS_ServerIP>
