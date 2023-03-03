@@ -11,7 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadata("Sentry.ProjectDirectory", "C:\\Users\\김태현\\source\\repos\\FS-MCS500POE_CameraViewer\\FS-MCS500POE_CameraViewer\\")]
+[assembly: System.Reflection.AssemblyMetadata("Sentry.ProjectDirectory", "C:\\Users\\김태현\\Documents\\최동규_세인\\Project\\FS-MCS500POE_CameraViewer\\FS-MCS500POE_Came" +
+    "raViewer\\")]
 
 // MSBuild WriteCodeFragment 클래스에서 생성되었습니다.
 
