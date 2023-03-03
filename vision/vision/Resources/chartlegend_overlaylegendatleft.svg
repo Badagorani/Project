@@ -1,0 +1,17 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<svg x="0px" y="0px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" id="Overlay_Legend_at_Left" style="enable-background:new 0 0 32 32">
+  <style type="text/css">
+	.Black{fill:#727272;}
+	.Yellow{fill:#FFB115;}
+	.Blue{fill:#1177D7;}
+	.Red{fill:#D11C1C;}
+	.st0{opacity:0.5;}
+</style>
+  <polygon points="2,28 2,0 0,0 0,30 30,30 30,28 " class="Black" />
+  <g class="st0">
+    <polygon points="28,0 2,0 2,2 28,2 28,28 30,28 30,2 30,0  " class="Black" />
+  </g>
+  <rect x="4" y="4" width="6" height="6" class="Red" />
+  <rect x="4" y="12" width="6" height="6" class="Blue" />
+  <rect x="4" y="20" width="6" height="6" class="Yellow" />
+</svg>

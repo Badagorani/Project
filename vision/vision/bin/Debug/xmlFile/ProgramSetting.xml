@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Program_Setting>
+  <BasicCameraView>3</BasicCameraView>
+  <ImageFilePath>C:\FS-MCS500POE_Image_Save</ImageFilePath>
+  <ImageFileFormat>JPG</ImageFileFormat>
+  <VideoFilePath>C:\FS-MCS500POE_Video_Save</VideoFilePath>
+</Program_Setting>

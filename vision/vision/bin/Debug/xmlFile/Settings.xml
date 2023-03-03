@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgramSetting>
+	<BasicCameraView>1</BasicCameraView>
+	<ImageFilePath>2</ImageFilePath>
+	<ImageFileFormat>3</ImageFileFormat>
+	<VideoFilePath>4</VideoFilePath>
+	<m_sCamera1_DeviceIP>169.254.94.182</m_sCamera1_DeviceIP>
+	<m_sCamera2_DeviceIP>169.254.95.182</m_sCamera2_DeviceIP>
+	<m_sCamera3_DeviceIP>169.254.89.182</m_sCamera3_DeviceIP>
+	<Camera1_DeviceIP>169.254.94.182</Camera1_DeviceIP>
+	<Camera2_DeviceIP>169.254.95.182</Camera2_DeviceIP>
+	<Camera3_DeviceIP>169.254.89.182</Camera3_DeviceIP>
+</ProgramSetting>
