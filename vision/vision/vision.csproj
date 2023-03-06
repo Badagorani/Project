@@ -60,6 +60,7 @@
     <Reference Include="DevExpress.XtraNavBar.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v22.2, Version=22.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="GenApiDotNet40_v3_2, Version=3.2.0.2, Culture=neutral, PublicKeyToken=702a7d0a1d42e9d9, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\GenApiDotNet40_v3_2.dll</HintPath>

@@ -197,7 +197,7 @@ namespace vision
 					{
 						if (VideoCheck_Videos[0] != null)
 						{
-							int videofps = 1000 / (int)Math.Ceiling(fps);
+							int videofps = (int)Math.Ceiling(fps) / 1000;
 							using (Mat image = new Mat())
 							{
 								Bitmap bmp;
@@ -338,7 +338,7 @@ namespace vision
 		}
 		private void VideoCheck_FileClose()
 		{
-			if (lbc_VideoCheckFilePath.Text.Equals(""))
+			if (lbc_VideoCheckFilePath.Text.Equals("  파일 위치"))
 			{
 				MainForm.ShowMessage("재생", "영상을 불러오지 않았습니다!!", "주의");
 				return;
@@ -356,7 +356,7 @@ namespace vision
 				VideoCheck_Videos[i].Release();
 			}
 			VideoCheck_MainCam.Image = null;
-			lbc_VideoCheckFilePath.Text = "";
+			lbc_VideoCheckFilePath.Text = "  파일 위치";
 			Play = null;
 		}
 		private void tbc_VideoCheckTrack_Scroll(object sender, EventArgs e)

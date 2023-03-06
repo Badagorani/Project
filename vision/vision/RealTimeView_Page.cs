@@ -38,6 +38,7 @@ namespace vision
 		public int PastSelectedCamNo = 0;
 		public bool IsRecord = false;
 		public object[] lParameters;
+		public bool IsAnotherPage;
 		#endregion
 		public string Camera1IP
 		{
@@ -92,6 +93,7 @@ namespace vision
 				m_mutexImage[i] = new Mutex();
 			}
 			PanelSettings();
+			NowSelectedCamNo = MainForm.Settings.ProgramSetting.BasicCameraView;
 		}
 		private void RealTimeView_Page_Load(object sender, EventArgs e)
 		{
@@ -531,7 +533,7 @@ namespace vision
 				}
 				PictureBox[] CamImage = new PictureBox[] { RealTimeView_Cam1, RealTimeView_Cam2, RealTimeView_Cam3 };
 				ImageFormat Imageformat;
-				string ImageFormatText = MainForm.SettingsPage.ProgramSetting.ImageFileFormat;
+				string ImageFormatText = MainForm.Settings.ProgramSetting.ImageFileFormat;
 				switch (ImageFormatText)
 				{
 					case "JPG": Imageformat = ImageFormat.Jpeg; break;
@@ -610,7 +612,7 @@ namespace vision
 			string path;
 			if (ImageVideo == 1)
 			{
-				path = MainForm.SettingsPage.ProgramSetting.ImageFilePath;
+				path = MainForm.Settings.ProgramSetting.ImageFilePath;
 				switch (CamNo)
 				{
 					case 1: path += @"\Cam1\"; break;
@@ -620,7 +622,7 @@ namespace vision
 			}
 			else if (ImageVideo == 2)
 			{
-				path = MainForm.SettingsPage.ProgramSetting.VideoFilePath;
+				path = MainForm.Settings.ProgramSetting.VideoFilePath;
 				switch (CamNo)
 				{
 					case 1: path += @"\Cam1\"; break;

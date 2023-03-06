@@ -252,6 +252,7 @@
 			this.lbc_VideoCheckFilePath.Name = "lbc_VideoCheckFilePath";
 			this.lbc_VideoCheckFilePath.Size = new System.Drawing.Size(1271, 54);
 			this.lbc_VideoCheckFilePath.TabIndex = 11;
+			this.lbc_VideoCheckFilePath.Text = "  파일 위치";
 			// 
 			// btn_VideoCheckOpen
 			// 

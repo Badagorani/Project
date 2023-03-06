@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.Xml;
 using DevExpress.Utils.Frames;
+using DevExpress.Export.Xl;
 
 namespace vision
 {
@@ -26,27 +27,71 @@ namespace vision
 		{
 			InitializeComponent();
 			this.MainForm = form;
-			XMLLoad();
+			XMLLoading();
 		}
-		public void XMLLoad()
+		public void XMLLoading()
 		{
-			string strLocalFolder = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf(@"\"));
-			string strXMLFolder;
-			string strXMLFile;
-
+			XMLLoad_Program();
+			XMLLoad_Camera();
+			XMLLoad_Work();
+		}
+		public void XMLLoad_Program()
+		{
+			XMLLoad("ProgramSetting.xml");
+			rb_Camera_ProgramSetting.SelectedIndex = ProgramSetting.BasicCameraView;
+			lb_ImageSaveFolder_ProgramSetting.Text = ProgramSetting.ImageFilePath;
+			lb_ImageSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = ProgramSetting.ImageFilePath;
+			cb_ImgFormat_ProgramSetting.Text = ProgramSetting.ImageFileFormat;
+			lb_VideoSaveFolder_ProgramSetting.Text = ProgramSetting.VideoFilePath;
+			lb_VideoSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = ProgramSetting.VideoFilePath;
+		}
+		public void XMLLoad_Camera()
+		{
+			XMLLoad("CameraSetting.xml");
+			txt_Cam1IP_CameraSetting.Text = MainForm.RealTimeView.Camera1IP;
+			txt_Cam2IP_CameraSetting.Text = MainForm.RealTimeView.Camera2IP;
+			txt_Cam3IP_CameraSetting.Text = MainForm.RealTimeView.Camera3IP;
+			cb_TextView_CameraSetting.Text = CameraSetting.TextMark;
+			if (cb_TextView_CameraSetting.Text.Equals("날짜/시간"))
+			{
+				lb_TextView_CameraSetting.Text = "  yyyy년 MM월 dd일 HH시 mm분 ss초";
+				txt_UserText_CameraSetting.Enabled = false;
+			}
+			else if (cb_TextView_CameraSetting.Text.Equals("로봇 거리"))
+			{
+				txt_UserText_CameraSetting.Text = "  로봇 거리";
+				txt_UserText_CameraSetting.Enabled = false;
+			}
+			else
+			{
+				txt_UserText_CameraSetting.Text = CameraSetting.UserText;
+			}
+			txt_CameraWidth_CameraSetting.Text = CameraSetting.CamWidth.ToString();
+			txt_CameraHeight_CameraSetting.Text = CameraSetting.CamHeight.ToString();
+		}
+		public void XMLLoad_Work()
+		{
+			XMLLoad("WorkFileSetting.xml");
+			tg_LogSaveOnOff.IsOn = WorkFileSetting.LogSave;
+			txt_WorkUser_WorkFileSetting.Text = WorkFileSetting.WorkUser;
+			dat_Day_WorkFileSetting.Text = DateTime.Today.ToString("yyyy-MM-dd");
+			lb_WorkFolder_WorkFileSetting.Text = WorkFileSetting.WorkFilePath;
+			lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTip = WorkFileSetting.WorkFilePath;
+		}
+		public void XMLLoad(string XMLFile)
+		{
+			string strLocalFolder = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf(@"\")) + @"\xmlFile\";
 			try
 			{
-				strXMLFolder = @"\xmlFile\";
-				strXMLFile = strXMLFolder + @"ProgramSetting.xml";
-				DirectoryInfo di = new DirectoryInfo(strLocalFolder + strXMLFolder);
-				if (di.Exists == false) di.Create();
+				DirectoryInfo di = new DirectoryInfo(strLocalFolder);
+				if (di.Exists == false)
+				{
+					di.Create();
+				}
 				var serializer = new XmlSerializer(typeof(Program_Setting));
-				using (var reader = XmlReader.Create(strLocalFolder + strXMLFile))
+				using (var reader = XmlReader.Create(strLocalFolder + XMLFile))
 				{
 					ProgramSetting = (Program_Setting)serializer.Deserialize(reader);
-					//property_setting.m_sCamera1_DeviceIP = form.Camera1IP;
-					//property_setting.m_sCamera2_DeviceIP = form.Camera2IP;
-					//property_setting.m_sCamera3_DeviceIP = form.Camera3IP;
 				}
 			}
 			catch (Exception ex)
