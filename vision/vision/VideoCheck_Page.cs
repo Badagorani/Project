@@ -189,6 +189,11 @@ namespace vision
 		{
 			try
 			{
+				if (lbc_VideoCheckFilePath.Text.Equals("  파일 위치"))
+				{
+					MainForm.ShowMessage("재생", "영상을 불러오지 않았습니다!!", "주의");
+					return;
+				}
 				if (Play == null)
 				{
 					//Play = new Thread[3];
@@ -322,6 +327,11 @@ namespace vision
 		}
 		private void VideoCheck_Stop()
 		{
+			if (lbc_VideoCheckFilePath.Text.Equals("  파일 위치"))
+			{
+				MainForm.ShowMessage("재생", "영상을 불러오지 않았습니다!!", "주의");
+				return;
+			}
 			IsPaused = true;
 			tbc_VideoCheckTrack.Value = 0;
 			for (int i = 0; i < VideoCheck_Pictures.Length; i++)

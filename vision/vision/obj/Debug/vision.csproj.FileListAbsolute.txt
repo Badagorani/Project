@@ -161,7 +161,6 @@ C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vi
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.csproj.SuggestedBindingRedirects.cache
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.Form1.resources
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.Properties.Resources.resources
-C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.Property.resources
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.RealTimeView_Page.resources
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.Settings_Page.resources
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.VideoAnalysis_Page.resources
@@ -174,3 +173,7 @@ C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vi
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\obj\Debug\vision.pdb
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.dll
 C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\DevExpress.XtraVerticalGrid.v22.2.xml
+C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml

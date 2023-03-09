@@ -30,14 +30,17 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings_Page));
 			this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-			this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+			this.lb_VideoFolder_ProgramSetting = new DevExpress.XtraEditors.LabelControl();
+			this.lb_ImageFolder_ProgramSetting = new DevExpress.XtraEditors.LabelControl();
+			this.lb_WorkFolder_WorkFileSetting = new DevExpress.XtraEditors.LabelControl();
+			this.btn_WorkFolder_WorkFileSetting = new DevExpress.XtraEditors.SimpleButton();
 			this.cb_TextView_CameraSetting = new DevExpress.XtraEditors.ComboBoxEdit();
 			this.cb_ImgFormat_ProgramSetting = new DevExpress.XtraEditors.ComboBoxEdit();
 			this.rb_Camera_ProgramSetting = new DevExpress.XtraEditors.RadioGroup();
 			this.tg_LogSaveOnOff = new DevExpress.XtraEditors.ToggleSwitch();
-			this.btn_ImageSave_ProgramSetting = new DevExpress.XtraEditors.SimpleButton();
-			this.btn_VideoSave_ProgramSetting = new DevExpress.XtraEditors.SimpleButton();
-			this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_ImageFolder_ProgramSetting = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_VideoFolder_ProgramSetting = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_Save_ProgramSetting = new DevExpress.XtraEditors.SimpleButton();
 			this.txt_Cam1IP_CameraSetting = new DevExpress.XtraEditors.TextEdit();
 			this.txt_Cam2IP_CameraSetting = new DevExpress.XtraEditors.TextEdit();
 			this.txt_Cam3IP_CameraSetting = new DevExpress.XtraEditors.TextEdit();
@@ -45,8 +48,8 @@
 			this.txt_CameraHeight_CameraSetting = new DevExpress.XtraEditors.TextEdit();
 			this.txt_WorkUser_WorkFileSetting = new DevExpress.XtraEditors.TextEdit();
 			this.txt_WorkTarget_WorkFileSetting = new DevExpress.XtraEditors.TextEdit();
-			this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-			this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_Save_CameraSetting = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_Save_WorkFileSetting = new DevExpress.XtraEditors.SimpleButton();
 			this.txt_UserText_CameraSetting = new DevExpress.XtraEditors.TextEdit();
 			this.dat_Day_WorkFileSetting = new DevExpress.XtraEditors.DateEdit();
 			this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -60,9 +63,9 @@
 			this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.simpleLabelItem7 = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-			this.lb_VideoSaveFolder_ProgramSetting = new DevExpress.XtraLayout.SimpleLabelItem();
-			this.lb_ImageSaveFolder_ProgramSetting = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+			this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+			this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
 			this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
 			this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -90,11 +93,11 @@
 			this.simpleLabelItem19 = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.simpleLabelItem20 = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem22 = new DevExpress.XtraLayout.LayoutControlItem();
-			this.lb_WorkFolder_WorkFileSetting = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem24 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
+			this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
 			this.layoutControl1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.cb_TextView_CameraSetting.Properties)).BeginInit();
@@ -122,9 +125,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_VideoSaveFolder_ProgramSetting)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_ImageSaveFolder_ProgramSetting)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
@@ -152,23 +155,26 @@
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem19)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem20)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_WorkFolder_WorkFileSetting)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// layoutControl1
 			// 
-			this.layoutControl1.Controls.Add(this.simpleButton16);
+			this.layoutControl1.Controls.Add(this.lb_VideoFolder_ProgramSetting);
+			this.layoutControl1.Controls.Add(this.lb_ImageFolder_ProgramSetting);
+			this.layoutControl1.Controls.Add(this.lb_WorkFolder_WorkFileSetting);
+			this.layoutControl1.Controls.Add(this.btn_WorkFolder_WorkFileSetting);
 			this.layoutControl1.Controls.Add(this.cb_TextView_CameraSetting);
 			this.layoutControl1.Controls.Add(this.cb_ImgFormat_ProgramSetting);
 			this.layoutControl1.Controls.Add(this.rb_Camera_ProgramSetting);
 			this.layoutControl1.Controls.Add(this.tg_LogSaveOnOff);
-			this.layoutControl1.Controls.Add(this.btn_ImageSave_ProgramSetting);
-			this.layoutControl1.Controls.Add(this.btn_VideoSave_ProgramSetting);
-			this.layoutControl1.Controls.Add(this.simpleButton15);
+			this.layoutControl1.Controls.Add(this.btn_ImageFolder_ProgramSetting);
+			this.layoutControl1.Controls.Add(this.btn_VideoFolder_ProgramSetting);
+			this.layoutControl1.Controls.Add(this.btn_Save_ProgramSetting);
 			this.layoutControl1.Controls.Add(this.txt_Cam1IP_CameraSetting);
 			this.layoutControl1.Controls.Add(this.txt_Cam2IP_CameraSetting);
 			this.layoutControl1.Controls.Add(this.txt_Cam3IP_CameraSetting);
@@ -176,8 +182,8 @@
 			this.layoutControl1.Controls.Add(this.txt_CameraHeight_CameraSetting);
 			this.layoutControl1.Controls.Add(this.txt_WorkUser_WorkFileSetting);
 			this.layoutControl1.Controls.Add(this.txt_WorkTarget_WorkFileSetting);
-			this.layoutControl1.Controls.Add(this.simpleButton17);
-			this.layoutControl1.Controls.Add(this.simpleButton18);
+			this.layoutControl1.Controls.Add(this.btn_Save_CameraSetting);
+			this.layoutControl1.Controls.Add(this.btn_Save_WorkFileSetting);
 			this.layoutControl1.Controls.Add(this.txt_UserText_CameraSetting);
 			this.layoutControl1.Controls.Add(this.dat_Day_WorkFileSetting);
 			this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -189,20 +195,57 @@
 			this.layoutControl1.TabIndex = 1;
 			this.layoutControl1.Text = "layoutControl1";
 			// 
-			// simpleButton16
+			// lb_VideoFolder_ProgramSetting
 			// 
-			this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton16.Appearance.Options.UseFont = true;
-			this.simpleButton16.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton16.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton16.ImageOptions.SvgImage")));
-			this.simpleButton16.Location = new System.Drawing.Point(1327, 210);
-			this.simpleButton16.Name = "simpleButton16";
-			this.simpleButton16.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.simpleButton16.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton16.Size = new System.Drawing.Size(247, 36);
-			this.simpleButton16.StyleController = this.layoutControl1;
-			this.simpleButton16.TabIndex = 18;
-			this.simpleButton16.Text = "바꾸기";
+			this.lb_VideoFolder_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.lb_VideoFolder_ProgramSetting.Appearance.Options.UseFont = true;
+			this.lb_VideoFolder_ProgramSetting.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+			this.lb_VideoFolder_ProgramSetting.Location = new System.Drawing.Point(24, 296);
+			this.lb_VideoFolder_ProgramSetting.Name = "lb_VideoFolder_ProgramSetting";
+			this.lb_VideoFolder_ProgramSetting.Size = new System.Drawing.Size(498, 28);
+			this.lb_VideoFolder_ProgramSetting.StyleController = this.layoutControl1;
+			this.lb_VideoFolder_ProgramSetting.TabIndex = 31;
+			this.lb_VideoFolder_ProgramSetting.Text = "labelControl1";
+			// 
+			// lb_ImageFolder_ProgramSetting
+			// 
+			this.lb_ImageFolder_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.lb_ImageFolder_ProgramSetting.Appearance.Options.UseFont = true;
+			this.lb_ImageFolder_ProgramSetting.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+			this.lb_ImageFolder_ProgramSetting.Location = new System.Drawing.Point(24, 186);
+			this.lb_ImageFolder_ProgramSetting.Name = "lb_ImageFolder_ProgramSetting";
+			this.lb_ImageFolder_ProgramSetting.Size = new System.Drawing.Size(498, 28);
+			this.lb_ImageFolder_ProgramSetting.StyleController = this.layoutControl1;
+			this.lb_ImageFolder_ProgramSetting.TabIndex = 30;
+			this.lb_ImageFolder_ProgramSetting.Text = "labelControl1";
+			// 
+			// lb_WorkFolder_WorkFileSetting
+			// 
+			this.lb_WorkFolder_WorkFileSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.lb_WorkFolder_WorkFileSetting.Appearance.Options.UseFont = true;
+			this.lb_WorkFolder_WorkFileSetting.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+			this.lb_WorkFolder_WorkFileSetting.Location = new System.Drawing.Point(1076, 250);
+			this.lb_WorkFolder_WorkFileSetting.Name = "lb_WorkFolder_WorkFileSetting";
+			this.lb_WorkFolder_WorkFileSetting.Size = new System.Drawing.Size(498, 28);
+			this.lb_WorkFolder_WorkFileSetting.StyleController = this.layoutControl1;
+			this.lb_WorkFolder_WorkFileSetting.TabIndex = 29;
+			this.lb_WorkFolder_WorkFileSetting.Text = "labelControl1";
+			// 
+			// btn_WorkFolder_WorkFileSetting
+			// 
+			this.btn_WorkFolder_WorkFileSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_WorkFolder_WorkFileSetting.Appearance.Options.UseFont = true;
+			this.btn_WorkFolder_WorkFileSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_WorkFolder_WorkFileSetting.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton16.ImageOptions.SvgImage")));
+			this.btn_WorkFolder_WorkFileSetting.Location = new System.Drawing.Point(1327, 210);
+			this.btn_WorkFolder_WorkFileSetting.Name = "btn_WorkFolder_WorkFileSetting";
+			this.btn_WorkFolder_WorkFileSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_WorkFolder_WorkFileSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_WorkFolder_WorkFileSetting.Size = new System.Drawing.Size(247, 36);
+			this.btn_WorkFolder_WorkFileSetting.StyleController = this.layoutControl1;
+			this.btn_WorkFolder_WorkFileSetting.TabIndex = 18;
+			this.btn_WorkFolder_WorkFileSetting.Text = "바꾸기";
+			this.btn_WorkFolder_WorkFileSetting.Click += new System.EventHandler(this.PathChange);
 			// 
 			// cb_TextView_CameraSetting
 			// 
@@ -211,6 +254,8 @@
 			this.cb_TextView_CameraSetting.Name = "cb_TextView_CameraSetting";
 			this.cb_TextView_CameraSetting.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
 			this.cb_TextView_CameraSetting.Properties.Appearance.Options.UseFont = true;
+			this.cb_TextView_CameraSetting.Properties.Appearance.Options.UseTextOptions = true;
+			this.cb_TextView_CameraSetting.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.cb_TextView_CameraSetting.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
 			this.cb_TextView_CameraSetting.Properties.DropDownRows = 3;
@@ -226,12 +271,14 @@
 			// cb_ImgFormat_ProgramSetting
 			// 
 			this.cb_ImgFormat_ProgramSetting.EditValue = "PNG";
-			this.cb_ImgFormat_ProgramSetting.Location = new System.Drawing.Point(275, 218);
+			this.cb_ImgFormat_ProgramSetting.Location = new System.Drawing.Point(226, 218);
 			this.cb_ImgFormat_ProgramSetting.Name = "cb_ImgFormat_ProgramSetting";
 			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
 			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
 			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.Options.UseFont = true;
 			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.Options.UseForeColor = true;
+			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.Options.UseTextOptions = true;
+			this.cb_ImgFormat_ProgramSetting.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.cb_ImgFormat_ProgramSetting.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
 			this.cb_ImgFormat_ProgramSetting.Properties.DropDownRows = 3;
@@ -240,13 +287,13 @@
             "PNG",
             "BMP"});
 			this.cb_ImgFormat_ProgramSetting.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-			this.cb_ImgFormat_ProgramSetting.Size = new System.Drawing.Size(247, 34);
+			this.cb_ImgFormat_ProgramSetting.Size = new System.Drawing.Size(296, 34);
 			this.cb_ImgFormat_ProgramSetting.StyleController = this.layoutControl1;
 			this.cb_ImgFormat_ProgramSetting.TabIndex = 9;
 			// 
 			// rb_Camera_ProgramSetting
 			// 
-			this.rb_Camera_ProgramSetting.Location = new System.Drawing.Point(275, 60);
+			this.rb_Camera_ProgramSetting.Location = new System.Drawing.Point(226, 60);
 			this.rb_Camera_ProgramSetting.Name = "rb_Camera_ProgramSetting";
 			this.rb_Camera_ProgramSetting.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
 			this.rb_Camera_ProgramSetting.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
@@ -260,7 +307,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem(null, "카메라 3")});
 			this.rb_Camera_ProgramSetting.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.rb_Camera_ProgramSetting.ShowToolTips = false;
-			this.rb_Camera_ProgramSetting.Size = new System.Drawing.Size(247, 82);
+			this.rb_Camera_ProgramSetting.Size = new System.Drawing.Size(296, 82);
 			this.rb_Camera_ProgramSetting.StyleController = this.layoutControl1;
 			this.rb_Camera_ProgramSetting.TabIndex = 5;
 			// 
@@ -282,50 +329,53 @@
 			this.tg_LogSaveOnOff.StyleController = this.layoutControl1;
 			this.tg_LogSaveOnOff.TabIndex = 6;
 			// 
-			// btn_ImageSave_ProgramSetting
+			// btn_ImageFolder_ProgramSetting
 			// 
-			this.btn_ImageSave_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.btn_ImageSave_ProgramSetting.Appearance.Options.UseFont = true;
-			this.btn_ImageSave_ProgramSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.btn_ImageSave_ProgramSetting.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ImageSave_ProgramSetting.ImageOptions.SvgImage")));
-			this.btn_ImageSave_ProgramSetting.Location = new System.Drawing.Point(275, 146);
-			this.btn_ImageSave_ProgramSetting.Name = "btn_ImageSave_ProgramSetting";
-			this.btn_ImageSave_ProgramSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.btn_ImageSave_ProgramSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.btn_ImageSave_ProgramSetting.Size = new System.Drawing.Size(247, 36);
-			this.btn_ImageSave_ProgramSetting.StyleController = this.layoutControl1;
-			this.btn_ImageSave_ProgramSetting.TabIndex = 7;
-			this.btn_ImageSave_ProgramSetting.Text = "바꾸기";
+			this.btn_ImageFolder_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_ImageFolder_ProgramSetting.Appearance.Options.UseFont = true;
+			this.btn_ImageFolder_ProgramSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_ImageFolder_ProgramSetting.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_ImageSave_ProgramSetting.ImageOptions.SvgImage")));
+			this.btn_ImageFolder_ProgramSetting.Location = new System.Drawing.Point(226, 146);
+			this.btn_ImageFolder_ProgramSetting.Name = "btn_ImageFolder_ProgramSetting";
+			this.btn_ImageFolder_ProgramSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_ImageFolder_ProgramSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_ImageFolder_ProgramSetting.Size = new System.Drawing.Size(296, 36);
+			this.btn_ImageFolder_ProgramSetting.StyleController = this.layoutControl1;
+			this.btn_ImageFolder_ProgramSetting.TabIndex = 7;
+			this.btn_ImageFolder_ProgramSetting.Text = "바꾸기";
+			this.btn_ImageFolder_ProgramSetting.Click += new System.EventHandler(this.PathChange);
 			// 
-			// btn_VideoSave_ProgramSetting
+			// btn_VideoFolder_ProgramSetting
 			// 
-			this.btn_VideoSave_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.btn_VideoSave_ProgramSetting.Appearance.Options.UseFont = true;
-			this.btn_VideoSave_ProgramSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.btn_VideoSave_ProgramSetting.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_VideoSave_ProgramSetting.ImageOptions.SvgImage")));
-			this.btn_VideoSave_ProgramSetting.Location = new System.Drawing.Point(275, 256);
-			this.btn_VideoSave_ProgramSetting.Name = "btn_VideoSave_ProgramSetting";
-			this.btn_VideoSave_ProgramSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.btn_VideoSave_ProgramSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.btn_VideoSave_ProgramSetting.Size = new System.Drawing.Size(247, 36);
-			this.btn_VideoSave_ProgramSetting.StyleController = this.layoutControl1;
-			this.btn_VideoSave_ProgramSetting.TabIndex = 10;
-			this.btn_VideoSave_ProgramSetting.Text = "바꾸기";
+			this.btn_VideoFolder_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_VideoFolder_ProgramSetting.Appearance.Options.UseFont = true;
+			this.btn_VideoFolder_ProgramSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_VideoFolder_ProgramSetting.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_VideoSave_ProgramSetting.ImageOptions.SvgImage")));
+			this.btn_VideoFolder_ProgramSetting.Location = new System.Drawing.Point(226, 256);
+			this.btn_VideoFolder_ProgramSetting.Name = "btn_VideoFolder_ProgramSetting";
+			this.btn_VideoFolder_ProgramSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_VideoFolder_ProgramSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_VideoFolder_ProgramSetting.Size = new System.Drawing.Size(296, 36);
+			this.btn_VideoFolder_ProgramSetting.StyleController = this.layoutControl1;
+			this.btn_VideoFolder_ProgramSetting.TabIndex = 10;
+			this.btn_VideoFolder_ProgramSetting.Text = "바꾸기";
+			this.btn_VideoFolder_ProgramSetting.Click += new System.EventHandler(this.PathChange);
 			// 
-			// simpleButton15
+			// btn_Save_ProgramSetting
 			// 
-			this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton15.Appearance.Options.UseFont = true;
-			this.simpleButton15.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton15.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
-			this.simpleButton15.Location = new System.Drawing.Point(24, 738);
-			this.simpleButton15.Name = "simpleButton15";
-			this.simpleButton15.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.simpleButton15.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton15.Size = new System.Drawing.Size(498, 36);
-			this.simpleButton15.StyleController = this.layoutControl1;
-			this.simpleButton15.TabIndex = 14;
-			this.simpleButton15.Text = "저  장";
+			this.btn_Save_ProgramSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_Save_ProgramSetting.Appearance.Options.UseFont = true;
+			this.btn_Save_ProgramSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_Save_ProgramSetting.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
+			this.btn_Save_ProgramSetting.Location = new System.Drawing.Point(24, 738);
+			this.btn_Save_ProgramSetting.Name = "btn_Save_ProgramSetting";
+			this.btn_Save_ProgramSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_Save_ProgramSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_Save_ProgramSetting.Size = new System.Drawing.Size(498, 36);
+			this.btn_Save_ProgramSetting.StyleController = this.layoutControl1;
+			this.btn_Save_ProgramSetting.TabIndex = 14;
+			this.btn_Save_ProgramSetting.Text = "저  장";
+			this.btn_Save_ProgramSetting.Click += new System.EventHandler(this.SaveButton);
 			// 
 			// txt_Cam1IP_CameraSetting
 			// 
@@ -422,35 +472,37 @@
 			this.txt_WorkTarget_WorkFileSetting.StyleController = this.layoutControl1;
 			this.txt_WorkTarget_WorkFileSetting.TabIndex = 22;
 			// 
-			// simpleButton17
+			// btn_Save_CameraSetting
 			// 
-			this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton17.Appearance.Options.UseFont = true;
-			this.simpleButton17.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton17.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
-			this.simpleButton17.Location = new System.Drawing.Point(550, 738);
-			this.simpleButton17.Name = "simpleButton17";
-			this.simpleButton17.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.simpleButton17.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton17.Size = new System.Drawing.Size(498, 36);
-			this.simpleButton17.StyleController = this.layoutControl1;
-			this.simpleButton17.TabIndex = 25;
-			this.simpleButton17.Text = "저  장";
+			this.btn_Save_CameraSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_Save_CameraSetting.Appearance.Options.UseFont = true;
+			this.btn_Save_CameraSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_Save_CameraSetting.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
+			this.btn_Save_CameraSetting.Location = new System.Drawing.Point(550, 738);
+			this.btn_Save_CameraSetting.Name = "btn_Save_CameraSetting";
+			this.btn_Save_CameraSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_Save_CameraSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_Save_CameraSetting.Size = new System.Drawing.Size(498, 36);
+			this.btn_Save_CameraSetting.StyleController = this.layoutControl1;
+			this.btn_Save_CameraSetting.TabIndex = 25;
+			this.btn_Save_CameraSetting.Text = "저  장";
+			this.btn_Save_CameraSetting.Click += new System.EventHandler(this.SaveButton);
 			// 
-			// simpleButton18
+			// btn_Save_WorkFileSetting
 			// 
-			this.simpleButton18.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton18.Appearance.Options.UseFont = true;
-			this.simpleButton18.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton18.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
-			this.simpleButton18.Location = new System.Drawing.Point(1076, 738);
-			this.simpleButton18.Name = "simpleButton18";
-			this.simpleButton18.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.simpleButton18.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton18.Size = new System.Drawing.Size(498, 36);
-			this.simpleButton18.StyleController = this.layoutControl1;
-			this.simpleButton18.TabIndex = 26;
-			this.simpleButton18.Text = "저  장";
+			this.btn_Save_WorkFileSetting.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_Save_WorkFileSetting.Appearance.Options.UseFont = true;
+			this.btn_Save_WorkFileSetting.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_Save_WorkFileSetting.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
+			this.btn_Save_WorkFileSetting.Location = new System.Drawing.Point(1076, 738);
+			this.btn_Save_WorkFileSetting.Name = "btn_Save_WorkFileSetting";
+			this.btn_Save_WorkFileSetting.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_Save_WorkFileSetting.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_Save_WorkFileSetting.Size = new System.Drawing.Size(498, 36);
+			this.btn_Save_WorkFileSetting.StyleController = this.layoutControl1;
+			this.btn_Save_WorkFileSetting.TabIndex = 26;
+			this.btn_Save_WorkFileSetting.Text = "저  장";
+			this.btn_Save_WorkFileSetting.Click += new System.EventHandler(this.SaveButton);
 			// 
 			// txt_UserText_CameraSetting
 			// 
@@ -471,6 +523,8 @@
 			this.dat_Day_WorkFileSetting.Name = "dat_Day_WorkFileSetting";
 			this.dat_Day_WorkFileSetting.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
 			this.dat_Day_WorkFileSetting.Properties.Appearance.Options.UseFont = true;
+			this.dat_Day_WorkFileSetting.Properties.Appearance.Options.UseTextOptions = true;
+			this.dat_Day_WorkFileSetting.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
 			this.dat_Day_WorkFileSetting.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
 			this.dat_Day_WorkFileSetting.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -510,9 +564,9 @@
             this.layoutControlItem7,
             this.simpleLabelItem7,
             this.layoutControlItem8,
-            this.lb_VideoSaveFolder_ProgramSetting,
-            this.lb_ImageSaveFolder_ProgramSetting,
-            this.layoutControlItem6});
+            this.layoutControlItem6,
+            this.layoutControlItem2,
+            this.layoutControlItem11});
 			this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
 			this.layoutControlGroup1.Name = "layoutControlGroup1";
 			this.layoutControlGroup1.Size = new System.Drawing.Size(526, 778);
@@ -533,16 +587,16 @@
 			this.simpleLabelItem4.AppearanceItemCaption.Options.UseFont = true;
 			this.simpleLabelItem4.Location = new System.Drawing.Point(0, 0);
 			this.simpleLabelItem4.Name = "simpleLabelItem4";
-			this.simpleLabelItem4.Size = new System.Drawing.Size(251, 86);
+			this.simpleLabelItem4.Size = new System.Drawing.Size(202, 86);
 			this.simpleLabelItem4.Text = "  기본 카메라";
 			this.simpleLabelItem4.TextSize = new System.Drawing.Size(188, 28);
 			// 
 			// layoutControlItem4
 			// 
 			this.layoutControlItem4.Control = this.rb_Camera_ProgramSetting;
-			this.layoutControlItem4.Location = new System.Drawing.Point(251, 0);
+			this.layoutControlItem4.Location = new System.Drawing.Point(202, 0);
 			this.layoutControlItem4.Name = "layoutControlItem4";
-			this.layoutControlItem4.Size = new System.Drawing.Size(251, 86);
+			this.layoutControlItem4.Size = new System.Drawing.Size(300, 86);
 			this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem4.TextVisible = false;
 			// 
@@ -553,16 +607,16 @@
 			this.simpleLabelItem5.AppearanceItemCaption.Options.UseFont = true;
 			this.simpleLabelItem5.Location = new System.Drawing.Point(0, 86);
 			this.simpleLabelItem5.Name = "simpleLabelItem5";
-			this.simpleLabelItem5.Size = new System.Drawing.Size(251, 40);
+			this.simpleLabelItem5.Size = new System.Drawing.Size(202, 40);
 			this.simpleLabelItem5.Text = "  이미지 저장 폴더";
 			this.simpleLabelItem5.TextSize = new System.Drawing.Size(188, 28);
 			// 
 			// layoutControlItem5
 			// 
-			this.layoutControlItem5.Control = this.btn_ImageSave_ProgramSetting;
-			this.layoutControlItem5.Location = new System.Drawing.Point(251, 86);
+			this.layoutControlItem5.Control = this.btn_ImageFolder_ProgramSetting;
+			this.layoutControlItem5.Location = new System.Drawing.Point(202, 86);
 			this.layoutControlItem5.Name = "layoutControlItem5";
-			this.layoutControlItem5.Size = new System.Drawing.Size(251, 40);
+			this.layoutControlItem5.Size = new System.Drawing.Size(300, 40);
 			this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem5.TextVisible = false;
 			// 
@@ -573,16 +627,16 @@
 			this.simpleLabelItem6.AppearanceItemCaption.Options.UseFont = true;
 			this.simpleLabelItem6.Location = new System.Drawing.Point(0, 158);
 			this.simpleLabelItem6.Name = "simpleLabelItem6";
-			this.simpleLabelItem6.Size = new System.Drawing.Size(251, 38);
+			this.simpleLabelItem6.Size = new System.Drawing.Size(202, 38);
 			this.simpleLabelItem6.Text = "  이미지 포맷 기본값";
 			this.simpleLabelItem6.TextSize = new System.Drawing.Size(188, 28);
 			// 
 			// layoutControlItem7
 			// 
 			this.layoutControlItem7.Control = this.cb_ImgFormat_ProgramSetting;
-			this.layoutControlItem7.Location = new System.Drawing.Point(251, 158);
+			this.layoutControlItem7.Location = new System.Drawing.Point(202, 158);
 			this.layoutControlItem7.Name = "layoutControlItem7";
-			this.layoutControlItem7.Size = new System.Drawing.Size(251, 38);
+			this.layoutControlItem7.Size = new System.Drawing.Size(300, 38);
 			this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem7.TextVisible = false;
 			// 
@@ -593,7 +647,7 @@
 			this.simpleLabelItem7.AppearanceItemCaption.Options.UseFont = true;
 			this.simpleLabelItem7.Location = new System.Drawing.Point(0, 196);
 			this.simpleLabelItem7.Name = "simpleLabelItem7";
-			this.simpleLabelItem7.Size = new System.Drawing.Size(251, 40);
+			this.simpleLabelItem7.Size = new System.Drawing.Size(202, 40);
 			this.simpleLabelItem7.Text = "  동영상 저장 폴더";
 			this.simpleLabelItem7.TextSize = new System.Drawing.Size(188, 28);
 			// 
@@ -601,54 +655,39 @@
 			// 
 			this.layoutControlItem8.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
 			this.layoutControlItem8.AppearanceItemCaption.Options.UseFont = true;
-			this.layoutControlItem8.Control = this.btn_VideoSave_ProgramSetting;
-			this.layoutControlItem8.Location = new System.Drawing.Point(251, 196);
+			this.layoutControlItem8.Control = this.btn_VideoFolder_ProgramSetting;
+			this.layoutControlItem8.Location = new System.Drawing.Point(202, 196);
 			this.layoutControlItem8.Name = "layoutControlItem8";
-			this.layoutControlItem8.Size = new System.Drawing.Size(251, 40);
+			this.layoutControlItem8.Size = new System.Drawing.Size(300, 40);
 			this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem8.TextVisible = false;
 			// 
-			// lb_VideoSaveFolder_ProgramSetting
-			// 
-			this.lb_VideoSaveFolder_ProgramSetting.AllowHotTrack = false;
-			this.lb_VideoSaveFolder_ProgramSetting.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.lb_VideoSaveFolder_ProgramSetting.AppearanceItemCaption.Options.UseFont = true;
-			this.lb_VideoSaveFolder_ProgramSetting.Location = new System.Drawing.Point(0, 236);
-			this.lb_VideoSaveFolder_ProgramSetting.Name = "lb_VideoSaveFolder_ProgramSetting";
-			this.lb_VideoSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = "여기에 동영상 주소를 넣음";
-			this.lb_VideoSaveFolder_ProgramSetting.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-			this.lb_VideoSaveFolder_ProgramSetting.OptionsToolTip.ToolTipTitle = "현재 지정된 동영상 폴더 주소";
-			this.lb_VideoSaveFolder_ProgramSetting.Size = new System.Drawing.Size(502, 32);
-			this.lb_VideoSaveFolder_ProgramSetting.Text = "  테스트텍스트";
-			this.lb_VideoSaveFolder_ProgramSetting.TextSize = new System.Drawing.Size(188, 28);
-			// 
-			// lb_ImageSaveFolder_ProgramSetting
-			// 
-			this.lb_ImageSaveFolder_ProgramSetting.AllowHotTrack = false;
-			this.lb_ImageSaveFolder_ProgramSetting.AppearanceItemCaption.BorderColor = System.Drawing.Color.Red;
-			this.lb_ImageSaveFolder_ProgramSetting.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.lb_ImageSaveFolder_ProgramSetting.AppearanceItemCaption.Options.UseBorderColor = true;
-			this.lb_ImageSaveFolder_ProgramSetting.AppearanceItemCaption.Options.UseFont = true;
-			this.lb_ImageSaveFolder_ProgramSetting.Location = new System.Drawing.Point(0, 126);
-			this.lb_ImageSaveFolder_ProgramSetting.Name = "lb_ImageSaveFolder_ProgramSetting";
-			this.lb_ImageSaveFolder_ProgramSetting.OptionsPrint.AppearanceItemControl.BorderColor = System.Drawing.Color.Black;
-			this.lb_ImageSaveFolder_ProgramSetting.OptionsPrint.AppearanceItemControl.Options.UseBorderColor = true;
-			this.lb_ImageSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = "여기에 이미지 주소를 넣음";
-			this.lb_ImageSaveFolder_ProgramSetting.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-			this.lb_ImageSaveFolder_ProgramSetting.OptionsToolTip.ToolTipTitle = "현재 지정된 이미지 폴더 주소";
-			this.lb_ImageSaveFolder_ProgramSetting.Size = new System.Drawing.Size(502, 32);
-			this.lb_ImageSaveFolder_ProgramSetting.StartNewLine = true;
-			this.lb_ImageSaveFolder_ProgramSetting.Text = "  테스트텍스트";
-			this.lb_ImageSaveFolder_ProgramSetting.TextSize = new System.Drawing.Size(188, 28);
-			// 
 			// layoutControlItem6
 			// 
-			this.layoutControlItem6.Control = this.simpleButton15;
+			this.layoutControlItem6.Control = this.btn_Save_ProgramSetting;
 			this.layoutControlItem6.Location = new System.Drawing.Point(0, 678);
 			this.layoutControlItem6.Name = "layoutControlItem6";
 			this.layoutControlItem6.Size = new System.Drawing.Size(502, 40);
 			this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem6.TextVisible = false;
+			// 
+			// layoutControlItem2
+			// 
+			this.layoutControlItem2.Control = this.lb_ImageFolder_ProgramSetting;
+			this.layoutControlItem2.Location = new System.Drawing.Point(0, 126);
+			this.layoutControlItem2.Name = "layoutControlItem2";
+			this.layoutControlItem2.Size = new System.Drawing.Size(502, 32);
+			this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
+			this.layoutControlItem2.TextVisible = false;
+			// 
+			// layoutControlItem11
+			// 
+			this.layoutControlItem11.Control = this.lb_VideoFolder_ProgramSetting;
+			this.layoutControlItem11.Location = new System.Drawing.Point(0, 236);
+			this.layoutControlItem11.Name = "layoutControlItem11";
+			this.layoutControlItem11.Size = new System.Drawing.Size(502, 32);
+			this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
+			this.layoutControlItem11.TextVisible = false;
 			// 
 			// layoutControlGroup2
 			// 
@@ -820,7 +859,7 @@
 			// 
 			// layoutControlItem21
 			// 
-			this.layoutControlItem21.Control = this.simpleButton17;
+			this.layoutControlItem21.Control = this.btn_Save_CameraSetting;
 			this.layoutControlItem21.Location = new System.Drawing.Point(0, 678);
 			this.layoutControlItem21.Name = "layoutControlItem21";
 			this.layoutControlItem21.Size = new System.Drawing.Size(502, 40);
@@ -862,11 +901,11 @@
             this.simpleLabelItem19,
             this.simpleLabelItem20,
             this.layoutControlItem22,
-            this.lb_WorkFolder_WorkFileSetting,
             this.layoutControlItem17,
             this.layoutControlItem24,
             this.layoutControlItem18,
-            this.layoutControlItem14});
+            this.layoutControlItem14,
+            this.layoutControlItem1});
 			this.layoutControlGroup3.Location = new System.Drawing.Point(1052, 0);
 			this.layoutControlGroup3.Name = "layoutControlGroup3";
 			this.layoutControlGroup3.Size = new System.Drawing.Size(526, 778);
@@ -946,26 +985,12 @@
 			// 
 			// layoutControlItem22
 			// 
-			this.layoutControlItem22.Control = this.simpleButton18;
+			this.layoutControlItem22.Control = this.btn_Save_WorkFileSetting;
 			this.layoutControlItem22.Location = new System.Drawing.Point(0, 678);
 			this.layoutControlItem22.Name = "layoutControlItem22";
 			this.layoutControlItem22.Size = new System.Drawing.Size(502, 40);
 			this.layoutControlItem22.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem22.TextVisible = false;
-			// 
-			// lb_WorkFolder_WorkFileSetting
-			// 
-			this.lb_WorkFolder_WorkFileSetting.AllowHotTrack = false;
-			this.lb_WorkFolder_WorkFileSetting.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.lb_WorkFolder_WorkFileSetting.AppearanceItemCaption.Options.UseFont = true;
-			this.lb_WorkFolder_WorkFileSetting.Location = new System.Drawing.Point(0, 190);
-			this.lb_WorkFolder_WorkFileSetting.Name = "lb_WorkFolder_WorkFileSetting";
-			this.lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTip = "여기에 작업폴더 주소를 넣음";
-			this.lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-			this.lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTipTitle = "현재 지정된 작업 폴더 주소";
-			this.lb_WorkFolder_WorkFileSetting.Size = new System.Drawing.Size(502, 32);
-			this.lb_WorkFolder_WorkFileSetting.Text = "  테스트텍스트";
-			this.lb_WorkFolder_WorkFileSetting.TextSize = new System.Drawing.Size(188, 28);
 			// 
 			// layoutControlItem17
 			// 
@@ -996,12 +1021,21 @@
 			// 
 			// layoutControlItem14
 			// 
-			this.layoutControlItem14.Control = this.simpleButton16;
+			this.layoutControlItem14.Control = this.btn_WorkFolder_WorkFileSetting;
 			this.layoutControlItem14.Location = new System.Drawing.Point(251, 150);
 			this.layoutControlItem14.Name = "layoutControlItem14";
 			this.layoutControlItem14.Size = new System.Drawing.Size(251, 40);
 			this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem14.TextVisible = false;
+			// 
+			// layoutControlItem1
+			// 
+			this.layoutControlItem1.Control = this.lb_WorkFolder_WorkFileSetting;
+			this.layoutControlItem1.Location = new System.Drawing.Point(0, 190);
+			this.layoutControlItem1.Name = "layoutControlItem1";
+			this.layoutControlItem1.Size = new System.Drawing.Size(502, 32);
+			this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+			this.layoutControlItem1.TextVisible = false;
 			// 
 			// Settings_Page
 			// 
@@ -1037,9 +1071,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_VideoSaveFolder_ProgramSetting)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_ImageSaveFolder_ProgramSetting)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
@@ -1067,11 +1101,11 @@
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem19)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem20)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem22)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.lb_WorkFolder_WorkFileSetting)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem24)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -1079,14 +1113,14 @@
 		#endregion
 
 		private DevExpress.XtraLayout.LayoutControl layoutControl1;
-		private DevExpress.XtraEditors.SimpleButton simpleButton16;
+		private DevExpress.XtraEditors.SimpleButton btn_WorkFolder_WorkFileSetting;
 		private DevExpress.XtraEditors.ComboBoxEdit cb_TextView_CameraSetting;
 		private DevExpress.XtraEditors.ComboBoxEdit cb_ImgFormat_ProgramSetting;
 		private DevExpress.XtraEditors.RadioGroup rb_Camera_ProgramSetting;
 		private DevExpress.XtraEditors.ToggleSwitch tg_LogSaveOnOff;
-		private DevExpress.XtraEditors.SimpleButton btn_ImageSave_ProgramSetting;
-		private DevExpress.XtraEditors.SimpleButton btn_VideoSave_ProgramSetting;
-		private DevExpress.XtraEditors.SimpleButton simpleButton15;
+		private DevExpress.XtraEditors.SimpleButton btn_ImageFolder_ProgramSetting;
+		private DevExpress.XtraEditors.SimpleButton btn_VideoFolder_ProgramSetting;
+		private DevExpress.XtraEditors.SimpleButton btn_Save_ProgramSetting;
 		private DevExpress.XtraEditors.TextEdit txt_Cam1IP_CameraSetting;
 		private DevExpress.XtraEditors.TextEdit txt_Cam2IP_CameraSetting;
 		private DevExpress.XtraEditors.TextEdit txt_Cam3IP_CameraSetting;
@@ -1094,8 +1128,8 @@
 		private DevExpress.XtraEditors.TextEdit txt_CameraHeight_CameraSetting;
 		private DevExpress.XtraEditors.TextEdit txt_WorkUser_WorkFileSetting;
 		private DevExpress.XtraEditors.TextEdit txt_WorkTarget_WorkFileSetting;
-		private DevExpress.XtraEditors.SimpleButton simpleButton17;
-		private DevExpress.XtraEditors.SimpleButton simpleButton18;
+		private DevExpress.XtraEditors.SimpleButton btn_Save_CameraSetting;
+		private DevExpress.XtraEditors.SimpleButton btn_Save_WorkFileSetting;
 		private DevExpress.XtraEditors.TextEdit txt_UserText_CameraSetting;
 		private DevExpress.XtraEditors.DateEdit dat_Day_WorkFileSetting;
 		private DevExpress.XtraLayout.LayoutControlGroup Root;
@@ -1109,8 +1143,6 @@
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
 		private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem7;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-		private DevExpress.XtraLayout.SimpleLabelItem lb_VideoSaveFolder_ProgramSetting;
-		private DevExpress.XtraLayout.SimpleLabelItem lb_ImageSaveFolder_ProgramSetting;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
 		private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
 		private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
@@ -1139,10 +1171,15 @@
 		private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem19;
 		private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem20;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
-		private DevExpress.XtraLayout.SimpleLabelItem lb_WorkFolder_WorkFileSetting;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
+		private DevExpress.XtraEditors.LabelControl lb_WorkFolder_WorkFileSetting;
+		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+		private DevExpress.XtraEditors.LabelControl lb_VideoFolder_ProgramSetting;
+		private DevExpress.XtraEditors.LabelControl lb_ImageFolder_ProgramSetting;
+		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
 	}
 }

@@ -93,7 +93,7 @@ namespace vision
 				m_mutexImage[i] = new Mutex();
 			}
 			PanelSettings();
-			NowSelectedCamNo = MainForm.Settings.ProgramSetting.BasicCameraView;
+			NowSelectedCamNo = MainForm.Settings.ProgramSetting.BasicCameraView + 1;
 		}
 		private void RealTimeView_Page_Load(object sender, EventArgs e)
 		{

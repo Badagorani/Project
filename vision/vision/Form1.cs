@@ -82,10 +82,7 @@ namespace vision
 			{
 				SplashShow();
 				SplashShow("설정을 불러오는 중...");
-				SettingsLoad();
-				SplashShow("완료");
-				Thread.Sleep(1000);
-				SplashScreenManager.CloseForm();
+				Settings = new Settings_Page(this);
 			}
 			catch (Exception ex)
 			{
@@ -95,12 +92,17 @@ namespace vision
 		}
 		private void Form1_Shown(object sender, EventArgs e)
 		{
+			SplashShow("완료");
+			Thread.Sleep(1000);
+			SplashScreenManager.CloseForm();
 			LoadingAnimationStart();
+
 			RealTimeView = new RealTimeView_Page(this);
 			RealTimeView.Parent = RealTimeView_Page;
 			RealTimeView.BringToFront();
 			RealTimeView.Dock = DockStyle.Fill;
 			RealTimeView.Show();
+			Settings.XMLLoad_CameraPlus();
 
 			VideoCheck = new VideoCheck_Page(this);
 			VideoCheck.Parent = VideoCheck_Page;
@@ -121,39 +123,6 @@ namespace vision
 
 			LoadingAnimationEnd();
 		}
-		#region 세팅 불러오기
-		public void SettingsLoad()
-		{
-			Settings = new Settings_Page(this);
-
-			// 프로그램 설정
-			//rb_Camera_ProgramSetting.SelectedIndex = Settings.ProgramSetting.BasicCameraView;
-			//NowSelectedCamNo = Settings.ProgramSetting.BasicCameraView;
-			//lb_ImageSaveFolder_ProgramSetting.Text = Settings.ProgramSetting.ImageFilePath;
-			//lb_ImageSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = Settings.ProgramSetting.ImageFilePath;
-			//cb_ImgFormat_ProgramSetting.Text = Settings.ProgramSetting.ImageFileFormat;
-			//lb_VideoSaveFolder_ProgramSetting.Text = Settings.ProgramSetting.VideoFilePath;
-			//lb_VideoSaveFolder_ProgramSetting.OptionsToolTip.ToolTip = Settings.ProgramSetting.VideoFilePath;
-
-			//// 카메라 설정
-			//txt_Cam1IP_CameraSetting.Text = Camera1IP;
-			//txt_Cam2IP_CameraSetting.Text = Camera2IP;
-			//txt_Cam3IP_CameraSetting.Text = Camera3IP;
-			//cb_TextView_CameraSetting.Text = Settings.CameraSetting.TextMark;
-			//if (cb_TextView_CameraSetting.Text.Equals("날짜/시간")) txt_UserText_CameraSetting.Text = Settings.CameraSetting.UserText;
-			//else if (cb_TextView_CameraSetting.Text.Equals("로봇 거리")) txt_UserText_CameraSetting.Text = "로봇 거리";
-			//else txt_UserText_CameraSetting.Text = Settings.CameraSetting.UserText;
-			//txt_CameraWidth_CameraSetting.Text = CameraWidth.ToString();
-			//txt_CameraHeight_CameraSetting.Text = CameraHeight.ToString();
-
-			//// 작업파일 설정
-			//tg_LogSaveOnOff.IsOn = Settings.WorkFileSetting.LogSave;
-			//txt_WorkUser_WorkFileSetting.Text = Settings.WorkFileSetting.WorkUser;
-			//dat_Day_WorkFileSetting.Text = DateTime.Today.ToString("yyyy-MM-dd");
-			//lb_WorkFolder_WorkFileSetting.Text = "  갸아악";//Settings.WorkFileSetting.WorkFilePath;
-			//lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTip = Settings.WorkFileSetting.WorkFilePath;
-		}
-		#endregion
 		#region 내비게이션 클릭 이벤트
 		private void NavigationClick(object sender, EventArgs e)
 		{
@@ -222,7 +191,7 @@ namespace vision
 			{
 				//Settings.ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex + 1;
 				//Settings.ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.EditValue.ToString();
-				Settings.XMLSave(Settings.ProgramSetting, Settings.ProgramSetting.GetType());
+				//Settings.XMLSave(Settings.ProgramSetting, Settings.ProgramSetting.GetType(), "ProgramSetting.xml");
 			}
 			this.Hide();
 			RealTimeView.CameraClose();
