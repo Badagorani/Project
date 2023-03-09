@@ -48,7 +48,7 @@ namespace OMRON_Camera_Control
             }
             catch(Exception ex)
 			{
-                form.ShowMessage("오류", "제공된 매개변수 중 하나가 유효하지 않거나 범위를 벗어났습니다!\n" + ex.Message, "경고");
+                form.ShowMessage("오류", "제공된 매개변수가 유효하지 않거나 범위를 벗어났습니다!\n" + ex.Message, "경고");
             }
         }
 
@@ -78,7 +78,7 @@ namespace OMRON_Camera_Control
             }
             catch(Exception ex)
             {
-                form.ShowMessage("오류", "카메라 연결에 실패하였습니다!\n" + ex.Message, "경고");
+                //form.ShowMessage("오류", "카메라 연결에 실패하였습니다!\n" + ex.Message, "경고");
                 m_Camera_device = null;
             }
         }

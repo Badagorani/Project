@@ -99,10 +99,19 @@ namespace vision
 
 			RealTimeView = new RealTimeView_Page(this);
 			RealTimeView.Parent = RealTimeView_Page;
-			RealTimeView.BringToFront();
-			RealTimeView.Dock = DockStyle.Fill;
-			RealTimeView.Show();
-			Settings.XMLLoad_CameraPlus();
+			if (RealTimeView.m_isWork[0] && RealTimeView.m_isWork[1] && RealTimeView.m_isWork[2])
+			{
+				RealTimeView.BringToFront();
+				RealTimeView.Dock = DockStyle.Fill;
+				RealTimeView.Show();
+				Settings.XMLLoad_CameraPlus();
+			}
+			else
+			{
+				ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n", "경고");
+				this.Close();
+				return;
+			}
 
 			VideoCheck = new VideoCheck_Page(this);
 			VideoCheck.Parent = VideoCheck_Page;
@@ -127,6 +136,11 @@ namespace vision
 		private void NavigationClick(object sender, EventArgs e)
 		{
 			string NavigationName = ((SimpleButton)sender).Name;
+			if(ChangeCheck())
+			{
+				ShowMessage("설정", "녹화 중에는 페이지를 변경할 수 없습니다!!", "경고");
+				return;
+			}
 			if (RealTimeView.IsRecord)
 			{
 				ShowMessage("녹화 중...", "녹화 중에는 페이지를 변경할 수 없습니다!!", "경고");
@@ -149,6 +163,11 @@ namespace vision
 					//else tg_LogSaveOnOff.IsOn = true;
 					break;
 			}
+		}
+		private bool ChangeCheck()
+		{
+
+			return false;
 		}
 		#endregion
 		#region 팝업
@@ -194,7 +213,7 @@ namespace vision
 				//Settings.XMLSave(Settings.ProgramSetting, Settings.ProgramSetting.GetType(), "ProgramSetting.xml");
 			}
 			this.Hide();
-			RealTimeView.CameraClose();
+			if(RealTimeView != null) RealTimeView.CameraClose();
 			//Viewer_Thread.ViewSetting(NowSelectedCamNo, IsViewing);
 			//Camera_Setting.DestroyCamera();
 		}

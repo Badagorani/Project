@@ -257,22 +257,43 @@ namespace vision
 				MainForm.ShowMessage("오류", $"XML 문서 저장 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
 			}
 		}
+
+		private void ResetButton(object sender, EventArgs e)
+		{
+			try
+			{
+				string savesetting = ((SimpleButton)sender).Name.Substring("btn_Reset_".Length);
+				switch (savesetting)
+				{
+					case "ProgramSetting"	: XMLLoad_Program();						break;
+					case "CameraSetting"	: XMLLoad_Camera(); XMLLoad_CameraPlus();	break;
+					case "WorkFileSetting"	: XMLLoad_Work();							break;
+				}
+			}
+			catch (Exception ex)
+			{
+				MainForm.ShowMessage("오류", $"XML 문서 저장 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
+			}
+		}
 		public bool ProgramSettingSave()
 		{
 			string XMLFileName = "ProgramSetting.xml";
 			try
 			{
-				ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex;
-				ProgramSetting.ImageFilePath = lb_ImageFolder_ProgramSetting.Text;
-				ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.Text;
-				ProgramSetting.VideoFilePath = lb_VideoFolder_ProgramSetting.Text;
+				if (ProgramSetting.BasicCameraView != rb_Camera_ProgramSetting.SelectedIndex) ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex;
+				if (!ProgramSetting.ImageFilePath.Equals(lb_ImageFolder_ProgramSetting.Text)) ProgramSetting.ImageFilePath = lb_ImageFolder_ProgramSetting.Text.Trim();
+				if (!ProgramSetting.ImageFileFormat.Equals(cb_ImgFormat_ProgramSetting.Text)) ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.Text;
+				if (!ProgramSetting.VideoFilePath.Equals(lb_VideoFolder_ProgramSetting.Text)) ProgramSetting.VideoFilePath = lb_VideoFolder_ProgramSetting.Text.Trim();
 				XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\" + XMLFileName);
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "경고");
-				XMLLoad(XMLFileName);
 				return false;
+			}
+			finally
+			{
+				XMLLoad_Program();
 			}
 			return true;
 		}
@@ -281,20 +302,24 @@ namespace vision
 			string XMLFileName = "CameraSetting.xml";
 			try
 			{
-				CameraSetting.TextMark = cb_TextView_CameraSetting.Text;
-				CameraSetting.UserText = txt_UserText_CameraSetting.Text;
-				CameraSetting.Camera1IPAddress = txt_Cam1IP_CameraSetting.Text;
-				CameraSetting.Camera2IPAddress = txt_Cam2IP_CameraSetting.Text;
-				CameraSetting.Camera3IPAddress = txt_Cam3IP_CameraSetting.Text; //MainForm.RealTimeView.Camera3IP;
-				CameraSetting.CamWidth = int.Parse(txt_CameraWidth_CameraSetting.Text);
-				CameraSetting.CamHeight = int.Parse(txt_CameraHeight_CameraSetting.Text);
+				if(!CameraSetting.TextMark.Equals(cb_TextView_CameraSetting.Text)					) CameraSetting.TextMark = cb_TextView_CameraSetting.Text;
+				if(!CameraSetting.UserText.Equals(txt_UserText_CameraSetting.Text)					) CameraSetting.UserText = txt_UserText_CameraSetting.Text;
+				if(!CameraSetting.Camera1IPAddress.Equals(txt_Cam1IP_CameraSetting.Text)			) CameraSetting.Camera1IPAddress = txt_Cam1IP_CameraSetting.Text;
+				if(!CameraSetting.Camera2IPAddress.Equals(txt_Cam2IP_CameraSetting.Text)			) CameraSetting.Camera2IPAddress = txt_Cam2IP_CameraSetting.Text;
+				if(!CameraSetting.Camera3IPAddress.Equals(txt_Cam3IP_CameraSetting.Text)			) CameraSetting.Camera3IPAddress = txt_Cam3IP_CameraSetting.Text; //MainForm.RealTimeView.Camera3IP;
+				if(!CameraSetting.CamWidth.ToString().Equals(txt_CameraWidth_CameraSetting.Text)	) CameraSetting.CamWidth = int.Parse(txt_CameraWidth_CameraSetting.Text);
+				if(!CameraSetting.CamHeight.ToString().Equals(txt_CameraHeight_CameraSetting.Text)	) CameraSetting.CamHeight = int.Parse(txt_CameraHeight_CameraSetting.Text);
 				XMLSave(CameraSetting, CameraSetting.GetType(), @"\" + XMLFileName);
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
-				XMLLoad(XMLFileName);
 				return false;
+			}
+			finally
+			{
+				XMLLoad_Camera();
+				XMLLoad_CameraPlus();
 			}
 			return true;
 		}
@@ -303,18 +328,21 @@ namespace vision
 			string XMLFileName = "WorkFileSetting.xml";
 			try
 			{
-				WorkFileSetting.LogSave = tg_LogSaveOnOff.IsOn;
-				WorkFileSetting.WorkUser = txt_WorkUser_WorkFileSetting.Text;
-				WorkFileSetting.WorkDay = dat_Day_WorkFileSetting.Text;
-				WorkFileSetting.WorkTarget = txt_WorkTarget_WorkFileSetting.Text;
-				WorkFileSetting.WorkFilePath = lb_WorkFolder_WorkFileSetting.Text;
+				if(!WorkFileSetting.LogSave != tg_LogSaveOnOff.IsOn							) WorkFileSetting.LogSave = tg_LogSaveOnOff.IsOn;
+				if(!WorkFileSetting.WorkUser.Equals(txt_WorkUser_WorkFileSetting.Text)		) WorkFileSetting.WorkUser = txt_WorkUser_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkDay.Equals(dat_Day_WorkFileSetting.Text)			) WorkFileSetting.WorkDay = dat_Day_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkTarget.Equals(txt_WorkTarget_WorkFileSetting.Text)	) WorkFileSetting.WorkTarget = txt_WorkTarget_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkFilePath.Equals(lb_WorkFolder_WorkFileSetting.Text)	) WorkFileSetting.WorkFilePath = lb_WorkFolder_WorkFileSetting.Text.Trim();
 				XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\" + XMLFileName);
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
-				XMLLoad(XMLFileName);
 				return false;
+			}
+			finally
+			{
+				XMLLoad_Work();
 			}
 			return true;
 		}
@@ -330,6 +358,20 @@ namespace vision
 			//{
 			//	e.Handled = true;
 			//}
+		}
+		private void cb_TextView_CameraSetting_SelectedValueChanged(object sender, EventArgs e)
+		{
+			if (cb_TextView_CameraSetting.Text.Equals("사용자 선택"))
+			{
+				txt_UserText_CameraSetting.Enabled = true;
+				lb_TextView_CameraSetting.Text = "";
+			}
+			else
+			{
+				if (cb_TextView_CameraSetting.Text.Equals("날짜/시간")) lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
+				if (cb_TextView_CameraSetting.Text.Equals("로봇거리")) lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
+				txt_UserText_CameraSetting.Enabled = false;
+			}
 		}
 	}
 	public class Program_Setting

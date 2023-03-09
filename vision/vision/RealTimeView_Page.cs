@@ -90,6 +90,7 @@ namespace vision
 			for (int i = 0; i < Camera_Count; i++)
 			{
 				m_Camera[i] = new CameraControl(MainForm);
+				//if(!m_Camera[i].IsOpened) return;
 				m_mutexImage[i] = new Mutex();
 			}
 			PanelSettings();
@@ -104,8 +105,8 @@ namespace vision
 					m_Camera[index].CameraOpen();
 					if (!m_Camera[index].IsOpened)
 					{
-						MainForm.ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!", "경고");
-						MainForm.Close();
+						//MainForm.ShowMessage("오류", "카메라 연결에 실패하였습니다!", "경고");
+						//MainForm.Close();
 						return;
 					}
 
@@ -292,38 +293,27 @@ namespace vision
 						{
 							using (StringFormat stringFormat = new StringFormat())
 							{
-								stringFormat.Alignment = StringAlignment.Center;
-								stringFormat.LineAlignment = StringAlignment.Center;
-								PointF point = new PointF(850, 100);
+								stringFormat.Alignment = StringAlignment.Near;
+								stringFormat.LineAlignment = StringAlignment.Near;
+								PointF point = new PointF();
+								//PointF point = new PointF(850, 100);
 								string CamText = "";
 								switch (pb_cam.Name)
 								{
-									case "RealTimeView_Cam1":
-										CamText = "CAM1";
-										break;
-									case "RealTimeView_Cam2":
-										CamText = "CAM2";
-										break;
-									case "RealTimeView_Cam3":
-										CamText = "CAM3";
-										break;
-									default:
-										CamText = "";
-										break;
+									case "RealTimeView_Cam1": CamText = "CAM1"; break;
+									case "RealTimeView_Cam2": CamText = "CAM2"; break;
+									case "RealTimeView_Cam3": CamText = "CAM3"; break;
+									default					: CamText = "";		break;
 								}
-								//switch (MainForm.SettingsPage.CameraSetting.TextMark)
-								//{
-								//	case "날짜/시간":
-								//		CamText += DateTime.Now.ToString(" yyyy년 MM월 dd일 HH시 mm분 ss초");
-								//		break;
-								//	case "로봇거리":
-								//		CamText += "로봇거리" + DateTime.Now.ToString(" HH시 mm분 ss초");
-								//		break;
-								//	case "사용자 선택":
-								//		CamText += MainForm.SettingsPage.CameraSetting.UserText + DateTime.Now.ToString(" HH시 mm분 ss초");
-								//		break;
-								//}
-								CamText += DateTime.Now.ToString(" yyyy년 MM월 dd일 HH시 mm분 ss초");
+								switch (MainForm.Settings.CameraSetting.TextMark)
+								{
+									case "날짜/시간"	: CamText += DateTime.Now.ToString(" yyyy년 MM월 dd일 HH시 mm분 ss초");									break;
+									case "로봇거리"		: CamText += " 로봇거리" + DateTime.Now.ToString(" HH시 mm분 ss초");									break;
+									case "사용자 선택"	: CamText += " " + MainForm.Settings.CameraSetting.UserText + DateTime.Now.ToString(" HH시 mm분 ss초");	break;
+								}
+								//float x = g.MeasureString(CamText, new Font(font, 80, FontStyle.Bold)).Width;
+								//float y = g.MeasureString(CamText, new Font(font, 80, FontStyle.Bold)).Height;
+								//CamText += DateTime.Now.ToString(" yyyy년 MM월 dd일 HH시 mm분 ss초");
 								path.AddString(CamText, font, (int)FontStyle.Bold, 80, point, stringFormat);
 								//g.DrawString("테스트텍스트", new Font("맑은 고딕", 80, FontStyle.Bold), Brushes.Black, point, StringFormat.GenericTypographic);
 								//g.Flush();
@@ -653,8 +643,11 @@ namespace vision
 					m_thread[index].Join();
 					m_thread[index] = null;
 				}
-				m_Camera[index].Stop();
-				m_Camera[index].Close();
+				if (m_Camera[index] != null)
+				{
+					m_Camera[index].Stop();
+					m_Camera[index].Close();
+				}
 			}
 		}
 	}

@@ -35,17 +35,11 @@
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
 			this.btn_Settings = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_RealTimeView = new DevExpress.XtraEditors.SimpleButton();
-			this.defaultToolTipController1 = new DevExpress.Utils.DefaultToolTipController(this.components);
 			this.navigationFrame2 = new DevExpress.XtraBars.Navigation.NavigationFrame();
 			this.RealTimeView_Page = new DevExpress.XtraBars.Navigation.NavigationPage();
 			this.VideoCheck_Page = new DevExpress.XtraBars.Navigation.NavigationPage();
 			this.VideoAnalysis_Page = new DevExpress.XtraBars.Navigation.NavigationPage();
 			this.Settings_Page = new DevExpress.XtraBars.Navigation.NavigationPage();
-			this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
-			this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-			this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-			this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-			this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
 			this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
 			this.btn_VideoAnalysis = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_VideoCheck = new DevExpress.XtraEditors.SimpleButton();
@@ -57,13 +51,11 @@
 			this.tableLayoutPanel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).BeginInit();
 			this.navigationFrame2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// navigationFrame1
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.navigationFrame1, DevExpress.Utils.DefaultBoolean.Default);
 			this.navigationFrame1.Controls.Add(this.ButtonPage);
 			this.navigationFrame1.Dock = System.Windows.Forms.DockStyle.Top;
 			this.navigationFrame1.Location = new System.Drawing.Point(0, 0);
@@ -78,7 +70,6 @@
 			// 
 			// ButtonPage
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.ButtonPage, DevExpress.Utils.DefaultBoolean.Default);
 			this.ButtonPage.Appearance.BackColor = System.Drawing.Color.White;
 			this.ButtonPage.Appearance.Options.UseBackColor = true;
 			this.ButtonPage.Controls.Add(this.tableLayoutPanel3);
@@ -88,7 +79,6 @@
 			// 
 			// tableLayoutPanel3
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.tableLayoutPanel3, DevExpress.Utils.DefaultBoolean.Default);
 			this.tableLayoutPanel3.ColumnCount = 4;
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
 			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -141,19 +131,10 @@
 			this.btn_RealTimeView.TabIndex = 4;
 			this.btn_RealTimeView.TabStop = false;
 			this.btn_RealTimeView.Text = "실시간 감시";
-			this.btn_RealTimeView.ToolTipController = this.defaultToolTipController1.DefaultController;
 			this.btn_RealTimeView.Click += new System.EventHandler(this.NavigationClick);
-			// 
-			// defaultToolTipController1
-			// 
-			// 
-			// 
-			// 
-			this.defaultToolTipController1.DefaultController.KeepWhileHovered = true;
 			// 
 			// navigationFrame2
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.navigationFrame2, DevExpress.Utils.DefaultBoolean.Default);
 			this.navigationFrame2.Controls.Add(this.RealTimeView_Page);
 			this.navigationFrame2.Controls.Add(this.VideoCheck_Page);
 			this.navigationFrame2.Controls.Add(this.VideoAnalysis_Page);
@@ -174,7 +155,6 @@
 			// 
 			// RealTimeView_Page
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.RealTimeView_Page, DevExpress.Utils.DefaultBoolean.Default);
 			this.RealTimeView_Page.Appearance.BackColor = System.Drawing.Color.White;
 			this.RealTimeView_Page.Appearance.Options.UseBackColor = true;
 			this.RealTimeView_Page.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -183,7 +163,6 @@
 			// 
 			// VideoCheck_Page
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.VideoCheck_Page, DevExpress.Utils.DefaultBoolean.Default);
 			this.VideoCheck_Page.Appearance.BackColor = System.Drawing.Color.White;
 			this.VideoCheck_Page.Appearance.Options.UseBackColor = true;
 			this.VideoCheck_Page.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -192,7 +171,6 @@
 			// 
 			// VideoAnalysis_Page
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.VideoAnalysis_Page, DevExpress.Utils.DefaultBoolean.Default);
 			this.VideoAnalysis_Page.Appearance.BackColor = System.Drawing.Color.White;
 			this.VideoAnalysis_Page.Appearance.Options.UseBackColor = true;
 			this.VideoAnalysis_Page.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -201,56 +179,14 @@
 			// 
 			// Settings_Page
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.Settings_Page, DevExpress.Utils.DefaultBoolean.Default);
 			this.Settings_Page.Appearance.BackColor = System.Drawing.Color.White;
 			this.Settings_Page.Appearance.Options.UseBackColor = true;
 			this.Settings_Page.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.Settings_Page.Name = "Settings_Page";
 			this.Settings_Page.Size = new System.Drawing.Size(1598, 798);
 			// 
-			// barManager1
-			// 
-			this.barManager1.DockControls.Add(this.barDockControlTop);
-			this.barManager1.DockControls.Add(this.barDockControlBottom);
-			this.barManager1.DockControls.Add(this.barDockControlLeft);
-			this.barManager1.DockControls.Add(this.barDockControlRight);
-			this.barManager1.Form = this;
-			// 
-			// barDockControlTop
-			// 
-			this.barDockControlTop.CausesValidation = false;
-			this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-			this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-			this.barDockControlTop.Manager = this.barManager1;
-			this.barDockControlTop.Size = new System.Drawing.Size(1598, 0);
-			// 
-			// barDockControlBottom
-			// 
-			this.barDockControlBottom.CausesValidation = false;
-			this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.barDockControlBottom.Location = new System.Drawing.Point(0, 868);
-			this.barDockControlBottom.Manager = this.barManager1;
-			this.barDockControlBottom.Size = new System.Drawing.Size(1598, 0);
-			// 
-			// barDockControlLeft
-			// 
-			this.barDockControlLeft.CausesValidation = false;
-			this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-			this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-			this.barDockControlLeft.Manager = this.barManager1;
-			this.barDockControlLeft.Size = new System.Drawing.Size(0, 868);
-			// 
-			// barDockControlRight
-			// 
-			this.barDockControlRight.CausesValidation = false;
-			this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-			this.barDockControlRight.Location = new System.Drawing.Point(1598, 0);
-			this.barDockControlRight.Manager = this.barManager1;
-			this.barDockControlRight.Size = new System.Drawing.Size(0, 868);
-			// 
 			// fluentDesignFormContainer1
 			// 
-			this.defaultToolTipController1.SetAllowHtmlText(this.fluentDesignFormContainer1, DevExpress.Utils.DefaultBoolean.Default);
 			this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.fluentDesignFormContainer1.Location = new System.Drawing.Point(0, 0);
 			this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
@@ -314,7 +250,6 @@
 			// Form1
 			// 
 			this.ActiveGlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-			this.defaultToolTipController1.SetAllowHtmlText(this, DevExpress.Utils.DefaultBoolean.Default);
 			this.Appearance.BackColor = System.Drawing.Color.White;
 			this.Appearance.ForeColor = System.Drawing.Color.Black;
 			this.Appearance.Options.UseBackColor = true;
@@ -325,10 +260,6 @@
 			this.Controls.Add(this.navigationFrame2);
 			this.Controls.Add(this.navigationFrame1);
 			this.Controls.Add(this.fluentDesignFormContainer1);
-			this.Controls.Add(this.barDockControlLeft);
-			this.Controls.Add(this.barDockControlRight);
-			this.Controls.Add(this.barDockControlBottom);
-			this.Controls.Add(this.barDockControlTop);
 			this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
 			this.IconOptions.Icon = ((System.Drawing.Icon)(resources.GetObject("Form1.IconOptions.Icon")));
 			this.LookAndFeel.SkinName = "Office 2019 Colorful";
@@ -346,10 +277,8 @@
 			this.tableLayoutPanel3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.navigationFrame2)).EndInit();
 			this.navigationFrame2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
@@ -369,12 +298,6 @@
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
 		private DevExpress.XtraEditors.LabelControl labelControl1;
 		private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
-		private DevExpress.Utils.DefaultToolTipController defaultToolTipController1;
-		private DevExpress.XtraBars.BarManager barManager1;
-		private DevExpress.XtraBars.BarDockControl barDockControlTop;
-		private DevExpress.XtraBars.BarDockControl barDockControlBottom;
-		private DevExpress.XtraBars.BarDockControl barDockControlLeft;
-		private DevExpress.XtraBars.BarDockControl barDockControlRight;
 		public DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame2;
 	}
 }

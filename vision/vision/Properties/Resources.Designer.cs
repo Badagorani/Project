@@ -63,6 +63,16 @@ namespace vision.Properties {
         /// <summary>
         ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage actions_reload {
+            get {
+                object obj = ResourceManager.GetObject("actions_reload", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage bo_validation {
             get {
                 object obj = ResourceManager.GetObject("bo_validation", resourceCulture);
