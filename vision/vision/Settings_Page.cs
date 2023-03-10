@@ -61,9 +61,9 @@ namespace vision
 				lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
 				txt_UserText_CameraSetting.Enabled = false;
 			}
-			else if (cb_TextView_CameraSetting.Text.Equals("로봇 거리"))
+			else if (cb_TextView_CameraSetting.Text.Equals("로봇거리"))
 			{
-				txt_UserText_CameraSetting.Text = "  ☑ 로봇 거리";
+				lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
 				txt_UserText_CameraSetting.Enabled = false;
 			}
 			else
@@ -247,9 +247,15 @@ namespace vision
 				string savesetting = ((SimpleButton)sender).Name.Substring("btn_Save_".Length);
 				switch (savesetting)
 				{
-					case "ProgramSetting"	: ProgramSettingSave();		break;
-					case "CameraSetting"	: CameraSettingSave();		break;
-					case "WorkFileSetting"	: WorkFileSettingSave();	break;
+					case "ProgramSetting"	:	ProgramSettingSave();
+												MainForm.ShowMessage("오류", $"프로그램 설정이 변경되었습니다!\n", "알림");
+												break;
+					case "CameraSetting"	:	CameraSettingSave();
+												MainForm.ShowMessage("오류", $"카메라 설정이 변경되었습니다!\n", "알림");
+												break;
+					case "WorkFileSetting"	:	WorkFileSettingSave();
+												MainForm.ShowMessage("오류", $"작업파일 설정이 변경되었습니다!\n", "알림");
+												break;
 				}
 			}
 			catch(Exception ex)

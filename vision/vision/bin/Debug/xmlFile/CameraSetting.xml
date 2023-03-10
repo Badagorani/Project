@@ -4,7 +4,7 @@
   <Camera2IPAddress>169.254.89.182</Camera2IPAddress>
   <Camera3IPAddress>169.254.94.182</Camera3IPAddress>
   <TextMark>로봇거리</TextMark>
-  <UserText>아아아아으으아아아아음ㄹ아ㅜ댜 ㅐㄹㄷ재ㅑㄹ ㅐㅑㄷㅈㄹ</UserText>
+  <UserText />
   <CamWidth>2448</CamWidth>
   <CamHeight>2048</CamHeight>
 </Camera_Setting>
