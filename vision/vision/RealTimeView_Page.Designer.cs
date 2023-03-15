@@ -47,18 +47,19 @@
 			this.RealTimeView_MainCam = new System.Windows.Forms.PictureBox();
 			this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
 			this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
-			this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-			this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-			this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-			this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+			this.lb_TextView = new DevExpress.XtraEditors.LabelControl();
+			this.cb_TextView = new DevExpress.XtraEditors.ComboBoxEdit();
+			this.btn_VideoSetSave = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_VideoSetCancel = new DevExpress.XtraEditors.SimpleButton();
+			this.txt_UserText = new DevExpress.XtraEditors.TextEdit();
 			this.layoutControlGroup4 = new DevExpress.XtraLayout.LayoutControlGroup();
 			this.layoutControlGroup5 = new DevExpress.XtraLayout.LayoutControlGroup();
 			this.simpleLabelItem21 = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-			this.simpleLabelItem22 = new DevExpress.XtraLayout.SimpleLabelItem();
 			this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
+			this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.tableLayoutPanel4.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
@@ -78,16 +79,16 @@
 			this.popupControlContainer1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
 			this.layoutControl2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.cb_TextView.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txt_UserText.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem21)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem22)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel4
@@ -344,10 +345,11 @@
 			// 
 			// layoutControl2
 			// 
-			this.layoutControl2.Controls.Add(this.comboBoxEdit3);
-			this.layoutControl2.Controls.Add(this.simpleButton1);
-			this.layoutControl2.Controls.Add(this.simpleButton2);
-			this.layoutControl2.Controls.Add(this.textEdit10);
+			this.layoutControl2.Controls.Add(this.lb_TextView);
+			this.layoutControl2.Controls.Add(this.cb_TextView);
+			this.layoutControl2.Controls.Add(this.btn_VideoSetSave);
+			this.layoutControl2.Controls.Add(this.btn_VideoSetCancel);
+			this.layoutControl2.Controls.Add(this.txt_UserText);
 			this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.layoutControl2.Location = new System.Drawing.Point(0, 0);
 			this.layoutControl2.Name = "layoutControl2";
@@ -357,66 +359,79 @@
 			this.layoutControl2.TabIndex = 0;
 			this.layoutControl2.Text = "layoutControl2";
 			// 
-			// comboBoxEdit3
+			// lb_TextView
 			// 
-			this.comboBoxEdit3.EditValue = "날짜/시간";
-			this.comboBoxEdit3.Location = new System.Drawing.Point(211, 60);
-			this.comboBoxEdit3.Name = "comboBoxEdit3";
-			this.comboBoxEdit3.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.comboBoxEdit3.Properties.Appearance.Options.UseFont = true;
-			this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+			this.lb_TextView.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.lb_TextView.Appearance.Options.UseFont = true;
+			this.lb_TextView.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+			this.lb_TextView.Location = new System.Drawing.Point(24, 98);
+			this.lb_TextView.Name = "lb_TextView";
+			this.lb_TextView.Size = new System.Drawing.Size(345, 28);
+			this.lb_TextView.StyleController = this.layoutControl2;
+			this.lb_TextView.TabIndex = 8;
+			this.lb_TextView.Text = "labelControl1";
+			// 
+			// cb_TextView
+			// 
+			this.cb_TextView.EditValue = "날짜/시간";
+			this.cb_TextView.Location = new System.Drawing.Point(211, 60);
+			this.cb_TextView.Name = "cb_TextView";
+			this.cb_TextView.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.cb_TextView.Properties.Appearance.Options.UseFont = true;
+			this.cb_TextView.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-			this.comboBoxEdit3.Properties.Items.AddRange(new object[] {
+			this.cb_TextView.Properties.Items.AddRange(new object[] {
             "날짜/시간",
-            "사용자선택",
+            "사용자 선택",
             "로봇거리"});
-			this.comboBoxEdit3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-			this.comboBoxEdit3.Size = new System.Drawing.Size(158, 34);
-			this.comboBoxEdit3.StyleController = this.layoutControl2;
-			this.comboBoxEdit3.TabIndex = 4;
+			this.cb_TextView.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+			this.cb_TextView.Size = new System.Drawing.Size(158, 34);
+			this.cb_TextView.StyleController = this.layoutControl2;
+			this.cb_TextView.TabIndex = 4;
+			this.cb_TextView.SelectedValueChanged += new System.EventHandler(this.cb_TextView_SelectedValueChanged);
 			// 
-			// simpleButton1
+			// btn_VideoSetSave
 			// 
-			this.simpleButton1.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton1.Appearance.Options.UseFont = true;
-			this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton1.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
-			this.simpleButton1.Location = new System.Drawing.Point(24, 168);
-			this.simpleButton1.Name = "simpleButton1";
-			this.simpleButton1.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton1.Size = new System.Drawing.Size(170, 36);
-			this.simpleButton1.StyleController = this.layoutControl2;
-			this.simpleButton1.TabIndex = 5;
-			this.simpleButton1.Text = "저  장";
-			this.simpleButton1.Click += new System.EventHandler(this.RealTimeView_ButtonActions);
+			this.btn_VideoSetSave.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_VideoSetSave.Appearance.Options.UseFont = true;
+			this.btn_VideoSetSave.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_VideoSetSave.ImageOptions.SvgImage = global::vision.Properties.Resources.bo_validation;
+			this.btn_VideoSetSave.Location = new System.Drawing.Point(24, 168);
+			this.btn_VideoSetSave.Name = "btn_VideoSetSave";
+			this.btn_VideoSetSave.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_VideoSetSave.Size = new System.Drawing.Size(170, 36);
+			this.btn_VideoSetSave.StyleController = this.layoutControl2;
+			this.btn_VideoSetSave.TabIndex = 5;
+			this.btn_VideoSetSave.Text = "저  장";
+			this.btn_VideoSetSave.Click += new System.EventHandler(this.RealTimeView_ButtonActions);
 			// 
-			// simpleButton2
+			// btn_VideoSetCancel
 			// 
-			this.simpleButton2.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton2.Appearance.Options.UseFont = true;
-			this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton2.ImageOptions.SvgImage = global::vision.Properties.Resources.delete;
-			this.simpleButton2.Location = new System.Drawing.Point(198, 168);
-			this.simpleButton2.Name = "simpleButton2";
-			this.simpleButton2.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton2.Size = new System.Drawing.Size(171, 36);
-			this.simpleButton2.StyleController = this.layoutControl2;
-			this.simpleButton2.TabIndex = 6;
-			this.simpleButton2.Text = "취  소";
-			this.simpleButton2.Click += new System.EventHandler(this.RealTimeView_ButtonActions);
+			this.btn_VideoSetCancel.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_VideoSetCancel.Appearance.Options.UseFont = true;
+			this.btn_VideoSetCancel.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_VideoSetCancel.ImageOptions.SvgImage = global::vision.Properties.Resources.delete;
+			this.btn_VideoSetCancel.Location = new System.Drawing.Point(198, 168);
+			this.btn_VideoSetCancel.Name = "btn_VideoSetCancel";
+			this.btn_VideoSetCancel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_VideoSetCancel.Size = new System.Drawing.Size(171, 36);
+			this.btn_VideoSetCancel.StyleController = this.layoutControl2;
+			this.btn_VideoSetCancel.TabIndex = 6;
+			this.btn_VideoSetCancel.Text = "취  소";
+			this.btn_VideoSetCancel.Click += new System.EventHandler(this.RealTimeView_ButtonActions);
 			// 
-			// textEdit10
+			// txt_UserText
 			// 
-			this.textEdit10.EditValue = "테테스트텍스트";
-			this.textEdit10.Enabled = false;
-			this.textEdit10.Location = new System.Drawing.Point(24, 130);
-			this.textEdit10.Name = "textEdit10";
-			this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.textEdit10.Properties.Appearance.Options.UseFont = true;
-			this.textEdit10.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-			this.textEdit10.Size = new System.Drawing.Size(345, 34);
-			this.textEdit10.StyleController = this.layoutControl2;
-			this.textEdit10.TabIndex = 7;
+			this.txt_UserText.EditValue = "";
+			this.txt_UserText.Enabled = false;
+			this.txt_UserText.Location = new System.Drawing.Point(24, 130);
+			this.txt_UserText.Name = "txt_UserText";
+			this.txt_UserText.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.txt_UserText.Properties.Appearance.Options.UseFont = true;
+			this.txt_UserText.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.txt_UserText.Size = new System.Drawing.Size(345, 34);
+			this.txt_UserText.StyleController = this.layoutControl2;
+			this.txt_UserText.TabIndex = 7;
 			// 
 			// layoutControlGroup4
 			// 
@@ -436,10 +451,10 @@
 			this.layoutControlGroup5.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.simpleLabelItem21,
             this.layoutControlItem1,
-            this.simpleLabelItem22,
             this.layoutControlItem2,
             this.layoutControlItem11,
-            this.layoutControlItem23});
+            this.layoutControlItem23,
+            this.layoutControlItem3});
 			this.layoutControlGroup5.Location = new System.Drawing.Point(0, 0);
 			this.layoutControlGroup5.Name = "layoutControlGroup5";
 			this.layoutControlGroup5.Size = new System.Drawing.Size(373, 208);
@@ -458,30 +473,16 @@
 			// 
 			// layoutControlItem1
 			// 
-			this.layoutControlItem1.Control = this.comboBoxEdit3;
+			this.layoutControlItem1.Control = this.cb_TextView;
 			this.layoutControlItem1.Location = new System.Drawing.Point(187, 0);
 			this.layoutControlItem1.Name = "layoutControlItem1";
 			this.layoutControlItem1.Size = new System.Drawing.Size(162, 38);
 			this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem1.TextVisible = false;
 			// 
-			// simpleLabelItem22
-			// 
-			this.simpleLabelItem22.AllowHotTrack = false;
-			this.simpleLabelItem22.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleLabelItem22.AppearanceItemCaption.Options.UseFont = true;
-			this.simpleLabelItem22.Location = new System.Drawing.Point(0, 38);
-			this.simpleLabelItem22.Name = "simpleLabelItem22";
-			this.simpleLabelItem22.OptionsToolTip.ToolTip = "  ";
-			this.simpleLabelItem22.OptionsToolTip.ToolTipIconType = DevExpress.Utils.ToolTipIconType.Information;
-			this.simpleLabelItem22.OptionsToolTip.ToolTipTitle = "현재 화면에 보여지는 텍스트";
-			this.simpleLabelItem22.Size = new System.Drawing.Size(349, 32);
-			this.simpleLabelItem22.Text = "테스트텍스트";
-			this.simpleLabelItem22.TextSize = new System.Drawing.Size(174, 28);
-			// 
 			// layoutControlItem2
 			// 
-			this.layoutControlItem2.Control = this.simpleButton1;
+			this.layoutControlItem2.Control = this.btn_VideoSetSave;
 			this.layoutControlItem2.Location = new System.Drawing.Point(0, 108);
 			this.layoutControlItem2.Name = "layoutControlItem2";
 			this.layoutControlItem2.Size = new System.Drawing.Size(174, 40);
@@ -490,7 +491,7 @@
 			// 
 			// layoutControlItem11
 			// 
-			this.layoutControlItem11.Control = this.simpleButton2;
+			this.layoutControlItem11.Control = this.btn_VideoSetCancel;
 			this.layoutControlItem11.Location = new System.Drawing.Point(174, 108);
 			this.layoutControlItem11.Name = "layoutControlItem11";
 			this.layoutControlItem11.Size = new System.Drawing.Size(175, 40);
@@ -499,12 +500,23 @@
 			// 
 			// layoutControlItem23
 			// 
-			this.layoutControlItem23.Control = this.textEdit10;
+			this.layoutControlItem23.Control = this.txt_UserText;
 			this.layoutControlItem23.Location = new System.Drawing.Point(0, 70);
 			this.layoutControlItem23.Name = "layoutControlItem23";
 			this.layoutControlItem23.Size = new System.Drawing.Size(349, 38);
 			this.layoutControlItem23.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem23.TextVisible = false;
+			// 
+			// layoutControlItem3
+			// 
+			this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
+			this.layoutControlItem3.Control = this.lb_TextView;
+			this.layoutControlItem3.Location = new System.Drawing.Point(0, 38);
+			this.layoutControlItem3.Name = "layoutControlItem3";
+			this.layoutControlItem3.Size = new System.Drawing.Size(349, 32);
+			this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+			this.layoutControlItem3.TextVisible = false;
 			// 
 			// RealTimeView_Page
 			// 
@@ -536,16 +548,16 @@
 			this.popupControlContainer1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
 			this.layoutControl2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.cb_TextView.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txt_UserText.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem21)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem22)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem23)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -570,17 +582,18 @@
 		private System.Windows.Forms.PictureBox RealTimeView_MainCam;
 		private DevExpress.XtraBars.PopupControlContainer popupControlContainer1;
 		private DevExpress.XtraLayout.LayoutControl layoutControl2;
-		private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
-		private DevExpress.XtraEditors.SimpleButton simpleButton1;
-		private DevExpress.XtraEditors.SimpleButton simpleButton2;
-		private DevExpress.XtraEditors.TextEdit textEdit10;
+		private DevExpress.XtraEditors.SimpleButton btn_VideoSetSave;
+		private DevExpress.XtraEditors.SimpleButton btn_VideoSetCancel;
 		private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup4;
 		private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup5;
 		private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem21;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-		private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem22;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
+		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+		public DevExpress.XtraEditors.ComboBoxEdit cb_TextView;
+		public DevExpress.XtraEditors.TextEdit txt_UserText;
+		public DevExpress.XtraEditors.LabelControl lb_TextView;
 	}
 }

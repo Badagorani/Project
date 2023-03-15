@@ -349,6 +349,7 @@
 			this.Controls.Add(this.tableLayoutPanel8);
 			this.Name = "VideoCheck_Page";
 			this.Size = new System.Drawing.Size(1598, 798);
+			this.Load += new System.EventHandler(this.VideoCheck_Page_Load);
 			this.tableLayoutPanel5.ResumeLayout(false);
 			this.tableLayoutPanel6.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();

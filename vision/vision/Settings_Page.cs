@@ -19,6 +19,8 @@ using static System.Net.WebRequestMethods;
 using DevExpress.XtraLayout;
 using System.Security.Cryptography;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using DevExpress.XtraWaitForm;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace vision
 {
@@ -56,35 +58,54 @@ namespace vision
 		{
 			XMLLoad("CameraSetting.xml");
 			cb_TextView_CameraSetting.Text = CameraSetting.TextMark;
+			if(MainForm.RealTimeView != null) MainForm.RealTimeView.cb_TextView.Text = CameraSetting.TextMark;
 			if (cb_TextView_CameraSetting.Text.Equals("날짜/시간"))
 			{
 				lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
 				txt_UserText_CameraSetting.Enabled = false;
+				txt_UserText_CameraSetting.Text = "";
+				if (MainForm.RealTimeView != null)
+				{
+					MainForm.RealTimeView.lb_TextView.Text = "  ☑ 년월일시분초";
+					MainForm.RealTimeView.txt_UserText.Enabled = false;
+					MainForm.RealTimeView.txt_UserText.Text = "";
+				}
 			}
 			else if (cb_TextView_CameraSetting.Text.Equals("로봇거리"))
 			{
 				lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
 				txt_UserText_CameraSetting.Enabled = false;
+				txt_UserText_CameraSetting.Text = "";
+				if (MainForm.RealTimeView != null)
+				{
+					MainForm.RealTimeView.lb_TextView.Text = "  ☑ 로봇 거리";
+					MainForm.RealTimeView.txt_UserText.Enabled = false;
+					MainForm.RealTimeView.txt_UserText.Text = "";
+				}
 			}
 			else
 			{
 				txt_UserText_CameraSetting.Text = CameraSetting.UserText;
+				if (MainForm.RealTimeView != null) MainForm.RealTimeView.txt_UserText.Text = CameraSetting.UserText;
 			}
 		}
 		public void XMLLoad_CameraPlus()
 		{
-			txt_Cam1IP_CameraSetting.Text = MainForm.RealTimeView.Camera1IP;
-			txt_Cam2IP_CameraSetting.Text = MainForm.RealTimeView.Camera2IP;
-			txt_Cam3IP_CameraSetting.Text = MainForm.RealTimeView.Camera3IP;
+			CameraSetting.Camera1IPAddress = txt_Cam1IP_CameraSetting.Text = MainForm.RealTimeView.Camera1IP;
+			CameraSetting.Camera2IPAddress = txt_Cam2IP_CameraSetting.Text = MainForm.RealTimeView.Camera2IP;
+			CameraSetting.Camera3IPAddress = txt_Cam3IP_CameraSetting.Text = MainForm.RealTimeView.Camera3IP;
 			txt_CameraWidth_CameraSetting.Text = MainForm.RealTimeView.CameraWidth.ToString();
 			txt_CameraHeight_CameraSetting.Text = MainForm.RealTimeView.CameraHeight.ToString();
+			CameraSetting.CamWidth = MainForm.RealTimeView.CameraWidth;
+			CameraSetting.CamHeight = MainForm.RealTimeView.CameraHeight;
+			XMLSave(CameraSetting, CameraSetting.GetType(), @"\CameraSetting.xml");
 		}
 		public void XMLLoad_Work()
 		{
 			XMLLoad("WorkFileSetting.xml");
-			tg_LogSaveOnOff.IsOn = WorkFileSetting.LogSave;
+			tg_LogSaveOnOff.IsOn = true;
 			txt_WorkUser_WorkFileSetting.Text = WorkFileSetting.WorkUser;
-			dat_Day_WorkFileSetting.Text = DateTime.Today.ToString("yyyy-MM-dd");
+			//dat_Day_WorkFileSetting.Text = DateTime.Now.ToString("yyyy-MM-dd");
 			lb_WorkFolder_WorkFileSetting.Text = "  " + WorkFileSetting.WorkFilePath;
 			//SizeF textSize = Graphics.FromImage(new Bitmap(1, 1)).MeasureString(lb_WorkFolder_WorkFileSetting.Text, lb_WorkFolder_WorkFileSetting.AppearanceItemCaption.Font);
 			//if (textSize.Width > lb_WorkFolder_WorkFileSetting.MaxSize.Width)
@@ -198,13 +219,14 @@ namespace vision
 					WorkFileSetting.WorkUser = "";
 					WorkFileSetting.WorkDay = "";
 					WorkFileSetting.WorkTarget = "";
-					WorkFileSetting.WorkFilePath = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf(@"\")) + @"WorkLog";
+					WorkFileSetting.WorkFilePath = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf(@"\")) + @"\WorkLog";
 					XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\" + XMLFileName);
 					break;
 			}
 		}
 		private void PathChange(object sender, EventArgs e)
 		{
+			MainForm.LoadingAnimationStart();
 			try
 			{
 				using (CommonOpenFileDialog fd = new CommonOpenFileDialog())
@@ -219,7 +241,7 @@ namespace vision
 						default				: StartFolderPath = Application.ExecutablePath;		break;
 					}
 					fd.IsFolderPicker = true;
-					fd.InitialDirectory = StartFolderPath;
+					fd.DefaultDirectory = fd.InitialDirectory = StartFolderPath;
 					if (fd.ShowDialog() == CommonFileDialogResult.Ok)
 					{
 						string NewFolderPath = fd.FileName;
@@ -239,29 +261,32 @@ namespace vision
 			{
 				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
 			}
+			MainForm.LoadingAnimationEnd();
 		}
 		private void SaveButton(object sender, EventArgs e)
 		{
+			MainForm.LoadingAnimationStart();
 			try
 			{
 				string savesetting = ((SimpleButton)sender).Name.Substring("btn_Save_".Length);
 				switch (savesetting)
 				{
-					case "ProgramSetting"	:	ProgramSettingSave();
-												MainForm.ShowMessage("오류", $"프로그램 설정이 변경되었습니다!\n", "알림");
+					case "ProgramSetting"	:	if (!ProgramSettingSave()) MainForm.ShowMessage("알림", $"프로그램 설정\n변경된 사항이 없거나 변경이 실패하였습니다!", "알림");
+												else MainForm.ShowMessage("알림", $"프로그램 설정이 변경되었습니다!", "알림");
 												break;
-					case "CameraSetting"	:	CameraSettingSave();
-												MainForm.ShowMessage("오류", $"카메라 설정이 변경되었습니다!\n", "알림");
+					case "CameraSetting"	:	if (!CameraSettingSave()) MainForm.ShowMessage("알림", $"카메라 설정\n변경된 사항이 없거나 변경이 실패하였습니다!", "알림");
+												else MainForm.ShowMessage("알림", $"카메라 설정이 변경되었습니다!", "알림");
 												break;
-					case "WorkFileSetting"	:	WorkFileSettingSave();
-												MainForm.ShowMessage("오류", $"작업파일 설정이 변경되었습니다!\n", "알림");
+					case "WorkFileSetting"	:	if (!WorkFileSettingSave()) MainForm.ShowMessage("알림", $"작업파일 설정\n변경된 사항이 없거나 변경이 실패하였습니다!", "알림");
+												else MainForm.ShowMessage("알림", $"작업파일 설정이 변경되었습니다!", "알림");
 												break;
 				}
 			}
 			catch(Exception ex)
 			{
-				MainForm.ShowMessage("오류", $"XML 문서 저장 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
+				MainForm.ShowMessage("오류", $"설정 변경 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
 			}
+			MainForm.LoadingAnimationEnd();
 		}
 
 		private void ResetButton(object sender, EventArgs e)
@@ -278,23 +303,41 @@ namespace vision
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", $"XML 문서 저장 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
+				MainForm.ShowMessage("오류", $"초기화 중에 예외가 발생하였습니다! : {MethodBase.GetCurrentMethod().Name}\n" + ex, "경고");
 			}
 		}
 		public bool ProgramSettingSave()
 		{
 			string XMLFileName = "ProgramSetting.xml";
+			bool IsChanged = false;
 			try
 			{
-				if (ProgramSetting.BasicCameraView != rb_Camera_ProgramSetting.SelectedIndex) ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex;
-				if (!ProgramSetting.ImageFilePath.Equals(lb_ImageFolder_ProgramSetting.Text)) ProgramSetting.ImageFilePath = lb_ImageFolder_ProgramSetting.Text.Trim();
-				if (!ProgramSetting.ImageFileFormat.Equals(cb_ImgFormat_ProgramSetting.Text)) ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.Text;
-				if (!ProgramSetting.VideoFilePath.Equals(lb_VideoFolder_ProgramSetting.Text)) ProgramSetting.VideoFilePath = lb_VideoFolder_ProgramSetting.Text.Trim();
-				XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\" + XMLFileName);
+				if (ProgramSetting.BasicCameraView != rb_Camera_ProgramSetting.SelectedIndex)
+				{
+					ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex;
+					IsChanged = true;
+				}
+				if (!ProgramSetting.ImageFilePath.Equals(lb_ImageFolder_ProgramSetting.Text.Trim()))
+				{
+					ProgramSetting.ImageFilePath = lb_ImageFolder_ProgramSetting.Text.Trim();
+					IsChanged = true;
+				}
+				if (!ProgramSetting.ImageFileFormat.Equals(cb_ImgFormat_ProgramSetting.Text))
+				{
+					ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.Text;
+					IsChanged = true;
+				}
+				if (!ProgramSetting.VideoFilePath.Equals(lb_VideoFolder_ProgramSetting.Text.Trim()))
+				{
+					ProgramSetting.VideoFilePath = lb_VideoFolder_ProgramSetting.Text.Trim();
+					IsChanged = true;
+				}
+				if (IsChanged) XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\" + XMLFileName);
+				else return false;
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "경고");
+				MainForm.ShowMessage("오류", "프로그램 설정에 예외가 발생하였습니다!\n" + ex.Message, "경고");
 				return false;
 			}
 			finally
@@ -319,7 +362,7 @@ namespace vision
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
+				MainForm.ShowMessage("오류", "카메라 설정에 예외가 발생하였습니다!\n" + ex, "주의");
 				return false;
 			}
 			finally
@@ -334,16 +377,16 @@ namespace vision
 			string XMLFileName = "WorkFileSetting.xml";
 			try
 			{
-				if(!WorkFileSetting.LogSave != tg_LogSaveOnOff.IsOn							) WorkFileSetting.LogSave = tg_LogSaveOnOff.IsOn;
-				if(!WorkFileSetting.WorkUser.Equals(txt_WorkUser_WorkFileSetting.Text)		) WorkFileSetting.WorkUser = txt_WorkUser_WorkFileSetting.Text;
-				if(!WorkFileSetting.WorkDay.Equals(dat_Day_WorkFileSetting.Text)			) WorkFileSetting.WorkDay = dat_Day_WorkFileSetting.Text;
-				if(!WorkFileSetting.WorkTarget.Equals(txt_WorkTarget_WorkFileSetting.Text)	) WorkFileSetting.WorkTarget = txt_WorkTarget_WorkFileSetting.Text;
-				if(!WorkFileSetting.WorkFilePath.Equals(lb_WorkFolder_WorkFileSetting.Text)	) WorkFileSetting.WorkFilePath = lb_WorkFolder_WorkFileSetting.Text.Trim();
+				if(!WorkFileSetting.LogSave != tg_LogSaveOnOff.IsOn									) WorkFileSetting.LogSave = tg_LogSaveOnOff.IsOn;
+				if(!WorkFileSetting.WorkUser.Equals(txt_WorkUser_WorkFileSetting.Text)				) WorkFileSetting.WorkUser = txt_WorkUser_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkDay.Equals(dat_Day_WorkFileSetting.Text)					) WorkFileSetting.WorkDay = dat_Day_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkTarget.Equals(txt_WorkTarget_WorkFileSetting.Text)			) WorkFileSetting.WorkTarget = txt_WorkTarget_WorkFileSetting.Text;
+				if(!WorkFileSetting.WorkFilePath.Equals(lb_WorkFolder_WorkFileSetting.Text.Trim())	) WorkFileSetting.WorkFilePath = lb_WorkFolder_WorkFileSetting.Text.Trim();
 				XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\" + XMLFileName);
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
+				MainForm.ShowMessage("오류", "작업파일 설정에 예외가 발생하였습니다!\n" + ex, "주의");
 				return false;
 			}
 			finally
@@ -360,24 +403,176 @@ namespace vision
 			}
 
 			// only allow one decimal point
-			//if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
-			//{
-			//	e.Handled = true;
-			//}
+			if ((e.KeyChar == '.') && ((sender as System.Windows.Forms.TextBox).Text.IndexOf('.') > -1))
+			{
+				e.Handled = true;
+			}
+			if(((TextEdit)sender).Text.Length > 15) MainForm.ShowMessage("오류", "세로 크기는 600 ~ 2048 범위입니다!", "주의");
+		}
+		private void OnKeyPressSingleIP(object sender, KeyPressEventArgs e)
+		{
+			TextEdit text = (TextEdit)sender;
+			int iPos = 0;               // IP 구역의 현재 위치
+			int iDelimitNumber = 0;     // IP 구역의 갯수
+
+			int iLength = text.Text.Length;
+			int iIndex = text.Text.LastIndexOf(".");
+			int iIndex2 = -1;
+
+			while (true)
+			{
+				iIndex2 = text.Text.IndexOf(".", iIndex2 + 1);
+				if (iIndex2 == -1) break;
+
+				++iDelimitNumber;
+			}
+
+			// 숫자키와 백스페이스, '.' 만 입력 가능
+			if ((e.KeyChar < 48 || e.KeyChar > 57) &&
+			e.KeyChar != 8 && e.KeyChar != '.')
+			{
+				MainForm.ShowMessage("오류", "숫자만 입력 가능합니다!", "주의");
+				e.Handled = true;
+				return;
+			}
+
+			if (e.KeyChar != 8)
+			{
+				if (e.KeyChar != '.')
+				{
+					if (iIndex > 0) iPos = iLength - iIndex;
+					else			iPos = iLength + 1;
+
+					if (iPos == 3)
+					{
+						// 255 이상 체크
+						string strTmp = text.Text.Substring(iIndex + 1) + e.KeyChar;
+						if (Int32.Parse(strTmp) > 255)
+						{
+							MainForm.ShowMessage("오류", "IP 숫자는 255를 넘길 수 없습니다!", "주의");
+							e.Handled = true;
+							return;
+						}
+						else
+						{
+							// 3자리가 넘어가면 자동으로 .을 찍어준다
+							if (iDelimitNumber < 3)
+							{
+								text.AppendText(e.KeyChar.ToString());
+								text.AppendText(".");
+								iDelimitNumber++;
+								e.Handled = true;
+								return;
+							}
+						}
+					}
+
+					// IP 마지막 4자리째는 무조건 무시
+					if (iPos == 4)
+					{
+						e.Handled = true;
+						return;
+					}
+				}
+				else
+				{
+					// 아이피가 3구역 이상 쓰였으면, 이후 키는 무시한다
+					if (iDelimitNumber + 1 > 3)
+					{
+						MainForm.ShowMessage("오류", "IP 주소가 정확하지 않습니다!", "주의");
+						e.Handled = true;
+						return;
+					}
+					else
+					{
+						// 연속으로 .을 찍었으면 오류
+						if (text.Text.EndsWith("."))
+						{
+							MainForm.ShowMessage("오류", "IP 주소가 정확하지 않습니다!", "주의");
+							e.Handled = true;
+							return;
+						}
+						else iDelimitNumber++;
+					}
+				}
+			}
 		}
 		private void cb_TextView_CameraSetting_SelectedValueChanged(object sender, EventArgs e)
 		{
 			if (cb_TextView_CameraSetting.Text.Equals("사용자 선택"))
 			{
 				txt_UserText_CameraSetting.Enabled = true;
-				lb_TextView_CameraSetting.Text = "";
+				lb_TextView_CameraSetting.Text = "  사용자 텍스트 입력";
 			}
 			else
 			{
 				if (cb_TextView_CameraSetting.Text.Equals("날짜/시간")) lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
 				if (cb_TextView_CameraSetting.Text.Equals("로봇거리")) lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
+				txt_UserText_CameraSetting.Text = "";
 				txt_UserText_CameraSetting.Enabled = false;
 			}
+		}
+		private void txt_CameraSetting_Leave(object sender, EventArgs e)
+		{
+			string TextEditName = ((TextEdit)sender).Name;
+			try
+			{
+				switch (TextEditName)
+				{
+					case "txt_CameraWidth_CameraSetting": int CameraWidth = int.Parse(txt_CameraWidth_CameraSetting.Text);
+						if (800 > CameraWidth && CameraWidth > 2448)
+						{
+							MainForm.ShowMessage("오류", "가로 크기는 800 ~ 2448 범위입니다!", "주의");
+							txt_CameraWidth_CameraSetting.Text = "2448";
+						}
+						break;
+					case "txt_CameraHeight_CameraSetting": int CameraHeight = int.Parse(txt_CameraHeight_CameraSetting.Text);
+						if (600 > CameraHeight && CameraHeight > 2048)
+						{
+							MainForm.ShowMessage("오류", "세로 크기는 600 ~ 2048 범위입니다!", "주의");
+							txt_CameraHeight_CameraSetting.Text = "2048";
+						}
+						break;
+				}
+			}
+			catch (Exception ex)
+			{
+				MainForm.ShowMessage("오류", "화면 크기 설정 중에 예외가 발생하였습니다!\n" + ex, "주의");
+			}
+		}
+		private void FolderOpen(object sender, EventArgs e)
+		{
+			string FolderPath = ((LabelControl)sender).Text.Trim();
+			System.Diagnostics.Process.Start(FolderPath);
+		}
+		public bool ChangeCheck()
+		{
+			bool ProgramChange = false;
+			bool CameraChange = false;
+			bool WorkFileChange = false;
+			// 프로그램 설정 변경 체크
+			if (ProgramSetting.BasicCameraView != rb_Camera_ProgramSetting.SelectedIndex)			ProgramChange = true;
+			if (!ProgramSetting.ImageFilePath.Equals(lb_ImageFolder_ProgramSetting.Text.Trim()))	ProgramChange = true;
+			if (!ProgramSetting.ImageFileFormat.Equals(cb_ImgFormat_ProgramSetting.Text))			ProgramChange = true;
+			if (!ProgramSetting.VideoFilePath.Equals(lb_VideoFolder_ProgramSetting.Text.Trim()))	ProgramChange = true;
+			// 카메라 설정 변경 체크
+			if (!CameraSetting.TextMark.Equals(cb_TextView_CameraSetting.Text))						CameraChange = true;
+			if (!CameraSetting.UserText.Equals(txt_UserText_CameraSetting.Text))					CameraChange = true;
+			if (!CameraSetting.Camera1IPAddress.Equals(txt_Cam1IP_CameraSetting.Text))				CameraChange = true;
+			if (!CameraSetting.Camera2IPAddress.Equals(txt_Cam2IP_CameraSetting.Text))				CameraChange = true;
+			if (!CameraSetting.Camera3IPAddress.Equals(txt_Cam3IP_CameraSetting.Text))				CameraChange = true;
+			if (!CameraSetting.CamWidth.ToString().Equals(txt_CameraWidth_CameraSetting.Text))		CameraChange = true;
+			if (!CameraSetting.CamHeight.ToString().Equals(txt_CameraHeight_CameraSetting.Text))	CameraChange = true;
+
+			// 작업파일 설정 변경 체크
+			if (WorkFileSetting.LogSave != tg_LogSaveOnOff.IsOn)									WorkFileChange = true;
+			if (!WorkFileSetting.WorkUser.Equals(txt_WorkUser_WorkFileSetting.Text))				WorkFileChange = true;
+			if (!WorkFileSetting.WorkDay.Equals(dat_Day_WorkFileSetting.Text))						WorkFileChange = true;
+			if (!WorkFileSetting.WorkTarget.Equals(txt_WorkTarget_WorkFileSetting.Text))			WorkFileChange = true;
+			if (!WorkFileSetting.WorkFilePath.Equals(lb_WorkFolder_WorkFileSetting.Text.Trim()))	WorkFileChange = true;
+
+			if (ProgramChange || CameraChange || WorkFileChange)	return false;
+			else													return true;
 		}
 	}
 	public class Program_Setting

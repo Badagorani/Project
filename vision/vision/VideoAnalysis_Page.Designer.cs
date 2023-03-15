@@ -430,6 +430,7 @@
 			this.Controls.Add(this.tableLayoutPanel10);
 			this.Name = "VideoAnalysis_Page";
 			this.Size = new System.Drawing.Size(1598, 798);
+			this.Load += new System.EventHandler(this.VideoAnalysis_Page_Load);
 			this.tableLayoutPanel10.ResumeLayout(false);
 			this.tableLayoutPanel12.ResumeLayout(false);
 			this.tableLayoutPanel12.PerformLayout();

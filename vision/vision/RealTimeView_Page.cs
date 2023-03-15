@@ -19,6 +19,7 @@ using System.Runtime.InteropServices;
 using Accord.Video.FFMPEG;
 using vision.Properties;
 using System.IO;
+using System.Reflection;
 
 namespace vision
 {
@@ -98,6 +99,7 @@ namespace vision
 		}
 		private void RealTimeView_Page_Load(object sender, EventArgs e)
 		{
+			MainForm.Log.LogWrite($"{MethodBase.GetCurrentMethod().Name}");
 			try
 			{
 				for (int index = 0; index < Camera_Count; index++)
@@ -135,11 +137,51 @@ namespace vision
 					m_thread[index].Start(lParameters);
 					m_Camera[index].Start();
 				}
+				VideoSetLoad();
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n" + ex.Message, "경고");
 			}
+		}
+		public void VideoSetLoad()
+		{
+			cb_TextView.Text = MainForm.Settings.CameraSetting.TextMark;
+			if (cb_TextView.Text.Equals("날짜/시간"))
+			{
+				lb_TextView.Text = "  ☑ 년월일시분초";
+				txt_UserText.Enabled = false;
+			}
+			else if (cb_TextView.Text.Equals("로봇거리"))
+			{
+				lb_TextView.Text = "  ☑ 로봇 거리";
+				txt_UserText.Enabled = false;
+			}
+			else
+			{
+				lb_TextView.Text = "";
+				txt_UserText.Text = MainForm.Settings.CameraSetting.UserText;
+			}
+		}
+		public bool VideoSetSave()
+		{
+			string XMLFileName = "CameraSetting.xml";
+			try
+			{
+				if (!MainForm.Settings.CameraSetting.TextMark.Equals(cb_TextView.Text)) MainForm.Settings.CameraSetting.TextMark = cb_TextView.Text;
+				if (!MainForm.Settings.CameraSetting.UserText.Equals(txt_UserText.Text)) MainForm.Settings.CameraSetting.UserText = txt_UserText.Text;
+				MainForm.Settings.XMLSave(MainForm.Settings.CameraSetting, MainForm.Settings.CameraSetting.GetType(), @"\" + XMLFileName);
+			}
+			catch (Exception ex)
+			{
+				MainForm.ShowMessage("오류", "카메라 설정에 예외가 발생하였습니다!\n" + ex, "주의");
+				return false;
+			}
+			finally
+			{
+				MainForm.Settings.XMLLoad_Camera();
+			}
+			return true;
 		}
 		private void CreateBitmap(int index, int width, int height, System.Drawing.Imaging.PixelFormat format)
 		{
@@ -157,9 +199,14 @@ namespace vision
 			{
 				try
 				{
-					if (lThis.MainForm.navigationFrame2.SelectedPageIndex == 0)
+					if (lThis.MainForm.NowPageNo == 1)
 					{
 						Thread.Sleep(100);
+						if (lThis.MainForm.PastPageNo != 1)
+						{
+							Thread.Sleep(2000);
+							lThis.MainForm.PastPageNo = 1;
+						}
 
 						EventWaitHandle handle = lThis.m_Camera[0].HandleGrabDone;
 						if (handle.WaitOne(1000) == true)
@@ -198,9 +245,14 @@ namespace vision
 			{
 				try
 				{
-					if (lThis.MainForm.navigationFrame2.SelectedPageIndex == 0)
+					if (lThis.MainForm.NowPageNo == 1)
 					{
 						Thread.Sleep(100);
+						if (lThis.MainForm.PastPageNo != 1)
+						{
+							Thread.Sleep(2000);
+							lThis.MainForm.PastPageNo = 1;
+						}
 
 						EventWaitHandle handle = lThis.m_Camera[1].HandleGrabDone;
 						if (handle.WaitOne(1000) == true)
@@ -240,9 +292,14 @@ namespace vision
 			{
 				try
 				{
-					if (lThis.MainForm.navigationFrame2.SelectedPageIndex == 0)
+					if (lThis.MainForm.NowPageNo == 1)
 					{
 						Thread.Sleep(100);
+						if (lThis.MainForm.PastPageNo != 1)
+						{
+							Thread.Sleep(2000);
+							lThis.MainForm.PastPageNo = 1;
+						}
 
 						EventWaitHandle handle = lThis.m_Camera[2].HandleGrabDone;
 						if (handle.WaitOne(1000) == true)
@@ -498,6 +555,8 @@ namespace vision
 						//validationHint1.Properties.State = Utils.VisualEffects.ValidationHintState.Invalid;
 						break;
 					case "저  장":
+						if (!VideoSetSave()) MainForm.ShowMessage("알림", $"카메라 설정 변경이 실패하였습니다!", "알림");
+						else MainForm.ShowMessage("알림", $"카메라 설정이 변경되었습니다!", "알림");
 						popupControlContainer1.Visible = false;
 						break;
 					case "취  소":
@@ -629,9 +688,20 @@ namespace vision
 			if (di.Exists == false) di.Create();
 			return path;
 		}
-		private void btn_VideoSetting_Click(object sender, EventArgs e)
+		private void cb_TextView_SelectedValueChanged(object sender, EventArgs e)
 		{
-			popupControlContainer1.Show();
+			if (cb_TextView.Text.Equals("사용자 선택"))
+			{
+				txt_UserText.Enabled = true;
+				lb_TextView.Text = "사용자 텍스트 입력";
+			}
+			else
+			{
+				if (cb_TextView.Text.Equals("날짜/시간")) lb_TextView.Text = "☑ 년월일시분초";
+				if (cb_TextView.Text.Equals("로봇거리")) lb_TextView.Text = "☑ 로봇 거리";
+				txt_UserText.Text = "";
+				txt_UserText.Enabled = false;
+			}
 		}
 		public void CameraClose()
 		{

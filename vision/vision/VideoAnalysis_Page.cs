@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -20,6 +21,10 @@ namespace vision
 			InitializeComponent();
 			this.MainForm = form;
 			PanelSettings();
+		}
+		private void VideoAnalysis_Page_Load(object sender, EventArgs e)
+		{
+			MainForm.Log.LogWrite($"{MethodBase.GetCurrentMethod().Name}");
 		}
 		#region 페널 세팅
 		private void PanelSettings()

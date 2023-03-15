@@ -44,6 +44,9 @@ namespace vision
 		public VideoCheck_Page VideoCheck;
 		public VideoAnalysis_Page VideoAnalysis;
 		public Settings_Page Settings;
+		public LogRecord Log;
+		public int NowPageNo = 0;
+		public int PastPageNo = 0;
 		public Form1()
 		{
 			InitializeComponent();
@@ -83,10 +86,14 @@ namespace vision
 				SplashShow();
 				SplashShow("설정을 불러오는 중...");
 				Settings = new Settings_Page(this);
+				Log = new LogRecord(this);
+				NowPageNo = 1;
+				PastPageNo = 1;
 			}
 			catch (Exception ex)
 			{
 				ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n" + ex.Message, "경고");
+				Log.LogWrite(ex.Message);
 				this.Close();
 			}
 		}
@@ -95,8 +102,8 @@ namespace vision
 			SplashShow("완료");
 			Thread.Sleep(1000);
 			SplashScreenManager.CloseForm();
+			Thread.Sleep(1000);
 			LoadingAnimationStart();
-
 			RealTimeView = new RealTimeView_Page(this);
 			RealTimeView.Parent = RealTimeView_Page;
 			if (RealTimeView.m_isWork[0] && RealTimeView.m_isWork[1] && RealTimeView.m_isWork[2])
@@ -129,16 +136,16 @@ namespace vision
 			Settings.BringToFront();
 			Settings.Dock = DockStyle.Fill;
 			Settings.Show();
-
 			LoadingAnimationEnd();
 		}
 		#region 내비게이션 클릭 이벤트
 		private void NavigationClick(object sender, EventArgs e)
 		{
 			string NavigationName = ((SimpleButton)sender).Name;
-			if(ChangeCheck())
+			PastPageNo = NowPageNo;
+			if(NowPageNo == 4 && !Settings.ChangeCheck())
 			{
-				ShowMessage("설정", "녹화 중에는 페이지를 변경할 수 없습니다!!", "경고");
+				ShowMessage("설정", "설정을 저장하지 않아 페이지를 변경할 수 없습니다!!", "경고");
 				return;
 			}
 			if (RealTimeView.IsRecord)
@@ -149,25 +156,24 @@ namespace vision
 			switch (NavigationName)
 			{
 				case "btn_RealTimeView":
+					NowPageNo = 1;
 					navigationFrame2.SelectedPage = RealTimeView_Page;
 					break;
 				case "btn_VideoCheck":
+					NowPageNo = 2;
 					navigationFrame2.SelectedPage = VideoCheck_Page;
 					break;
 				case "btn_VideoAnalysis":
+					NowPageNo = 3;
 					navigationFrame2.SelectedPage = VideoAnalysis_Page;
 					break;
 				case "btn_Settings":
+					NowPageNo = 4;
 					navigationFrame2.SelectedPage = Settings_Page;
 					//if (tg_LogSaveOnOff.IsOn) tg_LogSaveOnOff.IsOn = false;
 					//else tg_LogSaveOnOff.IsOn = true;
 					break;
 			}
-		}
-		private bool ChangeCheck()
-		{
-
-			return false;
 		}
 		#endregion
 		#region 팝업

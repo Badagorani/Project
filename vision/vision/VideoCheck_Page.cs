@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,6 +31,10 @@ namespace vision
 			InitializeComponent();
 			this.MainForm = form;
 			PanelSettings();
+		}
+		private void VideoCheck_Page_Load(object sender, EventArgs e)
+		{
+			MainForm.Log.LogWrite($"{MethodBase.GetCurrentMethod().Name}");
 		}
 		#region 페널 세팅
 		private void PanelSettings()
@@ -168,7 +173,12 @@ namespace vision
 
 					for (int i = 0; i < VideoCheck_Pictures.Length; i++)
 					{
-						if (!VideoCheck_Videos[i].Open(FilesPath[i])) return;
+						if (!VideoCheck_Videos[i].Open(FilesPath[i]))
+						{
+							MainForm.ShowMessage("오류", "잘못된 영상 경로 입니다!!", "주의");
+							MainForm.LoadingAnimationEnd();
+							return;
+						}
 						VideoCheck_Videos[i].PosFrames = 1;
 						Mat imsimat = new Mat();
 						VideoCheck_Videos[i].Read(imsimat);
