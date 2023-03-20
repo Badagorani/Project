@@ -18,6 +18,7 @@ namespace vision
 			LogFolder = MainForm.Settings.WorkFileSetting.WorkFilePath;
 			DirectoryInfo di = new DirectoryInfo(LogFolder);
 			if (di.Exists == false) di.Create();
+			LogWrite("프로그램 시작");
 		}
 		public void LogWrite(string logcontent)
 		{

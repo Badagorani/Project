@@ -39,7 +39,7 @@
 			this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
 			this.VideoCheck_MainCam = new System.Windows.Forms.PictureBox();
 			this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-			this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+			this.btn_VideoCheckClose = new DevExpress.XtraEditors.SimpleButton();
 			this.lbc_VideoCheckFilePath = new DevExpress.XtraEditors.LabelControl();
 			this.btn_VideoCheckOpen = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_VideoCheckPlayPause = new DevExpress.XtraEditors.SimpleButton();
@@ -209,7 +209,7 @@
 			this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
 			this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-			this.tableLayoutPanel8.Controls.Add(this.simpleButton3, 2, 0);
+			this.tableLayoutPanel8.Controls.Add(this.btn_VideoCheckClose, 2, 0);
 			this.tableLayoutPanel8.Controls.Add(this.lbc_VideoCheckFilePath, 1, 0);
 			this.tableLayoutPanel8.Controls.Add(this.btn_VideoCheckOpen, 0, 0);
 			this.tableLayoutPanel8.Controls.Add(this.btn_VideoCheckPlayPause, 0, 1);
@@ -225,22 +225,22 @@
 			this.tableLayoutPanel8.Size = new System.Drawing.Size(1598, 120);
 			this.tableLayoutPanel8.TabIndex = 24;
 			// 
-			// simpleButton3
+			// btn_VideoCheckClose
 			// 
-			this.simpleButton3.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
-			this.simpleButton3.Appearance.Options.UseFont = true;
-			this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.simpleButton3.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-			this.simpleButton3.ImageOptions.SvgImage = global::vision.Properties.Resources.delete;
-			this.simpleButton3.Location = new System.Drawing.Point(1439, 4);
-			this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.simpleButton3.Name = "simpleButton3";
-			this.simpleButton3.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.simpleButton3.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.simpleButton3.Size = new System.Drawing.Size(156, 52);
-			this.simpleButton3.TabIndex = 20;
-			this.simpleButton3.Text = "파일 닫기";
-			this.simpleButton3.Click += new System.EventHandler(this.VideoCheck_ButtonActions);
+			this.btn_VideoCheckClose.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F, System.Drawing.FontStyle.Bold);
+			this.btn_VideoCheckClose.Appearance.Options.UseFont = true;
+			this.btn_VideoCheckClose.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.btn_VideoCheckClose.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+			this.btn_VideoCheckClose.ImageOptions.SvgImage = global::vision.Properties.Resources.delete;
+			this.btn_VideoCheckClose.Location = new System.Drawing.Point(1439, 4);
+			this.btn_VideoCheckClose.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.btn_VideoCheckClose.Name = "btn_VideoCheckClose";
+			this.btn_VideoCheckClose.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+			this.btn_VideoCheckClose.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_VideoCheckClose.Size = new System.Drawing.Size(156, 52);
+			this.btn_VideoCheckClose.TabIndex = 20;
+			this.btn_VideoCheckClose.Text = "파일 닫기";
+			this.btn_VideoCheckClose.Click += new System.EventHandler(this.VideoCheck_ButtonActions);
 			// 
 			// lbc_VideoCheckFilePath
 			// 
@@ -387,7 +387,7 @@
 		private DevExpress.XtraEditors.PanelControl panelControl5;
 		private System.Windows.Forms.PictureBox VideoCheck_MainCam;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-		private DevExpress.XtraEditors.SimpleButton simpleButton3;
+		private DevExpress.XtraEditors.SimpleButton btn_VideoCheckClose;
 		private DevExpress.XtraEditors.LabelControl lbc_VideoCheckFilePath;
 		private DevExpress.XtraEditors.SimpleButton btn_VideoCheckOpen;
 		private DevExpress.XtraEditors.SimpleButton btn_VideoCheckPlayPause;

@@ -23,7 +23,8 @@ namespace vision
 		VideoCapture[] VideoCheck_Videos;
 		PictureBox[] VideoCheck_Pictures;
 		string[] FilesPath;
-		double fps; bool IsPlaying = false;
+		double fps;
+		bool IsPlaying = false;
 		bool IsPaused = true;
 		Thread Play;
 		public VideoCheck_Page(Form1 form)
@@ -106,21 +107,11 @@ namespace vision
 			{
 				switch (ButtonText)
 				{
-					case "파일 열기":
-						VideoCheck_FileOpen();
-						break;
-					case "재 생":
-						VideoCheck_Play(ButtonText);
-						break;
-					case "일시정지":
-						VideoCheck_Play(ButtonText);
-						break;
-					case "정 지":
-						VideoCheck_Stop();
-						break;
-					case "파일 닫기":
-						VideoCheck_FileClose();
-						break;
+					case "파일 열기": VideoCheck_FileOpen();		break;
+					case "재 생"	:
+					case "일시정지"	: VideoCheck_Play(ButtonText);	break;
+					case "정 지"	: VideoCheck_Stop();			break;
+					case "파일 닫기": VideoCheck_FileClose();		break;
 				}
 			}
 			catch (Exception ex)
@@ -422,6 +413,29 @@ namespace vision
 				btn_VideoCheckPlayPause.Text = "재 생";
 				btn_VideoCheckPlayPause.ImageOptions.SvgImage = Resources.next;
 				Play = null;
+			}
+		}
+		public void PageChange()
+		{
+			IsPaused = true;
+			btn_VideoCheckPlayPause.Text = "재 생";
+			btn_VideoCheckPlayPause.ImageOptions.SvgImage = Resources.next;
+		}
+		public void VideoClose()
+		{
+			try
+			{
+				IsPlaying = false;
+				if (Play != null)
+				{
+					//Play.Interrupt();
+					Play.Abort();
+					Play = null;
+				}
+			}
+			catch(Exception ex)
+			{
+				//MainForm.ShowMessage("종료", "영상 확인 종료 중에 오류가 발생하였습니다!!\n" + ex.Message, "주의");
 			}
 		}
 	}

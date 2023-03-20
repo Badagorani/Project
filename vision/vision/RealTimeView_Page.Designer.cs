@@ -60,6 +60,7 @@
 			this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem23 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.tableLayoutPanel4.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
@@ -518,6 +519,11 @@
 			this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
 			this.layoutControlItem3.TextVisible = false;
 			// 
+			// timer1
+			// 
+			this.timer1.Interval = 1000;
+			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
 			// RealTimeView_Page
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -595,5 +601,6 @@
 		public DevExpress.XtraEditors.ComboBoxEdit cb_TextView;
 		public DevExpress.XtraEditors.TextEdit txt_UserText;
 		public DevExpress.XtraEditors.LabelControl lb_TextView;
+		private System.Windows.Forms.Timer timer1;
 	}
 }

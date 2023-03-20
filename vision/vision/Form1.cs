@@ -102,7 +102,7 @@ namespace vision
 			SplashShow("완료");
 			Thread.Sleep(1000);
 			SplashScreenManager.CloseForm();
-			Thread.Sleep(1000);
+			Thread.Sleep(2000);
 			LoadingAnimationStart();
 			RealTimeView = new RealTimeView_Page(this);
 			RealTimeView.Parent = RealTimeView_Page;
@@ -153,6 +153,9 @@ namespace vision
 				ShowMessage("녹화 중...", "녹화 중에는 페이지를 변경할 수 없습니다!!", "경고");
 				return;
 			}
+			if		(NowPageNo == 2) VideoCheck.PageChange();
+			else if (NowPageNo == 3) VideoAnalysis.PageChange();
+
 			switch (NavigationName)
 			{
 				case "btn_RealTimeView":
@@ -219,7 +222,9 @@ namespace vision
 				//Settings.XMLSave(Settings.ProgramSetting, Settings.ProgramSetting.GetType(), "ProgramSetting.xml");
 			}
 			this.Hide();
-			if(RealTimeView != null) RealTimeView.CameraClose();
+			if (RealTimeView != null) RealTimeView.CameraClose();
+			if (VideoCheck != null) VideoCheck.VideoClose();
+			if (VideoAnalysis!= null) VideoAnalysis.VideoClose();
 			//Viewer_Thread.ViewSetting(NowSelectedCamNo, IsViewing);
 			//Camera_Setting.DestroyCamera();
 		}

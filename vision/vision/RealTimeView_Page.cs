@@ -138,6 +138,7 @@ namespace vision
 					m_Camera[index].Start();
 				}
 				VideoSetLoad();
+				timer1.Start();
 			}
 			catch (Exception ex)
 			{
@@ -226,6 +227,7 @@ namespace vision
 
 							lThis.m_mutexImage[0].ReleaseMutex();
 						}
+						else lThis.m_isWork[0] = false;
 					}
 				}
 				catch (Exception ex)
@@ -273,6 +275,7 @@ namespace vision
 
 							lThis.m_mutexImage[1].ReleaseMutex();
 						}
+						else lThis.m_isWork[1] = false;
 					}
 				}
 				catch (Exception ex)
@@ -320,6 +323,7 @@ namespace vision
 
 							lThis.m_mutexImage[2].ReleaseMutex();
 						}
+						else lThis.m_isWork[2] = false;
 					}
 				}
 				catch (Exception ex)
@@ -619,7 +623,7 @@ namespace vision
 				{
 					string folderpath = FolderPath(2, i);
 					string videopath = folderpath + nowtime + " 녹화.mp4";
-					VideoFiles[i - 1].Open(videopath, m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height, Accord.Math.Rational.FromDouble(7.75), VideoCodec.MPEG4, 100000);
+					VideoFiles[i - 1].Open(videopath, m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height, 7/*Accord.Math.Rational.FromDouble(7.75)*/, VideoCodec.MPEG4, 100000);
 				}
 				IsRecord = true;
 			}
@@ -702,6 +706,10 @@ namespace vision
 				txt_UserText.Text = "";
 				txt_UserText.Enabled = false;
 			}
+		}
+		private void timer1_Tick(object sender, EventArgs e)
+		{
+			if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2]) MainForm.Close();
 		}
 		public void CameraClose()
 		{

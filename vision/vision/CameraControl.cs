@@ -146,7 +146,7 @@ namespace OMRON_Camera_Control
             }
             catch (Exception ex)
             {
-                form.ShowMessage("오류", "종료 실패 : 카메라의 상태를 확인해주세요!\n" + ex.Message, "경고");
+				//form.ShowMessage("오류", "종료 실패 : 카메라의 상태를 확인해주세요!\n" + ex.Message, "경고");
             }
         }
         public void SetEnableImageCallback(bool value)
@@ -198,7 +198,7 @@ namespace OMRON_Camera_Control
                 {
                     //Trace.WriteLine(exc.StackTrace);
                     //Trace.WriteLine(exc.Message);
-                    form.ShowMessage("종료", "카메라의 연결이 원활하지 않습니다!\n" + ex.Message, "주의");
+                    //form.ShowMessage("종료", "카메라의 연결이 원활하지 않습니다!\n" + ex.Message, "주의");
                 }
             }
             else

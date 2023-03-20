@@ -105,19 +105,11 @@ namespace vision
 			XMLLoad("WorkFileSetting.xml");
 			tg_LogSaveOnOff.IsOn = true;
 			txt_WorkUser_WorkFileSetting.Text = WorkFileSetting.WorkUser;
-			//dat_Day_WorkFileSetting.Text = DateTime.Now.ToString("yyyy-MM-dd");
+			txt_WorkUser_WorkFileSetting.Text = WorkFileSetting.WorkUser = "";
+			dat_Day_WorkFileSetting.Text = WorkFileSetting.WorkDay = "";
+			txt_WorkTarget_WorkFileSetting.Text = WorkFileSetting.WorkTarget = "";
 			lb_WorkFolder_WorkFileSetting.Text = "  " + WorkFileSetting.WorkFilePath;
-			//SizeF textSize = Graphics.FromImage(new Bitmap(1, 1)).MeasureString(lb_WorkFolder_WorkFileSetting.Text, lb_WorkFolder_WorkFileSetting.AppearanceItemCaption.Font);
-			//if (textSize.Width > lb_WorkFolder_WorkFileSetting.MaxSize.Width)
-			//{
-			//	int index = 0;
-			//	while (Graphics.FromImage(new Bitmap(1, 1)).MeasureString(lb_WorkFolder_WorkFileSetting.Text.Substring(0, index) + "...", lb_WorkFolder_WorkFileSetting.AppearanceItemCaption.Font).Width <= lb_WorkFolder_WorkFileSetting.MaxSize.Width)
-			//	{
-			//		index++;
-			//	}
-			//	lb_WorkFolder_WorkFileSetting.Text = lb_WorkFolder_WorkFileSetting.Text.Substring(0, index - 1) + "...";
-			//}
-			//lb_WorkFolder_WorkFileSetting.OptionsToolTip.ToolTip = WorkFileSetting.WorkFilePath;
+			XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
 		}
 		public void XMLLoad(string XMLFileName)
 		{
