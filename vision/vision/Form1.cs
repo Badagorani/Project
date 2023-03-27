@@ -96,13 +96,13 @@ namespace vision
 				Log.LogWrite(ex.Message);
 				this.Close();
 			}
-		}
-		private void Form1_Shown(object sender, EventArgs e)
-		{
 			SplashShow("완료");
 			Thread.Sleep(1000);
 			SplashScreenManager.CloseForm();
-			Thread.Sleep(2000);
+			Thread.Sleep(1000);
+		}
+		private void Form1_Shown(object sender, EventArgs e)
+		{
 			LoadingAnimationStart();
 			RealTimeView = new RealTimeView_Page(this);
 			RealTimeView.Parent = RealTimeView_Page;

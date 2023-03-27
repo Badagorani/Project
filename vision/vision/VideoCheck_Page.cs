@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
@@ -23,7 +24,7 @@ namespace vision
 		VideoCapture[] VideoCheck_Videos;
 		PictureBox[] VideoCheck_Pictures;
 		string[] FilesPath;
-		double fps;
+		int fps;
 		bool IsPlaying = false;
 		bool IsPaused = true;
 		Thread Play;
@@ -150,6 +151,7 @@ namespace vision
 				MainForm.LoadingAnimationStart();
 				if (ofd.ShowDialog() == DialogResult.OK)
 				{
+					if (IsPlaying) VideoCheck_FileClose();
 					//C:\FS - MCS500POE_Video_Save\Cam3\2023년 02월 16일 09시 21분 23초 녹화.mp4
 					string FileName = ofd.FileName.Substring((ofd.InitialDirectory + @"\Cam1\").Length);
 					string FilePath1 = ofd.InitialDirectory + @"\Cam1\" + FileName;
@@ -178,7 +180,7 @@ namespace vision
 					}
 					VideoCheck_MainCam.Image = VideoCheck_Pictures[MainForm.RealTimeView.NowSelectedCamNo - 1].Image;
 					tbc_VideoCheckTrack.Properties.Maximum = VideoCheck_Video1.FrameCount;
-					fps = VideoCheck_Video1.Fps;
+					fps = (int)VideoCheck_Video1.Fps;
 					tbc_VideoCheckTrack.Enabled = true;
 					//lbc_VideoCheckFilePath.Text = ofd.InitialDirectory + @"\Cam1/Cam2/Cam3\" + FileName;
 					lbc_VideoCheckFilePath.Text = "  " + FileName;
@@ -203,12 +205,15 @@ namespace vision
 					{
 						if (VideoCheck_Videos[0] != null)
 						{
-							int videofps = (int)Math.Ceiling(fps) / 1000;
+							//int videofps = (int)Math.Ceiling(fps) / 1000;
+							int videofps = 1000 / fps;
+							Stopwatch st = new Stopwatch();
 							using (Mat image = new Mat())
 							{
 								Bitmap bmp;
 								while (IsPlaying)
 								{
+									long started = st.ElapsedMilliseconds;
 									if (IsPaused) continue;
 									if (VideoCheck_Videos[0].PosFrames == VideoCheck_Videos[0].FrameCount) break;
 									if (VideoCheck_Videos[0].Read(image))
@@ -242,7 +247,10 @@ namespace vision
 										VideoCheck_MainCam.Image = VideoCheck_Pictures[MainForm.RealTimeView.NowSelectedCamNo - 1].Image;
 										tbc_VideoCheckTrack.Value = VideoCheck_Videos[0].PosFrames;
 									}));
-									Cv2.WaitKey(videofps);
+									int elapsed = (int)(st.ElapsedMilliseconds - started);
+									int delay = videofps - elapsed;
+									//Cv2.WaitKey(videofps);
+									if (delay > 0) Cv2.WaitKey(delay);
 								}
 								//VideoCheck_Videos[0].PosFrames = 0;
 							}

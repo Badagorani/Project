@@ -28,6 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
+			DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
 			this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
 			this.btn_VideoAnalysisClose2 = new DevExpress.XtraEditors.SimpleButton();
@@ -49,25 +55,34 @@
 			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.panelControl9 = new DevExpress.XtraEditors.PanelControl();
 			this.VideoAnalysis_Video1 = new System.Windows.Forms.PictureBox();
+			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+			this.CheckEdit1_5 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit1_4 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit1_3 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit1_2 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit1_1 = new DevExpress.XtraEditors.CheckEdit();
 			this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+			this.CheckEdit2_5 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit2_4 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit2_3 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit2_2 = new DevExpress.XtraEditors.CheckEdit();
+			this.CheckEdit2_1 = new DevExpress.XtraEditors.CheckEdit();
 			this.panelControl10 = new DevExpress.XtraEditors.PanelControl();
 			this.VideoAnalysis_Video2 = new System.Windows.Forms.PictureBox();
-			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbc_VideoAnalysisThreshold1_2 = new DevExpress.XtraEditors.TrackBarControl();
+			this.tileBarItem5 = new DevExpress.XtraBars.Navigation.TileBarItem();
+			this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
+			this.tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
+			this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
+			this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
+			this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
 			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbc_VideoAnalysisThreshold1_1 = new DevExpress.XtraEditors.TrackBarControl();
-			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
 			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+			this.trackBarControl1 = new DevExpress.XtraEditors.TrackBarControl();
 			this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbc_VideoAnalysisThreshold2_1 = new DevExpress.XtraEditors.TrackBarControl();
-			this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-			this.tbc_VideoAnalysisThreshold2_2 = new DevExpress.XtraEditors.TrackBarControl();
-			this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-			this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
+			this.trackBarControl2 = new DevExpress.XtraEditors.TrackBarControl();
+			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
 			this.tableLayoutPanel10.SuspendLayout();
 			this.tableLayoutPanel12.SuspendLayout();
 			this.tableLayoutPanel14.SuspendLayout();
@@ -82,26 +97,33 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl9)).BeginInit();
 			this.panelControl9.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video1)).BeginInit();
+			this.tableLayoutPanel3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_5.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_4.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_3.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_1.Properties)).BeginInit();
 			this.tableLayoutPanel2.SuspendLayout();
+			this.tableLayoutPanel4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_5.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_4.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_3.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_1.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl10)).BeginInit();
 			this.panelControl10.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video2)).BeginInit();
-			this.tableLayoutPanel3.SuspendLayout();
-			this.tableLayoutPanel4.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
+			this.popupControlContainer1.SuspendLayout();
 			this.tableLayoutPanel5.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_1.Properties)).BeginInit();
 			this.tableLayoutPanel6.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).BeginInit();
 			this.tableLayoutPanel7.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_1.Properties)).BeginInit();
-			this.tableLayoutPanel8.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_2.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel10
@@ -444,14 +466,14 @@
 			// 
 			this.tableLayoutPanel1.ColumnCount = 1;
 			this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
 			this.tableLayoutPanel1.Controls.Add(this.panelControl9, 0, 0);
+			this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
 			this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel1.Name = "tableLayoutPanel1";
 			this.tableLayoutPanel1.RowCount = 2;
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(793, 672);
 			this.tableLayoutPanel1.TabIndex = 33;
 			// 
@@ -460,12 +482,13 @@
 			this.panelControl9.Appearance.BackColor = System.Drawing.Color.White;
 			this.panelControl9.Appearance.Options.UseBackColor = true;
 			this.panelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.panelControl9.Controls.Add(this.popupControlContainer1);
 			this.panelControl9.Controls.Add(this.VideoAnalysis_Video1);
 			this.panelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelControl9.Location = new System.Drawing.Point(3, 4);
 			this.panelControl9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.panelControl9.Name = "panelControl9";
-			this.panelControl9.Size = new System.Drawing.Size(787, 563);
+			this.panelControl9.Size = new System.Drawing.Size(787, 596);
 			this.panelControl9.TabIndex = 32;
 			// 
 			// VideoAnalysis_Video1
@@ -475,26 +498,262 @@
 			this.VideoAnalysis_Video1.Location = new System.Drawing.Point(0, 0);
 			this.VideoAnalysis_Video1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.VideoAnalysis_Video1.Name = "VideoAnalysis_Video1";
-			this.VideoAnalysis_Video1.Size = new System.Drawing.Size(787, 563);
+			this.VideoAnalysis_Video1.Size = new System.Drawing.Size(787, 596);
 			this.VideoAnalysis_Video1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.VideoAnalysis_Video1.TabIndex = 12;
 			this.VideoAnalysis_Video1.TabStop = false;
+			// 
+			// tableLayoutPanel3
+			// 
+			this.tableLayoutPanel3.ColumnCount = 5;
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel3.Controls.Add(this.CheckEdit1_5, 4, 0);
+			this.tableLayoutPanel3.Controls.Add(this.CheckEdit1_4, 3, 0);
+			this.tableLayoutPanel3.Controls.Add(this.CheckEdit1_3, 2, 0);
+			this.tableLayoutPanel3.Controls.Add(this.CheckEdit1_2, 1, 0);
+			this.tableLayoutPanel3.Controls.Add(this.CheckEdit1_1, 0, 0);
+			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 607);
+			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+			this.tableLayoutPanel3.RowCount = 1;
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+			this.tableLayoutPanel3.Size = new System.Drawing.Size(787, 62);
+			this.tableLayoutPanel3.TabIndex = 33;
+			// 
+			// CheckEdit1_5
+			// 
+			this.CheckEdit1_5.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit1_5.Location = new System.Drawing.Point(631, 3);
+			this.CheckEdit1_5.Name = "CheckEdit1_5";
+			this.CheckEdit1_5.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit1_5.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit1_5.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit1_5.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit1_5.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit1_5.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit1_5.Properties.Caption = "Laplacian";
+			this.CheckEdit1_5.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit1_5.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit1_5.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit1_5.Size = new System.Drawing.Size(153, 56);
+			this.CheckEdit1_5.TabIndex = 39;
+			this.CheckEdit1_5.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit1_4
+			// 
+			this.CheckEdit1_4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit1_4.Location = new System.Drawing.Point(474, 3);
+			this.CheckEdit1_4.Name = "CheckEdit1_4";
+			this.CheckEdit1_4.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit1_4.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit1_4.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit1_4.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit1_4.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit1_4.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit1_4.Properties.Caption = "Scharr";
+			this.CheckEdit1_4.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit1_4.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit1_4.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit1_4.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit1_4.TabIndex = 38;
+			this.CheckEdit1_4.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit1_3
+			// 
+			this.CheckEdit1_3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit1_3.Location = new System.Drawing.Point(317, 3);
+			this.CheckEdit1_3.Name = "CheckEdit1_3";
+			this.CheckEdit1_3.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit1_3.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit1_3.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit1_3.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit1_3.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit1_3.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit1_3.Properties.Caption = "Sobel";
+			this.CheckEdit1_3.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit1_3.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit1_3.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit1_3.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit1_3.TabIndex = 37;
+			this.CheckEdit1_3.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit1_2
+			// 
+			this.CheckEdit1_2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit1_2.Location = new System.Drawing.Point(160, 3);
+			this.CheckEdit1_2.Name = "CheckEdit1_2";
+			this.CheckEdit1_2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit1_2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit1_2.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit1_2.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit1_2.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit1_2.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit1_2.Properties.Caption = "Canny Edge";
+			this.CheckEdit1_2.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit1_2.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit1_2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit1_2.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit1_2.TabIndex = 36;
+			this.CheckEdit1_2.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit1_1
+			// 
+			this.CheckEdit1_1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit1_1.EditValue = true;
+			this.CheckEdit1_1.Location = new System.Drawing.Point(3, 3);
+			this.CheckEdit1_1.Name = "CheckEdit1_1";
+			this.CheckEdit1_1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit1_1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit1_1.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit1_1.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit1_1.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit1_1.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit1_1.Properties.Caption = "Normal";
+			this.CheckEdit1_1.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit1_1.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit1_1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit1_1.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit1_1.TabIndex = 35;
+			this.CheckEdit1_1.Click += new System.EventHandler(this.FilterClick);
 			// 
 			// tableLayoutPanel2
 			// 
 			this.tableLayoutPanel2.ColumnCount = 1;
 			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 0, 1);
+			this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 1);
 			this.tableLayoutPanel2.Controls.Add(this.panelControl10, 0, 0);
 			this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tableLayoutPanel2.Location = new System.Drawing.Point(802, 3);
 			this.tableLayoutPanel2.Name = "tableLayoutPanel2";
 			this.tableLayoutPanel2.RowCount = 2;
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+			this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
 			this.tableLayoutPanel2.Size = new System.Drawing.Size(793, 672);
 			this.tableLayoutPanel2.TabIndex = 34;
+			// 
+			// tableLayoutPanel4
+			// 
+			this.tableLayoutPanel4.ColumnCount = 5;
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel4.Controls.Add(this.CheckEdit2_5, 4, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CheckEdit2_4, 3, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CheckEdit2_3, 2, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CheckEdit2_2, 1, 0);
+			this.tableLayoutPanel4.Controls.Add(this.CheckEdit2_1, 0, 0);
+			this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 607);
+			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+			this.tableLayoutPanel4.RowCount = 1;
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+			this.tableLayoutPanel4.Size = new System.Drawing.Size(787, 62);
+			this.tableLayoutPanel4.TabIndex = 34;
+			// 
+			// CheckEdit2_5
+			// 
+			this.CheckEdit2_5.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit2_5.Location = new System.Drawing.Point(631, 3);
+			this.CheckEdit2_5.Name = "CheckEdit2_5";
+			this.CheckEdit2_5.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit2_5.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit2_5.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit2_5.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit2_5.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit2_5.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit2_5.Properties.Caption = "Laplacian";
+			this.CheckEdit2_5.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit2_5.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit2_5.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit2_5.Size = new System.Drawing.Size(153, 56);
+			this.CheckEdit2_5.TabIndex = 39;
+			this.CheckEdit2_5.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit2_4
+			// 
+			this.CheckEdit2_4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit2_4.Location = new System.Drawing.Point(474, 3);
+			this.CheckEdit2_4.Name = "CheckEdit2_4";
+			this.CheckEdit2_4.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit2_4.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit2_4.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit2_4.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit2_4.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit2_4.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit2_4.Properties.Caption = "Scharr";
+			this.CheckEdit2_4.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit2_4.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit2_4.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit2_4.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit2_4.TabIndex = 38;
+			this.CheckEdit2_4.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit2_3
+			// 
+			this.CheckEdit2_3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit2_3.Location = new System.Drawing.Point(317, 3);
+			this.CheckEdit2_3.Name = "CheckEdit2_3";
+			this.CheckEdit2_3.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit2_3.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit2_3.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit2_3.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit2_3.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit2_3.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit2_3.Properties.Caption = "Sobel";
+			this.CheckEdit2_3.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit2_3.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit2_3.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit2_3.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit2_3.TabIndex = 37;
+			this.CheckEdit2_3.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit2_2
+			// 
+			this.CheckEdit2_2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit2_2.Location = new System.Drawing.Point(160, 3);
+			this.CheckEdit2_2.Name = "CheckEdit2_2";
+			this.CheckEdit2_2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit2_2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit2_2.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit2_2.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit2_2.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit2_2.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit2_2.Properties.Caption = "Canny Edge";
+			this.CheckEdit2_2.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit2_2.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit2_2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit2_2.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit2_2.TabIndex = 36;
+			this.CheckEdit2_2.Click += new System.EventHandler(this.FilterClick);
+			// 
+			// CheckEdit2_1
+			// 
+			this.CheckEdit2_1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.CheckEdit2_1.EditValue = true;
+			this.CheckEdit2_1.Location = new System.Drawing.Point(3, 3);
+			this.CheckEdit2_1.Name = "CheckEdit2_1";
+			this.CheckEdit2_1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 13F, System.Drawing.FontStyle.Bold);
+			this.CheckEdit2_1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.CheckEdit2_1.Properties.Appearance.Options.UseFont = true;
+			this.CheckEdit2_1.Properties.Appearance.Options.UseForeColor = true;
+			this.CheckEdit2_1.Properties.Appearance.Options.UseTextOptions = true;
+			this.CheckEdit2_1.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+			this.CheckEdit2_1.Properties.Caption = "Normal";
+			this.CheckEdit2_1.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
+			this.CheckEdit2_1.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.CheckEdit2_1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
+			this.CheckEdit2_1.Size = new System.Drawing.Size(151, 56);
+			this.CheckEdit2_1.TabIndex = 35;
+			this.CheckEdit2_1.Click += new System.EventHandler(this.FilterClick);
 			// 
 			// panelControl10
 			// 
@@ -506,7 +765,7 @@
 			this.panelControl10.Location = new System.Drawing.Point(3, 4);
 			this.panelControl10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.panelControl10.Name = "panelControl10";
-			this.panelControl10.Size = new System.Drawing.Size(787, 563);
+			this.panelControl10.Size = new System.Drawing.Size(787, 596);
 			this.panelControl10.TabIndex = 33;
 			// 
 			// VideoAnalysis_Video2
@@ -516,280 +775,174 @@
 			this.VideoAnalysis_Video2.Location = new System.Drawing.Point(0, 0);
 			this.VideoAnalysis_Video2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.VideoAnalysis_Video2.Name = "VideoAnalysis_Video2";
-			this.VideoAnalysis_Video2.Size = new System.Drawing.Size(787, 563);
+			this.VideoAnalysis_Video2.Size = new System.Drawing.Size(787, 596);
 			this.VideoAnalysis_Video2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.VideoAnalysis_Video2.TabIndex = 11;
 			this.VideoAnalysis_Video2.TabStop = false;
 			// 
-			// tableLayoutPanel3
+			// tileBarItem5
 			// 
-			this.tableLayoutPanel3.ColumnCount = 3;
-			this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 2);
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-			this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-			this.tableLayoutPanel3.Controls.Add(this.labelControl3, 1, 1);
-			this.tableLayoutPanel3.Controls.Add(this.labelControl2, 1, 0);
-			this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel5, 2, 0);
-			this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 2, 1);
-			this.tableLayoutPanel3.Controls.Add(this.checkEdit1, 0, 0);
-			this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 574);
-			this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-			this.tableLayoutPanel3.RowCount = 2;
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel3.Size = new System.Drawing.Size(787, 95);
-			this.tableLayoutPanel3.TabIndex = 33;
+			this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+			tileItemElement6.Text = "tileBarItem5";
+			this.tileBarItem5.Elements.Add(tileItemElement6);
+			this.tileBarItem5.Id = 13;
+			this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
+			this.tileBarItem5.Name = "tileBarItem5";
 			// 
-			// tableLayoutPanel4
+			// tileBarItem3
 			// 
-			this.tableLayoutPanel4.ColumnCount = 1;
-			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel4.Controls.Add(this.tbc_VideoAnalysisThreshold1_2, 0, 1);
-			this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel4.Location = new System.Drawing.Point(239, 50);
-			this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-			this.tableLayoutPanel4.RowCount = 2;
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel4.Size = new System.Drawing.Size(545, 42);
-			this.tableLayoutPanel4.TabIndex = 26;
+			this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+			tileItemElement7.Text = "tileBarItem3";
+			this.tileBarItem3.Elements.Add(tileItemElement7);
+			this.tileBarItem3.Id = 12;
+			this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
+			this.tileBarItem3.Name = "tileBarItem3";
 			// 
-			// tbc_VideoAnalysisThreshold1_2
+			// tileBarItem2
 			// 
-			this.tbc_VideoAnalysisThreshold1_2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tbc_VideoAnalysisThreshold1_2.EditValue = null;
-			this.tbc_VideoAnalysisThreshold1_2.Location = new System.Drawing.Point(3, 12);
-			this.tbc_VideoAnalysisThreshold1_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tbc_VideoAnalysisThreshold1_2.Name = "tbc_VideoAnalysisThreshold1_2";
-			this.tbc_VideoAnalysisThreshold1_2.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.tbc_VideoAnalysisThreshold1_2.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.tbc_VideoAnalysisThreshold1_2.Properties.LookAndFeel.SkinName = "WXI";
-			this.tbc_VideoAnalysisThreshold1_2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.tbc_VideoAnalysisThreshold1_2.Properties.Maximum = 1000;
-			this.tbc_VideoAnalysisThreshold1_2.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.tbc_VideoAnalysisThreshold1_2.Size = new System.Drawing.Size(539, 26);
-			this.tbc_VideoAnalysisThreshold1_2.TabIndex = 23;
+			this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+			tileItemElement8.Text = "tileBarItem2";
+			this.tileBarItem2.Elements.Add(tileItemElement8);
+			this.tileBarItem2.Id = 11;
+			this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
+			this.tileBarItem2.Name = "tileBarItem2";
+			// 
+			// tileBarItem1
+			// 
+			this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+			tileItemElement9.Text = "tileBarItem1";
+			this.tileBarItem1.Elements.Add(tileItemElement9);
+			this.tileBarItem1.Id = 10;
+			this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
+			this.tileBarItem1.Name = "tileBarItem1";
+			// 
+			// tileBarItem4
+			// 
+			this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
+			tileItemElement10.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
+			tileItemElement10.Text = "tileBarItem4";
+			this.tileBarItem4.Elements.Add(tileItemElement10);
+			this.tileBarItem4.Id = 9;
+			this.tileBarItem4.Name = "tileBarItem4";
+			// 
+			// popupControlContainer1
+			// 
+			this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.popupControlContainer1.Controls.Add(this.tableLayoutPanel5);
+			this.popupControlContainer1.Location = new System.Drawing.Point(0, 520);
+			this.popupControlContainer1.Name = "popupControlContainer1";
+			this.popupControlContainer1.ShowCloseButton = true;
+			this.popupControlContainer1.Size = new System.Drawing.Size(787, 80);
+			this.popupControlContainer1.TabIndex = 24;
+			this.popupControlContainer1.Visible = false;
 			// 
 			// tableLayoutPanel5
 			// 
-			this.tableLayoutPanel5.ColumnCount = 1;
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel5.Controls.Add(this.tbc_VideoAnalysisThreshold1_1, 0, 1);
+			this.tableLayoutPanel5.ColumnCount = 2;
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.36364F));
+			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.63636F));
+			this.tableLayoutPanel5.Controls.Add(this.textEdit2, 1, 1);
+			this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 1);
+			this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
+			this.tableLayoutPanel5.Controls.Add(this.textEdit1, 1, 0);
 			this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel5.Location = new System.Drawing.Point(239, 3);
+			this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
 			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
 			this.tableLayoutPanel5.RowCount = 2;
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel5.Size = new System.Drawing.Size(545, 41);
-			this.tableLayoutPanel5.TabIndex = 27;
-			// 
-			// tbc_VideoAnalysisThreshold1_1
-			// 
-			this.tbc_VideoAnalysisThreshold1_1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tbc_VideoAnalysisThreshold1_1.EditValue = null;
-			this.tbc_VideoAnalysisThreshold1_1.Location = new System.Drawing.Point(3, 12);
-			this.tbc_VideoAnalysisThreshold1_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tbc_VideoAnalysisThreshold1_1.Name = "tbc_VideoAnalysisThreshold1_1";
-			this.tbc_VideoAnalysisThreshold1_1.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.tbc_VideoAnalysisThreshold1_1.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.tbc_VideoAnalysisThreshold1_1.Properties.LookAndFeel.SkinName = "WXI";
-			this.tbc_VideoAnalysisThreshold1_1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.tbc_VideoAnalysisThreshold1_1.Properties.Maximum = 1000;
-			this.tbc_VideoAnalysisThreshold1_1.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.tbc_VideoAnalysisThreshold1_1.Size = new System.Drawing.Size(539, 25);
-			this.tbc_VideoAnalysisThreshold1_1.TabIndex = 23;
-			// 
-			// labelControl2
-			// 
-			this.labelControl2.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.labelControl2.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl2.Appearance.Options.UseFont = true;
-			this.labelControl2.Appearance.Options.UseForeColor = true;
-			this.labelControl2.Appearance.Options.UseTextOptions = true;
-			this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-			this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelControl2.Location = new System.Drawing.Point(121, 3);
-			this.labelControl2.Name = "labelControl2";
-			this.labelControl2.Size = new System.Drawing.Size(112, 41);
-			this.labelControl2.TabIndex = 30;
-			this.labelControl2.Text = "Threshold1 ";
-			// 
-			// labelControl3
-			// 
-			this.labelControl3.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl3.Appearance.Options.UseFont = true;
-			this.labelControl3.Appearance.Options.UseForeColor = true;
-			this.labelControl3.Appearance.Options.UseTextOptions = true;
-			this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-			this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelControl3.Location = new System.Drawing.Point(121, 50);
-			this.labelControl3.Name = "labelControl3";
-			this.labelControl3.Size = new System.Drawing.Size(112, 42);
-			this.labelControl3.TabIndex = 31;
-			this.labelControl3.Text = "Threshold2 ";
+			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+			this.tableLayoutPanel5.Size = new System.Drawing.Size(787, 80);
+			this.tableLayoutPanel5.TabIndex = 0;
 			// 
 			// tableLayoutPanel6
 			// 
-			this.tableLayoutPanel6.ColumnCount = 3;
-			this.tableLayoutPanel2.SetColumnSpan(this.tableLayoutPanel6, 2);
-			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-			this.tableLayoutPanel6.Controls.Add(this.checkEdit2, 0, 0);
-			this.tableLayoutPanel6.Controls.Add(this.labelControl4, 1, 1);
-			this.tableLayoutPanel6.Controls.Add(this.labelControl5, 1, 0);
-			this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 2, 0);
-			this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel8, 2, 1);
+			this.tableLayoutPanel6.ColumnCount = 1;
+			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+			this.tableLayoutPanel6.Controls.Add(this.trackBarControl1, 0, 1);
 			this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 574);
+			this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
 			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
 			this.tableLayoutPanel6.RowCount = 2;
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel6.Size = new System.Drawing.Size(787, 95);
-			this.tableLayoutPanel6.TabIndex = 34;
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+			this.tableLayoutPanel6.Size = new System.Drawing.Size(673, 34);
+			this.tableLayoutPanel6.TabIndex = 26;
 			// 
-			// labelControl4
+			// trackBarControl1
 			// 
-			this.labelControl4.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.labelControl4.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl4.Appearance.Options.UseFont = true;
-			this.labelControl4.Appearance.Options.UseForeColor = true;
-			this.labelControl4.Appearance.Options.UseTextOptions = true;
-			this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-			this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelControl4.Location = new System.Drawing.Point(121, 50);
-			this.labelControl4.Name = "labelControl4";
-			this.labelControl4.Size = new System.Drawing.Size(112, 42);
-			this.labelControl4.TabIndex = 31;
-			this.labelControl4.Text = "Threshold2 ";
-			// 
-			// labelControl5
-			// 
-			this.labelControl5.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.labelControl5.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl5.Appearance.Options.UseFont = true;
-			this.labelControl5.Appearance.Options.UseForeColor = true;
-			this.labelControl5.Appearance.Options.UseTextOptions = true;
-			this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-			this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.labelControl5.Location = new System.Drawing.Point(121, 3);
-			this.labelControl5.Name = "labelControl5";
-			this.labelControl5.Size = new System.Drawing.Size(112, 41);
-			this.labelControl5.TabIndex = 30;
-			this.labelControl5.Text = "Threshold1 ";
+			this.trackBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.trackBarControl1.EditValue = 20;
+			this.trackBarControl1.Location = new System.Drawing.Point(3, 10);
+			this.trackBarControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.trackBarControl1.Name = "trackBarControl1";
+			this.trackBarControl1.Properties.LabelAppearance.Options.UseTextOptions = true;
+			this.trackBarControl1.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.trackBarControl1.Properties.LookAndFeel.SkinName = "WXI";
+			this.trackBarControl1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.trackBarControl1.Properties.Maximum = 200;
+			this.trackBarControl1.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarControl1.Size = new System.Drawing.Size(667, 20);
+			this.trackBarControl1.TabIndex = 23;
+			this.trackBarControl1.Value = 20;
+			this.trackBarControl1.Scroll += new System.EventHandler(this.scroll1);
 			// 
 			// tableLayoutPanel7
 			// 
 			this.tableLayoutPanel7.ColumnCount = 1;
 			this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel7.Controls.Add(this.tbc_VideoAnalysisThreshold2_1, 0, 1);
+			this.tableLayoutPanel7.Controls.Add(this.trackBarControl2, 0, 1);
 			this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel7.Location = new System.Drawing.Point(239, 3);
+			this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 43);
 			this.tableLayoutPanel7.Name = "tableLayoutPanel7";
 			this.tableLayoutPanel7.RowCount = 2;
 			this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
 			this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel7.Size = new System.Drawing.Size(545, 41);
+			this.tableLayoutPanel7.Size = new System.Drawing.Size(673, 34);
 			this.tableLayoutPanel7.TabIndex = 27;
 			// 
-			// tbc_VideoAnalysisThreshold2_1
+			// trackBarControl2
 			// 
-			this.tbc_VideoAnalysisThreshold2_1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tbc_VideoAnalysisThreshold2_1.EditValue = 100;
-			this.tbc_VideoAnalysisThreshold2_1.Location = new System.Drawing.Point(3, 12);
-			this.tbc_VideoAnalysisThreshold2_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tbc_VideoAnalysisThreshold2_1.Name = "tbc_VideoAnalysisThreshold2_1";
-			this.tbc_VideoAnalysisThreshold2_1.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.tbc_VideoAnalysisThreshold2_1.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.tbc_VideoAnalysisThreshold2_1.Properties.LookAndFeel.SkinName = "WXI";
-			this.tbc_VideoAnalysisThreshold2_1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.tbc_VideoAnalysisThreshold2_1.Properties.Maximum = 200;
-			this.tbc_VideoAnalysisThreshold2_1.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.tbc_VideoAnalysisThreshold2_1.Size = new System.Drawing.Size(539, 25);
-			this.tbc_VideoAnalysisThreshold2_1.TabIndex = 23;
-			this.tbc_VideoAnalysisThreshold2_1.Value = 100;
-			this.tbc_VideoAnalysisThreshold2_1.Scroll += new System.EventHandler(this.tbc_VideoAnalysisThreshold1_Scroll);
+			this.trackBarControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.trackBarControl2.EditValue = 200;
+			this.trackBarControl2.Location = new System.Drawing.Point(3, 10);
+			this.trackBarControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.trackBarControl2.Name = "trackBarControl2";
+			this.trackBarControl2.Properties.LabelAppearance.Options.UseTextOptions = true;
+			this.trackBarControl2.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.trackBarControl2.Properties.LookAndFeel.SkinName = "WXI";
+			this.trackBarControl2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.trackBarControl2.Properties.Maximum = 500;
+			this.trackBarControl2.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarControl2.Size = new System.Drawing.Size(667, 20);
+			this.trackBarControl2.TabIndex = 23;
+			this.trackBarControl2.Value = 200;
+			this.trackBarControl2.Scroll += new System.EventHandler(this.scroll2);
 			// 
-			// tableLayoutPanel8
+			// textEdit1
 			// 
-			this.tableLayoutPanel8.ColumnCount = 1;
-			this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel8.Controls.Add(this.tbc_VideoAnalysisThreshold2_2, 0, 1);
-			this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel8.Location = new System.Drawing.Point(239, 50);
-			this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-			this.tableLayoutPanel8.RowCount = 2;
-			this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel8.Size = new System.Drawing.Size(545, 42);
-			this.tableLayoutPanel8.TabIndex = 26;
+			this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textEdit1.EditValue = "20";
+			this.textEdit1.Location = new System.Drawing.Point(682, 3);
+			this.textEdit1.Name = "textEdit1";
+			this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.8F, System.Drawing.FontStyle.Bold);
+			this.textEdit1.Properties.Appearance.Options.UseFont = true;
+			this.textEdit1.Size = new System.Drawing.Size(102, 34);
+			this.textEdit1.TabIndex = 28;
+			this.textEdit1.TextChanged += new System.EventHandler(this.text1);
 			// 
-			// tbc_VideoAnalysisThreshold2_2
+			// textEdit2
 			// 
-			this.tbc_VideoAnalysisThreshold2_2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tbc_VideoAnalysisThreshold2_2.EditValue = 500;
-			this.tbc_VideoAnalysisThreshold2_2.Location = new System.Drawing.Point(3, 12);
-			this.tbc_VideoAnalysisThreshold2_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tbc_VideoAnalysisThreshold2_2.Name = "tbc_VideoAnalysisThreshold2_2";
-			this.tbc_VideoAnalysisThreshold2_2.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.tbc_VideoAnalysisThreshold2_2.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.tbc_VideoAnalysisThreshold2_2.Properties.LookAndFeel.SkinName = "WXI";
-			this.tbc_VideoAnalysisThreshold2_2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.tbc_VideoAnalysisThreshold2_2.Properties.Maximum = 2000;
-			this.tbc_VideoAnalysisThreshold2_2.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.tbc_VideoAnalysisThreshold2_2.Size = new System.Drawing.Size(539, 26);
-			this.tbc_VideoAnalysisThreshold2_2.TabIndex = 23;
-			this.tbc_VideoAnalysisThreshold2_2.Value = 500;
-			this.tbc_VideoAnalysisThreshold2_2.Scroll += new System.EventHandler(this.tbc_VideoAnalysisThreshold2_Scroll);
-			// 
-			// checkEdit1
-			// 
-			this.checkEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.checkEdit1.Location = new System.Drawing.Point(3, 3);
-			this.checkEdit1.Name = "checkEdit1";
-			this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.checkEdit1.Properties.Appearance.Options.UseFont = true;
-			this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
-			this.checkEdit1.Properties.Appearance.Options.UseTextOptions = true;
-			this.checkEdit1.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.checkEdit1.Properties.Caption = "Edge Detection";
-			this.checkEdit1.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
-			this.checkEdit1.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.checkEdit1.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-			this.tableLayoutPanel3.SetRowSpan(this.checkEdit1, 2);
-			this.checkEdit1.Size = new System.Drawing.Size(112, 89);
-			this.checkEdit1.TabIndex = 32;
-			// 
-			// checkEdit2
-			// 
-			this.checkEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.checkEdit2.Location = new System.Drawing.Point(3, 3);
-			this.checkEdit2.Name = "checkEdit2";
-			this.checkEdit2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 11F, System.Drawing.FontStyle.Bold);
-			this.checkEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.checkEdit2.Properties.Appearance.Options.UseFont = true;
-			this.checkEdit2.Properties.Appearance.Options.UseForeColor = true;
-			this.checkEdit2.Properties.Appearance.Options.UseTextOptions = true;
-			this.checkEdit2.Properties.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
-			this.checkEdit2.Properties.Caption = "Edge Detection";
-			this.checkEdit2.Properties.CheckBoxOptions.Style = DevExpress.XtraEditors.Controls.CheckBoxStyle.SvgRadio2;
-			this.checkEdit2.Properties.ContentAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.checkEdit2.Properties.GlyphAlignment = DevExpress.Utils.HorzAlignment.Default;
-			this.tableLayoutPanel6.SetRowSpan(this.checkEdit2, 2);
-			this.checkEdit2.Size = new System.Drawing.Size(112, 89);
-			this.checkEdit2.TabIndex = 33;
+			this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textEdit2.EditValue = "200";
+			this.textEdit2.Location = new System.Drawing.Point(682, 43);
+			this.textEdit2.Name = "textEdit2";
+			this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.8F, System.Drawing.FontStyle.Bold);
+			this.textEdit2.Properties.Appearance.Options.UseFont = true;
+			this.textEdit2.Size = new System.Drawing.Size(102, 34);
+			this.textEdit2.TabIndex = 29;
+			this.textEdit2.TextChanged += new System.EventHandler(this.text2);
 			// 
 			// VideoAnalysis_Page
 			// 
@@ -818,32 +971,35 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl9)).EndInit();
 			this.panelControl9.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video1)).EndInit();
+			this.tableLayoutPanel3.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_4.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_3.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit1_1.Properties)).EndInit();
 			this.tableLayoutPanel2.ResumeLayout(false);
+			this.tableLayoutPanel4.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_4.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_3.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.CheckEdit2_1.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl10)).EndInit();
 			this.panelControl10.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video2)).EndInit();
-			this.tableLayoutPanel3.ResumeLayout(false);
-			this.tableLayoutPanel3.PerformLayout();
-			this.tableLayoutPanel4.ResumeLayout(false);
-			this.tableLayoutPanel4.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_2.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
+			this.popupControlContainer1.ResumeLayout(false);
 			this.tableLayoutPanel5.ResumeLayout(false);
-			this.tableLayoutPanel5.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold1_1)).EndInit();
 			this.tableLayoutPanel6.ResumeLayout(false);
 			this.tableLayoutPanel6.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).EndInit();
 			this.tableLayoutPanel7.ResumeLayout(false);
 			this.tableLayoutPanel7.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_1)).EndInit();
-			this.tableLayoutPanel8.ResumeLayout(false);
-			this.tableLayoutPanel8.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_2.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.tbc_VideoAnalysisThreshold2_2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -875,20 +1031,29 @@
 		private DevExpress.XtraEditors.PanelControl panelControl10;
 		private System.Windows.Forms.PictureBox VideoAnalysis_Video2;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-		private DevExpress.XtraEditors.TrackBarControl tbc_VideoAnalysisThreshold1_1;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit1_5;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit1_4;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit1_3;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit1_2;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit1_1;
+		private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem5;
+		private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem3;
+		private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem2;
+		private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem1;
+		private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem4;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-		private DevExpress.XtraEditors.TrackBarControl tbc_VideoAnalysisThreshold1_2;
-		private DevExpress.XtraEditors.LabelControl labelControl3;
-		private DevExpress.XtraEditors.LabelControl labelControl2;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-		private DevExpress.XtraEditors.LabelControl labelControl4;
-		private DevExpress.XtraEditors.LabelControl labelControl5;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit2_5;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit2_4;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit2_3;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit2_2;
+		private DevExpress.XtraEditors.CheckEdit CheckEdit2_1;
+		private DevExpress.XtraBars.PopupControlContainer popupControlContainer1;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+		private DevExpress.XtraEditors.TextEdit textEdit2;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-		private DevExpress.XtraEditors.TrackBarControl tbc_VideoAnalysisThreshold2_1;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
-		private DevExpress.XtraEditors.TrackBarControl tbc_VideoAnalysisThreshold2_2;
-		private DevExpress.XtraEditors.CheckEdit checkEdit1;
-		private DevExpress.XtraEditors.CheckEdit checkEdit2;
+		private DevExpress.XtraEditors.TrackBarControl trackBarControl2;
+		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+		private DevExpress.XtraEditors.TrackBarControl trackBarControl1;
+		private DevExpress.XtraEditors.TextEdit textEdit1;
 	}
 }

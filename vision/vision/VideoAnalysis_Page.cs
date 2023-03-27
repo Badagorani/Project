@@ -15,6 +15,10 @@ using OpenCvSharp.Extensions;
 using System.Threading;
 using vision.Properties;
 using System.Diagnostics;
+using System.Windows.Forms.VisualStyles;
+using System.Numerics;
+using DevExpress.Utils.Drawing.Helpers;
+using Microsoft.WindowsAPICodePack.Shell;
 
 namespace vision
 {
@@ -29,6 +33,7 @@ namespace vision
 		bool[] IsPaused = new bool[2];
 		int[] Threshold1 = new int[2];
 		int[] Threshold2 = new int[2];
+		int[] FilterCheck = new int[2];
 		#endregion
 		Thread[] Play = new Thread[2];
 		public VideoAnalysis_Page(Form1 form)
@@ -137,6 +142,7 @@ namespace vision
 				MainForm.LoadingAnimationStart();
 				if (ofd.ShowDialog() == DialogResult.OK)
 				{
+					if (IsPlaying[0]) VideoCheck_FileClose1();
 					//C:\FS - MCS500POE_Video_Save\Cam3\2023년 02월 16일 09시 21분 23초 녹화.mp4
 					string FileName = ofd.FileName;
 					VideoCapture VideoAnalysis_VideoCapture = new VideoCapture(FileName);
@@ -149,9 +155,9 @@ namespace vision
 						return;
 					}
 					VideoAnalysis_VideoCapture.PosFrames = 1;
-					Mat imsimat = new Mat();
-					VideoAnalysis_VideoCapture.Read(imsimat);
-					VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(imsimat);
+					Mat image = new Mat();
+					VideoAnalysis_VideoCapture.Read(image);
+					VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
 					VideoAnalysis_VideoCapture.PosFrames = 0;
 					tbc_VideoAnalysisTrack1.Properties.Maximum = VideoAnalysis_VideoCapture.FrameCount;
 					//fps[0] = VideoAnalysis_VideoCapture.Fps;
@@ -159,6 +165,9 @@ namespace vision
 					tbc_VideoAnalysisTrack1.Enabled = true;
 					//lbc_VideoCheckFilePath.Text = ofd.InitialDirectory + @"\Cam1/Cam2/Cam3\" + FileName;
 					lbc_VideoAnalysisFilePath1.Text = "  " + FileName;
+					IsPaused[0] = true;
+					Threshold1[0] = trackBarControl1.Value;
+					Threshold2[0] = trackBarControl2.Value;
 				}
 				MainForm.LoadingAnimationEnd();
 			}
@@ -195,7 +204,7 @@ namespace vision
 									{
 										Invoke((Action)(() =>
 										{
-											bmp = BitmapConverter.ToBitmap(image);
+											bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
 											VideoAnalysis_Video1.Image = bmp;
 										}));
 									}
@@ -244,9 +253,9 @@ namespace vision
 			tbc_VideoAnalysisTrack1.Value = 0;
 
 			VideoAnalysis_Videos[0].PosFrames = 1;
-			Mat imsimat = new Mat();
-			VideoAnalysis_Videos[0].Read(imsimat);
-			VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(imsimat);
+			Mat image = new Mat();
+			VideoAnalysis_Videos[0].Read(image);
+			VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
 			VideoAnalysis_Videos[0].PosFrames = 0;
 
 			btn_VideoAnalysisPlayPause1.Text = "재 생";
@@ -269,19 +278,19 @@ namespace vision
 			VideoAnalysis_Video1.Image = null;
 			VideoAnalysis_Videos[0].PosFrames = 0;
 			VideoAnalysis_Videos[0].Release();
+			VideoAnalysis_Videos[0] = null;
 
 			lbc_VideoAnalysisFilePath1.Text = "  파일 위치";
 			Play[0] = null;
 		}
 		private void tbc_VideoCheckTrack_Scroll1(object sender, EventArgs e)
 		{
-			MainForm.LoadingAnimationStart();
 			if (IsPaused[0])
 			{
 				Mat image = new Mat();
 				VideoAnalysis_Videos[0].PosFrames = tbc_VideoAnalysisTrack1.Value;
 				VideoAnalysis_Videos[0].Read(image);
-				Bitmap bmp = BitmapConverter.ToBitmap(image);
+				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
 				VideoAnalysis_Video1.Image = bmp;
 			}
 			else
@@ -290,7 +299,6 @@ namespace vision
 				VideoAnalysis_Videos[0].PosFrames = tbc_VideoAnalysisTrack1.Value;
 				IsPaused[0] = false;
 			}
-			MainForm.LoadingAnimationEnd();
 		}
 		private void VideoCheck_TrackBar_ValueChanged1(object sender, EventArgs e)
 		{
@@ -316,6 +324,7 @@ namespace vision
 				MainForm.LoadingAnimationStart();
 				if (ofd.ShowDialog() == DialogResult.OK)
 				{
+					if (IsPlaying[1]) VideoCheck_FileClose2();
 					//C:\FS - MCS500POE_Video_Save\Cam3\2023년 02월 16일 09시 21분 23초 녹화.mp4
 					string FileName = ofd.FileName;
 					VideoCapture VideoAnalysis_VideoCapture = new VideoCapture(FileName);
@@ -328,9 +337,9 @@ namespace vision
 						return;
 					}
 					VideoAnalysis_VideoCapture.PosFrames = 1;
-					Mat imsimat = new Mat();
-					VideoAnalysis_VideoCapture.Read(imsimat);
-					VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(imsimat);
+					Mat image = new Mat();
+					VideoAnalysis_VideoCapture.Read(image);
+					VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
 					VideoAnalysis_VideoCapture.PosFrames = 0;
 
 					tbc_VideoAnalysisTrack2.Properties.Maximum = VideoAnalysis_VideoCapture.FrameCount;
@@ -339,6 +348,7 @@ namespace vision
 					tbc_VideoAnalysisTrack2.Enabled = true;
 					//lbc_VideoCheckFilePath.Text = ofd.InitialDirectory + @"\Cam1/Cam2/Cam3\" + FileName;
 					lbc_VideoAnalysisFilePath2.Text = "  " + FileName;
+					IsPaused[1] = true;
 				}
 				MainForm.LoadingAnimationEnd();
 			}
@@ -375,11 +385,7 @@ namespace vision
 									{
 										Invoke((Action)(() =>
 										{
-											Mat InputImage = new Mat();
-											Cv2.CvtColor(image, InputImage, ColorConversionCodes.BGR2GRAY);
-											Mat EdgeImage = new Mat();
-											Cv2.Canny(InputImage, EdgeImage, Threshold1[1], Threshold2[1]);
-											bmp = BitmapConverter.ToBitmap(EdgeImage);
+											bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
 											VideoAnalysis_Video2.Image = bmp;
 										}));
 									}
@@ -428,9 +434,9 @@ namespace vision
 			tbc_VideoAnalysisTrack2.Value = 0;
 
 			VideoAnalysis_Videos[1].PosFrames = 1;
-			Mat imsimat = new Mat();
-			VideoAnalysis_Videos[1].Read(imsimat);
-			VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(imsimat);
+			Mat image = new Mat();
+			VideoAnalysis_Videos[1].Read(image);
+			VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
 			VideoAnalysis_Videos[1].PosFrames = 0;
 
 			btn_VideoAnalysisPlayPause2.Text = "재 생";
@@ -450,22 +456,22 @@ namespace vision
 			tbc_VideoAnalysisTrack2.Value = 0;
 			tbc_VideoAnalysisTrack2.Enabled = false;
 
-			VideoAnalysis_Video1.Image = null;
+			VideoAnalysis_Video2.Image = null;
 			VideoAnalysis_Videos[1].PosFrames = 0;
 			VideoAnalysis_Videos[1].Release();
+			VideoAnalysis_Videos[1] = null;
 
 			lbc_VideoAnalysisFilePath2.Text = "  파일 위치";
 			Play[1] = null;
 		}
 		private void tbc_VideoCheckTrack_Scroll2(object sender, EventArgs e)
 		{
-			MainForm.LoadingAnimationStart();
 			if (IsPaused[1])
 			{
 				Mat image = new Mat();
 				VideoAnalysis_Videos[1].PosFrames = tbc_VideoAnalysisTrack2.Value;
 				VideoAnalysis_Videos[1].Read(image);
-				Bitmap bmp = BitmapConverter.ToBitmap(image);
+				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
 				VideoAnalysis_Video2.Image = bmp;
 			}
 			else
@@ -474,7 +480,6 @@ namespace vision
 				VideoAnalysis_Videos[1].PosFrames = tbc_VideoAnalysisTrack2.Value;
 				IsPaused[1] = false;
 			}
-			MainForm.LoadingAnimationEnd();
 		}
 		private void VideoCheck_TrackBar_ValueChanged2(object sender, EventArgs e)
 		{
@@ -525,13 +530,228 @@ namespace vision
 				//MainForm.ShowMessage("종료", "영상 분석 종료 중에 오류가 발생하였습니다!!\n" + ex.Message, "주의");
 			}
 		}
-		private void tbc_VideoAnalysisThreshold1_Scroll(object sender, EventArgs e)
+		private Mat FilterSet(Mat InputMat, int Filter = 1)
 		{
-			Threshold1[1] = tbc_VideoAnalysisThreshold2_1.Value;
+			if (InputMat == null) return InputMat;
+
+			Mat OutputMat = new Mat();
+			//Mat GrayMat = new Mat();
+			Mat EdgeMat = new Mat();
+			Mat BlurImg = new Mat();
+			//Cv2.CvtColor(InputMat, GrayMat, ColorConversionCodes.BGR2GRAY);
+			Cv2.GaussianBlur(InputMat, BlurImg, new OpenCvSharp.Size(3, 3), 1, 0, BorderTypes.Default);
+			switch (Filter)
+			{
+				case 2	: Cv2.Canny(BlurImg, EdgeMat, Threshold1[0], Threshold2[0]);/*60,200*/	break;
+				case 3	: Cv2.Sobel(BlurImg, EdgeMat, MatType.CV_8U, 1, 1);						break;
+				case 4	: Cv2.Scharr(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);					break;
+				case 5	: Cv2.Laplacian(BlurImg, EdgeMat, MatType.CV_8U, 3);					break;
+				//case 2	: Cv2.Canny(GrayMat, EdgeMat, Threshold1[0], Threshold2[0], 3, true);/*60,200*/	break;
+				//case 3	: Cv2.Sobel(GrayMat, EdgeMat, MatType.CV_8U, 1, 1, ksize: 3, scale: 1, delta: 0, BorderTypes.Default);	break;
+				//case 4	: Cv2.Scharr(GrayMat, EdgeMat, MatType.CV_8U, 1, 0, scale: 1, delta: 0, BorderTypes.Default);				break;
+				//case 5	: Cv2.Laplacian(GrayMat, EdgeMat, MatType.CV_8U, ksize: 3, scale: 1, delta: 0, BorderTypes.Default);		break;
+				default: OutputMat = InputMat; return OutputMat;
+			}
+			//if (Filter > 2) EdgeMat.ConvertTo(EdgeMat, MatType.CV_8UC1);
+			#region 도형찾기실패
+			/*// 도형 찾기
+			OpenCvSharp.Point[][] contours;
+			HierarchyIndex[] hierarchy;
+			Cv2.FindContours(FilterMat, out contours, out hierarchy, RetrievalModes.External, ContourApproximationModes.ApproxSimple);
+
+			//// 도형 내부 파란색으로 채우기
+			//Mat square = new Mat();
+			//Cv2.CvtColor(FilterMat, OutputMat, ColorConversionCodes.GRAY2BGR);
+			//foreach (var contour in contours)
+			//{
+			//	Cv2.DrawContours(OutputMat, new[] { contour }, -1, new Scalar(255, 0, 0), -1);
+			//	//Cv2.FloodFill(OutputMat, new[] { contour }, )
+			//}
+
+			// 도형 내부 채우기
+			OutputMat = FilterMat.Clone();
+			OpenCvSharp.Size MatResize = new OpenCvSharp.Size(FilterMat.Size().Width + 2, FilterMat.Size().Height + 2);
+			FilterMat = FilterMat.Resize(MatResize);
+			Mat mask = new Mat(FilterMat.Size(), MatType.CV_8UC1, new Scalar(0));
+			foreach (var contour in contours)
+			{
+				Cv2.DrawContours(mask, new[] { contour }, -1, new Scalar(255, 0, 0), -1);
+			}
+
+			//OutputMat = FilterMat.Clone();
+			//OutputMat.Resize(OutputMat.Size().Width + 2, OutputMat.Size().Height + 2);
+			Cv2.FloodFill(OutputMat, mask, new OpenCvSharp.Point(0, 0), new Scalar(255, 0, 0));*/
+			#endregion
+			#region 인터넷 C++ 소스 문서 보고 만듦(안됨) https://poorman.tistory.com/184
+			/*Mat kernel = Cv2.GetStructuringElement(MorphShapes.Ellipse, new OpenCvSharp.Size(11, 11));
+			Mat morph = new Mat();
+			Cv2.MorphologyEx(EdgeMat, morph, MorphTypes.Close, kernel);
+
+			//Vector<Vector<OpenCvSharp.Point>> contours;
+			//Vector<Vec4i> hierarchy;
+			OpenCvSharp.Point[][] contours;
+			HierarchyIndex[] hierarchy;
+			Cv2.FindContours(morph, out contours, out hierarchy, RetrievalModes.CComp, ContourApproximationModes.ApproxSimple, new OpenCvSharp.Point(0, 0));
+			
+			Mat contours_img = new Mat();
+			Cv2.CvtColor(EdgeMat, contours_img, ColorConversionCodes.GRAY2BGR);
+			for (int i = 0; i < contours.Length; i++)
+			{
+				RotatedRect rect = Cv2.MinAreaRect(contours[i]);
+				//double areaRatio = Math.Abs(Cv2.ContourArea(contours[i])) / (rect.Size.Width * rect.Size.Height);
+				Cv2.DrawContours(contours_img, contours, i, new Scalar(255, 0, 0), 2);
+			}
+
+			//OpenCvSharp.Point[] poly;
+			//Vector<OpenCvSharp.Point> poly;
+			List<OpenCvSharp.Point> poly = new List<OpenCvSharp.Point>();
+			Mat poly_img = new Mat();
+			Mat rectangle_img = new Mat();
+			Cv2.CvtColor(EdgeMat, poly_img, ColorConversionCodes.GRAY2BGR);
+			Cv2.CvtColor(EdgeMat, rectangle_img, ColorConversionCodes.GRAY2BGR);
+			for (int i = 0; i < contours.Length; i++)
+			{
+				Cv2.ApproxPolyDP(contours[i], poly, 1, true);
+				for (int j = 0; j < poly.Count; j++)
+				{
+					Cv2.Line(poly_img, poly[j], poly[(j + 1) % poly.Count], new Scalar(0, 255, 0), 2);
+					if(poly.Count == 4) Cv2.Line(rectangle_img, poly[j], poly[(j + 1) % poly.Count], new Scalar(0, 0, 255), 2);
+				}
+			}*/
+			#endregion
+			#region 인터넷 소스 문서 보고 만듦(안됨) https://bigenergy.tistory.com/entry/C-OpenCvSharp%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%82%AC%EA%B0%81%ED%98%95-%EA%B2%80%EC%B6%9C-%EB%B0%A9%EB%B2%95
+			/*OpenCvSharp.Point testpoint = new OpenCvSharp.Point();
+			OpenCvSharp.Point[][] contours;
+			HierarchyIndex[] hierarchy;
+			InputArray ia;
+			Cv2.FindContours(EdgeMat, out contours, out hierarchy, RetrievalModes.External, ContourApproximationModes.ApproxSimple);
+			OpenCvSharp.Size cvsize;
+			cvsize.Width = EdgeMat.Width;
+			cvsize.Height = EdgeMat.Height;
+			for (int i = 0; i < contours.Length; i++)
+			{
+				double peri = Cv2.ArcLength(contours[i], true);
+
+				OpenCvSharp.Point[] pp = Cv2.ApproxPolyDP(contours[i], 0.02 * peri, true);
+
+				RotatedRect rrect = Cv2.MinAreaRect(pp);
+				double areaRatio = Math.Abs(Cv2.ContourArea(contours[i], false)) / (rrect.Size.Width * rrect.Size.Height);
+
+				if (pp.Length == 4) Cv2.DrawContours(EdgeMat, contours, i, new Scalar(0, 255, 0), 1, LineTypes.AntiAlias, hierarchy, 100);
+				else Cv2.DrawContours(EdgeMat, contours, i, new Scalar(0, 0, 255), 1, LineTypes.AntiAlias, hierarchy, 100);
+
+			}*/
+			#endregion
+			Mat src = InputMat;
+			Mat src2 = new Mat();
+			src.CopyTo(OutputMat);
+			OpenCvSharp.Point[][] contours;
+			HierarchyIndex[] hierarchy;
+			Mat bin = new Mat();
+			Cv2.CvtColor(src, bin, ColorConversionCodes.BGR2GRAY);
+			Cv2.Threshold(bin, bin, 127, 255, ThresholdTypes.Binary);
+
+			Mat hierarchy1 = new Mat();
+			Cv2.FindContours(bin, out contours, out hierarchy, RetrievalModes.Tree, ContourApproximationModes.ApproxSimple);
+
+			for (int i = 0; i < contours.Length; i++)
+			{
+				Cv2.DrawContours(OutputMat, contours, i, Scalar.Blue, 3, LineTypes.AntiAlias);
+				for(int j = 0; j < contours[i].Length; j++)
+				{
+					Cv2.PutText(OutputMat, i.ToString(), contours[i][j], HersheyFonts.Italic, 2, Scalar.Black);
+				}
+			}
+
+
+			//Cv2.FindContours(EdgeMat, out OpenCvSharp.Point[][] contour2, out HierarchyIndex[] hierarchy2,
+			//	RetrievalModes.Tree, ContourApproximationModes.ApproxSimple);
+
+			//for (int i = 0; i < contour2.Length; i++)
+			//{
+			//	Cv2.DrawContours(OutputMat, contour2, i, new Scalar(0, 255, 255), 3, LineTypes.AntiAlias);
+			//}
+			return OutputMat;
 		}
-		private void tbc_VideoAnalysisThreshold2_Scroll(object sender, EventArgs e)
+		private void FilterClick(object sender, EventArgs e)
 		{
-			Threshold2[1] = tbc_VideoAnalysisThreshold2_2.Value;
+			MainForm.LoadingAnimationStart();
+			CheckEdit ClickedEdit = ((CheckEdit)sender);
+			int VideoNo = int.Parse(ClickedEdit.Name.Substring(ClickedEdit.Name.Length - 3, 1)) - 1;
+			int CheckNo = int.Parse(ClickedEdit.Name.Substring(ClickedEdit.Name.Length - 1, 1));
+			if (ClickedEdit.Checked)
+			{
+				ClickedEdit.Checked = false;
+				if(CheckNo == 2)
+				{
+					if(popupControlContainer1.Visible) popupControlContainer1.Visible = false;
+					else popupControlContainer1.Visible = true;
+				}
+				MainForm.LoadingAnimationEnd();
+				return;
+			}
+			else
+			{
+				if (CheckNo == 2)
+				{
+					if (popupControlContainer1.Visible) popupControlContainer1.Visible = false;
+					else popupControlContainer1.Visible = true;
+				}
+				else popupControlContainer1.Visible = false;
+				CheckEdit[] CheckEdits;
+				switch (VideoNo)
+				{
+					case 0: CheckEdits = new CheckEdit[] { CheckEdit1_1, CheckEdit1_2, CheckEdit1_3, CheckEdit1_4, CheckEdit1_5 }; break;
+					case 1: CheckEdits = new CheckEdit[] { CheckEdit2_1, CheckEdit2_2, CheckEdit2_3, CheckEdit2_4, CheckEdit2_5 }; break;
+					default: MainForm.ShowMessage("오류", "필터 변경에 문제가 발생하였습니다!!", "주의"); return;
+				}
+				foreach (CheckEdit edit in CheckEdits)
+				{
+					edit.Checked = false;
+					//if(!edit.Name.Equals(ClickedEdit.Name)) edit.Checked = false;
+				}
+				//CheckEdits[VideoNo].Checked = true;
+				FilterCheck[VideoNo] = CheckNo;
+				if(VideoAnalysis_Videos[VideoNo] != null && IsPaused[VideoNo])
+				{
+					PictureBox[] pbx = new PictureBox[] { VideoAnalysis_Video1, VideoAnalysis_Video2 };
+					if (VideoAnalysis_Videos[VideoNo].PosFrames >= 2) VideoAnalysis_Videos[VideoNo].PosFrames -= 1;
+					else VideoAnalysis_Videos[VideoNo].PosFrames = 1;
+					Mat image = new Mat();
+					VideoAnalysis_Videos[VideoNo].Read(image);
+					pbx[VideoNo].Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[VideoNo]));
+					if (VideoAnalysis_Videos[VideoNo].PosFrames <= 2) VideoAnalysis_Videos[VideoNo].PosFrames -= 1;
+				}
+			}
+			MainForm.LoadingAnimationEnd();
+		}
+		private void scroll1(object sender, EventArgs e)
+		{
+			Threshold1[0] = ((TrackBarControl)sender).Value;
+			textEdit1.Text = Threshold1[0].ToString();
+		}
+		private void scroll2(object sender, EventArgs e)
+		{
+			Threshold2[0] = ((TrackBarControl)sender).Value;
+			textEdit2.Text = Threshold2[0].ToString();
+		}
+		private void text1(object sender, EventArgs e)
+		{
+			string strtext = ((TextEdit)sender).Text;
+			if(!strtext.Equals(""))
+			{
+				Threshold1[0] = int.Parse(((TextEdit)sender).Text);
+				trackBarControl1.Value = Threshold1[0];
+			}
+		}
+		private void text2(object sender, EventArgs e)
+		{
+			string strtext = ((TextEdit)sender).Text;
+			if (!strtext.Equals(""))
+			{
+				Threshold2[0] = int.Parse(((TextEdit)sender).Text);
+				trackBarControl2.Value = Threshold2[0];
+			}
 		}
 	}
 }
