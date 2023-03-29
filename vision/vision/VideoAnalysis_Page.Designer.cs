@@ -28,12 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			DevExpress.XtraEditors.TileItemElement tileItemElement6 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
 			this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
 			this.btn_VideoAnalysisClose2 = new DevExpress.XtraEditors.SimpleButton();
@@ -75,14 +74,6 @@
 			this.tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
 			this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
 			this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
-			this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
-			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-			this.trackBarControl1 = new DevExpress.XtraEditors.TrackBarControl();
-			this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-			this.trackBarControl2 = new DevExpress.XtraEditors.TrackBarControl();
-			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
 			this.tableLayoutPanel10.SuspendLayout();
 			this.tableLayoutPanel12.SuspendLayout();
 			this.tableLayoutPanel14.SuspendLayout();
@@ -113,17 +104,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl10)).BeginInit();
 			this.panelControl10.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
-			this.popupControlContainer1.SuspendLayout();
-			this.tableLayoutPanel5.SuspendLayout();
-			this.tableLayoutPanel6.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).BeginInit();
-			this.tableLayoutPanel7.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel10
@@ -482,7 +462,6 @@
 			this.panelControl9.Appearance.BackColor = System.Drawing.Color.White;
 			this.panelControl9.Appearance.Options.UseBackColor = true;
 			this.panelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.panelControl9.Controls.Add(this.popupControlContainer1);
 			this.panelControl9.Controls.Add(this.VideoAnalysis_Video1);
 			this.panelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.panelControl9.Location = new System.Drawing.Point(3, 4);
@@ -783,8 +762,8 @@
 			// tileBarItem5
 			// 
 			this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement6.Text = "tileBarItem5";
-			this.tileBarItem5.Elements.Add(tileItemElement6);
+			tileItemElement1.Text = "tileBarItem5";
+			this.tileBarItem5.Elements.Add(tileItemElement1);
 			this.tileBarItem5.Id = 13;
 			this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem5.Name = "tileBarItem5";
@@ -792,8 +771,8 @@
 			// tileBarItem3
 			// 
 			this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement7.Text = "tileBarItem3";
-			this.tileBarItem3.Elements.Add(tileItemElement7);
+			tileItemElement2.Text = "tileBarItem3";
+			this.tileBarItem3.Elements.Add(tileItemElement2);
 			this.tileBarItem3.Id = 12;
 			this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem3.Name = "tileBarItem3";
@@ -801,8 +780,8 @@
 			// tileBarItem2
 			// 
 			this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement8.Text = "tileBarItem2";
-			this.tileBarItem2.Elements.Add(tileItemElement8);
+			tileItemElement3.Text = "tileBarItem2";
+			this.tileBarItem2.Elements.Add(tileItemElement3);
 			this.tileBarItem2.Id = 11;
 			this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem2.Name = "tileBarItem2";
@@ -810,8 +789,8 @@
 			// tileBarItem1
 			// 
 			this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement9.Text = "tileBarItem1";
-			this.tileBarItem1.Elements.Add(tileItemElement9);
+			tileItemElement4.Text = "tileBarItem1";
+			this.tileBarItem1.Elements.Add(tileItemElement4);
 			this.tileBarItem1.Id = 10;
 			this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem1.Name = "tileBarItem1";
@@ -819,130 +798,11 @@
 			// tileBarItem4
 			// 
 			this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement10.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
-			tileItemElement10.Text = "tileBarItem4";
-			this.tileBarItem4.Elements.Add(tileItemElement10);
+			tileItemElement5.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
+			tileItemElement5.Text = "tileBarItem4";
+			this.tileBarItem4.Elements.Add(tileItemElement5);
 			this.tileBarItem4.Id = 9;
 			this.tileBarItem4.Name = "tileBarItem4";
-			// 
-			// popupControlContainer1
-			// 
-			this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.popupControlContainer1.Controls.Add(this.tableLayoutPanel5);
-			this.popupControlContainer1.Location = new System.Drawing.Point(0, 520);
-			this.popupControlContainer1.Name = "popupControlContainer1";
-			this.popupControlContainer1.ShowCloseButton = true;
-			this.popupControlContainer1.Size = new System.Drawing.Size(787, 80);
-			this.popupControlContainer1.TabIndex = 24;
-			this.popupControlContainer1.Visible = false;
-			// 
-			// tableLayoutPanel5
-			// 
-			this.tableLayoutPanel5.ColumnCount = 2;
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 86.36364F));
-			this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.63636F));
-			this.tableLayoutPanel5.Controls.Add(this.textEdit2, 1, 1);
-			this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel7, 0, 1);
-			this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 0, 0);
-			this.tableLayoutPanel5.Controls.Add(this.textEdit1, 1, 0);
-			this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-			this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-			this.tableLayoutPanel5.RowCount = 2;
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.tableLayoutPanel5.Size = new System.Drawing.Size(787, 80);
-			this.tableLayoutPanel5.TabIndex = 0;
-			// 
-			// tableLayoutPanel6
-			// 
-			this.tableLayoutPanel6.ColumnCount = 1;
-			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel6.Controls.Add(this.trackBarControl1, 0, 1);
-			this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
-			this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-			this.tableLayoutPanel6.RowCount = 2;
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel6.Size = new System.Drawing.Size(673, 34);
-			this.tableLayoutPanel6.TabIndex = 26;
-			// 
-			// trackBarControl1
-			// 
-			this.trackBarControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.trackBarControl1.EditValue = 20;
-			this.trackBarControl1.Location = new System.Drawing.Point(3, 10);
-			this.trackBarControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.trackBarControl1.Name = "trackBarControl1";
-			this.trackBarControl1.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.trackBarControl1.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.trackBarControl1.Properties.LookAndFeel.SkinName = "WXI";
-			this.trackBarControl1.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.trackBarControl1.Properties.Maximum = 200;
-			this.trackBarControl1.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.trackBarControl1.Size = new System.Drawing.Size(667, 20);
-			this.trackBarControl1.TabIndex = 23;
-			this.trackBarControl1.Value = 20;
-			this.trackBarControl1.Scroll += new System.EventHandler(this.scroll1);
-			// 
-			// tableLayoutPanel7
-			// 
-			this.tableLayoutPanel7.ColumnCount = 1;
-			this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-			this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-			this.tableLayoutPanel7.Controls.Add(this.trackBarControl2, 0, 1);
-			this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 43);
-			this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-			this.tableLayoutPanel7.RowCount = 2;
-			this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-			this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-			this.tableLayoutPanel7.Size = new System.Drawing.Size(673, 34);
-			this.tableLayoutPanel7.TabIndex = 27;
-			// 
-			// trackBarControl2
-			// 
-			this.trackBarControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.trackBarControl2.EditValue = 200;
-			this.trackBarControl2.Location = new System.Drawing.Point(3, 10);
-			this.trackBarControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.trackBarControl2.Name = "trackBarControl2";
-			this.trackBarControl2.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.trackBarControl2.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.trackBarControl2.Properties.LookAndFeel.SkinName = "WXI";
-			this.trackBarControl2.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.trackBarControl2.Properties.Maximum = 500;
-			this.trackBarControl2.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.trackBarControl2.Size = new System.Drawing.Size(667, 20);
-			this.trackBarControl2.TabIndex = 23;
-			this.trackBarControl2.Value = 200;
-			this.trackBarControl2.Scroll += new System.EventHandler(this.scroll2);
-			// 
-			// textEdit1
-			// 
-			this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textEdit1.EditValue = "20";
-			this.textEdit1.Location = new System.Drawing.Point(682, 3);
-			this.textEdit1.Name = "textEdit1";
-			this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.8F, System.Drawing.FontStyle.Bold);
-			this.textEdit1.Properties.Appearance.Options.UseFont = true;
-			this.textEdit1.Size = new System.Drawing.Size(102, 34);
-			this.textEdit1.TabIndex = 28;
-			this.textEdit1.TextChanged += new System.EventHandler(this.text1);
-			// 
-			// textEdit2
-			// 
-			this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.textEdit2.EditValue = "200";
-			this.textEdit2.Location = new System.Drawing.Point(682, 43);
-			this.textEdit2.Name = "textEdit2";
-			this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.8F, System.Drawing.FontStyle.Bold);
-			this.textEdit2.Properties.Appearance.Options.UseFont = true;
-			this.textEdit2.Size = new System.Drawing.Size(102, 34);
-			this.textEdit2.TabIndex = 29;
-			this.textEdit2.TextChanged += new System.EventHandler(this.text2);
 			// 
 			// VideoAnalysis_Page
 			// 
@@ -987,19 +847,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl10)).EndInit();
 			this.panelControl10.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
-			this.popupControlContainer1.ResumeLayout(false);
-			this.tableLayoutPanel5.ResumeLayout(false);
-			this.tableLayoutPanel6.ResumeLayout(false);
-			this.tableLayoutPanel6.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).EndInit();
-			this.tableLayoutPanel7.ResumeLayout(false);
-			this.tableLayoutPanel7.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -1047,13 +894,5 @@
 		private DevExpress.XtraEditors.CheckEdit CheckEdit2_3;
 		private DevExpress.XtraEditors.CheckEdit CheckEdit2_2;
 		private DevExpress.XtraEditors.CheckEdit CheckEdit2_1;
-		private DevExpress.XtraBars.PopupControlContainer popupControlContainer1;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-		private DevExpress.XtraEditors.TextEdit textEdit2;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-		private DevExpress.XtraEditors.TrackBarControl trackBarControl2;
-		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-		private DevExpress.XtraEditors.TrackBarControl trackBarControl1;
-		private DevExpress.XtraEditors.TextEdit textEdit1;
 	}
 }

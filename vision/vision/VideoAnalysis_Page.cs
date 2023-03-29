@@ -31,8 +31,6 @@ namespace vision
 		int[] fps = new int[2];
 		bool[] IsPlaying = new bool[2];
 		bool[] IsPaused = new bool[2];
-		int[] Threshold1 = new int[2];
-		int[] Threshold2 = new int[2];
 		int[] FilterCheck = new int[2];
 		#endregion
 		Thread[] Play = new Thread[2];
@@ -166,8 +164,6 @@ namespace vision
 					//lbc_VideoCheckFilePath.Text = ofd.InitialDirectory + @"\Cam1/Cam2/Cam3\" + FileName;
 					lbc_VideoAnalysisFilePath1.Text = "  " + FileName;
 					IsPaused[0] = true;
-					Threshold1[0] = trackBarControl1.Value;
-					Threshold2[0] = trackBarControl2.Value;
 				}
 				MainForm.LoadingAnimationEnd();
 			}
@@ -542,10 +538,10 @@ namespace vision
 			Cv2.GaussianBlur(InputMat, BlurImg, new OpenCvSharp.Size(3, 3), 1, 0, BorderTypes.Default);
 			switch (Filter)
 			{
-				case 2	: Cv2.Canny(BlurImg, EdgeMat, Threshold1[0], Threshold2[0]);/*60,200*/	break;
-				case 3	: Cv2.Sobel(BlurImg, EdgeMat, MatType.CV_8U, 1, 1);						break;
-				case 4	: Cv2.Scharr(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);					break;
-				case 5	: Cv2.Laplacian(BlurImg, EdgeMat, MatType.CV_8U, 3);					break;
+				case 2	: Cv2.Canny(BlurImg, EdgeMat, 70, 130);/*60,200*/		break;
+				case 3	: Cv2.Sobel(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);		break;
+				case 4	: Cv2.Scharr(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);	break;
+				case 5	: Cv2.Laplacian(BlurImg, EdgeMat, MatType.CV_8U, 5);	break;
 				//case 2	: Cv2.Canny(GrayMat, EdgeMat, Threshold1[0], Threshold2[0], 3, true);/*60,200*/	break;
 				//case 3	: Cv2.Sobel(GrayMat, EdgeMat, MatType.CV_8U, 1, 1, ksize: 3, scale: 1, delta: 0, BorderTypes.Default);	break;
 				//case 4	: Cv2.Scharr(GrayMat, EdgeMat, MatType.CV_8U, 1, 0, scale: 1, delta: 0, BorderTypes.Default);				break;
@@ -642,27 +638,26 @@ namespace vision
 
 			}*/
 			#endregion
-			Mat src = InputMat;
-			Mat src2 = new Mat();
-			src.CopyTo(OutputMat);
-			OpenCvSharp.Point[][] contours;
-			HierarchyIndex[] hierarchy;
-			Mat bin = new Mat();
-			Cv2.CvtColor(src, bin, ColorConversionCodes.BGR2GRAY);
-			Cv2.Threshold(bin, bin, 127, 255, ThresholdTypes.Binary);
+			//Mat src = InputMat;
+			//Mat src2 = new Mat();
+			//src.CopyTo(OutputMat);
+			//OpenCvSharp.Point[][] contours;
+			//HierarchyIndex[] hierarchy;
+			//Mat bin = new Mat();
+			//Cv2.CvtColor(src, bin, ColorConversionCodes.BGR2GRAY);
+			//Cv2.Threshold(bin, bin, 127, 255, ThresholdTypes.Binary);
 
-			Mat hierarchy1 = new Mat();
-			Cv2.FindContours(bin, out contours, out hierarchy, RetrievalModes.Tree, ContourApproximationModes.ApproxSimple);
+			//Mat hierarchy1 = new Mat();
+			//Cv2.FindContours(bin, out contours, out hierarchy, RetrievalModes.Tree, ContourApproximationModes.ApproxSimple);
 
-			for (int i = 0; i < contours.Length; i++)
-			{
-				Cv2.DrawContours(OutputMat, contours, i, Scalar.Blue, 3, LineTypes.AntiAlias);
-				for(int j = 0; j < contours[i].Length; j++)
-				{
-					Cv2.PutText(OutputMat, i.ToString(), contours[i][j], HersheyFonts.Italic, 2, Scalar.Black);
-				}
-			}
-
+			//for (int i = 0; i < contours.Length; i++)
+			//{
+			//	Cv2.DrawContours(OutputMat, contours, i, Scalar.Blue, 3, LineTypes.AntiAlias);
+			//	for(int j = 0; j < contours[i].Length; j++)
+			//	{
+			//		Cv2.PutText(OutputMat, i.ToString(), contours[i][j], HersheyFonts.Italic, 2, Scalar.Black);
+			//	}
+			//}
 
 			//Cv2.FindContours(EdgeMat, out OpenCvSharp.Point[][] contour2, out HierarchyIndex[] hierarchy2,
 			//	RetrievalModes.Tree, ContourApproximationModes.ApproxSimple);
@@ -671,6 +666,30 @@ namespace vision
 			//{
 			//	Cv2.DrawContours(OutputMat, contour2, i, new Scalar(0, 255, 255), 3, LineTypes.AntiAlias);
 			//}
+
+			#region 사각형 색칠 성공 https://stackoverflow.com/questions/72067943/how-do-i-fill-specific-parts-in-the-image-with-canny-edge-detection-open-cv
+			if (Filter == 2)
+			{
+				Mat kernelEllipse = Cv2.GetStructuringElement(MorphShapes.Ellipse, new OpenCvSharp.Size(3, 3));
+				Mat dilate = new Mat();
+				Cv2.Dilate(EdgeMat, dilate, kernelEllipse, new OpenCvSharp.Point(-1, -1), 1, BorderTypes.Reflect);
+
+				Mat[] contours;
+				Mat hierarchy = new Mat();
+				Cv2.FindContours(dilate.Clone(), out contours, hierarchy, RetrievalModes.External, ContourApproximationModes.ApproxSimple);
+
+				OutputMat = EdgeMat.Clone();
+				for (int i = 0; i < contours.Length; i++)
+				{
+					double area = Cv2.ContourArea(contours[i]);
+					if (area > 2000)
+					{
+						Cv2.DrawContours(OutputMat, contours, i, Scalar.Blue, -1);
+					}
+				}
+			}
+			else OutputMat = EdgeMat;
+			#endregion
 			return OutputMat;
 		}
 		private void FilterClick(object sender, EventArgs e)
@@ -682,22 +701,11 @@ namespace vision
 			if (ClickedEdit.Checked)
 			{
 				ClickedEdit.Checked = false;
-				if(CheckNo == 2)
-				{
-					if(popupControlContainer1.Visible) popupControlContainer1.Visible = false;
-					else popupControlContainer1.Visible = true;
-				}
 				MainForm.LoadingAnimationEnd();
 				return;
 			}
 			else
 			{
-				if (CheckNo == 2)
-				{
-					if (popupControlContainer1.Visible) popupControlContainer1.Visible = false;
-					else popupControlContainer1.Visible = true;
-				}
-				else popupControlContainer1.Visible = false;
 				CheckEdit[] CheckEdits;
 				switch (VideoNo)
 				{
@@ -724,34 +732,6 @@ namespace vision
 				}
 			}
 			MainForm.LoadingAnimationEnd();
-		}
-		private void scroll1(object sender, EventArgs e)
-		{
-			Threshold1[0] = ((TrackBarControl)sender).Value;
-			textEdit1.Text = Threshold1[0].ToString();
-		}
-		private void scroll2(object sender, EventArgs e)
-		{
-			Threshold2[0] = ((TrackBarControl)sender).Value;
-			textEdit2.Text = Threshold2[0].ToString();
-		}
-		private void text1(object sender, EventArgs e)
-		{
-			string strtext = ((TextEdit)sender).Text;
-			if(!strtext.Equals(""))
-			{
-				Threshold1[0] = int.Parse(((TextEdit)sender).Text);
-				trackBarControl1.Value = Threshold1[0];
-			}
-		}
-		private void text2(object sender, EventArgs e)
-		{
-			string strtext = ((TextEdit)sender).Text;
-			if (!strtext.Equals(""))
-			{
-				Threshold2[0] = int.Parse(((TextEdit)sender).Text);
-				trackBarControl2.Value = Threshold2[0];
-			}
 		}
 	}
 }
