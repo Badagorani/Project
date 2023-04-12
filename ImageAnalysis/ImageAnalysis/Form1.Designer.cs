@@ -63,12 +63,24 @@
 			this.textBox5 = new System.Windows.Forms.TextBox();
 			this.trackBar5 = new System.Windows.Forms.TrackBar();
 			this.button19 = new System.Windows.Forms.Button();
+			this.button20 = new System.Windows.Forms.Button();
+			this.button21 = new System.Windows.Forms.Button();
+			this.button22 = new System.Windows.Forms.Button();
+			this.label6 = new System.Windows.Forms.Label();
+			this.button23 = new System.Windows.Forms.Button();
+			this.button24 = new System.Windows.Forms.Button();
+			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.trackBar6 = new System.Windows.Forms.TrackBar();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.button25 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
@@ -315,7 +327,7 @@
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(151, 34);
 			this.textBox4.TabIndex = 19;
-			this.textBox4.Text = "250";
+			this.textBox4.Text = "230";
 			this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
 			this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyDigitPress);
 			// 
@@ -326,7 +338,7 @@
 			this.textBox3.Name = "textBox3";
 			this.textBox3.Size = new System.Drawing.Size(151, 34);
 			this.textBox3.TabIndex = 18;
-			this.textBox3.Text = "300";
+			this.textBox3.Text = "170";
 			this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
 			this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyDigitPress);
 			// 
@@ -337,7 +349,7 @@
 			this.trackBar3.Name = "trackBar3";
 			this.trackBar3.Size = new System.Drawing.Size(579, 45);
 			this.trackBar3.TabIndex = 17;
-			this.trackBar3.Value = 300;
+			this.trackBar3.Value = 170;
 			this.trackBar3.Scroll += new System.EventHandler(this.trackBar3_Scroll);
 			this.trackBar3.ValueChanged += new System.EventHandler(this.trackBar3_Scroll);
 			// 
@@ -348,7 +360,7 @@
 			this.trackBar4.Name = "trackBar4";
 			this.trackBar4.Size = new System.Drawing.Size(579, 45);
 			this.trackBar4.TabIndex = 16;
-			this.trackBar4.Value = 250;
+			this.trackBar4.Value = 230;
 			this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
 			this.trackBar4.ValueChanged += new System.EventHandler(this.trackBar4_Scroll);
 			// 
@@ -359,7 +371,7 @@
 			this.button14.Name = "button14";
 			this.button14.Size = new System.Drawing.Size(300, 59);
 			this.button14.TabIndex = 26;
-			this.button14.Text = "사각형 색칠";
+			this.button14.Text = "사각형 검출";
 			this.button14.UseVisualStyleBackColor = true;
 			this.button14.Click += new System.EventHandler(this.button14_Click);
 			// 
@@ -424,7 +436,7 @@
 			this.textBox5.Name = "textBox5";
 			this.textBox5.Size = new System.Drawing.Size(151, 34);
 			this.textBox5.TabIndex = 30;
-			this.textBox5.Text = "250";
+			this.textBox5.Text = "1000";
 			this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
 			this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnlyDigitPress);
 			// 
@@ -436,7 +448,7 @@
 			this.trackBar5.Name = "trackBar5";
 			this.trackBar5.Size = new System.Drawing.Size(579, 45);
 			this.trackBar5.TabIndex = 29;
-			this.trackBar5.Value = 250;
+			this.trackBar5.Value = 1000;
 			this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll);
 			this.trackBar5.ValueChanged += new System.EventHandler(this.trackBar5_Scroll);
 			// 
@@ -451,11 +463,149 @@
 			this.button19.UseVisualStyleBackColor = true;
 			this.button19.Click += new System.EventHandler(this.button19_Click);
 			// 
+			// button20
+			// 
+			this.button20.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.button20.Location = new System.Drawing.Point(1230, 423);
+			this.button20.Name = "button20";
+			this.button20.Size = new System.Drawing.Size(300, 59);
+			this.button20.TabIndex = 35;
+			this.button20.Text = "사각형 하나하나 그리기";
+			this.button20.UseVisualStyleBackColor = true;
+			this.button20.Click += new System.EventHandler(this.button20_Click);
+			// 
+			// button21
+			// 
+			this.button21.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.button21.Location = new System.Drawing.Point(1230, 358);
+			this.button21.Name = "button21";
+			this.button21.Size = new System.Drawing.Size(300, 59);
+			this.button21.TabIndex = 36;
+			this.button21.Text = "윤곽선 검출";
+			this.button21.UseVisualStyleBackColor = true;
+			this.button21.Click += new System.EventHandler(this.button21_Click);
+			// 
+			// button22
+			// 
+			this.button22.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.button22.Location = new System.Drawing.Point(1536, 358);
+			this.button22.Name = "button22";
+			this.button22.Size = new System.Drawing.Size(300, 59);
+			this.button22.TabIndex = 37;
+			this.button22.Text = "이미지에서 윤곽선 검출";
+			this.button22.UseVisualStyleBackColor = true;
+			this.button22.Click += new System.EventHandler(this.button22_Click);
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.label6.Location = new System.Drawing.Point(1230, 270);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(79, 28);
+			this.label6.TabIndex = 42;
+			this.label6.Text = "곱 크기";
+			// 
+			// button23
+			// 
+			this.button23.Font = new System.Drawing.Font("맑은 고딕", 20F);
+			this.button23.Location = new System.Drawing.Point(2029, 259);
+			this.button23.Name = "button23";
+			this.button23.Size = new System.Drawing.Size(59, 42);
+			this.button23.TabIndex = 41;
+			this.button23.Text = "▼";
+			this.button23.UseVisualStyleBackColor = true;
+			this.button23.Click += new System.EventHandler(this.button23_Click);
+			// 
+			// button24
+			// 
+			this.button24.Font = new System.Drawing.Font("맑은 고딕", 20F);
+			this.button24.Location = new System.Drawing.Point(1964, 259);
+			this.button24.Name = "button24";
+			this.button24.Size = new System.Drawing.Size(59, 42);
+			this.button24.TabIndex = 40;
+			this.button24.Text = "▲";
+			this.button24.UseVisualStyleBackColor = true;
+			this.button24.Click += new System.EventHandler(this.button24_Click);
+			// 
+			// textBox6
+			// 
+			this.textBox6.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.textBox6.Location = new System.Drawing.Point(2113, 267);
+			this.textBox6.Name = "textBox6";
+			this.textBox6.Size = new System.Drawing.Size(151, 34);
+			this.textBox6.TabIndex = 39;
+			this.textBox6.Text = "0.06";
+			// 
+			// trackBar6
+			// 
+			this.trackBar6.Location = new System.Drawing.Point(1379, 267);
+			this.trackBar6.Maximum = 100000;
+			this.trackBar6.Name = "trackBar6";
+			this.trackBar6.Size = new System.Drawing.Size(579, 45);
+			this.trackBar6.TabIndex = 38;
+			this.trackBar6.Value = 600;
+			this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll);
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Items.AddRange(new object[] {
+            "Tree",
+            "External",
+            "List",
+            "CComp"});
+			this.comboBox1.Location = new System.Drawing.Point(1842, 358);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(147, 36);
+			this.comboBox1.TabIndex = 43;
+			this.comboBox1.Text = "Tree";
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Items.AddRange(new object[] {
+            "ApproxNone",
+            "ApproxSimple",
+            "ApproxTC89L1",
+            "ApproxTC89KCOS"});
+			this.comboBox2.Location = new System.Drawing.Point(2013, 358);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(220, 36);
+			this.comboBox2.TabIndex = 44;
+			this.comboBox2.Text = "ApproxNone";
+			this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+			// 
+			// button25
+			// 
+			this.button25.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.button25.Location = new System.Drawing.Point(1536, 423);
+			this.button25.Name = "button25";
+			this.button25.Size = new System.Drawing.Size(300, 59);
+			this.button25.TabIndex = 45;
+			this.button25.Text = "코너 디텍트";
+			this.button25.UseVisualStyleBackColor = true;
+			this.button25.Click += new System.EventHandler(this.button25_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(2278, 761);
+			this.Controls.Add(this.button25);
+			this.Controls.Add(this.comboBox2);
+			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.label6);
+			this.Controls.Add(this.button23);
+			this.Controls.Add(this.button24);
+			this.Controls.Add(this.textBox6);
+			this.Controls.Add(this.trackBar6);
+			this.Controls.Add(this.button22);
+			this.Controls.Add(this.button21);
+			this.Controls.Add(this.button20);
 			this.Controls.Add(this.button19);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.button17);
@@ -500,6 +650,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -542,6 +693,17 @@
 		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.TrackBar trackBar5;
 		private System.Windows.Forms.Button button19;
+		private System.Windows.Forms.Button button20;
+		private System.Windows.Forms.Button button21;
+		private System.Windows.Forms.Button button22;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Button button23;
+		private System.Windows.Forms.Button button24;
+		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TrackBar trackBar6;
+		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox comboBox2;
+		private System.Windows.Forms.Button button25;
 	}
 }
 
