@@ -20,6 +20,8 @@ using Accord.Video.FFMPEG;
 using vision.Properties;
 using System.IO;
 using System.Reflection;
+using OpenCvSharp;
+using OpenCvSharp.Extensions;
 
 namespace vision
 {
@@ -31,7 +33,7 @@ namespace vision
 		public Mutex[] m_mutexImage = null;
 		public Bitmap[] m_bitmap = null;
 		public Thread[] m_thread = null;
-		VideoFileWriter[] VideoFiles = null;
+		VideoWriter[] VideoFiles = null;
 		public delegate void PaintDelegate(PictureBox pb_cam, Bitmap bmp, Mutex mutex);
 		#region 상태
 		public bool[] m_isWork = null;
@@ -399,7 +401,7 @@ namespace vision
 					if (IsRecord)
 					{
 						//VideoFiles[int.Parse(pb_cam.Name.Substring(("RealTimeView_Cam".Length), 1)) - 1].WriteVideoFrame(bmpimg);
-						VideoFiles[CamNo - 1].WriteVideoFrame(bmpimg);
+						VideoFiles[CamNo - 1].Write(BitmapConverter.ToMat(bmpimg));
 					}
 				}
 				else
@@ -543,7 +545,7 @@ namespace vision
 						Thread.Sleep(500);
 						for (int i = 0; i < 3; i++)
 						{
-							VideoFiles[i].Close();
+							VideoFiles[i].Release();
 							VideoFiles[i] = null;
 						}
 						btn_VideoSave.Text = "동영상 저장";
@@ -614,16 +616,17 @@ namespace vision
 		{
 			try
 			{
-				VideoFileWriter VideoFile1 = new VideoFileWriter();
-				VideoFileWriter VideoFile2 = new VideoFileWriter();
-				VideoFileWriter VideoFile3 = new VideoFileWriter();
-				VideoFiles = new VideoFileWriter[] { VideoFile1, VideoFile2, VideoFile3 };
+				VideoWriter VideoFile1 = new VideoWriter();
+				VideoWriter VideoFile2 = new VideoWriter();
+				VideoWriter VideoFile3 = new VideoWriter();
+				VideoFiles = new VideoWriter[] { VideoFile1, VideoFile2, VideoFile3 };
 				string nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분 ss초");
 				for (int i = 1; i < 4; i++)
 				{
 					string folderpath = FolderPath(2, i);
 					string videopath = folderpath + nowtime + " 녹화.mp4";
-					VideoFiles[i - 1].Open(videopath, m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height, 7/*Accord.Math.Rational.FromDouble(7.75)*/, VideoCodec.MPEG4, 100000);
+					//VideoFiles[i - 1].Open(videopath, m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height, 7/*Accord.Math.Rational.FromDouble(7.75)*/, VideoCodec.MPEG4, 100000);
+					VideoFiles[i - 1].Open(videopath, FourCC.MPG4, 7, new OpenCvSharp.Size(m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height), true);
 				}
 				IsRecord = true;
 			}

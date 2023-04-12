@@ -267,7 +267,6 @@
 			this.btn_Reset_ProgramSetting.StyleController = this.layoutControl1;
 			this.btn_Reset_ProgramSetting.TabIndex = 33;
 			this.btn_Reset_ProgramSetting.Text = "초 기 화";
-			this.btn_Reset_ProgramSetting.Click += new System.EventHandler(this.ResetButton);
 			// 
 			// lb_VideoFolder_ProgramSetting
 			// 
@@ -344,7 +343,7 @@
 			this.cb_TextView_CameraSetting.Size = new System.Drawing.Size(247, 34);
 			this.cb_TextView_CameraSetting.StyleController = this.layoutControl1;
 			this.cb_TextView_CameraSetting.TabIndex = 12;
-			this.cb_TextView_CameraSetting.SelectedValueChanged += new System.EventHandler(this.cb_TextView_CameraSetting_SelectedValueChanged);
+			this.cb_TextView_CameraSetting.SelectedValueChanged += new System.EventHandler(this.VideoTextChange);
 			// 
 			// cb_ImgFormat_ProgramSetting
 			// 
@@ -368,6 +367,7 @@
 			this.cb_ImgFormat_ProgramSetting.Size = new System.Drawing.Size(296, 34);
 			this.cb_ImgFormat_ProgramSetting.StyleController = this.layoutControl1;
 			this.cb_ImgFormat_ProgramSetting.TabIndex = 9;
+			this.cb_ImgFormat_ProgramSetting.SelectedIndexChanged += new System.EventHandler(this.ImageFormatChange);
 			// 
 			// rb_Camera_ProgramSetting
 			// 
@@ -388,6 +388,7 @@
 			this.rb_Camera_ProgramSetting.Size = new System.Drawing.Size(296, 82);
 			this.rb_Camera_ProgramSetting.StyleController = this.layoutControl1;
 			this.rb_Camera_ProgramSetting.TabIndex = 5;
+			this.rb_Camera_ProgramSetting.SelectedIndexChanged += new System.EventHandler(this.FirstViewCameraChange);
 			// 
 			// tg_LogSaveOnOff
 			// 
@@ -406,6 +407,7 @@
 			this.tg_LogSaveOnOff.Size = new System.Drawing.Size(247, 32);
 			this.tg_LogSaveOnOff.StyleController = this.layoutControl1;
 			this.tg_LogSaveOnOff.TabIndex = 6;
+			this.tg_LogSaveOnOff.Toggled += new System.EventHandler(this.LogOnOff);
 			// 
 			// btn_ImageFolder_ProgramSetting
 			// 
@@ -453,7 +455,6 @@
 			this.btn_Save_ProgramSetting.StyleController = this.layoutControl1;
 			this.btn_Save_ProgramSetting.TabIndex = 14;
 			this.btn_Save_ProgramSetting.Text = "저  장";
-			this.btn_Save_ProgramSetting.Click += new System.EventHandler(this.SaveButton);
 			// 
 			// txt_Cam1IP_CameraSetting
 			// 
@@ -470,6 +471,7 @@
 			this.txt_Cam1IP_CameraSetting.StyleController = this.layoutControl1;
 			this.txt_Cam1IP_CameraSetting.TabIndex = 15;
 			this.txt_Cam1IP_CameraSetting.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnKeyPressSingleIP);
+			this.txt_Cam1IP_CameraSetting.Leave += new System.EventHandler(this.CameraIPChange);
 			// 
 			// txt_Cam2IP_CameraSetting
 			// 
@@ -485,6 +487,7 @@
 			this.txt_Cam2IP_CameraSetting.Size = new System.Drawing.Size(247, 34);
 			this.txt_Cam2IP_CameraSetting.StyleController = this.layoutControl1;
 			this.txt_Cam2IP_CameraSetting.TabIndex = 16;
+			this.txt_Cam2IP_CameraSetting.EditValueChanged += new System.EventHandler(this.CameraIPChange);
 			this.txt_Cam2IP_CameraSetting.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnKeyPressSingleIP);
 			// 
 			// txt_Cam3IP_CameraSetting
@@ -501,6 +504,7 @@
 			this.txt_Cam3IP_CameraSetting.Size = new System.Drawing.Size(247, 34);
 			this.txt_Cam3IP_CameraSetting.StyleController = this.layoutControl1;
 			this.txt_Cam3IP_CameraSetting.TabIndex = 17;
+			this.txt_Cam3IP_CameraSetting.EditValueChanged += new System.EventHandler(this.CameraIPChange);
 			this.txt_Cam3IP_CameraSetting.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.OnKeyPressSingleIP);
 			// 
 			// txt_CameraWidth_CameraSetting
@@ -600,6 +604,7 @@
 			this.txt_UserText_CameraSetting.Size = new System.Drawing.Size(498, 34);
 			this.txt_UserText_CameraSetting.StyleController = this.layoutControl1;
 			this.txt_UserText_CameraSetting.TabIndex = 27;
+			this.txt_UserText_CameraSetting.EditValueChanged += new System.EventHandler(this.UserTextChange);
 			// 
 			// dat_Day_WorkFileSetting
 			// 

@@ -530,18 +530,23 @@ namespace vision
 		{
 			if (InputMat == null) return InputMat;
 
-			Mat OutputMat = new Mat();
-			//Mat GrayMat = new Mat();
+			Mat OutputMat = InputMat.Clone();
+			Mat GrayMat = new Mat();
 			Mat EdgeMat = new Mat();
-			Mat BlurImg = new Mat();
-			//Cv2.CvtColor(InputMat, GrayMat, ColorConversionCodes.BGR2GRAY);
-			Cv2.GaussianBlur(InputMat, BlurImg, new OpenCvSharp.Size(3, 3), 1, 0, BorderTypes.Default);
+			//Mat BlurImg = new Mat();
+			Cv2.CvtColor(InputMat, GrayMat, ColorConversionCodes.BGR2GRAY);
+			Mat BinaryMat = new Mat();
+			Cv2.Threshold(GrayMat, BinaryMat, 145, 255, ThresholdTypes.Binary);
+			//Mat imsibinary = new Mat();
+			//Cv2.Resize(BinaryMat, imsibinary, new OpenCvSharp.Size(0, 0), 0.3, 0.3);
+			//Cv2.ImShow("binary", imsibinary);
+			//Cv2.GaussianBlur(InputMat, BlurImg, new OpenCvSharp.Size(3, 3), 1, 0, BorderTypes.Default);
 			switch (Filter)
 			{
-				case 2	: Cv2.Canny(BlurImg, EdgeMat, 70, 130);/*60,200*/		break;
-				case 3	: Cv2.Sobel(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);		break;
-				case 4	: Cv2.Scharr(BlurImg, EdgeMat, MatType.CV_8U, 1, 0);	break;
-				case 5	: Cv2.Laplacian(BlurImg, EdgeMat, MatType.CV_8U, 5);	break;
+				case 2	: Cv2.Canny(BinaryMat, EdgeMat, 170, 230, 3, true);/*60,200*/	break;
+				case 3	: Cv2.Sobel(BinaryMat, EdgeMat, MatType.CV_8U, 1, 0);			break;
+				case 4	: Cv2.Scharr(BinaryMat, EdgeMat, MatType.CV_8U, 1, 0);			break;
+				case 5	: Cv2.Laplacian(BinaryMat, EdgeMat, MatType.CV_8U, 5);			break;
 				//case 2	: Cv2.Canny(GrayMat, EdgeMat, Threshold1[0], Threshold2[0], 3, true);/*60,200*/	break;
 				//case 3	: Cv2.Sobel(GrayMat, EdgeMat, MatType.CV_8U, 1, 1, ksize: 3, scale: 1, delta: 0, BorderTypes.Default);	break;
 				//case 4	: Cv2.Scharr(GrayMat, EdgeMat, MatType.CV_8U, 1, 0, scale: 1, delta: 0, BorderTypes.Default);				break;
@@ -638,6 +643,7 @@ namespace vision
 
 			}*/
 			#endregion
+			#region ???
 			//Mat src = InputMat;
 			//Mat src2 = new Mat();
 			//src.CopyTo(OutputMat);
@@ -666,9 +672,9 @@ namespace vision
 			//{
 			//	Cv2.DrawContours(OutputMat, contour2, i, new Scalar(0, 255, 255), 3, LineTypes.AntiAlias);
 			//}
-
+			#endregion
 			#region 사각형 색칠 성공 https://stackoverflow.com/questions/72067943/how-do-i-fill-specific-parts-in-the-image-with-canny-edge-detection-open-cv
-			if (Filter == 2)
+			/*if (Filter == 2)
 			{
 				Mat kernelEllipse = Cv2.GetStructuringElement(MorphShapes.Ellipse, new OpenCvSharp.Size(3, 3));
 				Mat dilate = new Mat();
@@ -688,9 +694,81 @@ namespace vision
 					}
 				}
 			}
+			else OutputMat = EdgeMat;*/
+			#endregion
+			#region 사각형 색칠, 좌표 표시, 세로 길이 표시
+			if(Filter == 2)
+			{
+				//Mat imsicanny = new Mat();
+				//Cv2.Resize(EdgeMat, imsicanny, new OpenCvSharp.Size(0, 0), 0.3, 0.3);
+				//Cv2.ImShow("canny", imsicanny);
+				Mat dilate = new Mat();
+				Mat kernelEllipse = Cv2.GetStructuringElement(MorphShapes.Rect, new OpenCvSharp.Size(13, 13));
+				Cv2.Dilate(EdgeMat, dilate, kernelEllipse, new OpenCvSharp.Point(-1, -1), 1, BorderTypes.Reflect);
+				Mat imsidilate = new Mat();
+				Cv2.Resize(dilate, imsidilate, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
+				Cv2.ImShow("dilate", imsidilate);
+
+				// 윤곽선 찾기
+				OpenCvSharp.Point[][] contours;
+				HierarchyIndex[] hierarchy;
+				Cv2.FindContours(dilate, out contours, out hierarchy, RetrievalModes.CComp, ContourApproximationModes.ApproxTC89KCOS);
+
+				List<OpenCvSharp.Point> vertex = new List<OpenCvSharp.Point>();
+				for (int i = 0; i < contours.Length; i++)
+				{
+					double length = Cv2.ArcLength(contours[i], true);
+					if (length > 3200 || length < 1300) continue;
+					OpenCvSharp.Point[] pp = Cv2.ApproxPolyDP(contours[i], 0.02 * length, true);
+					RotatedRect rrect = Cv2.MinAreaRect(pp);
+					if (pp.Length == 4)
+					{
+						Console.WriteLine($"순서 : {i}, 길이 : {length}");
+						Cv2.DrawContours(OutputMat, contours, i, Scalar.Red, -1, LineTypes.AntiAlias, hierarchy);
+						Console.WriteLine($"성공 길이 : {length}");
+						for (int j = 0; j < pp.Length; j++) vertex.Add(pp[j]);
+						//Mat imsiout = new Mat();
+						//Cv2.Resize(OutputMat, imsiout, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
+						//Cv2.ImShow($"contours : {i} imsiout", imsiout);
+					}
+				}
+				//vertex.Sort();
+				for (int i = 0; i < vertex.Count; i++)
+				{
+					if (i % 4 != 3)
+					{
+						double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]));
+						Cv2.PutText(OutputMat, $"{PointLength}cm", LengthWritePoint(vertex[i], vertex[i + 1]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+					}
+					else
+					{
+						double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]));
+						Cv2.PutText(OutputMat, $"{PointLength}cm", LengthWritePoint(vertex[i], vertex[i - 3]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+					}
+				}
+			}
 			else OutputMat = EdgeMat;
 			#endregion
 			return OutputMat;
+		}
+		public double DistanceToPoint(OpenCvSharp.Point a, OpenCvSharp.Point b)
+		{
+			return Math.Round((double)Math.Sqrt(Math.Pow(a.X - b.X, 2) + Math.Pow(a.Y - b.Y, 2)), 0);
+		}
+		public OpenCvSharp.Point LengthWritePoint(OpenCvSharp.Point a, OpenCvSharp.Point b)
+		{
+			int longX = a.X > b.X ? a.X : b.X;
+			int shortX = a.X < b.X ? a.X : b.X;
+			int longY = a.Y > b.Y ? a.Y : b.Y;
+			int shortY = a.Y < b.Y ? a.Y : b.Y;
+			int PointX = shortX + ((longX - shortX) / 2);
+			int PointY = shortY + ((longY - shortY) / 2);
+			return new OpenCvSharp.Point(PointX, PointY);
+		}
+		public double PixelToCentimeter(double pixel)
+		{
+			return Math.Round(pixel * 2.54 / 96, 2);
+			//return Math.Round(pixel * 96 / 2.54, 2);
 		}
 		private void FilterClick(object sender, EventArgs e)
 		{

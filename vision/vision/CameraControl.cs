@@ -410,6 +410,10 @@ namespace OMRON_Camera_Control
             get { return m_Camera_device.GetLocalIStPort().GetINodeMap().GetNode<IInteger>("GevDeviceIPAddress"); }
             set {  }
         }
+        public IFloat DeviceFrame
+        {
+            get { return m_Camera_device.GetRemoteIStPort().GetINodeMap().GetNode<IFloat>("AcquisitionFrameRate"); }
+        }
         public string SetDeviceIPAddress
 		{
             set { SetIP(value); }

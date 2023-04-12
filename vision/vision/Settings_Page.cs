@@ -216,15 +216,22 @@ namespace vision
 					break;
 			}
 		}
+		private void FirstViewCameraChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			ProgramSetting.BasicCameraView = rb_Camera_ProgramSetting.SelectedIndex;
+			XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\ProgramSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
 		private void PathChange(object sender, EventArgs e)
 		{
-			MainForm.LoadingAnimationStart();
+			//MainForm.LoadingAnimationStart();
 			try
 			{
+				string ButtonName = ((SimpleButton)sender).Name.Substring("btn_".Length, ((SimpleButton)sender).Name.LastIndexOf("_") - 4);
+				string StartFolderPath;
 				using (CommonOpenFileDialog fd = new CommonOpenFileDialog())
 				{
-					string ButtonName = ((SimpleButton)sender).Name.Substring("btn_".Length, ((SimpleButton)sender).Name.LastIndexOf("_") - 4);
-					string StartFolderPath;
 					switch (ButtonName)
 					{
 						case "ImageFolder"	: StartFolderPath = ProgramSetting.ImageFilePath;	break;
@@ -248,12 +255,112 @@ namespace vision
 						}
 					}
 				}
+				if (!ButtonName.Equals("WorkFolder"))	XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\ProgramSetting.xml");
+				else									XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "폴더를 선택하는 중에 예외가 발생하였습니다!\n" + ex, "주의");
 			}
-			MainForm.LoadingAnimationEnd();
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void ImageFormatChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			ProgramSetting.ImageFileFormat = cb_ImgFormat_ProgramSetting.Text;
+			XMLSave(ProgramSetting, ProgramSetting.GetType(), @"\ProgramSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void CameraIPChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			string changeName = ((TextEdit)sender).Name;
+			string newIP = ((TextEdit)sender).Text;
+			string changeCamera = changeName.Substring("txt_Cam".Length, 1);
+			switch(changeCamera)
+			{
+				case "1":
+					if (CameraSetting.Camera1IPAddress.Equals(newIP)) return;
+					else
+					{
+						MainForm.RealTimeView.Camera1IP = newIP;
+						CameraSetting.Camera1IPAddress = newIP;
+					}
+					break;
+				case "2":
+					if (CameraSetting.Camera2IPAddress.Equals(newIP)) return;
+					else
+					{
+						MainForm.RealTimeView.Camera2IP = newIP;
+						CameraSetting.Camera2IPAddress = newIP;
+					}
+					break;
+				case "3":
+					if (CameraSetting.Camera3IPAddress.Equals(newIP)) return;
+					else
+					{
+						MainForm.RealTimeView.Camera3IP = newIP;
+						CameraSetting.Camera3IPAddress = newIP;
+					}
+					break;
+			}
+			XMLSave(CameraSetting, CameraSetting.GetType(), @"\CameraSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void VideoTextChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			if (cb_TextView_CameraSetting.Text.Equals("사용자 선택"))
+			{
+				txt_UserText_CameraSetting.Enabled = true;
+				lb_TextView_CameraSetting.Text = "  사용자 텍스트 입력";
+			}
+			else
+			{
+				if (cb_TextView_CameraSetting.Text.Equals("날짜/시간")) lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
+				if (cb_TextView_CameraSetting.Text.Equals("로봇거리")) lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
+				txt_UserText_CameraSetting.Text = "";
+				txt_UserText_CameraSetting.Enabled = false;
+			}
+			CameraSetting.TextMark = cb_TextView_CameraSetting.Text;
+			CameraSetting.UserText = txt_UserText_CameraSetting.Text;
+			XMLSave(CameraSetting, CameraSetting.GetType(), @"\CameraSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void UserTextChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			CameraSetting.UserText = txt_UserText_CameraSetting.Text;
+			XMLSave(CameraSetting, CameraSetting.GetType(), @"\CameraSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void LogOnOff(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			WorkFileSetting.LogSave = tg_LogSaveOnOff.IsOn;
+			XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void WorkUserChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			WorkFileSetting.WorkUser = txt_WorkUser_WorkFileSetting.Text;
+			XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void WorkTargetChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			WorkFileSetting.WorkTarget = txt_WorkTarget_WorkFileSetting.Text;
+			XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
+			//MainForm.LoadingAnimationEnd();
+		}
+		private void WorkDayChange(object sender, EventArgs e)
+		{
+			//MainForm.LoadingAnimationStart();
+			WorkFileSetting.WorkDay = (string)dat_Day_WorkFileSetting.EditValue;
+			XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
+			//MainForm.LoadingAnimationEnd();
 		}
 		private void SaveButton(object sender, EventArgs e)
 		{
@@ -487,21 +594,6 @@ namespace vision
 						else iDelimitNumber++;
 					}
 				}
-			}
-		}
-		private void cb_TextView_CameraSetting_SelectedValueChanged(object sender, EventArgs e)
-		{
-			if (cb_TextView_CameraSetting.Text.Equals("사용자 선택"))
-			{
-				txt_UserText_CameraSetting.Enabled = true;
-				lb_TextView_CameraSetting.Text = "  사용자 텍스트 입력";
-			}
-			else
-			{
-				if (cb_TextView_CameraSetting.Text.Equals("날짜/시간")) lb_TextView_CameraSetting.Text = "  ☑ 년월일시분초";
-				if (cb_TextView_CameraSetting.Text.Equals("로봇거리")) lb_TextView_CameraSetting.Text = "  ☑ 로봇 거리";
-				txt_UserText_CameraSetting.Text = "";
-				txt_UserText_CameraSetting.Enabled = false;
 			}
 		}
 		private void txt_CameraSetting_Leave(object sender, EventArgs e)

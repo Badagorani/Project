@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Camera_Setting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Camera1IPAddress>169.254.94.182</Camera1IPAddress>
+  <Camera1IPAddress>169.254.89.183</Camera1IPAddress>
   <Camera2IPAddress>169.254.95.182</Camera2IPAddress>
-  <Camera3IPAddress>169.254.89.182</Camera3IPAddress>
+  <Camera3IPAddress>169.254.94.182</Camera3IPAddress>
   <TextMark>날짜/시간</TextMark>
   <UserText />
   <CamWidth>2448</CamWidth>
