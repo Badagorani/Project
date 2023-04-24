@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WireVisionInspection", "WireVisionInspection\WireVisionInspection.csproj", "{41E42BCF-B550-4753-90E6-BB8164FC63EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41E42BCF-B550-4753-90E6-BB8164FC63EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E42BCF-B550-4753-90E6-BB8164FC63EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E42BCF-B550-4753-90E6-BB8164FC63EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E42BCF-B550-4753-90E6-BB8164FC63EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5A0851C-1E85-4D46-A4AE-E11FBC92E921}
+	EndGlobalSection
+EndGlobal

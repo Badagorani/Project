@@ -1,0 +1,13 @@
+[ 로봇1 2023-04-24 월요일 15:58:36 014 ] Settings_Page -> XMLSave 
+[ 로봇1 2023-04-24 월요일 15:58:39 620 ] Settings_Page -> FolderOpen 
+[ 로봇1 2023-04-24 월요일 15:59:13 027 ] Settings_Page -> FolderOpen 
+[ 로봇1 2023-04-24 월요일 16:00:57 401 ] Form1 -> Form1_FormClosing 
+[ 로봇1 2023-04-24 월요일 16:00:57 421 ] RealTimeView_Page -> CameraClose 
+[ 로봇1 2023-04-24 월요일 16:00:57 447 ] CameraControl -> Stop 
+[ 로봇1 2023-04-24 월요일 16:00:58 819 ] CameraControl -> Close 
+[ 로봇1 2023-04-24 월요일 16:00:58 847 ] CameraControl -> Stop 
+[ 로봇1 2023-04-24 월요일 16:01:00 161 ] CameraControl -> Close 
+[ 로봇1 2023-04-24 월요일 16:01:00 182 ] CameraControl -> Stop 
+[ 로봇1 2023-04-24 월요일 16:01:00 537 ] CameraControl -> Close 
+[ 로봇1 2023-04-24 월요일 16:01:00 549 ] VideoCheck_Page -> VideoClose 
+[ 로봇1 2023-04-24 월요일 16:01:00 550 ] VideoAnalysis_Page -> VideoClose 

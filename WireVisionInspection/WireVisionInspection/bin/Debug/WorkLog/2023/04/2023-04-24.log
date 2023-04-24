@@ -1,0 +1,474 @@
+[ 2023-04-24 월요일 09:12:41 927 ] 프로그램 시작
+[ 2023-04-24 월요일 09:12:44 313 ] Form1 -> Form1_Shown 
+[ 2023-04-24 월요일 09:12:45 299 ] RealTimeView_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:12:45 689 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ 2023-04-24 월요일 09:12:45 690 ] RealTimeView_Page -> VideoSetLoad 
+[ 2023-04-24 월요일 09:12:45 690 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ 2023-04-24 월요일 09:12:45 692 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:12:45 693 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:12:45 959 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:12:45 993 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:12:46 006 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:12:46 017 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:12:46 071 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:12:46 406 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:12:46 420 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:12:46 428 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:12:46 431 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:12:46 576 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:12:47 006 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:12:47 021 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:12:47 030 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:12:47 035 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:12:47 221 ] VideoCheck_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:12:47 329 ] VideoAnalysis_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:12:56 383 ] Settings_Page -> WorkUserChange 
+[ 2023-04-24 월요일 09:12:56 384 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:12:56 603 ] Settings_Page -> WorkUserChange 
+[ 2023-04-24 월요일 09:12:56 604 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:13:06 806 ] Settings_Page -> WorkDayChange 
+[ 2023-04-24 월요일 09:13:06 806 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:14:31 301 ] Settings_Page -> WorkTargetChange 
+[ 2023-04-24 월요일 09:14:31 301 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:14:31 444 ] Settings_Page -> WorkTargetChange 
+[ 2023-04-24 월요일 09:14:31 444 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:14:35 403 ] Settings_Page -> WorkTargetChange 
+[ 2023-04-24 월요일 09:14:35 403 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:54:42 517 ] Form1 -> Form1_FormClosing 
+[ 2023-04-24 월요일 09:54:42 522 ] RealTimeView_Page -> CameraClose 
+[ 2023-04-24 월요일 09:54:42 525 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:54:42 750 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:54:42 766 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:54:42 829 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:54:42 853 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:54:44 134 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:54:44 149 ] VideoCheck_Page -> VideoClose 
+[ 2023-04-24 월요일 09:54:44 150 ] VideoAnalysis_Page -> VideoClose 
+[ 2023-04-24 월요일 09:57:33 022 ] 프로그램 시작
+[ 2023-04-24 월요일 09:57:35 358 ] Form1 -> Form1_Shown 
+[ 2023-04-24 월요일 09:57:36 457 ] RealTimeView_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:57:36 782 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ 2023-04-24 월요일 09:57:36 783 ] RealTimeView_Page -> VideoSetLoad 
+[ 2023-04-24 월요일 09:57:36 784 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ 2023-04-24 월요일 09:57:36 785 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:57:36 786 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:57:37 045 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:57:37 083 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:57:37 095 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:57:37 110 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:57:37 171 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:57:37 455 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:57:37 466 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:57:37 472 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:57:37 478 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:57:37 541 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 09:57:37 851 ] CameraControl -> open 
+[ 2023-04-24 월요일 09:57:37 865 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 09:57:37 871 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 09:57:37 873 ] CameraControl -> Start 
+[ 2023-04-24 월요일 09:57:38 046 ] VideoCheck_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:57:38 155 ] VideoAnalysis_Page -> PanelSettings 
+[ 2023-04-24 월요일 09:57:43 621 ] Settings_Page -> WorkUserChange 
+[ 2023-04-24 월요일 09:57:43 622 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 09:57:49 279 ] Form1 -> NavigationClick 
+[ 2023-04-24 월요일 09:57:49 475 ] VideoAnalysis_Page -> VideoAnalysis_Page_Load 
+[ 2023-04-24 월요일 09:57:51 325 ] Form1 -> NavigationClick 
+[ 2023-04-24 월요일 09:57:51 326 ] VideoAnalysis_Page -> PageChange 
+[ 2023-04-24 월요일 09:58:01 605 ] Form1 -> Form1_FormClosing 
+[ 2023-04-24 월요일 09:58:01 620 ] RealTimeView_Page -> CameraClose 
+[ 2023-04-24 월요일 09:58:01 741 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:58:01 859 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:58:01 969 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:58:03 329 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:58:03 386 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 09:58:03 745 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:58:03 781 ] VideoCheck_Page -> VideoClose 
+[ 2023-04-24 월요일 09:58:03 784 ] VideoAnalysis_Page -> VideoClose 
+[ 2023-04-24 월요일 09:58:04 133 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 09:58:04 134 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:58:04 143 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 09:58:04 143 ] CameraControl -> Close 
+[ 2023-04-24 월요일 09:58:04 144 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 09:58:04 144 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:17 352 ] 프로그램 시작
+[ 2023-04-24 월요일 13:26:20 037 ] Form1 -> Form1_Shown 
+[ 2023-04-24 월요일 13:26:20 877 ] RealTimeView_Page -> PanelSettings 
+[ 2023-04-24 월요일 13:26:21 276 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ 2023-04-24 월요일 13:26:21 277 ] RealTimeView_Page -> VideoSetLoad 
+[ 2023-04-24 월요일 13:26:21 279 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ 2023-04-24 월요일 13:26:21 280 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 13:26:21 282 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 13:26:21 530 ] CameraControl -> open 
+[ 2023-04-24 월요일 13:26:21 560 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 13:26:21 573 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 13:26:21 586 ] CameraControl -> Start 
+[ 2023-04-24 월요일 13:26:21 630 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 13:26:21 907 ] CameraControl -> open 
+[ 2023-04-24 월요일 13:26:21 916 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 13:26:21 924 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 13:26:21 927 ] CameraControl -> Start 
+[ 2023-04-24 월요일 13:26:22 010 ] CameraControl -> CameraOpen 
+[ 2023-04-24 월요일 13:26:22 349 ] CameraControl -> open 
+[ 2023-04-24 월요일 13:26:22 361 ] RealTimeView_Page -> CreateBitmap 
+[ 2023-04-24 월요일 13:26:22 369 ] CameraControl -> SetEnableImageCallback 
+[ 2023-04-24 월요일 13:26:22 373 ] CameraControl -> Start 
+[ 2023-04-24 월요일 13:26:22 479 ] VideoCheck_Page -> PanelSettings 
+[ 2023-04-24 월요일 13:26:22 595 ] VideoAnalysis_Page -> PanelSettings 
+[ 2023-04-24 월요일 13:26:29 154 ] Settings_Page -> WorkDayChange 
+[ 2023-04-24 월요일 13:26:29 154 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 13:26:31 364 ] Settings_Page -> WorkDayChange 
+[ 2023-04-24 월요일 13:26:31 364 ] Settings_Page -> XMLSave 
+[ 2023-04-24 월요일 13:26:36 911 ] Form1 -> Form1_FormClosing 
+[ 2023-04-24 월요일 13:26:36 921 ] RealTimeView_Page -> CameraClose 
+[ 2023-04-24 월요일 13:26:36 924 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 13:26:38 315 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:38 331 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 13:26:39 624 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:39 637 ] CameraControl -> Stop 
+[ 2023-04-24 월요일 13:26:39 973 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:39 987 ] VideoCheck_Page -> VideoClose 
+[ 2023-04-24 월요일 13:26:39 988 ] VideoAnalysis_Page -> VideoClose 
+[ 2023-04-24 월요일 13:26:40 139 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 13:26:40 139 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:40 143 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 13:26:40 143 ] CameraControl -> Close 
+[ 2023-04-24 월요일 13:26:40 144 ] CameraControl -> Finalize 
+[ 2023-04-24 월요일 13:26:40 144 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:01:30 865 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:01:33 319 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:01:33 862 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:01:34 238 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:01:34 240 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:01:34 242 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:01:34 493 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:01:34 527 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:01:34 552 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:01:34 561 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:01:34 608 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:01:34 937 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:01:34 952 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:01:34 962 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:01:34 967 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:01:35 038 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:01:35 541 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:01:35 557 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:01:35 578 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:01:35 582 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:01:35 666 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:01:35 712 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:01:35 832 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:01:50 035 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:50 129 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:50 249 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:50 528 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:50 663 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:50 792 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 146 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 265 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 400 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 695 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 698 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 701 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 803 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:51 889 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 071 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 074 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 077 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 168 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 264 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 441 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:52 445 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:01:54 322 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 385 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 752 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 824 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 828 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 831 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:54 945 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:55 128 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:55 130 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:55 133 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:01:56 657 ] Settings_Page -> WorkUserSet 
+[ default 2023-04-24 월요일 16:22:50 655 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:22:52 976 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:22:53 447 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:22:53 789 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:22:53 790 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:22:53 792 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:22:54 059 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:22:54 085 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:22:54 099 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:22:54 109 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:22:54 180 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:22:54 508 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:22:54 519 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:22:54 534 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:22:54 537 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:22:54 688 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:22:56 335 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:22:56 353 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:22:56 362 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:22:56 365 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:22:56 515 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:22:56 568 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:22:56 685 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:23:03 598 ] Form1 -> Form1_FormClosing 
+[ default 2023-04-24 월요일 16:23:03 606 ] RealTimeView_Page -> CameraClose 
+[ default 2023-04-24 월요일 16:23:03 609 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:23:03 803 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:23:03 817 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:23:05 112 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:23:05 124 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:23:05 480 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:23:05 494 ] VideoCheck_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:23:05 495 ] VideoAnalysis_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:37:17 215 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:37:19 560 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:37:20 372 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:37:20 736 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:37:20 737 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:37:20 738 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:37:21 025 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:37:21 054 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:37:21 069 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:37:21 083 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:37:21 138 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:37:21 453 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:37:21 471 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:37:21 478 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:37:21 480 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:37:21 566 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:37:21 997 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:37:22 008 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:37:22 016 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:37:22 018 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:37:22 094 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:37:22 137 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:37:22 292 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:37:26 970 ] Form1 -> Form1_FormClosing 
+[ default 2023-04-24 월요일 16:37:26 977 ] RealTimeView_Page -> CameraClose 
+[ default 2023-04-24 월요일 16:37:26 984 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:37:28 430 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:37:28 452 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:37:29 812 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:37:29 824 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:37:30 178 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:37:30 190 ] VideoCheck_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:37:30 191 ] VideoAnalysis_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:37:30 328 ] CameraControl -> Finalize 
+[ default 2023-04-24 월요일 16:37:30 328 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:37:30 333 ] CameraControl -> Finalize 
+[ default 2023-04-24 월요일 16:37:30 333 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:37:30 334 ] CameraControl -> Finalize 
+[ default 2023-04-24 월요일 16:37:30 334 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:38:33 988 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:38:36 370 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:38:36 983 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:38:37 354 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:38:37 355 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:38:37 356 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:38:37 619 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:38:37 657 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:38:37 673 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:38:37 690 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:38:37 742 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:38:38 060 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:38:38 074 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:38:38 082 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:38:38 084 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:38:38 150 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:38:38 533 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:38:38 553 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:38:38 561 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:38:38 566 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:38:38 742 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:38:38 788 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:38:38 936 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:38:58 114 ] Form1 -> Form1_FormClosing 
+[ default 2023-04-24 월요일 16:38:58 122 ] RealTimeView_Page -> CameraClose 
+[ default 2023-04-24 월요일 16:38:58 124 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:38:58 255 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:38:58 283 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:38:59 591 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:38:59 604 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:38:59 957 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:38:59 971 ] VideoCheck_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:38:59 971 ] VideoAnalysis_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:41:45 928 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:41:48 316 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:41:48 768 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:41:49 099 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:41:49 100 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:41:49 101 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:41:49 362 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:41:49 388 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:41:49 402 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:41:49 413 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:41:49 460 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:41:49 764 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:41:49 774 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:41:49 782 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:41:49 785 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:41:49 849 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:41:51 403 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:41:51 422 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:41:51 448 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:41:51 452 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:41:51 564 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:41:51 615 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:41:51 745 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:42:06 363 ] Settings_Page -> FolderOpen 
+[ default 2023-04-24 월요일 16:42:20 274 ] Form1 -> Form1_FormClosing 
+[ default 2023-04-24 월요일 16:42:20 289 ] RealTimeView_Page -> CameraClose 
+[ default 2023-04-24 월요일 16:42:20 298 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:42:21 745 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:42:21 762 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:42:23 066 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:42:23 093 ] CameraControl -> Stop 
+[ default 2023-04-24 월요일 16:42:23 444 ] CameraControl -> Close 
+[ default 2023-04-24 월요일 16:42:23 462 ] VideoCheck_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:42:23 463 ] VideoAnalysis_Page -> VideoClose 
+[ default 2023-04-24 월요일 16:46:26 949 ] 프로그램 시작
+[ default 2023-04-24 월요일 16:46:29 329 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 16:46:30 067 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:46:30 443 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 16:46:30 444 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 16:46:30 449 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:46:30 741 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:46:30 787 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:46:30 799 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:46:30 814 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:46:30 894 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:46:31 241 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:46:31 252 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:46:31 259 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:46:31 263 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:46:31 373 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 16:46:31 897 ] CameraControl -> open 
+[ default 2023-04-24 월요일 16:46:31 957 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 16:46:31 967 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 16:46:31 972 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 16:46:32 064 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 16:46:32 109 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:46:32 280 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 16:47:08 723 ] Form1 -> NavigationClick 
+[ default 2023-04-24 월요일 16:47:11 683 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:12 164 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:12 740 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:12 823 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:12 976 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 213 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 215 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 217 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 309 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 406 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 630 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 633 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 635 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 751 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:13 854 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:14 097 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:14 102 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 16:47:14 655 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:14 742 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:14 823 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:14 982 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:14 985 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:14 987 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:15 078 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:15 190 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:16 629 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:16 634 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 16:47:16 726 ] Settings_Page -> WorkUserSet 
+[ default 2023-04-24 월요일 17:14:44 930 ] 프로그램 시작
+[ default 2023-04-24 월요일 17:14:47 281 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 17:14:47 784 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:14:48 153 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 17:14:48 153 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 17:14:48 155 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:14:48 433 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:14:48 475 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:14:48 487 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:14:48 500 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:14:48 549 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:14:48 847 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:14:48 862 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:14:48 871 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:14:48 873 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:14:48 959 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:14:49 334 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:14:49 347 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:14:49 354 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:14:49 357 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:14:49 565 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 17:14:49 605 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:14:49 724 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:15:36 128 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:36 299 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:37 236 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:37 380 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:38 246 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:38 317 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:38 781 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:38 996 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:38 998 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:39 001 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:39 221 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:40 685 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:40 689 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:15:41 885 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:42 093 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:42 380 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:42 907 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:42 910 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:42 912 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:43 148 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:43 372 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:45 786 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:45 789 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:15:45 914 ] Settings_Page -> WorkUserSet 
+[ default 2023-04-24 월요일 17:19:28 453 ] 프로그램 시작
+[ default 2023-04-24 월요일 17:19:30 809 ] Form1 -> Form1_Shown 
+[ default 2023-04-24 월요일 17:19:31 338 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:19:31 671 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-04-24 월요일 17:19:31 671 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-04-24 월요일 17:19:31 673 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:19:31 912 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:19:31 951 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:19:31 967 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:19:31 982 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:19:32 027 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:19:32 391 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:19:32 402 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:19:32 408 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:19:32 411 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:19:32 501 ] CameraControl -> CameraOpen 
+[ default 2023-04-24 월요일 17:19:34 026 ] CameraControl -> open 
+[ default 2023-04-24 월요일 17:19:34 039 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-04-24 월요일 17:19:34 044 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-04-24 월요일 17:19:34 047 ] CameraControl -> Start 
+[ default 2023-04-24 월요일 17:19:34 112 ] Settings_Page -> XMLSave 
+[ default 2023-04-24 월요일 17:19:34 155 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:19:34 304 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-04-24 월요일 17:19:40 757 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:41 332 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:41 808 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:41 885 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 053 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 163 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 166 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 168 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 245 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 493 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 497 ] Settings_Page -> WorkUserChange 
+[ default 2023-04-24 월요일 17:19:42 806 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:42 900 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:42 997 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 155 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 157 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 159 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 276 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 373 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 653 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:43 655 ] Settings_Page -> WorkTargetChange 
+[ default 2023-04-24 월요일 17:19:45 303 ] Settings_Page -> WorkUserSet 

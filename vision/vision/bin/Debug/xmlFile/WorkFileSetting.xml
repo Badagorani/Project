@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WorkFile_Setting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <LogSave>true</LogSave>
-  <WorkUser />
-  <WorkDay />
-  <WorkTarget />
-  <WorkFilePath>C:\Users\김태현\Documents\최동규_세인\Project\vision\vision\bin\Debug\WorkLog</WorkFilePath>
-</WorkFile_Setting>
