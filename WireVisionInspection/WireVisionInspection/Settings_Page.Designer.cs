@@ -482,6 +482,7 @@
 			// 
 			// txt_WorkUser_WorkFileSetting
 			// 
+			this.txt_WorkUser_WorkFileSetting.ImeMode = System.Windows.Forms.ImeMode.Hangul;
 			this.txt_WorkUser_WorkFileSetting.Location = new System.Drawing.Point(1327, 134);
 			this.txt_WorkUser_WorkFileSetting.Name = "txt_WorkUser_WorkFileSetting";
 			this.txt_WorkUser_WorkFileSetting.Properties.Appearance.BorderColor = System.Drawing.Color.Red;
@@ -498,6 +499,7 @@
 			// 
 			// txt_WorkTarget_WorkFileSetting
 			// 
+			this.txt_WorkTarget_WorkFileSetting.ImeMode = System.Windows.Forms.ImeMode.Hangul;
 			this.txt_WorkTarget_WorkFileSetting.Location = new System.Drawing.Point(1327, 172);
 			this.txt_WorkTarget_WorkFileSetting.Name = "txt_WorkTarget_WorkFileSetting";
 			this.txt_WorkTarget_WorkFileSetting.Properties.Appearance.BorderColor = System.Drawing.Color.Red;
@@ -1325,8 +1327,6 @@
 		private DevExpress.XtraEditors.TextEdit txt_Cam3IP_CameraSetting;
 		private DevExpress.XtraEditors.TextEdit txt_CameraWidth_CameraSetting;
 		private DevExpress.XtraEditors.TextEdit txt_CameraHeight_CameraSetting;
-		private DevExpress.XtraEditors.TextEdit txt_WorkUser_WorkFileSetting;
-		private DevExpress.XtraEditors.TextEdit txt_WorkTarget_WorkFileSetting;
 		private DevExpress.XtraEditors.DateEdit dat_Day_WorkFileSetting;
 		private DevExpress.XtraLayout.LayoutControlGroup Root;
 		private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
@@ -1366,7 +1366,6 @@
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem24;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
-		private DevExpress.XtraEditors.LabelControl lb_WorkFolder_WorkFileSetting;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
 		private DevExpress.XtraEditors.LabelControl lb_VideoFolder_ProgramSetting;
 		private DevExpress.XtraEditors.LabelControl lb_ImageFolder_ProgramSetting;
@@ -1390,5 +1389,8 @@
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem22;
 		private DevExpress.XtraLayout.LayoutControlItem layoutControlItem23;
 		private System.Windows.Forms.Timer timer1;
+		public DevExpress.XtraEditors.LabelControl lb_WorkFolder_WorkFileSetting;
+		public DevExpress.XtraEditors.TextEdit txt_WorkUser_WorkFileSetting;
+		public DevExpress.XtraEditors.TextEdit txt_WorkTarget_WorkFileSetting;
 	}
 }

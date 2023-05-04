@@ -143,6 +143,7 @@ namespace WireVisionInspection
 			Settings.Show();
 
 			navigationFrame2.SelectedPage = Settings_Page;
+			Settings.txt_WorkUser_WorkFileSetting.Focus();
 			LoadingAnimationEnd();
 		}
 		#region 내비게이션 클릭 이벤트

@@ -574,6 +574,7 @@ namespace WireVisionInspection
 				btn_WorkUserSet_WorkFileSetting.Enabled = true;
 				txt_WorkUser_WorkFileSetting.Enabled = true;
 				txt_WorkTarget_WorkFileSetting.Enabled = true;
+				txt_WorkUser_WorkFileSetting.Focus();
 				//XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
 			}
 			catch (Exception ex)
@@ -983,7 +984,8 @@ namespace WireVisionInspection
 		private void timer1_Tick(object sender, EventArgs e)
 		{
 			if (WorkFileSetting.WorkDay != DateTime.Now.ToString("yyyy-MM-dd dddd"))
-				WorkDayChange(sender, e);
+				dat_Day_WorkFileSetting.Text = DateTime.Now.ToString("yyyy-MM-dd dddd");
+				//WorkDayChange(sender, e);
 		}
 	}
 	public class Program_Setting

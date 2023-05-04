@@ -27,6 +27,7 @@ namespace WireVisionInspection
 		public void LogFolderSet()
 		{
 			LogFilePath = LogFolderPath + @"\" + DateTime.Now.ToString("yyyy-MM-dd") + ".log";
+			MainForm.Settings.lb_WorkFolder_WorkFileSetting.Text = LogFolderPath;
 			//LogFolder = MainForm.Settings.WorkFileSetting.WorkFilePath;
 			//NowYearFolder = LogFolder + @"\" + DateTime.Now.ToString("yyyy");
 			//NowMonthFolder = NowYearFolder + @"\" + DateTime.Now.ToString("MM");
@@ -49,19 +50,18 @@ namespace WireVisionInspection
 					string writeLog = "[ " + LogContentHead + DateTime.Now.ToString(" yyyy-MM-dd dddd HH:mm:ss fff") + " ] " + logmessage;
 					if (!fi.Exists)
 					{
+						DirectoryInfo di = new DirectoryInfo(LogFolderPath);
+						if (di.Exists == false) di.Create();
 						using (StreamWriter sw = new StreamWriter(LogFilePath))
 						{
-							sw.WriteLine(writeLog);
+							sw.WriteLine("[ " + DateTime.Now.ToString(" yyyy-MM-dd dddd HH:mm:ss fff") + " ] " + "파일 생성 성공");
 							sw.Close();
 						}
 					}
-					else
+					using (StreamWriter sw = File.AppendText(LogFilePath))
 					{
-						using (StreamWriter sw = File.AppendText(LogFilePath))
-						{
-							sw.WriteLine(writeLog);
-							sw.Close();
-						}
+						sw.WriteLine(writeLog);
+						sw.Close();
 					}
 				}
 				catch (Exception ex)

@@ -33,6 +33,7 @@ namespace WireVisionInspection
 		bool[] IsPlaying = new bool[2];
 		bool[] IsPaused = new bool[2];
 		int[] FilterCheck = new int[2];
+		int[] VideoCamNo = new int[2];
 		#endregion
 		Thread[] Play = new Thread[2];
 		public VideoAnalysis_Page(Form1 form)
@@ -181,6 +182,7 @@ namespace WireVisionInspection
 						string FileName = ofd.FileName;
 						VideoCapture VideoAnalysis_VideoCapture = new VideoCapture(FileName);
 						VideoAnalysis_Videos[0] = VideoAnalysis_VideoCapture;
+						VideoCamNo[0] = int.Parse(FileName.Substring(FileName.LastIndexOf("Cam") + 3, 1));
 
 						if (!VideoAnalysis_VideoCapture.Open(FileName))
 						{
@@ -191,7 +193,7 @@ namespace WireVisionInspection
 						VideoAnalysis_VideoCapture.PosFrames = 1;
 						Mat image = new Mat();
 						VideoAnalysis_VideoCapture.Read(image);
-						VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
+						VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[0], FilterCheck[0]));
 						VideoAnalysis_VideoCapture.PosFrames = 0;
 						tbc_VideoAnalysisTrack1.Properties.Maximum = VideoAnalysis_VideoCapture.FrameCount;
 						//fps[0] = VideoAnalysis_VideoCapture.Fps;
@@ -243,7 +245,7 @@ namespace WireVisionInspection
 									{
 										Invoke((Action)(() =>
 										{
-											bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
+											bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[0], FilterCheck[0]));
 											VideoAnalysis_Video1.Image = bmp;
 										}));
 									}
@@ -298,7 +300,7 @@ namespace WireVisionInspection
 				VideoAnalysis_Videos[0].PosFrames = 1;
 				Mat image = new Mat();
 				VideoAnalysis_Videos[0].Read(image);
-				VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
+				VideoAnalysis_Video1.Image = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[0], FilterCheck[0]));
 				VideoAnalysis_Videos[0].PosFrames = 0;
 
 				btn_VideoAnalysisPlayPause1.Text = "재 생";
@@ -348,7 +350,7 @@ namespace WireVisionInspection
 				Mat image = new Mat();
 				VideoAnalysis_Videos[0].PosFrames = tbc_VideoAnalysisTrack1.Value;
 				VideoAnalysis_Videos[0].Read(image);
-				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[0]));
+				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[0], FilterCheck[0]));
 				VideoAnalysis_Video1.Image = bmp;
 			}
 			else
@@ -390,6 +392,7 @@ namespace WireVisionInspection
 						string FileName = ofd.FileName;
 						VideoCapture VideoAnalysis_VideoCapture = new VideoCapture(FileName);
 						VideoAnalysis_Videos[1] = VideoAnalysis_VideoCapture;
+						VideoCamNo[1] = int.Parse(FileName.Substring(FileName.LastIndexOf("Cam"), 1));
 
 						if (!VideoAnalysis_VideoCapture.Open(FileName))
 						{
@@ -400,7 +403,7 @@ namespace WireVisionInspection
 						VideoAnalysis_VideoCapture.PosFrames = 1;
 						Mat image = new Mat();
 						VideoAnalysis_VideoCapture.Read(image);
-						VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
+						VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[1], FilterCheck[1]));
 						VideoAnalysis_VideoCapture.PosFrames = 0;
 
 						tbc_VideoAnalysisTrack2.Properties.Maximum = VideoAnalysis_VideoCapture.FrameCount;
@@ -453,7 +456,7 @@ namespace WireVisionInspection
 									{
 										Invoke((Action)(() =>
 										{
-											bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
+											bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[1], FilterCheck[1]));
 											VideoAnalysis_Video2.Image = bmp;
 										}));
 									}
@@ -508,7 +511,7 @@ namespace WireVisionInspection
 				VideoAnalysis_Videos[1].PosFrames = 1;
 				Mat image = new Mat();
 				VideoAnalysis_Videos[1].Read(image);
-				VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
+				VideoAnalysis_Video2.Image = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[1], FilterCheck[1]));
 				VideoAnalysis_Videos[1].PosFrames = 0;
 
 				btn_VideoAnalysisPlayPause2.Text = "재 생";
@@ -558,7 +561,7 @@ namespace WireVisionInspection
 				Mat image = new Mat();
 				VideoAnalysis_Videos[1].PosFrames = tbc_VideoAnalysisTrack2.Value;
 				VideoAnalysis_Videos[1].Read(image);
-				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[1]));
+				Bitmap bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[1], FilterCheck[1]));
 				VideoAnalysis_Video2.Image = bmp;
 			}
 			else
@@ -628,7 +631,7 @@ namespace WireVisionInspection
 				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
-		private Mat FilterSet(Mat InputMat, int Filter = 1)
+		private Mat FilterSet(Mat InputMat, int VideoCamNo, int Filter/* = 1*/)
 		{
 			if (InputMat == null) return InputMat;
 
@@ -822,34 +825,141 @@ namespace WireVisionInspection
 					for (int i = 0; i < contours.Length; i++)
 					{
 						double length = Cv2.ArcLength(contours[i], true);
-						if (length > 3200 || length < 1300) continue;
+						if (length > 3200 || length < 1800) continue;
 						OpenCvSharp.Point[] pp = Cv2.ApproxPolyDP(contours[i], 0.02 * length, true);
 						RotatedRect rrect = Cv2.MinAreaRect(pp);
 						if (pp.Length == 4)
 						{
 							Console.WriteLine($"순서 : {i}, 길이 : {length}");
 							Cv2.DrawContours(OutputMat, contours, i, Scalar.Red, -1, LineTypes.AntiAlias, hierarchy);
-							Console.WriteLine($"성공 길이 : {length}");
-							for (int j = 0; j < pp.Length; j++) vertex.Add(pp[j]);
+							//Console.WriteLine($"성공 길이 : {length}");
+							List<OpenCvSharp.Point> imsipoint = new List<OpenCvSharp.Point>();
+							for (int j = 0; j < pp.Length; j++) imsipoint.Add(pp[j]);
+							SortPointsClockwise(imsipoint);
+							for (int j = 0; j < imsipoint.Count; j++) vertex.Add(imsipoint[j]);
 							//Mat imsiout = new Mat();
 							//Cv2.Resize(OutputMat, imsiout, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
 							//Cv2.ImShow($"contours : {i} imsiout", imsiout);
 						}
 					}
-					//vertex.Sort();
+					//List<OpenCvSharp.Point> imsivertex = new List<OpenCvSharp.Point>();
+					//for (int i = 3; i < vertex.Count; i += 4)
+					//{
+					//	imsivertex.Add(LengthWritePoint(vertex[i], vertex[i - 2]));
+					//}
+					//SortPointsClockwise(imsivertex);
+					//List<OpenCvSharp.Point> sortedvertex = new List<OpenCvSharp.Point>();
+					//for (int i = 0; i < imsivertex.Count; i ++)
+					//{
+					//	for (int j = 3; j < vertex.Count; j += 4)
+					//	{
+					//		if (imsivertex[i] == LengthWritePoint(vertex[j], vertex[j - 2]))
+					//		{
+					//			sortedvertex.Add(vertex[j - 3]);
+					//			sortedvertex.Add(vertex[j - 2]);
+					//			sortedvertex.Add(vertex[j - 1]);
+					//			sortedvertex.Add(vertex[j - 0]);
+					//		}
+					//	}
+					//}
+					List<OpenCvSharp.Point> RectanglePoint = new List<OpenCvSharp.Point>();
+					List<double> RectangleLengths = new List<double>();
 					for (int i = 0; i < vertex.Count; i++)
 					{
-						if (i % 4 != 3)
+						#region 과거 코드
+						//if (i % 4 != 3)
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+						//	Cv2.PutText(OutputMat, (i % 4 + 1).ToString() + $"면 : {PointLength}cm", LengthWritePoint(vertex[i], vertex[i + 1]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i + $"면 : {PointLength}cm");
+						//}
+						//else
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]), VideoCamNo);
+						//	Cv2.PutText(OutputMat, (i % 4 + 1).ToString() + $"면 : {PointLength}cm", LengthWritePoint(vertex[i], vertex[i - 3]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i + $"면 : {PointLength}cm");
+						//}
+						#endregion
+						//if (i % 4 == 0)
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+						//	if (PointLength < 2)
+						//	{
+						//		i += 3;
+						//		continue;
+						//	}
+						//	OpenCvSharp.Point writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+						//	writepoint.Y += 30;
+						//	Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
+						//}
+						//else if (i % 4 == 1)
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+						//	OpenCvSharp.Point writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+						//	writepoint.X -= 15;
+						//	writepoint.Y += 40;
+						//	Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
+						//}
+						//else if (i % 4 == 2)
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+						//	OpenCvSharp.Point writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+						//	writepoint.Y -= 30;
+						//	Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
+						//}
+						//else if (i % 4 == 3)
+						//{
+						//	double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]), VideoCamNo);
+						//	OpenCvSharp.Point writepoint = LengthWritePoint(vertex[i], vertex[i - 3]);
+						//	writepoint.X += 15;
+						//	writepoint.Y -= 40;
+						//	Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						//	Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
+						//	Cv2.PutText(OutputMat, (i / 4 + 1).ToString(), LengthWritePoint(vertex[i], vertex[i - 2]), HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+						//	Console.WriteLine($"오차 : cm");
+						//}
+						double PointLength = 0;
+						OpenCvSharp.Point writepoint = new OpenCvSharp.Point();
+						switch (i % 4)
 						{
-							double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]));
-							Cv2.PutText(OutputMat, $"{PointLength}cm", LengthWritePoint(vertex[i], vertex[i + 1]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+							case 0:
+								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+								if (PointLength < 2)
+								{
+									i += 3;
+									continue;
+								}
+								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+								writepoint.Y += 30;
+								break;
+							case 1:
+								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+								writepoint.X -= 15;
+								writepoint.Y += 40;
+								break;
+							case 2:
+								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
+								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
+								writepoint.Y -= 30;
+								break;
+							case 3:
+								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]), VideoCamNo);
+								writepoint = LengthWritePoint(vertex[i], vertex[i - 3]);
+								writepoint.X += 15;
+								writepoint.Y -= 40;
+								RectanglePoint.Add(LengthWritePoint(vertex[i], vertex[i - 2]));
+								Cv2.PutText(OutputMat, (i / 4 + 1).ToString(), LengthWritePoint(vertex[i], vertex[i - 2]), HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+								break;
 						}
-						else
-						{
-							double PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]));
-							Cv2.PutText(OutputMat, $"{PointLength}cm", LengthWritePoint(vertex[i], vertex[i - 3]), HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
-						}
+						RectangleLengths.Add(PointLength);
+						Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
 					}
+					ErrorCheck(vertex, RectanglePoint, RectangleLengths);
 				}
 				else OutputMat = EdgeMat;
 				#endregion
@@ -862,6 +972,36 @@ namespace WireVisionInspection
 			}
 			return OutputMat;
 		}
+		#region 사각형의 변을 시계방향으로 정렬 - 참조 : https://www.crocus.co.kr/1634
+		public static void SortPointsClockwise(List<OpenCvSharp.Point> points)
+		{
+			float averageX = 0;
+			float averageY = 0;
+
+			foreach (OpenCvSharp.Point point in points)
+			{
+				averageX += point.X;
+				averageY += point.Y;
+			}
+
+			float finalAverageX = averageX / points.Count;
+			float finalAverageY = averageY / points.Count;
+
+			Comparison<OpenCvSharp.Point> comparison = (lhs, rhs) =>
+			{
+				double lhsAngle = Math.Atan2(lhs.Y - finalAverageY, lhs.X - finalAverageX);
+				double rhsAngle = Math.Atan2(rhs.Y - finalAverageY, rhs.X - finalAverageX);
+
+				// Depending on the coordinate system, you might need to reverse these two conditions
+				if (lhsAngle < rhsAngle) return -1;
+				if (lhsAngle > rhsAngle) return 1;
+
+				return 0;
+			};
+
+			points.Sort(comparison);
+		}
+		#endregion
 		public double DistanceToPoint(OpenCvSharp.Point a, OpenCvSharp.Point b)
 		{
 			return Math.Round((double)Math.Sqrt(Math.Pow(a.X - b.X, 2) + Math.Pow(a.Y - b.Y, 2)), 0);
@@ -876,10 +1016,66 @@ namespace WireVisionInspection
 			int PointY = shortY + ((longY - shortY) / 2);
 			return new OpenCvSharp.Point(PointX, PointY);
 		}
-		public double PixelToCentimeter(double pixel)
+		public double PixelToCentimeter(double pixel, int CamNo)
 		{
-			return Math.Round(pixel * 2.54 / 96, 2);
-			//return Math.Round(pixel * MainForm.Settings.CameraSetting.Cam1pxLength, 2);
+			//return Math.Round(pixel * 2.54 / 96, 2);
+			Camera_Setting CamSet = MainForm.Settings.CameraSetting;
+			double[] CamPx = new double[] { CamSet.Cam1pxLength, CamSet.Cam2pxLength, CamSet.Cam3pxLength };
+			return Math.Round(pixel * CamPx[CamNo - 1], 2);
+		}
+		private void ErrorCheck(List<OpenCvSharp.Point> points, List<OpenCvSharp.Point> rectangles, List<double> RectangleLengths)
+		{
+			if (rectangles[1].Y < rectangles[0].Y - 100 && rectangles[1].Y < rectangles[0].Y + 100)
+			{
+				// 1이 가장 밑
+				for (int i = 1; i < rectangles.Count; i++)
+				{
+					Console.WriteLine("1번 사각형 기준 " + (i + 1) + "번 사각형");
+					Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[0] - RectangleLengths[i * 4 + 0]), 2) + "cm");
+					Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[1] - RectangleLengths[i * 4 + 1]), 2) + "cm");
+					Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[2] - RectangleLengths[i * 4 + 2]), 2) + "cm");
+					Console.WriteLine("오차 4면 : " + Math.Round((RectangleLengths[3] - RectangleLengths[i * 4 + 3]), 2) + "cm");
+				}
+			}
+			else
+			{
+				// 1, 2가 가장 밑
+				//for (int i = 2; i < rectangles.Count; i+=2)
+				//{
+				//	Console.WriteLine("1번 사각형 기준" + (i + 1) + "번 사각형");
+				//	Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[0] - RectangleLengths[i * 4 + 0]), 2) + "cm");
+				//	Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[1] - RectangleLengths[i * 4 + 1]), 2) + "cm");
+				//	Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[2] - RectangleLengths[i * 4 + 2]), 2) + "cm");
+				//	Console.WriteLine("오차 4면 : " + Math.Round((RectangleLengths[3] - RectangleLengths[i * 4 + 3]), 2) + "cm");
+				//}
+				//for (int i = 3; i < rectangles.Count; i += 2)
+				//{
+				//	Console.WriteLine("2번 사각형 기준" + (i + 1) + "번 사각형");
+				//	Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[4] - RectangleLengths[i * 4 + 0]), 2) + "cm");
+				//	Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[5] - RectangleLengths[i * 4 + 1]), 2) + "cm");
+				//	Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[6] - RectangleLengths[i * 4 + 2]), 2) + "cm");
+				//	Console.WriteLine("오차 4면 : " + Math.Round((RectangleLengths[7] - RectangleLengths[i * 4 + 3]), 2) + "cm");
+				//}
+				for (int i = 2; i < rectangles.Count; i++)
+				{
+					if (rectangles[i].X > rectangles[0].X - 150 && rectangles[i].X < rectangles[0].X + 150)
+					{
+						Console.WriteLine("1번 사각형 기준 " + (i + 1) + "번 사각형");
+						Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[0] - RectangleLengths[i * 4 + 0]), 2) + "cm");
+						Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[1] - RectangleLengths[i * 4 + 1]), 2) + "cm");
+						Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[2] - RectangleLengths[i * 4 + 2]), 2) + "cm");
+						Console.WriteLine("오차 4면 : " + Math.Round((RectangleLengths[3] - RectangleLengths[i * 4 + 3]), 2) + "cm");
+					}
+					else
+					{
+						Console.WriteLine("2번 사각형 기준 " + (i + 1) + "번 사각형");
+						Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[4] - RectangleLengths[i * 4 + 0]), 2) + "cm");
+						Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[5] - RectangleLengths[i * 4 + 1]), 2) + "cm");
+						Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[6] - RectangleLengths[i * 4 + 2]), 2) + "cm");
+						Console.WriteLine("오차 4면 : " + Math.Round((RectangleLengths[7] - RectangleLengths[i * 4 + 3]), 2) + "cm");
+					}
+				}
+			}
 		}
 		private void FilterClick(object sender, EventArgs e)
 		{
@@ -919,7 +1115,7 @@ namespace WireVisionInspection
 						else VideoAnalysis_Videos[VideoNo].PosFrames = 1;
 						Mat image = new Mat();
 						VideoAnalysis_Videos[VideoNo].Read(image);
-						pbx[VideoNo].Image = BitmapConverter.ToBitmap(FilterSet(image, FilterCheck[VideoNo]));
+						pbx[VideoNo].Image = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[VideoNo], FilterCheck[VideoNo]));
 						if (VideoAnalysis_Videos[VideoNo].PosFrames <= 2) VideoAnalysis_Videos[VideoNo].PosFrames -= 1;
 					}
 				}

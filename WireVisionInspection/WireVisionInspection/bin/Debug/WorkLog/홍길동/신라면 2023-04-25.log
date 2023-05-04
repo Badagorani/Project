@@ -1,0 +1,11 @@
+[ 신라면 2023-04-25 화요일 09:35:20 403 ] Settings_Page -> XMLSave 
+[ 신라면 2023-04-25 화요일 09:37:21 661 ] Form1 -> Form1_FormClosing 
+[ 신라면 2023-04-25 화요일 09:37:21 671 ] RealTimeView_Page -> CameraClose 
+[ 신라면 2023-04-25 화요일 09:37:21 729 ] CameraControl -> Stop 
+[ 신라면 2023-04-25 화요일 09:37:23 202 ] CameraControl -> Close 
+[ 신라면 2023-04-25 화요일 09:37:23 229 ] CameraControl -> Stop 
+[ 신라면 2023-04-25 화요일 09:37:24 518 ] CameraControl -> Close 
+[ 신라면 2023-04-25 화요일 09:37:24 539 ] CameraControl -> Stop 
+[ 신라면 2023-04-25 화요일 09:37:24 895 ] CameraControl -> Close 
+[ 신라면 2023-04-25 화요일 09:37:24 913 ] VideoCheck_Page -> VideoClose 
+[ 신라면 2023-04-25 화요일 09:37:24 914 ] VideoAnalysis_Page -> VideoClose 

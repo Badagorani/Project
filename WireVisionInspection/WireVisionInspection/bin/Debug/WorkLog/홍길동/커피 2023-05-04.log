@@ -1,0 +1,12 @@
+[ 커피 2023-05-03 수요일 17:13:01 323 ] Form1 -> NavigationClick 
+[ 커피 2023-05-03 수요일 17:13:32 122 ] VideoAnalysis_Page -> PageChange 
+[ 커피 2023-05-03 수요일 17:13:35 613 ] Form1 -> Form1_FormClosing 
+[ 커피 2023-05-03 수요일 17:13:35 628 ] RealTimeView_Page -> CameraClose 
+[ 커피 2023-05-03 수요일 17:13:35 637 ] CameraControl -> Stop 
+[ 커피 2023-05-03 수요일 17:13:35 754 ] CameraControl -> Close 
+[ 커피 2023-05-03 수요일 17:13:35 787 ] CameraControl -> Stop 
+[ 커피 2023-05-03 수요일 17:13:35 912 ] CameraControl -> Close 
+[ 커피 2023-05-03 수요일 17:13:35 932 ] CameraControl -> Stop 
+[ 커피 2023-05-03 수요일 17:13:36 267 ] CameraControl -> Close 
+[ 커피 2023-05-03 수요일 17:13:36 290 ] VideoCheck_Page -> VideoClose 
+[ 커피 2023-05-03 수요일 17:13:36 291 ] VideoAnalysis_Page -> VideoClose 
