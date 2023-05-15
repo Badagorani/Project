@@ -29,7 +29,7 @@ namespace WireVisionInspection
 	{
 		Form1 MainForm;
 		public LogRecord Log;
-		public int Camera_Count = 3;
+		public int Camera_Count = 0;
 		private CameraControl[] m_Camera = null;
 		public Mutex[] m_mutexImage = null;
 		public Bitmap[] m_bitmap = null;
@@ -86,11 +86,14 @@ namespace WireVisionInspection
 			InitializeComponent();
 			this.MainForm = form;
 			Log = MainForm.Log;
-			m_Camera = new CameraControl[Camera_Count];
-			m_mutexImage = new Mutex[Camera_Count];
-			m_bitmap = new Bitmap[Camera_Count];
-			m_thread = new Thread[Camera_Count];
-			m_isWork = new bool[Camera_Count];
+			if(Camera_Count > 0)
+			{
+				m_Camera = new CameraControl[Camera_Count];
+				m_mutexImage = new Mutex[Camera_Count];
+				m_bitmap = new Bitmap[Camera_Count];
+				m_thread = new Thread[Camera_Count];
+				m_isWork = new bool[Camera_Count];
+			}
 
 			for (int i = 0; i < Camera_Count; i++)
 			{
@@ -795,7 +798,7 @@ namespace WireVisionInspection
 					MainForm.Settings.txt_UserText_CameraSetting.Enabled = false;
 				}
 				MainForm.Settings.CameraSetting.TextMark = cb_TextView.Text;
-				if (!m_Camera[0].IsOpened) txt_UserText.Text = MainForm.Settings.CameraSetting.UserText;
+				if (m_Camera != null && !m_Camera[0].IsOpened) txt_UserText.Text = MainForm.Settings.CameraSetting.UserText;
 				else MainForm.Settings.CameraSetting.UserText = txt_UserText.Text;
 				MainForm.Settings.XMLSave(MainForm.Settings.CameraSetting, MainForm.Settings.CameraSetting.GetType(), @"\CameraSetting.xml");
 			}
@@ -826,7 +829,10 @@ namespace WireVisionInspection
 		}
 		private void timer1_Tick(object sender, EventArgs e)
 		{
-			if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2]) MainForm.Close();
+			if(m_isWork != null)
+			{
+				if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2]) MainForm.Close();
+			}
 		}
 		public void CameraClose()
 		{

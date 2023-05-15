@@ -2,7 +2,7 @@
 <WorkFile_Setting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <LogSave>true</LogSave>
   <WorkUser>홍길동</WorkUser>
-  <WorkDay>2023-05-04 목요일</WorkDay>
-  <WorkTarget>커커피</WorkTarget>
+  <WorkDay>2023-05-15 월요일</WorkDay>
+  <WorkTarget>커피</WorkTarget>
   <WorkFilePath>C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\WorkLog</WorkFilePath>
 </WorkFile_Setting>

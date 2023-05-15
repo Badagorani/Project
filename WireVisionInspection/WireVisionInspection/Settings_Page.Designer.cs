@@ -496,6 +496,7 @@
 			this.txt_WorkUser_WorkFileSetting.StyleController = this.layoutControl1;
 			this.txt_WorkUser_WorkFileSetting.TabIndex = 21;
 			this.txt_WorkUser_WorkFileSetting.EditValueChanged += new System.EventHandler(this.WorkUserChange);
+			this.txt_WorkUser_WorkFileSetting.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WorkEnterEvent);
 			// 
 			// txt_WorkTarget_WorkFileSetting
 			// 
@@ -513,6 +514,7 @@
 			this.txt_WorkTarget_WorkFileSetting.StyleController = this.layoutControl1;
 			this.txt_WorkTarget_WorkFileSetting.TabIndex = 22;
 			this.txt_WorkTarget_WorkFileSetting.EditValueChanged += new System.EventHandler(this.WorkTargetChange);
+			this.txt_WorkTarget_WorkFileSetting.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WorkEnterEvent);
 			// 
 			// txt_UserText_CameraSetting
 			// 

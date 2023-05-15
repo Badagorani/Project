@@ -108,42 +108,51 @@ namespace WireVisionInspection
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			LoadingAnimationStart();
-			RealTimeView = new RealTimeView_Page(this);
-			RealTimeView.Parent = RealTimeView_Page;
-			if (RealTimeView.m_isWork[0] && RealTimeView.m_isWork[1] && RealTimeView.m_isWork[2])
+			try
 			{
-				RealTimeView.BringToFront();
-				RealTimeView.Dock = DockStyle.Fill;
-				RealTimeView.Show();
-				Settings.XMLLoad_CameraPlus();
+				RealTimeView = new RealTimeView_Page(this);
+				RealTimeView.Parent = RealTimeView_Page;
+				if (RealTimeView.m_isWork != null && RealTimeView.m_isWork[0] && RealTimeView.m_isWork[1] && RealTimeView.m_isWork[2])
+				{
+					RealTimeView.BringToFront();
+					RealTimeView.Dock = DockStyle.Fill;
+					RealTimeView.Show();
+					Settings.XMLLoad_CameraPlus();
+				}
+				else
+				{
+					//ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n", "경고");
+					ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n카메라 연결 후 다시 실행해 주세요!\n", "경고");
+					Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+					//this.Close();
+					//return;
+				}
+
+				VideoCheck = new VideoCheck_Page(this);
+				VideoCheck.Parent = VideoCheck_Page;
+				VideoCheck.BringToFront();
+				VideoCheck.Dock = DockStyle.Fill;
+				VideoCheck.Show();
+
+				VideoAnalysis = new VideoAnalysis_Page(this);
+				VideoAnalysis.Parent = VideoAnalysis_Page;
+				VideoAnalysis.BringToFront();
+				VideoAnalysis.Dock = DockStyle.Fill;
+				VideoAnalysis.Show();
+
+				Settings.Parent = Settings_Page;
+				Settings.BringToFront();
+				Settings.Dock = DockStyle.Fill;
+				Settings.Show();
+
+				navigationFrame2.SelectedPage = Settings_Page;
+				Settings.txt_WorkUser_WorkFileSetting.Focus();
 			}
-			else
+			catch(Exception ex)
 			{
-				ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n", "경고");
-				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-				this.Close();
-				return;
+				ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n" + ex.Message, "경고");
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
-
-			VideoCheck = new VideoCheck_Page(this);
-			VideoCheck.Parent = VideoCheck_Page;
-			VideoCheck.BringToFront();
-			VideoCheck.Dock = DockStyle.Fill;
-			VideoCheck.Show();
-
-			VideoAnalysis = new VideoAnalysis_Page(this);
-			VideoAnalysis.Parent = VideoAnalysis_Page;
-			VideoAnalysis.BringToFront();
-			VideoAnalysis.Dock = DockStyle.Fill;
-			VideoAnalysis.Show();
-
-			Settings.Parent = Settings_Page;
-			Settings.BringToFront();
-			Settings.Dock = DockStyle.Fill;
-			Settings.Show();
-
-			navigationFrame2.SelectedPage = Settings_Page;
-			Settings.txt_WorkUser_WorkFileSetting.Focus();
 			LoadingAnimationEnd();
 		}
 		#region 내비게이션 클릭 이벤트

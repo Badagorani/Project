@@ -274,3 +274,4 @@ C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireV
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.csproj.CopyComplete
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.exe
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.pdb
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.Form2.resources

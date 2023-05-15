@@ -543,6 +543,13 @@ namespace WireVisionInspection
 			}
 			//MainForm.LoadingAnimationEnd();
 		}
+		private void WorkEnterEvent(object sender, KeyEventArgs e)
+		{
+			if(e.KeyCode == Keys.Enter)
+			{
+				WorkUserSet(sender, e);
+			}
+		}
 		private void WorkDayChange(object sender, EventArgs e)
 		{
 			if (Log != null) Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");

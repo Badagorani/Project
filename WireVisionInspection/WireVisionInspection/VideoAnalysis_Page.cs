@@ -19,12 +19,16 @@ using System.Windows.Forms.VisualStyles;
 using System.Numerics;
 using DevExpress.Utils.Drawing.Helpers;
 using Microsoft.WindowsAPICodePack.Shell;
+using DevExpress.XtraBars.Docking2010.Views.Widget;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace WireVisionInspection
 {
 	public partial class VideoAnalysis_Page : XtraUserControl
 	{
 		Form1 MainForm;
+		Form2 SubForm;
 		public LogRecord Log;
 		#region Controls
 		VideoCapture[] VideoAnalysis_Videos = new VideoCapture[2];
@@ -42,6 +46,8 @@ namespace WireVisionInspection
 			this.MainForm = form;
 			Log = MainForm.Log;
 			PanelSettings();
+			SubForm = new Form2();
+			SubForm.Show();
 		}
 		private void VideoAnalysis_Page_Load(object sender, EventArgs e)
 		{
@@ -207,10 +213,63 @@ namespace WireVisionInspection
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", "영상1 여는 중 예외가 발생하였습니다!" + ex.Message, "주의");
+				MainForm.ShowMessage("오류", "영상1 여는 중 예외가 발생하였습니다!\n영상은 'Cam「1 ~ 3」' 폴더 안에 있어야 합니다!\n" + ex.Message, "주의");
 				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 			MainForm.LoadingAnimationEnd();
+		}
+		private void VideoPlay1()
+		{
+			IsPlaying[0] = true;
+			if (VideoAnalysis_Videos[0] != null)
+			{
+				//int videofps = (int)Math.Ceiling(fps[0]) / 1000;
+				int videofps = 1000 / fps[0];
+				Stopwatch st = new Stopwatch();
+				st.Start();
+				using (Mat image = new Mat())
+				{
+					EventWaitHandle handle = new EventWaitHandle(false, EventResetMode.AutoReset);
+					Bitmap bmp;
+					while (IsPlaying[0])
+					{
+						handle.Set();
+						long started = st.ElapsedMilliseconds;
+						if (IsPaused[0]) continue;
+						if (VideoAnalysis_Videos[0].PosFrames == VideoAnalysis_Videos[0].FrameCount) break;
+						if (VideoAnalysis_Videos[0].Read(image))
+						{
+							Invoke((Action)(() =>
+							{
+								bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[0], FilterCheck[0]));
+								if(VideoAnalysis_Video1.Image != null)
+								{
+									//var beforeimage = VideoAnalysis_Video1.Image;
+									VideoAnalysis_Video1.Image = null;
+									VideoAnalysis_Video1.Image = bmp;
+									VideoAnalysis_Video1.Refresh();
+									//handle.WaitOne();
+									//beforeimage.Dispose();
+								}
+							}));
+						}
+						Invoke((Action)(() =>
+						{
+							tbc_VideoAnalysisTrack1.Value = VideoAnalysis_Videos[0].PosFrames;
+						}));
+						int elapsed = (int)(st.ElapsedMilliseconds - started);
+						int delay = videofps - elapsed;
+						//Cv2.WaitKey(videofps1
+						if (delay > 0) Cv2.WaitKey(delay);
+
+						Console.WriteLine("Video 01 : " + delay);
+						//if (IsPlaying[1] && !IsPaused[1]) Thread.Sleep(30);
+
+						//WaitHandle.
+					}
+				}
+			}
+			else Play = null;
 		}
 		private void VideoCheck_Play1(string ButtonText)
 		{
@@ -224,7 +283,8 @@ namespace WireVisionInspection
 				}
 				if (Play[0] == null)
 				{
-					IsPlaying[0] = true;
+					#region 스레드 람다식 구현1
+					/*IsPlaying[0] = true;
 					Play[0] = new Thread(() =>
 					{
 						if (VideoAnalysis_Videos[0] != null)
@@ -257,11 +317,15 @@ namespace WireVisionInspection
 									int delay = videofps - elapsed;
 									//Cv2.WaitKey(videofps);
 									if (delay > 0) Cv2.WaitKey(delay);
+									if (IsPlaying[1] && !IsPaused[1]) Thread.Sleep(30);
 								}
 							}
 						}
 						else Play = null;
-					});
+					});*/
+					#endregion
+					Play[0] = new Thread(new ThreadStart(VideoPlay1));
+					//Play[0].IsBackground = true;
 					Play[0].Start();
 				}
 				if (ButtonText.Equals("재 생"))
@@ -392,7 +456,7 @@ namespace WireVisionInspection
 						string FileName = ofd.FileName;
 						VideoCapture VideoAnalysis_VideoCapture = new VideoCapture(FileName);
 						VideoAnalysis_Videos[1] = VideoAnalysis_VideoCapture;
-						VideoCamNo[1] = int.Parse(FileName.Substring(FileName.LastIndexOf("Cam"), 1));
+						VideoCamNo[1] = int.Parse(FileName.Substring(FileName.LastIndexOf("Cam") + 3, 1));
 
 						if (!VideoAnalysis_VideoCapture.Open(FileName))
 						{
@@ -423,6 +487,57 @@ namespace WireVisionInspection
 			}
 			MainForm.LoadingAnimationEnd();
 		}
+		private void VideoPlay2()
+		{
+			IsPlaying[1] = true;
+			if (VideoAnalysis_Videos[1] != null)
+			{
+				//int videofps = (int)Math.Ceiling(fps[1]) / 1000;
+				int videofps = 1000 / fps[1];
+				Stopwatch st = new Stopwatch();
+				st.Start();
+				using (Mat image = new Mat())
+				{
+					EventWaitHandle handle = new EventWaitHandle(false, EventResetMode.AutoReset);
+					Bitmap bmp;
+					while (IsPlaying[1])
+					{
+						handle.Set();
+						long started = st.ElapsedMilliseconds;
+						if (IsPaused[1]) continue;
+						if (VideoAnalysis_Videos[1].PosFrames == VideoAnalysis_Videos[1].FrameCount) break;
+						if (VideoAnalysis_Videos[1].Read(image))
+						{
+							Invoke((Action)(() =>
+							{
+								bmp = BitmapConverter.ToBitmap(FilterSet(image, VideoCamNo[1], FilterCheck[1]));
+								if (VideoAnalysis_Video2.Image != null)
+								{
+									//var beforeimage = VideoAnalysis_Video2.Image;
+									VideoAnalysis_Video2.Image = null;
+									VideoAnalysis_Video2.Image = bmp;
+									VideoAnalysis_Video2.Refresh();
+									//handle.WaitOne();
+									//beforeimage.Dispose();
+								}
+							}));
+						}
+						Invoke((Action)(() =>
+						{
+							tbc_VideoAnalysisTrack2.Value = VideoAnalysis_Videos[1].PosFrames;
+						}));
+						int elapsed = (int)(st.ElapsedMilliseconds - started);
+						int delay = videofps - elapsed;
+						//Cv2.WaitKey(videofps);
+						if (delay > 0) Cv2.WaitKey(delay);
+						Console.WriteLine("Video 02 : " + delay);
+
+						Thread.Sleep(1);
+					}
+				}
+			}
+			else Play = null;
+		}
 		private void VideoCheck_Play2(string ButtonText)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
@@ -435,7 +550,8 @@ namespace WireVisionInspection
 				}
 				if (Play[1] == null)
 				{
-					IsPlaying[1] = true;
+					#region 스레드 람다식 구현2
+					/*IsPlaying[1] = true;
 					Play[1] = new Thread(() =>
 					{
 						if (VideoAnalysis_Videos[1] != null)
@@ -472,7 +588,10 @@ namespace WireVisionInspection
 							}
 						}
 						else Play = null;
-					});
+					});*/
+					#endregion
+					Play[1] = new Thread(new ThreadStart(VideoPlay2));
+					//Play[1].IsBackground = true;
 					Play[1].Start();
 				}
 				if (ButtonText.Equals("재 생"))
@@ -495,6 +614,7 @@ namespace WireVisionInspection
 				return;
 			}
 		}
+
 		private void VideoCheck_Stop2()
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
@@ -633,6 +753,7 @@ namespace WireVisionInspection
 		}
 		private Mat FilterSet(Mat InputMat, int VideoCamNo, int Filter/* = 1*/)
 		{
+			Stopwatch sw = Stopwatch.StartNew();
 			if (InputMat == null) return InputMat;
 
 			Mat OutputMat = InputMat.Clone();
@@ -822,6 +943,7 @@ namespace WireVisionInspection
 					Cv2.FindContours(dilate, out contours, out hierarchy, RetrievalModes.CComp, ContourApproximationModes.ApproxSimple);
 
 					List<OpenCvSharp.Point> vertex = new List<OpenCvSharp.Point>();
+					Console.WriteLine($"\n");
 					for (int i = 0; i < contours.Length; i++)
 					{
 						double length = Cv2.ArcLength(contours[i], true);
@@ -957,7 +1079,7 @@ namespace WireVisionInspection
 						}
 						RectangleLengths.Add(PointLength);
 						Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
-						Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
+						//Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
 					}
 					ErrorCheck(vertex, RectanglePoint, RectangleLengths);
 				}
@@ -969,6 +1091,14 @@ namespace WireVisionInspection
 				//MainForm.ShowMessage("종료", "영상 필터 적용 중 예외가 발생하였습니다!!\n" + ex.Message, "주의");
 				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 				OutputMat = InputMat;
+			}
+			string CallFunction = new StackFrame(1, true).GetMethod().Name;
+			//Console.WriteLine(VidoeDisplayNo + "번째 영상 메서드 실행 시간 : " + sw.ElapsedMilliseconds.ToString() + "ms");
+			if (CallFunction.Contains(">"))
+			{
+				string VidoeDisplayNo = CallFunction.Substring(CallFunction.LastIndexOf(">") - 1, 1);
+				SubForm.listBox1.Items.Add("적용된 필터 : " + Filter + " / " + VidoeDisplayNo + "번째 영상 메서드 실행 시간 : " + sw.ElapsedMilliseconds.ToString() + "ms\n");
+				SubForm.listBox1.SelectedIndex = SubForm.listBox1.Items.Count - 1;
 			}
 			return OutputMat;
 		}
@@ -1030,7 +1160,7 @@ namespace WireVisionInspection
 				// 1이 가장 밑
 				for (int i = 1; i < rectangles.Count; i++)
 				{
-					Console.WriteLine("1번 사각형 기준 " + (i + 1) + "번 사각형");
+					Console.WriteLine("\n1번 사각형 기준 " + (i + 1) + "번 사각형");
 					Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[0] - RectangleLengths[i * 4 + 0]), 2) + "cm");
 					Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[1] - RectangleLengths[i * 4 + 1]), 2) + "cm");
 					Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[2] - RectangleLengths[i * 4 + 2]), 2) + "cm");
@@ -1060,7 +1190,7 @@ namespace WireVisionInspection
 				{
 					if (rectangles[i].X > rectangles[0].X - 150 && rectangles[i].X < rectangles[0].X + 150)
 					{
-						Console.WriteLine("1번 사각형 기준 " + (i + 1) + "번 사각형");
+						Console.WriteLine("\n1번 사각형 기준 " + (i + 1) + "번 사각형");
 						Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[0] - RectangleLengths[i * 4 + 0]), 2) + "cm");
 						Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[1] - RectangleLengths[i * 4 + 1]), 2) + "cm");
 						Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[2] - RectangleLengths[i * 4 + 2]), 2) + "cm");
@@ -1068,7 +1198,7 @@ namespace WireVisionInspection
 					}
 					else
 					{
-						Console.WriteLine("2번 사각형 기준 " + (i + 1) + "번 사각형");
+						Console.WriteLine("\n2번 사각형 기준 " + (i + 1) + "번 사각형");
 						Console.WriteLine("오차 1면 : " + Math.Round((RectangleLengths[4] - RectangleLengths[i * 4 + 0]), 2) + "cm");
 						Console.WriteLine("오차 2면 : " + Math.Round((RectangleLengths[5] - RectangleLengths[i * 4 + 1]), 2) + "cm");
 						Console.WriteLine("오차 3면 : " + Math.Round((RectangleLengths[6] - RectangleLengths[i * 4 + 2]), 2) + "cm");
