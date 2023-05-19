@@ -29,7 +29,7 @@ namespace WireVisionInspection
 	{
 		Form1 MainForm;
 		public LogRecord Log;
-		public int Camera_Count = 0;
+		public int Camera_Count = 3;
 		private CameraControl[] m_Camera = null;
 		public Mutex[] m_mutexImage = null;
 		public Bitmap[] m_bitmap = null;
@@ -117,7 +117,7 @@ namespace WireVisionInspection
 					{
 						//MainForm.ShowMessage("오류", "카메라 연결에 실패하였습니다!", "경고");
 						//MainForm.Close();
-						return;
+						continue;
 					}
 
 					long width = 0, height = 0;
@@ -145,13 +145,13 @@ namespace WireVisionInspection
 					m_thread[index].Start(lParameters);
 					m_Camera[index].Start();
 				}
-				timer1.Start();
 			}
 			catch (Exception ex)
 			{
 				MainForm.ShowMessage("오류", "카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n" + ex.Message, "경고");
 				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
+			timer1.Start();
 		}
 		public void VideoSetLoad()
 		{
@@ -405,10 +405,12 @@ namespace WireVisionInspection
 
 					Bitmap bmpimg = (Bitmap)bmp.Clone();
 					pb_cam.Image = bmpimg;
+					pb_cam.Refresh();
 					int CamNo = int.Parse(pb_cam.Name.Substring(("RealTimeView_Cam".Length), 1));
 					if (CamNo == NowSelectedCamNo)
 					{
 						RealTimeView_MainCam.Image = bmpimg;
+						RealTimeView_MainCam.Refresh();
 						//if (NowSelectedCamNo > 0 && NowSelectedCamNo < 4)
 						//{
 
@@ -500,7 +502,7 @@ namespace WireVisionInspection
 				manager.Form.Parent.Controls[0].Controls.Add(sb);
 				manager.Form.Parent.Controls[0].Controls.Add(manager.Panels[0]);
 				sb.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
-				sb.Text = "화면을 다시 열려면\n더블클릭 하세요";
+				sb.Text = "화면을 다시 열려면\n더블클릭하세요";
 				sb.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
 				sb.Dock = DockStyle.Fill;
 				sb.DoubleClick += new EventHandler(PanelDoubleClick);
@@ -683,12 +685,12 @@ namespace WireVisionInspection
 				VideoWriter VideoFile3 = new VideoWriter();
 				VideoFiles = new VideoWriter[] { VideoFile1, VideoFile2, VideoFile3 };
 				string nowtime = DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분 ss초");
-				for (int i = 1; i < 4; i++)
+				for (int i = 0; i < Camera_Count; i++)
 				{
-					string folderpath = FolderPath(2, i);
+					string folderpath = FolderPath(2, i + 1);
 					string videopath = folderpath + nowtime + " 녹화.mp4";
 					//VideoFiles[i - 1].Open(videopath, m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height, 7/*Accord.Math.Rational.FromDouble(7.75)*/, VideoCodec.MPEG4, 100000);
-					VideoFiles[i - 1].Open(videopath, FourCC.MPG4, 7, new OpenCvSharp.Size(m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height), true);
+					VideoFiles[i].Open(videopath, FourCC.MPG4, 7, new OpenCvSharp.Size(m_bitmap[NowSelectedCamNo - 1].Width, m_bitmap[NowSelectedCamNo - 1].Height), true);
 				}
 				IsRecord = true;
 			}
@@ -721,6 +723,7 @@ namespace WireVisionInspection
 			}
 		}
 		#endregion
+		#region 저장할 폴더 반환
 		/// <summary>
 		/// 저장할 폴더를 반환한다
 		/// </summary>
@@ -769,6 +772,7 @@ namespace WireVisionInspection
 				return "";
 			}
 		}
+		#endregion
 		private void cb_TextView_SelectedValueChanged(object sender, EventArgs e)
 		{
 			//MainForm.LoadingAnimationStart();
@@ -831,7 +835,11 @@ namespace WireVisionInspection
 		{
 			if(m_isWork != null)
 			{
-				if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2]) MainForm.Close();
+				if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2])
+				{
+					MainForm.ShowMessage("오류", "모든 카메라가 동작하지 않습니다!\n프로그램을 종료합니다!", "경고");
+					MainForm.Close();
+				}
 			}
 		}
 		public void CameraClose()

@@ -267,6 +267,7 @@
     <Content Include="OpenCvSharpExtern.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resources\연결확인.png" />
     <None Include="Resources\assigntask.svg" />
     <None Include="Resources\lensico.ico" />
     <None Include="Resources\actions_reload.svg" />

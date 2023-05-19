@@ -112,11 +112,11 @@ namespace WireVisionInspection
 			{
 				RealTimeView = new RealTimeView_Page(this);
 				RealTimeView.Parent = RealTimeView_Page;
+				RealTimeView.BringToFront();
+				RealTimeView.Dock = DockStyle.Fill;
+				RealTimeView.Show();
 				if (RealTimeView.m_isWork != null && RealTimeView.m_isWork[0] && RealTimeView.m_isWork[1] && RealTimeView.m_isWork[2])
 				{
-					RealTimeView.BringToFront();
-					RealTimeView.Dock = DockStyle.Fill;
-					RealTimeView.Show();
 					Settings.XMLLoad_CameraPlus();
 				}
 				else

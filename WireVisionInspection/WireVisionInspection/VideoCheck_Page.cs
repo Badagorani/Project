@@ -100,7 +100,7 @@ namespace WireVisionInspection
 				manager.Form.Parent.Controls[0].Controls.Add(sb);
 				manager.Form.Parent.Controls[0].Controls.Add(manager.Panels[0]);
 				sb.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
-				sb.Text = "화면을 다시 열려면\n더블클릭 하세요";
+				sb.Text = "화면을 다시 열려면\n더블클릭하세요";
 				sb.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
 				sb.Dock = DockStyle.Fill;
 				sb.DoubleClick += new EventHandler(PanelDoubleClick);
@@ -189,7 +189,7 @@ namespace WireVisionInspection
 				using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = false, ValidateNames = true })
 				{
 					ofd.Filter = "동영상 파일 (*.mp4;*.avi;*.mov;*.wmv;*.mkv)|*.mp4;*.avi;*.mov;*.wmv;*.mkv";
-					ofd.InitialDirectory = @"C:\FS-MCS500POE_Video_Save";
+					ofd.InitialDirectory = MainForm.Settings.ProgramSetting.VideoFilePath;
 
 					MainForm.LoadingAnimationStart();
 					if (ofd.ShowDialog() == DialogResult.OK)
@@ -232,7 +232,7 @@ namespace WireVisionInspection
 			}
 			catch (Exception ex)
 			{
-				MainForm.ShowMessage("오류", "영상 여는 중 예외가 발생하였습니다!" + ex.Message, "주의");
+				MainForm.ShowMessage("오류", "영상 여는 중 예외가 발생하였습니다!\n" + ex.Message, "주의");
 				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 			MainForm.LoadingAnimationEnd();
@@ -272,6 +272,7 @@ namespace WireVisionInspection
 										{
 											bmp = BitmapConverter.ToBitmap(image);
 											VideoCheck_Cam1.Image = bmp;
+											VideoCheck_Cam1.Refresh();
 										}));
 									}
 									if (VideoCheck_Videos[1].Read(image))
@@ -280,6 +281,7 @@ namespace WireVisionInspection
 										{
 											bmp = BitmapConverter.ToBitmap(image);
 											VideoCheck_Cam2.Image = bmp;
+											VideoCheck_Cam2.Refresh();
 										}));
 									}
 									if (VideoCheck_Videos[2].Read(image))
@@ -288,6 +290,7 @@ namespace WireVisionInspection
 										{
 											bmp = BitmapConverter.ToBitmap(image);
 											VideoCheck_Cam3.Image = bmp;
+											VideoCheck_Cam3.Refresh();
 										}));
 									}
 									//if (NowSelectedCamNo == 1) VideoCheck_MainCam.Image = bmp;
@@ -295,6 +298,7 @@ namespace WireVisionInspection
 									Invoke((Action)(() =>
 									{
 										VideoCheck_MainCam.Image = VideoCheck_Pictures[MainForm.RealTimeView.NowSelectedCamNo - 1].Image;
+										VideoCheck_MainCam.Refresh();
 										tbc_VideoCheckTrack.Value = VideoCheck_Videos[0].PosFrames;
 									}));
 									int elapsed = (int)(st.ElapsedMilliseconds - started);
@@ -449,7 +453,7 @@ namespace WireVisionInspection
 		}
 		private void tbc_VideoCheckTrack_Scroll(object sender, EventArgs e)
 		{
-			MainForm.LoadingAnimationStart();
+			//MainForm.LoadingAnimationStart();
 			if (IsPaused)
 			{
 				for (int i = 0; i < VideoCheck_Videos.Length; i++)
@@ -471,7 +475,7 @@ namespace WireVisionInspection
 				IsPaused = false;
 			}
 			VideoCheck_MainCam.Image = VideoCheck_Pictures[MainForm.RealTimeView.NowSelectedCamNo - 1].Image;
-			MainForm.LoadingAnimationEnd();
+			//MainForm.LoadingAnimationEnd();
 		}
 		private void VideoCheck_TrackBar_ValueChanged(object sender, EventArgs e)
 		{

@@ -95,7 +95,7 @@ namespace WireVisionInspection
 				manager.Form.Parent.Controls[0].Controls.Add(sb);
 				manager.Form.Parent.Controls[0].Controls.Add(manager.Panels[0]);
 				sb.Font = new Font("맑은 고딕", 18F, FontStyle.Bold);
-				sb.Text = "화면을 다시 열려면\n더블클릭 하세요";
+				sb.Text = "화면을 다시 열려면\n더블클릭하세요";
 				sb.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
 				sb.Dock = DockStyle.Fill;
 				sb.DoubleClick += new EventHandler(PanelDoubleClick);
@@ -944,12 +944,29 @@ namespace WireVisionInspection
 
 					List<OpenCvSharp.Point> vertex = new List<OpenCvSharp.Point>();
 					Console.WriteLine($"\n");
+					int minLen, maxLen;
+					double avrLen = 0;
+					foreach(OpenCvSharp.Point[] p in contours)
+					{
+						avrLen += Cv2.ArcLength(p, true);
+					}
+					Console.WriteLine("평균 길이 : " + (avrLen / contours.Length).ToString());
+					if((avrLen / contours.Length) < 1300)
+					{
+						minLen = 1000;
+						maxLen = 1850;
+					}
+					else
+					{
+						minLen = 1800;
+						maxLen = 3200;
+					}
 					for (int i = 0; i < contours.Length; i++)
 					{
 						double length = Cv2.ArcLength(contours[i], true);
-						if (length > 3200 || length < 1800) continue;
+						if (length > maxLen/*3200*/ || length < minLen/*1800*/) continue;
 						OpenCvSharp.Point[] pp = Cv2.ApproxPolyDP(contours[i], 0.02 * length, true);
-						RotatedRect rrect = Cv2.MinAreaRect(pp);
+						//RotatedRect rrect = Cv2.MinAreaRect(pp);
 						if (pp.Length == 4)
 						{
 							Console.WriteLine($"순서 : {i}, 길이 : {length}");
@@ -1055,30 +1072,42 @@ namespace WireVisionInspection
 									continue;
 								}
 								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
-								writepoint.Y += 30;
+								writepoint.X -= 120;
+								writepoint.Y += 50;
 								break;
 							case 1:
 								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
 								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
-								writepoint.X -= 15;
-								writepoint.Y += 40;
+								writepoint.X -= 105;
+								writepoint.Y += 50;
 								break;
 							case 2:
 								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i + 1]), VideoCamNo);
 								writepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
-								writepoint.Y -= 30;
+								writepoint.X -= 120;
+								writepoint.Y -= 20;
 								break;
 							case 3:
 								PointLength = PixelToCentimeter(DistanceToPoint(vertex[i], vertex[i - 3]), VideoCamNo);
 								writepoint = LengthWritePoint(vertex[i], vertex[i - 3]);
-								writepoint.X += 15;
-								writepoint.Y -= 40;
+								writepoint.X -= 105;
+								writepoint.Y -= 10;
 								RectanglePoint.Add(LengthWritePoint(vertex[i], vertex[i - 2]));
-								Cv2.PutText(OutputMat, (i / 4 + 1).ToString(), LengthWritePoint(vertex[i], vertex[i - 2]), HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+								if((i / 4 + 1) < 10)
+								{
+									Cv2.PutText(OutputMat, (i / 4 + 1).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(50, -50)), 
+									HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+								}
+								else
+								{
+									Cv2.PutText(OutputMat, (i / 4 + 1).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(100, -50)),
+									HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+								}
 								break;
 						}
 						RectangleLengths.Add(PointLength);
-						Cv2.PutText(OutputMat, i % 4 + 1 + $"side : {PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 2);
+						Cv2.PutText(OutputMat, /*i % 4 + 1 + */$"{PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 3);
+						
 						//Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
 					}
 					ErrorCheck(vertex, RectanglePoint, RectangleLengths);

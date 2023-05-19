@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Program_Setting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <BasicCameraView>1</BasicCameraView>
+  <BasicCameraView>0</BasicCameraView>
   <ImageFilePath>C:\FS-MCS500POE_Image_Save</ImageFilePath>
   <ImageFileFormat>JPG</ImageFileFormat>
   <VideoFilePath>C:\FS-MCS500POE_Video_Save</VideoFilePath>

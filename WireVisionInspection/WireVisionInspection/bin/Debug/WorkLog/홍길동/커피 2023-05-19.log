@@ -1,0 +1,23 @@
+[  2023-05-19 금요일 09:33:00 974 ] 파일 생성 성공
+[ 커피 2023-05-19 금요일 09:33:00 973 ] Settings_Page -> XMLSave 
+[ 커피 2023-05-19 금요일 09:33:03 621 ] Form1 -> NavigationClick 
+[ 커피 2023-05-19 금요일 09:33:03 835 ] VideoAnalysis_Page -> VideoAnalysis_Page_Load 
+[ 커피 2023-05-19 금요일 09:33:06 075 ] Form1 -> NavigationClick 
+[ 커피 2023-05-19 금요일 09:33:06 076 ] VideoAnalysis_Page -> PageChange 
+[ 커피 2023-05-19 금요일 09:33:08 362 ] Settings_Page -> FolderOpen 
+[ 커피 2023-05-19 금요일 09:49:46 243 ] Form1 -> NavigationClick 
+[ 커피 2023-05-19 금요일 09:49:48 434 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ 커피 2023-05-19 금요일 09:49:48 482 ] VideoAnalysis_Page -> VideoCheck_FileOpen2 
+[ 커피 2023-05-19 금요일 09:49:54 568 ] VideoAnalysis_Page -> FilterClick 
+[ 커피 2023-05-19 금요일 09:50:05 462 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ 커피 2023-05-19 금요일 09:50:05 466 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ 커피 2023-05-19 금요일 09:50:19 666 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ 커피 2023-05-19 금요일 09:50:19 667 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ 커피 2023-05-19 금요일 13:26:42 428 ] Form1 -> NavigationClick 
+[ 커피 2023-05-19 금요일 13:26:42 429 ] VideoAnalysis_Page -> PageChange 
+[ 커피 2023-05-19 금요일 13:26:47 075 ] RealTimeView_Page -> RealTimeView_CamActions 
+[ 커피 2023-05-19 금요일 13:26:57 244 ] RealTimeView_Page -> RealTimeView_CamActions 
+[ 커피 2023-05-19 금요일 13:27:03 140 ] RealTimeView_Page -> RealTimeView_CamActions 
+[ 커피 2023-05-19 금요일 13:27:08 664 ] RealTimeView_Page -> RealTimeView_CamActions 
+[ 커피 2023-05-19 금요일 13:28:11 051 ] RealTimeView_Page -> PanelClosed 
+[ 커피 2023-05-19 금요일 13:28:13 637 ] RealTimeView_Page -> PanelDoubleClick 

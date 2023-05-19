@@ -1,0 +1,47 @@
+[  2023-05-17 수요일 09:05:16 400 ] 파일 생성 성공
+[ default 2023-05-17 수요일 09:05:16 399 ] 프로그램 시작
+[ default 2023-05-17 수요일 09:05:18 832 ] Form1 -> Form1_Shown 
+[ default 2023-05-17 수요일 09:05:19 361 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-05-17 수요일 09:05:19 716 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-05-17 수요일 09:05:19 717 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-05-17 수요일 09:05:19 718 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ default 2023-05-17 수요일 09:05:19 719 ] Settings_Page -> XMLSave 
+[ default 2023-05-17 수요일 09:05:23 348 ] Form1 -> Form1_Shown 
+[ default 2023-05-17 수요일 09:05:23 385 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-05-17 수요일 09:05:23 526 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-05-17 수요일 09:05:27 724 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:27 837 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:27 842 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:27 843 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:28 219 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:28 221 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 09:05:28 346 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 470 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 476 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 477 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 814 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 817 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 09:05:28 818 ] Settings_Page -> WorkUserSet 
+[ default 2023-05-17 수요일 10:42:18 260 ] 프로그램 시작
+[ default 2023-05-17 수요일 10:42:20 632 ] Form1 -> Form1_Shown 
+[ default 2023-05-17 수요일 10:42:21 063 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-05-17 수요일 10:42:21 424 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-05-17 수요일 10:42:21 425 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-05-17 수요일 10:42:21 427 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ default 2023-05-17 수요일 10:42:21 429 ] Settings_Page -> XMLSave 
+[ default 2023-05-17 수요일 10:42:23 403 ] Form1 -> Form1_Shown 
+[ default 2023-05-17 수요일 10:42:23 450 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-05-17 수요일 10:42:23 636 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-05-17 수요일 10:42:25 998 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 102 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 106 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 107 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 241 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 244 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-17 수요일 10:42:26 389 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 530 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 532 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 534 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 713 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 715 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-17 수요일 10:42:26 716 ] Settings_Page -> WorkUserSet 
