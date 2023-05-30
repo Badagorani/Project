@@ -1,0 +1,65 @@
+[  2023-05-25 목요일 09:34:52 559 ] 파일 생성 성공
+[ default 2023-05-25 목요일 09:34:52 559 ] 프로그램 시작
+[ default 2023-05-25 목요일 09:34:54 888 ] Form1 -> Form1_Shown 
+[ default 2023-05-25 목요일 09:34:55 822 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-05-25 목요일 09:34:56 180 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-05-25 목요일 09:34:56 180 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-05-25 목요일 09:34:56 181 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ default 2023-05-25 목요일 09:34:56 182 ] Settings_Page -> XMLSave 
+[ default 2023-05-25 목요일 09:34:56 183 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 09:34:56 410 ] CameraControl -> open 
+[ default 2023-05-25 목요일 09:34:56 432 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-05-25 목요일 09:34:56 466 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-05-25 목요일 09:34:56 476 ] CameraControl -> Start 
+[ default 2023-05-25 목요일 09:34:57 070 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 09:34:57 108 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-05-25 목요일 09:34:57 108 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 09:34:57 123 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-05-25 목요일 09:36:20 532 ] Form1 -> Form1_Shown 
+[ default 2023-05-25 목요일 09:36:20 592 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-05-25 목요일 09:36:20 704 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-05-25 목요일 09:36:23 236 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 350 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 363 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 363 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 484 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 489 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 09:36:23 585 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 737 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 743 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 744 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 902 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 904 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 09:36:23 905 ] Settings_Page -> WorkUserSet 
+[ default 2023-05-25 목요일 17:12:20 167 ] 프로그램 시작
+[ default 2023-05-25 목요일 17:12:22 503 ] Form1 -> Form1_Shown 
+[ default 2023-05-25 목요일 17:12:23 321 ] RealTimeView_Page -> PanelSettings 
+[ default 2023-05-25 목요일 17:12:23 681 ] RealTimeView_Page -> RealTimeView_Page_Load 
+[ default 2023-05-25 목요일 17:12:23 682 ] RealTimeView_Page -> VideoSetLoad 
+[ default 2023-05-25 목요일 17:12:23 683 ] RealTimeView_Page -> cb_TextView_SelectedValueChanged 
+[ default 2023-05-25 목요일 17:12:23 684 ] Settings_Page -> XMLSave 
+[ default 2023-05-25 목요일 17:12:23 685 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 17:12:23 904 ] CameraControl -> open 
+[ default 2023-05-25 목요일 17:12:23 936 ] RealTimeView_Page -> CreateBitmap 
+[ default 2023-05-25 목요일 17:12:23 941 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-05-25 목요일 17:12:23 957 ] CameraControl -> Start 
+[ default 2023-05-25 목요일 17:12:24 555 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 17:12:24 625 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-05-25 목요일 17:12:24 625 ] CameraControl -> CameraOpen 
+[ default 2023-05-25 목요일 17:12:24 654 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-05-25 목요일 17:12:25 497 ] Form1 -> Form1_Shown 
+[ default 2023-05-25 목요일 17:12:25 566 ] VideoCheck_Page -> PanelSettings 
+[ default 2023-05-25 목요일 17:12:25 696 ] VideoAnalysis_Page -> PanelSettings 
+[ default 2023-05-25 목요일 17:12:28 311 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 433 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 441 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 443 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 556 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 563 ] Settings_Page -> WorkUserChange 
+[ default 2023-05-25 목요일 17:12:28 819 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:28 940 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:28 940 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:28 940 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:29 336 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:29 336 ] Settings_Page -> WorkTargetChange 
+[ default 2023-05-25 목요일 17:12:29 338 ] Settings_Page -> WorkUserSet 

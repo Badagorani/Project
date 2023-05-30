@@ -1,0 +1,199 @@
+[  2023-05-25 목요일 09:36:23 942 ] 파일 생성 성공
+[ ㅓㅓ 2023-05-25 목요일 09:36:23 940 ] Settings_Page -> XMLSave 
+[ ㅓㅓ 2023-05-25 목요일 09:36:25 600 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-05-25 목요일 09:36:25 835 ] VideoAnalysis_Page -> VideoAnalysis_Page_Load 
+[ ㅓㅓ 2023-05-25 목요일 11:53:02 705 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 11:53:02 793 ] VideoAnalysis_Page -> VideoCheck_FileOpen1 
+[ ㅓㅓ 2023-05-25 목요일 11:53:19 689 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 11:53:22 681 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 11:53:22 703 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 11:53:34 915 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 11:53:34 916 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 13:26:42 555 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:26:42 563 ] VideoAnalysis_Page -> VideoCheck_FileOpen2 
+[ ㅓㅓ 2023-05-25 목요일 13:26:57 875 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:29:38 575 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:29:38 585 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 13:29:55 455 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:29:56 881 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:29:58 369 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:29:58 988 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:30:01 099 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:01 101 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:02 121 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:02 121 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:09 797 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:09 957 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:10 107 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:10 317 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:10 481 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:10 624 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:10 842 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 034 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 191 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 371 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 536 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 715 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:11 867 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 029 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 187 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 372 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 519 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 688 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:12 869 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:13 022 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:13 198 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:13 371 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:13 792 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:13 923 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 130 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 279 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 432 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 606 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 790 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:14 958 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:15 062 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:15 063 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:15 139 ] VideoAnalysis_Page -> FilterSet 인덱스가 범위를 벗어났습니다. 인덱스는 음수가 아니어야 하며 컬렉션의 크기보다 작아야 합니다.
+매개 변수 이름: index
+[ ㅓㅓ 2023-05-25 목요일 13:30:18 205 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:30:20 552 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:30:21 930 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 13:30:33 057 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:33 058 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:46 398 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 13:30:46 398 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:22 489 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:22 489 ] VideoAnalysis_Page -> VideoCheck_FileOpen2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:25 282 ] VideoAnalysis_Page -> VideoCheck_FileClose2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:27 004 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 14:18:30 098 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:30 099 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:38 097 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 14:18:38 097 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 15:03:19 407 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-05-25 목요일 15:03:19 418 ] VideoAnalysis_Page -> PageChange 
+[ ㅓㅓ 2023-05-25 목요일 15:03:28 835 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-05-25 목요일 16:58:10 523 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 16:58:10 528 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 16:58:18 708 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 16:58:18 712 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 16:58:34 929 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 16:58:34 931 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 16:58:37 557 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 16:58:37 557 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:00 716 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:00 716 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:05 105 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:05 105 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:06 513 ] Form1 -> Form1_FormClosing 
+[ ㅓㅓ 2023-05-25 목요일 17:12:06 524 ] RealTimeView_Page -> CameraClose 
+[ ㅓㅓ 2023-05-25 목요일 17:12:06 563 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 868 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 925 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 925 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 925 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 925 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 926 ] VideoCheck_Page -> VideoClose 
+[ ㅓㅓ 2023-05-25 목요일 17:12:07 927 ] VideoAnalysis_Page -> VideoClose 
+[ ㅓㅓ 2023-05-25 목요일 17:12:29 378 ] Settings_Page -> XMLSave 
+[ ㅓㅓ 2023-05-25 목요일 17:12:31 386 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-05-25 목요일 17:12:31 639 ] VideoAnalysis_Page -> VideoAnalysis_Page_Load 
+[ ㅓㅓ 2023-05-25 목요일 17:12:44 790 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:44 857 ] VideoAnalysis_Page -> VideoCheck_FileOpen1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:49 208 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:12:49 208 ] VideoAnalysis_Page -> VideoCheck_FileOpen2 
+[ ㅓㅓ 2023-05-25 목요일 17:12:53 056 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:12:54 280 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:12:56 690 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:56 691 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:58 570 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:12:58 571 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:13:03 803 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:03 806 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:13 188 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:13 203 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:13 890 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:13 890 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:14 503 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:14 503 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:16 093 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:16 096 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:17 205 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:17 209 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:17 943 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:17 943 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:23 973 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:23 979 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:25 289 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:25 302 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:25 969 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:25 972 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:27 648 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:27 648 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:28 161 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:28 163 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:28 808 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:28 808 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:29 785 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:29 786 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:31 294 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:31 298 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:32 363 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:32 364 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:32 670 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:32 670 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:36 056 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions2 
+[ ㅓㅓ 2023-05-25 목요일 17:13:36 056 ] VideoAnalysis_Page -> VideoCheck_Play2 
+[ ㅓㅓ 2023-05-25 목요일 17:28:35 752 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:28:35 754 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:28:51 723 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:29:09 941 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:29:16 724 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:29:27 877 ] VideoAnalysis_Page -> FilterClick 
+[ ㅓㅓ 2023-05-25 목요일 17:29:38 683 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:29:38 684 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:56:14 508 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:56:14 508 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:56:26 250 ] VideoAnalysis_Page -> VideoAnalysis_ButtonActions1 
+[ ㅓㅓ 2023-05-25 목요일 17:56:26 252 ] VideoAnalysis_Page -> VideoCheck_Play1 
+[ ㅓㅓ 2023-05-25 목요일 17:59:09 375 ] Form1 -> Form1_FormClosing 
+[ ㅓㅓ 2023-05-25 목요일 17:59:09 385 ] RealTimeView_Page -> CameraClose 
+[ ㅓㅓ 2023-05-25 목요일 17:59:09 392 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 657 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 712 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 712 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 712 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 712 ] CameraControl -> Close 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 714 ] VideoCheck_Page -> VideoClose 
+[ ㅓㅓ 2023-05-25 목요일 17:59:10 715 ] VideoAnalysis_Page -> VideoClose 
