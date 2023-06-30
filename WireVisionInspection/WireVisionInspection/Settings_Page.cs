@@ -97,9 +97,9 @@ namespace WireVisionInspection
 		}
 		public void XMLLoad_CameraPlus()
 		{
-			CameraSetting.Camera1IPAddress = txt_Cam1IP_CameraSetting.Text = MainForm.RealTimeView.Camera1IP;
-			CameraSetting.Camera2IPAddress = txt_Cam2IP_CameraSetting.Text = MainForm.RealTimeView.Camera2IP;
-			CameraSetting.Camera3IPAddress = txt_Cam3IP_CameraSetting.Text = MainForm.RealTimeView.Camera3IP;
+			if (MainForm.RealTimeView.m_isWork[0]) CameraSetting.Camera1IPAddress = txt_Cam1IP_CameraSetting.Text = MainForm.RealTimeView.Camera1IP;
+			if (MainForm.RealTimeView.m_isWork[1]) CameraSetting.Camera2IPAddress = txt_Cam2IP_CameraSetting.Text = MainForm.RealTimeView.Camera2IP;
+			if (MainForm.RealTimeView.m_isWork[2]) CameraSetting.Camera3IPAddress = txt_Cam3IP_CameraSetting.Text = MainForm.RealTimeView.Camera3IP;
 			txt_CameraWidth_CameraSetting.Text = MainForm.RealTimeView.CameraWidth.ToString();
 			txt_CameraHeight_CameraSetting.Text = MainForm.RealTimeView.CameraHeight.ToString();
 			CameraSetting.CamWidth = MainForm.RealTimeView.CameraWidth;
@@ -559,6 +559,11 @@ namespace WireVisionInspection
 				//dat_Day_WorkFileSetting.Properties.Appearance.BorderColor = Color.Lime;
 				WorkFileSetting.WorkDay = dat_Day_WorkFileSetting.Text;
 				XMLSave(WorkFileSetting, WorkFileSetting.GetType(), @"\WorkFileSetting.xml");
+				if (Log != null)
+				{
+					Log.LogFileChange(txt_WorkTarget_WorkFileSetting.Text);
+					Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} 완료");
+				}
 			}
 			catch (Exception ex)
 			{

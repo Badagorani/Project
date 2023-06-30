@@ -39,6 +39,10 @@ namespace WireVisionInspection
 			//di = new DirectoryInfo(NowMonthFolder);
 			//if (di.Exists == false) di.Create();
 		}
+		/// <summary>
+		/// 로그 쓰기
+		/// </summary>
+		/// <param name="logmessage">로그 내용</param>
 		public void LogWrite(string logmessage)
 		{
 			if (MainForm.Settings.WorkFileSetting.LogSave)

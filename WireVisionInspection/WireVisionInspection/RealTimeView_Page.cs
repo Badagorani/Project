@@ -103,6 +103,22 @@ namespace WireVisionInspection
 			}
 			PanelSettings();
 			NowSelectedCamNo = MainForm.Settings.ProgramSetting.BasicCameraView + 1;
+
+			tbar[0] = trackBarControl1;
+			tbar[1] = trackBarControl2;
+			tbar[2] = trackBarControl3;
+			tbar[3] = trackBarControl4;
+			tbar[4] = trackBarControl5;
+			ted[0] = textEdit1;
+			ted[1] = textEdit2;
+			ted[2] = textEdit3;
+			ted[3] = textEdit4;
+			ted[4] = textEdit5;
+			textEdit1.Text = trackBarControl1.Value.ToString();
+			textEdit2.Text = trackBarControl2.Value.ToString();
+			textEdit3.Text = trackBarControl3.Value.ToString();
+			textEdit4.Text = trackBarControl4.Value.ToString();
+			textEdit5.Text = trackBarControl5.Value.ToString();
 		}
 		private void RealTimeView_Page_Load(object sender, EventArgs e)
 		{
@@ -245,7 +261,20 @@ namespace WireVisionInspection
 
 							lThis.m_mutexImage[0].ReleaseMutex();
 						}
-						else lThis.m_isWork[0] = false;
+						//else lThis.m_isWork[0] = false;
+						else
+						{
+							bool flag = false;
+							for (int i = 0; i < 10; i++)
+							{
+								if (handle.WaitOne(1000))
+								{
+									flag = true;
+									break;
+								}
+							}
+							if (!flag) lThis.m_isWork[0] = false;
+						}
 					}
 				}
 				catch (Exception ex)
@@ -293,7 +322,20 @@ namespace WireVisionInspection
 
 							lThis.m_mutexImage[1].ReleaseMutex();
 						}
-						else lThis.m_isWork[1] = false;
+						//else lThis.m_isWork[1] = false;
+						else
+						{
+							bool flag = false;
+							for (int i = 0; i < 10; i++)
+							{
+								if (handle.WaitOne(1000))
+								{
+									flag = true;
+									break;
+								}
+							}
+							if (!flag) lThis.m_isWork[1] = false;
+						}
 					}
 				}
 				catch (Exception ex)
@@ -341,7 +383,20 @@ namespace WireVisionInspection
 
 							lThis.m_mutexImage[2].ReleaseMutex();
 						}
-						else lThis.m_isWork[2] = false;
+						//else lThis.m_isWork[2] = false;
+						else
+						{
+							bool flag = false;
+							for (int i = 0; i < 10; i++)
+							{
+								if (handle.WaitOne(1000))
+								{
+									flag = true;
+									break;
+								}
+							}
+							if (!flag) lThis.m_isWork[2] = false;
+						}
 					}
 				}
 				catch (Exception ex)
@@ -405,6 +460,12 @@ namespace WireVisionInspection
 
 					Bitmap bmpimg = (Bitmap)bmp.Clone();
 					pb_cam.Image = bmpimg;
+					#region 나중에 삭제필요!!
+					// 20, 160 기억해두기!!
+					Bitmap imsibmpimg = bmpimg;
+					Mat bmpMat = BitmapConverter.ToMat(bmpimg);
+					bmpimg = BitmapConverter.ToBitmap(MainForm.VideoAnalysis.FilterSet(bmpMat, 1, 2));
+					#endregion
 					pb_cam.Refresh();
 					int CamNo = int.Parse(pb_cam.Name.Substring(("RealTimeView_Cam".Length), 1));
 					if (CamNo == NowSelectedCamNo)
@@ -419,7 +480,8 @@ namespace WireVisionInspection
 					if (IsRecord)
 					{
 						//VideoFiles[int.Parse(pb_cam.Name.Substring(("RealTimeView_Cam".Length), 1)) - 1].WriteVideoFrame(bmpimg);
-						VideoFiles[CamNo - 1].Write(BitmapConverter.ToMat(bmpimg));
+						//VideoFiles[CamNo - 1].Write(BitmapConverter.ToMat(bmpimg));
+						VideoFiles[CamNo - 1].Write(BitmapConverter.ToMat(imsibmpimg));
 					}
 				}
 				else
@@ -660,6 +722,7 @@ namespace WireVisionInspection
 				}
 				for (int i = 1; i < 4; i++)
 				{
+					if (CamImage[i - 1].Image == null) continue;
 					string folderpath = FolderPath(1, i);
 					string nowtime = DateTime.Now.ToString("yyyyMMddHHmmssfff");
 					string imagepath = folderpath + nowtime + "." + ImageFormatText.ToLower();
@@ -858,6 +921,26 @@ namespace WireVisionInspection
 					m_Camera[index].Stop();
 					m_Camera[index].Close();
 				}
+			}
+		}
+		TrackBarControl[] tbar = new TrackBarControl[5];
+		TextEdit[] ted = new TextEdit[5];
+		private void FilterSettingChange(object sender, EventArgs e)
+		{
+			if (MainForm.VideoAnalysis != null)
+			{
+				int changedint = int.Parse(((TrackBarControl)sender).Name.Substring(((TrackBarControl)sender).Name.Length - 1)) - 1;
+				ted[changedint].Text = tbar[changedint].Value.ToString();
+				MainForm.VideoAnalysis.tbar[changedint].Value = tbar[changedint].Value;
+			}
+		}
+		private void TextChanges(object sender, EventArgs e)
+		{
+			if (MainForm.VideoAnalysis != null)
+			{
+				int changedint = int.Parse(((TextEdit)sender).Name.Substring(((TextEdit)sender).Name.Length - 1)) - 1;
+				if (!ted[changedint].Text.Equals(""))tbar[changedint].Value = int.Parse(ted[changedint].Text);
+				MainForm.VideoAnalysis.tbar[changedint].Value = tbar[changedint].Value;
 			}
 		}
 	}

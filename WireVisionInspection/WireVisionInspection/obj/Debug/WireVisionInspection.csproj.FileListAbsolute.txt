@@ -275,3 +275,11 @@ C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireV
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.exe
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.pdb
 C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\obj\Debug\WireVisionInspection.Form2.resources
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\EntityFramework.dll
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\System.Data.SQLite.dll
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\EntityFramework.xml
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\김태현\Documents\최동규_세인\Project\WireVisionInspection\WireVisionInspection\bin\Debug\System.Data.SQLite.xml

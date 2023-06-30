@@ -119,13 +119,22 @@ namespace WireVisionInspection
 				{
 					Settings.XMLLoad_CameraPlus();
 				}
+				else if (RealTimeView.m_isWork[0] || RealTimeView.m_isWork[1] || RealTimeView.m_isWork[2])
+				{
+					int ConnectedCamera = 3;
+					if (RealTimeView.m_isWork[0]) ConnectedCamera--;
+					if (RealTimeView.m_isWork[1]) ConnectedCamera--;
+					if (RealTimeView.m_isWork[2]) ConnectedCamera--;
+					ShowMessage("오류", ConnectedCamera + "대의 카메라 연결에 실패하였습니다!\n", "경고");
+					Settings.XMLLoad_CameraPlus();
+				}
 				else
 				{
 					//ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n프로그램을 종료합니다!\n", "경고");
 					ShowMessage("오류", "3대의 카메라 연결에 실패하였습니다!\n카메라 연결 후 다시 실행해 주세요!\n", "경고");
 					Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-					//this.Close();
-					//return;
+					this.Close();
+					return;
 				}
 
 				VideoCheck = new VideoCheck_Page(this);
