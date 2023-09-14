@@ -780,8 +780,8 @@ namespace WireVisionInspection
 			if (InputMat == null) return InputMat;
 			Mat OutputMat = InputMat.Clone();
 
-			OutputMat = NewFilterTest(InputMat, VideoCamNo, Filter);
-			return OutputMat;
+			//OutputMat = NewFilterTest(InputMat, VideoCamNo, Filter);
+			//return OutputMat;
 
 			try
 			{
@@ -1692,9 +1692,14 @@ namespace WireVisionInspection
 			//Cv2.Resize(ChangedMat, BinaryMat, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
 			//Cv2.ImShow("binary", BinaryMat);
 
+			//Cv2.AdaptiveThreshold(ChangedMat, ChangedMat, tbar[0].Value, AdaptiveThresholdTypes.GaussianC, ThresholdTypes.Binary, 25, 5);
+			//Mat AdaptiveBinaryMat = new Mat();
+			//Cv2.Resize(ChangedMat, AdaptiveBinaryMat, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
+			//Cv2.ImShow("AdaptiveBinaryMat", AdaptiveBinaryMat);
+
 			//55,255,60,100
 			// 2진 이미지를 캐니 엣지 필터로 가장자리 검출
-			Cv2.Canny(ChangedMat, ChangedMat, tbar[2].Value, tbar[3].Value, 3, true);
+			Cv2.Canny(ChangedMat, ChangedMat, 60, 100, 3, true);
 			Mat imsicanny = new Mat();
 			Cv2.Resize(ChangedMat, imsicanny, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
 			Cv2.ImShow("canny111", imsicanny);
@@ -1703,9 +1708,9 @@ namespace WireVisionInspection
 			Mat dilate = new Mat();
 			Mat kernelEllipse = Cv2.GetStructuringElement(MorphShapes.Rect, new OpenCvSharp.Size(4, 4));
 			Cv2.Dilate(ChangedMat, ChangedMat, kernelEllipse, new OpenCvSharp.Point(-1, -1), 1, BorderTypes.Reflect);
-			Mat imsidilate = new Mat();
-			Cv2.Resize(ChangedMat, imsidilate, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
-			Cv2.ImShow("dilate", imsidilate);
+			//Mat imsidilate = new Mat();
+			//Cv2.Resize(ChangedMat, imsidilate, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
+			//Cv2.ImShow("dilate", imsidilate);
 
 			// 검출된 가장자리 이미지 침식
 			//Mat erode = new Mat();
@@ -1725,31 +1730,20 @@ namespace WireVisionInspection
 			FindContours2(ChangedMat, OutputMat, 2);
 			return OutputMat;
 		}
+
+		public List<OpenCvSharp.Point> vertex = new List<OpenCvSharp.Point>();
+		public List<OpenCvSharp.Point> moments = new List<OpenCvSharp.Point>();
+		public List<OpenCvSharp.Point> RectanglePoint = new List<OpenCvSharp.Point>();
+		public List<int> SquareNumber = new List<int>();
+		public List<double> RectangleLengths = new List<double>();
+		public List<double> RectangleLengthsPixel = new List<double>();
+		public List<OpenCvSharp.Point> writepoint = new List<OpenCvSharp.Point>();
+		public List<OpenCvSharp.Point> SquareApex = new List<OpenCvSharp.Point>();
 		private void FindContours2(Mat InputMat, Mat OutputMat, int CamNo)
 		{
 			OpenCvSharp.Point[][] contours;
 			HierarchyIndex[] hierarchy;
 			Cv2.FindContours(InputMat, out contours, out hierarchy, RetrievalModes.List, ContourApproximationModes.ApproxSimple);
-			//InputMat.FindContours(out contours, out hierarchy, RetrievalModes.List, ContourApproximationModes.ApproxSimple);
-			//foreach (var cnt in contours)
-			//{
-			//	var epsilon = 0.02 * Cv2.ArcLength(cnt, false);
-			//	//var approx = Cv2.ApproxPolyDP(cnt, epsilon, true);
-			//	var approx = Cv2.ApproxPolyDP(cnt, epsilon, false);
-			//	var approxPoints = approx.OfType< IEnumerable<OpenCvSharp.Point>>();
-
-			//	// 윤곽이 정사각형이면 이미지에 그립니다.
-			//	if (approx.Length == 4 && approx.All(x => Math.Abs(x.X - approx[0].X) == 0 || Math.Abs(x.Y - approx[0].Y) == 0))
-			//	{
-			//		OutputMat.DrawContours(approxPoints, -1, new Scalar(0, 255, 0), 3);
-			//	}
-			//}
-			//for (int i = 0; i < contours.Length; i++)
-			//{
-			//	Cv2.DrawContours(OutputMat, contours, i, Scalar.Red, -1, LineTypes.AntiAlias, hierarchy);
-			//}
-			//return;
-			List<OpenCvSharp.Point> vertex = new List<OpenCvSharp.Point>();
 			Console.WriteLine($"\n");
 			int minLen = 0, maxLen = 0;
 			double avrLen = 0;
@@ -1832,16 +1826,19 @@ namespace WireVisionInspection
 					}
 					Rect a = Cv2.BoundingRect(contours[i]);
 					//if (!flag) Cv2.Rectangle(OutputMat, Cv2.BoundingRect(contours[i]), Scalar.Red, -1, LineTypes.AntiAlias);
-					if (!flag) Cv2.DrawContours(OutputMat, contours, i, Scalar.Red, -1, LineTypes.AntiAlias, hierarchy);
+					if (!flag)
+					{
+						Cv2.DrawContours(OutputMat, contours, i, Scalar.Red, -1, LineTypes.AntiAlias, hierarchy);
+						Moments mmt = Cv2.Moments(contours[i]);
+						double	cx = mmt.M10 / mmt.M00,
+								cy = mmt.M01 / mmt.M00;
+						moments.Add(new OpenCvSharp.Point(cx, cy));
+					}
 					//Mat imsiout = new Mat();
 					//Cv2.Resize(OutputMat, imsiout, new OpenCvSharp.Size(0, 0), 0.5, 0.5);
 					//Cv2.ImShow($"contours : {i} imsiout", imsiout);
 				}
 			}
-			List<OpenCvSharp.Point> RectanglePoint = new List<OpenCvSharp.Point>();
-			List<double> RectangleLengths = new List<double>();
-			List<double> RectangleLengthsPixel = new List<double>();
-			List<OpenCvSharp.Point> writepoint = new List<OpenCvSharp.Point>();
 			int smallcount = 0;
 			for (int i = 0; i < vertex.Count; i++)
 			{
@@ -1862,7 +1859,8 @@ namespace WireVisionInspection
 						imsiwritepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
 						imsiwritepoint.X -= 120;
 						imsiwritepoint.Y += 50;
-						Console.WriteLine(i / 4 + 1 + "번 사각형 위왼 좌표 : " + vertex[i].ToString());
+						Console.WriteLine(i / 4 + 1 - smallcount + "번 사각형 위왼 좌표 : " + vertex[i].ToString());
+						SquareApex.Add(vertex[i]);
 						break;
 					case 1:
 						vertex[i] = new OpenCvSharp.Point(vertex[i].X + 2, vertex[i].Y - 2);
@@ -1871,7 +1869,8 @@ namespace WireVisionInspection
 						imsiwritepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
 						imsiwritepoint.X -= 105;
 						imsiwritepoint.Y += 50;
-						Console.WriteLine(i / 4 + 1 + "번 사각형 위오 좌표 : " + vertex[i].ToString());
+						Console.WriteLine(i / 4 + 1 - smallcount + "번 사각형 위오 좌표 : " + vertex[i].ToString());
+						SquareApex.Add(vertex[i]);
 						break;
 					case 2:
 						vertex[i] = new OpenCvSharp.Point(vertex[i].X + 2, vertex[i].Y + 2);
@@ -1880,7 +1879,8 @@ namespace WireVisionInspection
 						imsiwritepoint = LengthWritePoint(vertex[i], vertex[i + 1]);
 						imsiwritepoint.X -= 120;
 						imsiwritepoint.Y -= 20;
-						Console.WriteLine(i /4 + 1 + "번 사각형 밑오 좌표 : " + vertex[i].ToString());
+						Console.WriteLine(i / 4 + 1 - smallcount + "번 사각형 밑오 좌표 : " + vertex[i].ToString());
+						SquareApex.Add(vertex[i]);
 						break;
 					case 3:
 						vertex[i] = new OpenCvSharp.Point(vertex[i].X - 2, vertex[i].Y + 2);
@@ -1890,26 +1890,34 @@ namespace WireVisionInspection
 						imsiwritepoint.X -= 105;
 						imsiwritepoint.Y -= 10;
 						RectanglePoint.Add(LengthWritePoint(vertex[i], vertex[i - 2]));
+						SquareNumber.Add(i / 4 + 1 - smallcount);
 						if ((i / 4 + 1) < 10)
 						{
-							Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(50, -50)),
-							HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+							//Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(50, -50)),
+							//HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+							Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), moments[i / 4] - new OpenCvSharp.Point(50, -50),
+								HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
 						}
 						else
 						{
-							Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(100, -50)),
-							HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+							//Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), (LengthWritePoint(vertex[i], vertex[i - 2]) - new OpenCvSharp.Point(100, -50)),
+							//HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
+							Cv2.PutText(OutputMat, (i / 4 + 1 - smallcount).ToString(), moments[i / 4] - new OpenCvSharp.Point(100, -50),
+								HersheyFonts.HersheyScriptSimplex, 5, Scalar.Blue, 5);
 						}
-						Console.WriteLine(i / 4 + 1 + "번 사각형 밑왼 좌표 : " + vertex[i].ToString() + "\n");
+						Console.WriteLine(i / 4 + 1 - smallcount + "번 사각형 밑왼 좌표 : " + vertex[i].ToString() + "\n");
+						SquareApex.Add(vertex[i]);
 						break;
 				}
+				//if (moments.Count > i) Cv2.PutText(OutputMat, i.ToString(), moments[i] - new OpenCvSharp.Point(50, -50),
+				//					   HersheyFonts.HersheyScriptSimplex, 2, Scalar.Orange, 2);
 				writepoint.Add(imsiwritepoint);
 				RectangleLengths.Add(PointLength);
 				//Console.WriteLine("좌표 : " + vertex[i].ToString());
 				//Cv2.PutText(OutputMat, /*i % 4 + 1 + */$"{PointLength}cm", writepoint, HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 3);
 				//Console.WriteLine(i % 4 + 1 + $"면 : {PointLength}cm");
 			}
-			ErrorCheck(RectanglePoint, RectangleLengths);
+			//ErrorCheck(RectanglePoint, RectangleLengths);
 			OpenCvSharp.Point MatCenterPoint = new OpenCvSharp.Point(OutputMat.Width / 2, OutputMat.Height / 2);
 			double CenterDistance = 0, imsidistance = 1000000, bigimsiset = 0, Criteria = 0;
 			int imsiset = 0, criticalset = 0;
@@ -1962,6 +1970,7 @@ namespace WireVisionInspection
 				//Cv2.PutText(OutputMat, /*i % 4 + 1 + */$"{viewmilimeter}mm", writepoint[i], HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 3);
 				//Cv2.PutText(OutputMat, /*i % 4 + 1 + */$"{Math.Round((20 / RectangleLengthsPixel[i]) * RectangleLengthsPixel[i], 1)}mm", writepoint[i], HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 3);
 				Cv2.PutText(OutputMat, /*i % 4 + 1 + */$"{RectangleLengthsPixel[i]}px", writepoint[i], HersheyFonts.HersheyScriptSimplex, 2, Scalar.Lime, 3);
+				// 영역에 들어온 픽셀은 길이가 어떻게되는지 알아야함!
 			}
 			SubForm.listBox1.SelectedIndex = SubForm.listBox1.Items.Count - 1;
 			//List<string> strings = new List<string>();
@@ -1981,6 +1990,59 @@ namespace WireVisionInspection
 			//		}
 			//	}
 			//}
+			//vertex.Clear();
+			//moments.Clear();
+			//RectanglePoint.Clear();
+			//RectangleLengths.Clear();
+			//SquareNumber.Clear();
+			//RectangleLengthsPixel.Clear();
+			//writepoint.Clear();
+			//SquareApex.Clear();
+		}
+		public void SaveData()
+		{
+			//SquareApex
+			// 구조체에 담는다면 꼭지점 좌표, 1px당 길이만 가능함
+			// 영역의 정보는 담지 못한다
+			// DB에 정보를 담아낸다
+			string sqliteFile = Environment.CurrentDirectory + "\\" + @"Height100mm.db";
+			//SQLiteConnection.CreateFile(sqliteFile);
+			string connString = @"Data Source = " + sqliteFile + ";";
+			SQLiteConnection conn = null;
+			conn = new SQLiteConnection(connString);
+			conn.Open();
+
+			//string sql = "CREATE TABLE Coordinates (SquareNo int, CoordinatesX int, CoordinatesY int, RealLength real)";
+			//SQLiteCommand command = new SQLiteCommand(sql, conn);
+			//int result = command.ExecuteNonQuery();
+			//sql = "CREATE INDEX CoordinatesIndex ON Coordinates(CoordinatesX, CoordinatesY)";
+			//command = new SQLiteCommand(sql, conn);
+			//result = command.ExecuteNonQuery();
+
+			for (int i = 0; i < SquareNumber.Count; i++)
+			{
+				for (int j = 0; j < SquareApex.Count; j++)
+				{
+					string strSquareNo = SquareNumber[i].ToString();
+					string strCoordinatesX = SquareApex[j].X.ToString();
+					string strCoordinatesY = SquareApex[j].Y.ToString();
+					string strRealLength = "";
+					string sql1 = "INSERT INTO Coordinates (SquareNo, CoordinatesX, CoordinatesY, RealLength) " +
+								  "VALUES ('" + strSquareNo + "', '" + strCoordinatesX + "', '" + strCoordinatesY + "', '" + strRealLength + "')";
+					SQLiteCommand command1 = new SQLiteCommand(sql1, conn);
+					int result1 = command1.ExecuteNonQuery();
+				}
+			}
+
+			string sql2 = "SELECT RealLength FROM Coordinates WHERE CoordinatesX = 111 AND CoordinatesY = 222";
+			SQLiteCommand cmd2 = new SQLiteCommand(sql2, conn);
+			SQLiteDataReader rdr = cmd2.ExecuteReader();
+			while (rdr.Read())
+			{
+				MessageBox.Show(rdr["RealLength"].ToString());
+			}
+			rdr.Close();
+			conn.Close();
 		}
 	}
 }

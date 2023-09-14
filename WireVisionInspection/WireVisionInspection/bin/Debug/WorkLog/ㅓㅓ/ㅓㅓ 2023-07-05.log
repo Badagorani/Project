@@ -1,0 +1,24 @@
+[  2023-07-05 수요일 10:51:16 189 ] 파일 생성 성공
+[ ㅓㅓ 2023-07-05 수요일 10:51:16 189 ] Settings_Page -> XMLSave 
+[ ㅓㅓ 2023-07-05 수요일 10:51:17 945 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-07-05 수요일 10:52:07 953 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-07-05 수요일 10:52:08 139 ] VideoCheck_Page -> VideoCheck_Page_Load 
+[ ㅓㅓ 2023-07-05 수요일 10:52:09 046 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-07-05 수요일 10:52:09 047 ] VideoCheck_Page -> PageChange 
+[ ㅓㅓ 2023-07-05 수요일 10:52:13 086 ] Form1 -> NavigationClick 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 349 ] Form1 -> Form1_FormClosing 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 366 ] RealTimeView_Page -> CameraClose 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 493 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 840 ] CameraControl -> Close 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 889 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 889 ] CameraControl -> Close 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 889 ] CameraControl -> Stop 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 889 ] CameraControl -> Close 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 890 ] VideoCheck_Page -> VideoClose 
+[ ㅓㅓ 2023-07-05 수요일 17:21:26 892 ] VideoAnalysis_Page -> VideoClose 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 307 ] CameraControl -> Finalize 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 308 ] CameraControl -> Close 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 325 ] CameraControl -> Finalize 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 325 ] CameraControl -> Close 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 325 ] CameraControl -> Finalize 
+[ ㅓㅓ 2023-07-05 수요일 17:21:27 326 ] CameraControl -> Close 

@@ -60,6 +60,9 @@
 			this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
 			this.panelControl5 = new DevExpress.XtraEditors.PanelControl();
+			this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+			this.trackBarControl5 = new DevExpress.XtraEditors.TrackBarControl();
+			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
@@ -74,9 +77,7 @@
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.trackBarControl1 = new DevExpress.XtraEditors.TrackBarControl();
-			this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-			this.trackBarControl5 = new DevExpress.XtraEditors.TrackBarControl();
-			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+			this.button1 = new System.Windows.Forms.Button();
 			this.tableLayoutPanel4.SuspendLayout();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
@@ -107,6 +108,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl5)).BeginInit();
 			this.panelControl5.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -119,9 +123,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel4
@@ -554,6 +555,44 @@
 			this.panelControl5.Name = "panelControl5";
 			this.panelControl5.Size = new System.Drawing.Size(428, 306);
 			this.panelControl5.TabIndex = 41;
+			this.panelControl5.Visible = false;
+			// 
+			// textEdit5
+			// 
+			this.textEdit5.Location = new System.Drawing.Point(337, 231);
+			this.textEdit5.Name = "textEdit5";
+			this.textEdit5.Size = new System.Drawing.Size(76, 22);
+			this.textEdit5.TabIndex = 43;
+			this.textEdit5.EditValueChanged += new System.EventHandler(this.TextChanges);
+			// 
+			// trackBarControl5
+			// 
+			this.trackBarControl5.EditValue = 200;
+			this.trackBarControl5.Location = new System.Drawing.Point(82, 227);
+			this.trackBarControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.trackBarControl5.Name = "trackBarControl5";
+			this.trackBarControl5.Properties.LabelAppearance.Options.UseTextOptions = true;
+			this.trackBarControl5.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.trackBarControl5.Properties.LookAndFeel.SkinName = "WXI";
+			this.trackBarControl5.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.trackBarControl5.Properties.Maximum = 1000;
+			this.trackBarControl5.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarControl5.Size = new System.Drawing.Size(249, 45);
+			this.trackBarControl5.TabIndex = 42;
+			this.trackBarControl5.Value = 200;
+			this.trackBarControl5.Scroll += new System.EventHandler(this.FilterSettingChange);
+			// 
+			// labelControl7
+			// 
+			this.labelControl7.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold);
+			this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.labelControl7.Appearance.Options.UseFont = true;
+			this.labelControl7.Appearance.Options.UseForeColor = true;
+			this.labelControl7.Location = new System.Drawing.Point(7, 234);
+			this.labelControl7.Name = "labelControl7";
+			this.labelControl7.Size = new System.Drawing.Size(45, 17);
+			this.labelControl7.TabIndex = 41;
+			this.labelControl7.Text = "PolyDP";
 			// 
 			// textEdit4
 			// 
@@ -727,47 +766,21 @@
 			this.trackBarControl1.Value = 145;
 			this.trackBarControl1.Scroll += new System.EventHandler(this.FilterSettingChange);
 			// 
-			// textEdit5
+			// button1
 			// 
-			this.textEdit5.Location = new System.Drawing.Point(337, 231);
-			this.textEdit5.Name = "textEdit5";
-			this.textEdit5.Size = new System.Drawing.Size(76, 22);
-			this.textEdit5.TabIndex = 43;
-			this.textEdit5.EditValueChanged += new System.EventHandler(this.TextChanges);
-			// 
-			// trackBarControl5
-			// 
-			this.trackBarControl5.EditValue = 200;
-			this.trackBarControl5.Location = new System.Drawing.Point(82, 227);
-			this.trackBarControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.trackBarControl5.Name = "trackBarControl5";
-			this.trackBarControl5.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.trackBarControl5.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.trackBarControl5.Properties.LookAndFeel.SkinName = "WXI";
-			this.trackBarControl5.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.trackBarControl5.Properties.Maximum = 1000;
-			this.trackBarControl5.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.trackBarControl5.Size = new System.Drawing.Size(249, 45);
-			this.trackBarControl5.TabIndex = 42;
-			this.trackBarControl5.Value = 200;
-			this.trackBarControl5.Scroll += new System.EventHandler(this.FilterSettingChange);
-			// 
-			// labelControl7
-			// 
-			this.labelControl7.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold);
-			this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl7.Appearance.Options.UseFont = true;
-			this.labelControl7.Appearance.Options.UseForeColor = true;
-			this.labelControl7.Location = new System.Drawing.Point(7, 234);
-			this.labelControl7.Name = "labelControl7";
-			this.labelControl7.Size = new System.Drawing.Size(45, 17);
-			this.labelControl7.TabIndex = 41;
-			this.labelControl7.Text = "PolyDP";
+			this.button1.Location = new System.Drawing.Point(5, 750);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(75, 23);
+			this.button1.TabIndex = 42;
+			this.button1.Text = "이거";
+			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// RealTimeView_Page
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.panelControl5);
 			this.Controls.Add(this.popupControlContainer1);
 			this.Controls.Add(this.tableLayoutPanel1);
@@ -807,6 +820,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
 			this.panelControl5.ResumeLayout(false);
 			this.panelControl5.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
@@ -819,9 +835,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -876,5 +889,6 @@
 		private DevExpress.XtraEditors.TextEdit textEdit5;
 		public DevExpress.XtraEditors.TrackBarControl trackBarControl5;
 		private DevExpress.XtraEditors.LabelControl labelControl7;
+		private System.Windows.Forms.Button button1;
 	}
 }

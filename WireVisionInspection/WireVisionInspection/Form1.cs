@@ -61,7 +61,7 @@ namespace WireVisionInspection
 				op.Title = "와이어 비전 검사 소프트웨어";
 				op.Subtitle = "Wire Vision Inspection Software";
 				op.RightFooter = "준비";
-				op.LeftFooter = "Copyright 2023. Seinens Co.,Ltd.\nAll Rights reserved.";
+				op.LeftFooter = "Copyright 2023. Seinens Co.,Ltd.\nAll Rights reserved.";/*Copyright© 올바른 표기법은?*/
 				op.LoadingIndicatorType = FluentLoadingIndicatorType.Dots;
 				op.OpacityColor = Color.Black;
 				op.Opacity = 100;

@@ -43,6 +43,7 @@ namespace WireVisionInspection
 		public bool IsRecord = false;
 		public object[] lParameters;
 		public bool IsAnotherPage;
+		public bool savetf = false;
 		#endregion
 		public string Camera1IP
 		{
@@ -234,6 +235,7 @@ namespace WireVisionInspection
 			{
 				try
 				{
+					if (lThis.savetf) continue;
 					if (lThis.MainForm.NowPageNo == 1)
 					{
 						Thread.Sleep(100);
@@ -498,6 +500,23 @@ namespace WireVisionInspection
 			finally
 			{
 				if (MainForm.navigationFrame2.SelectedPageIndex == 0) mutex.ReleaseMutex();
+				//string dd = Console.ReadLine();
+				//if (dd.Equals("dd")) MainForm.VideoAnalysis.SaveData();
+				if (savetf)
+				{
+					DialogResult dresult = MessageBox.Show("이걸로 저장?", "저장", MessageBoxButtons.OKCancel);
+					if (dresult == DialogResult.OK) MainForm.VideoAnalysis.SaveData();
+					else savetf = false;
+				}
+				MainForm.VideoAnalysis.vertex.Clear();
+				MainForm.VideoAnalysis.moments.Clear();
+				MainForm.VideoAnalysis.RectanglePoint.Clear();
+				MainForm.VideoAnalysis.RectangleLengths.Clear();
+				MainForm.VideoAnalysis.SquareNumber.Clear();
+				MainForm.VideoAnalysis.RectangleLengthsPixel.Clear();
+				MainForm.VideoAnalysis.writepoint.Clear();
+				MainForm.VideoAnalysis.SquareApex.Clear();
+				savetf = false;
 			}
 		}
 		#endregion
@@ -900,6 +919,7 @@ namespace WireVisionInspection
 			{
 				if (!m_isWork[0] && !m_isWork[1] && !m_isWork[2])
 				{
+					timer1.Stop();
 					MainForm.ShowMessage("오류", "모든 카메라가 동작하지 않습니다!\n프로그램을 종료합니다!", "경고");
 					MainForm.Close();
 				}
@@ -942,6 +962,11 @@ namespace WireVisionInspection
 				if (!ted[changedint].Text.Equals(""))tbar[changedint].Value = int.Parse(ted[changedint].Text);
 				MainForm.VideoAnalysis.tbar[changedint].Value = tbar[changedint].Value;
 			}
+		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			savetf = true;
 		}
 	}
 }

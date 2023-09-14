@@ -39,14 +39,14 @@
 			this.listBox1.ItemHeight = 37;
 			this.listBox1.Location = new System.Drawing.Point(0, 0);
 			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(771, 755);
+			this.listBox1.Size = new System.Drawing.Size(771, 971);
 			this.listBox1.TabIndex = 1;
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(771, 755);
+			this.ClientSize = new System.Drawing.Size(771, 971);
 			this.Controls.Add(this.listBox1);
 			this.Name = "Form2";
 			this.Text = "Form2";

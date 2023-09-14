@@ -28,11 +28,11 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-			DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement4 = new DevExpress.XtraEditors.TileItemElement();
+			DevExpress.XtraEditors.TileItemElement tileItemElement5 = new DevExpress.XtraEditors.TileItemElement();
 			this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
 			this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
 			this.btn_VideoAnalysisClose2 = new DevExpress.XtraEditors.SimpleButton();
@@ -75,6 +75,9 @@
 			this.tileBarItem1 = new DevExpress.XtraBars.Navigation.TileBarItem();
 			this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
 			this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+			this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+			this.trackBarControl5 = new DevExpress.XtraEditors.TrackBarControl();
+			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
@@ -89,9 +92,6 @@
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.trackBarControl1 = new DevExpress.XtraEditors.TrackBarControl();
-			this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-			this.trackBarControl5 = new DevExpress.XtraEditors.TrackBarControl();
-			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
 			this.tableLayoutPanel10.SuspendLayout();
 			this.tableLayoutPanel12.SuspendLayout();
 			this.tableLayoutPanel14.SuspendLayout();
@@ -124,6 +124,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.VideoAnalysis_Video2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
 			this.panelControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -136,9 +139,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// tableLayoutPanel10
@@ -797,8 +797,8 @@
 			// tileBarItem5
 			// 
 			this.tileBarItem5.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement11.Text = "tileBarItem5";
-			this.tileBarItem5.Elements.Add(tileItemElement11);
+			tileItemElement1.Text = "tileBarItem5";
+			this.tileBarItem5.Elements.Add(tileItemElement1);
 			this.tileBarItem5.Id = 13;
 			this.tileBarItem5.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem5.Name = "tileBarItem5";
@@ -806,8 +806,8 @@
 			// tileBarItem3
 			// 
 			this.tileBarItem3.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement12.Text = "tileBarItem3";
-			this.tileBarItem3.Elements.Add(tileItemElement12);
+			tileItemElement2.Text = "tileBarItem3";
+			this.tileBarItem3.Elements.Add(tileItemElement2);
 			this.tileBarItem3.Id = 12;
 			this.tileBarItem3.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem3.Name = "tileBarItem3";
@@ -815,8 +815,8 @@
 			// tileBarItem2
 			// 
 			this.tileBarItem2.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement13.Text = "tileBarItem2";
-			this.tileBarItem2.Elements.Add(tileItemElement13);
+			tileItemElement3.Text = "tileBarItem2";
+			this.tileBarItem2.Elements.Add(tileItemElement3);
 			this.tileBarItem2.Id = 11;
 			this.tileBarItem2.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem2.Name = "tileBarItem2";
@@ -824,8 +824,8 @@
 			// tileBarItem1
 			// 
 			this.tileBarItem1.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement14.Text = "tileBarItem1";
-			this.tileBarItem1.Elements.Add(tileItemElement14);
+			tileItemElement4.Text = "tileBarItem1";
+			this.tileBarItem1.Elements.Add(tileItemElement4);
 			this.tileBarItem1.Id = 10;
 			this.tileBarItem1.ItemSize = DevExpress.XtraBars.Navigation.TileBarItemSize.Medium;
 			this.tileBarItem1.Name = "tileBarItem1";
@@ -833,9 +833,9 @@
 			// tileBarItem4
 			// 
 			this.tileBarItem4.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
-			tileItemElement15.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
-			tileItemElement15.Text = "tileBarItem4";
-			this.tileBarItem4.Elements.Add(tileItemElement15);
+			tileItemElement5.AnchorAlignment = DevExpress.Utils.AnchorAlignment.Bottom;
+			tileItemElement5.Text = "tileBarItem4";
+			this.tileBarItem4.Elements.Add(tileItemElement5);
 			this.tileBarItem4.Id = 9;
 			this.tileBarItem4.Name = "tileBarItem4";
 			// 
@@ -862,6 +862,44 @@
 			this.panelControl1.Name = "panelControl1";
 			this.panelControl1.Size = new System.Drawing.Size(428, 306);
 			this.panelControl1.TabIndex = 40;
+			this.panelControl1.Visible = false;
+			// 
+			// textEdit5
+			// 
+			this.textEdit5.Location = new System.Drawing.Point(335, 227);
+			this.textEdit5.Name = "textEdit5";
+			this.textEdit5.Size = new System.Drawing.Size(76, 22);
+			this.textEdit5.TabIndex = 40;
+			this.textEdit5.EditValueChanged += new System.EventHandler(this.TextChanges);
+			// 
+			// trackBarControl5
+			// 
+			this.trackBarControl5.EditValue = 200;
+			this.trackBarControl5.Location = new System.Drawing.Point(80, 223);
+			this.trackBarControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.trackBarControl5.Name = "trackBarControl5";
+			this.trackBarControl5.Properties.LabelAppearance.Options.UseTextOptions = true;
+			this.trackBarControl5.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.trackBarControl5.Properties.LookAndFeel.SkinName = "WXI";
+			this.trackBarControl5.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.trackBarControl5.Properties.Maximum = 1000;
+			this.trackBarControl5.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.trackBarControl5.Size = new System.Drawing.Size(249, 45);
+			this.trackBarControl5.TabIndex = 39;
+			this.trackBarControl5.Value = 200;
+			this.trackBarControl5.Scroll += new System.EventHandler(this.FilterSettingChange);
+			// 
+			// labelControl7
+			// 
+			this.labelControl7.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold);
+			this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.labelControl7.Appearance.Options.UseFont = true;
+			this.labelControl7.Appearance.Options.UseForeColor = true;
+			this.labelControl7.Location = new System.Drawing.Point(5, 230);
+			this.labelControl7.Name = "labelControl7";
+			this.labelControl7.Size = new System.Drawing.Size(45, 17);
+			this.labelControl7.TabIndex = 38;
+			this.labelControl7.Text = "PolyDP";
 			// 
 			// textEdit4
 			// 
@@ -1035,43 +1073,6 @@
 			this.trackBarControl1.Value = 145;
 			this.trackBarControl1.Scroll += new System.EventHandler(this.FilterSettingChange);
 			// 
-			// textEdit5
-			// 
-			this.textEdit5.Location = new System.Drawing.Point(335, 227);
-			this.textEdit5.Name = "textEdit5";
-			this.textEdit5.Size = new System.Drawing.Size(76, 22);
-			this.textEdit5.TabIndex = 40;
-			this.textEdit5.EditValueChanged += new System.EventHandler(this.TextChanges);
-			// 
-			// trackBarControl5
-			// 
-			this.trackBarControl5.EditValue = 200;
-			this.trackBarControl5.Location = new System.Drawing.Point(80, 223);
-			this.trackBarControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.trackBarControl5.Name = "trackBarControl5";
-			this.trackBarControl5.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.trackBarControl5.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.trackBarControl5.Properties.LookAndFeel.SkinName = "WXI";
-			this.trackBarControl5.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.trackBarControl5.Properties.Maximum = 1000;
-			this.trackBarControl5.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.trackBarControl5.Size = new System.Drawing.Size(249, 45);
-			this.trackBarControl5.TabIndex = 39;
-			this.trackBarControl5.Value = 200;
-			this.trackBarControl5.Scroll += new System.EventHandler(this.FilterSettingChange);
-			// 
-			// labelControl7
-			// 
-			this.labelControl7.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F, System.Drawing.FontStyle.Bold);
-			this.labelControl7.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.labelControl7.Appearance.Options.UseFont = true;
-			this.labelControl7.Appearance.Options.UseForeColor = true;
-			this.labelControl7.Location = new System.Drawing.Point(5, 230);
-			this.labelControl7.Name = "labelControl7";
-			this.labelControl7.Size = new System.Drawing.Size(45, 17);
-			this.labelControl7.TabIndex = 38;
-			this.labelControl7.Text = "PolyDP";
-			// 
 			// VideoAnalysis_Page
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1119,6 +1120,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
 			this.panelControl1.ResumeLayout(false);
 			this.panelControl1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
@@ -1131,9 +1135,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackBarControl1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackBarControl5)).EndInit();
 			this.ResumeLayout(false);
 
 		}

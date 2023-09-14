@@ -3,7 +3,7 @@
   <Camera1IPAddress>169.254.94.182</Camera1IPAddress>
   <Camera2IPAddress>169.254.95.182</Camera2IPAddress>
   <Camera3IPAddress>169.254.89.182</Camera3IPAddress>
-  <TextMark>사용자 선택</TextMark>
+  <TextMark>날짜/시간</TextMark>
   <UserText />
   <CamWidth>2448</CamWidth>
   <CamHeight>2048</CamHeight>
