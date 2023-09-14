@@ -1,0 +1,1706 @@
+[  2023-08-29 화요일 10:46:20 191 ] 파일 생성 성공
+[ default 2023-08-29 화요일 10:46:20 190 ] 프로그램 시작
+[ default 2023-08-29 화요일 10:46:20 285 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 10:46:20 513 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 11:12:52 908 ] 프로그램 시작
+[ default 2023-08-29 화요일 11:12:52 994 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:12:53 207 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 11:12:55 701 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:55 751 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:55 799 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:56 449 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:56 516 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:56 550 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:12:57 146 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 11:12:57 926 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:12:57 927 ] 검사자 : 543 & 검사장소 : 432 ==> 검사 시작
+[ default 2023-08-29 화요일 11:12:57 972 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 11:13:01 570 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 11:13:02 907 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:13:03 200 ] CameraControl -> open 
+[ default 2023-08-29 화요일 11:13:03 239 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 11:13:03 260 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 11:13:03 276 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 11:13:03 890 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:13:03 988 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:13:03 988 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:13:04 009 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:13:10 857 ] ViewPage -> SelectedView_Click 
+[ default 2023-08-29 화요일 11:13:27 925 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 11:13:27 939 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 11:13:27 972 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:13:28 072 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:13:28 098 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:13:28 099 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:13:28 099 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:13:28 099 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:13:28 222 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:13:28 222 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:13:28 228 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:13:28 228 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:13:28 228 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:13:28 229 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:14:51 122 ] 프로그램 시작
+[ default 2023-08-29 화요일 11:14:51 204 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:14:51 411 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 11:14:53 533 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:14:53 667 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:14:54 504 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:14:54 658 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:14:55 125 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 11:14:55 918 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:14:55 921 ] 검사자 : hh & 검사장소 : ff ==> 검사 시작
+[ default 2023-08-29 화요일 11:14:55 968 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 11:14:59 483 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 11:15:00 176 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:15:00 406 ] CameraControl -> open 
+[ default 2023-08-29 화요일 11:15:00 438 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 11:15:00 452 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 11:15:00 464 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 11:15:01 060 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:15:01 108 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:15:01 108 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:15:01 129 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:15:05 296 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 11:15:05 299 ] ViewPage -> ImageSaveAction 
+[ default 2023-08-29 화요일 11:15:08 134 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 11:16:13 005 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 11:16:28 313 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 11:16:28 321 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 11:16:28 474 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:16:28 850 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:16:28 871 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:16:28 871 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:16:28 871 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:16:28 872 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:16:28 947 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:16:28 947 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:16:28 950 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:16:28 951 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:16:28 951 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:16:28 951 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:18:54 741 ] 프로그램 시작
+[ default 2023-08-29 화요일 11:18:54 753 ] XmlProcessing -> XMLFileCreate 
+[ default 2023-08-29 화요일 11:18:54 754 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:18:54 794 ] XmlProcessing -> XMLFileCreate 
+[ default 2023-08-29 화요일 11:18:54 795 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:18:54 824 ] XmlProcessing -> XMLFileCreate 
+[ default 2023-08-29 화요일 11:18:54 826 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:18:54 876 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:18:55 126 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 11:18:56 931 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:57 055 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:57 238 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:58 147 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:58 295 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:58 462 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:18:58 870 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 11:18:59 654 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:18:59 655 ] 검사자 : rrr & 검사장소 : ttt ==> 검사 시작
+[ default 2023-08-29 화요일 11:18:59 703 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 11:19:03 132 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 11:19:03 750 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:19:03 972 ] CameraControl -> open 
+[ default 2023-08-29 화요일 11:19:03 997 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 11:19:04 014 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 11:19:04 024 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 11:19:04 606 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:19:04 646 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:19:04 646 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:19:04 667 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:19:08 197 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 11:19:08 199 ] ViewPage -> ImageSaveAction 
+[ default 2023-08-29 화요일 11:19:10 224 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 11:19:10 255 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 11:19:50 502 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 11:19:50 507 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 11:19:50 633 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:19:50 730 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:50 744 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:19:50 744 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:50 744 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:19:50 745 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:50 836 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:19:50 838 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:50 843 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:19:50 843 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:50 844 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:19:50 844 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:19:59 695 ] 프로그램 시작
+[ default 2023-08-29 화요일 11:19:59 762 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:19:59 971 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 11:20:01 354 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:01 385 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:01 406 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:01 518 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:01 614 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 170 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 270 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 426 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 449 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 532 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:02 641 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 11:20:03 268 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 11:20:04 044 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 11:20:04 044 ] 검사자 : hfghf & 검사장소 : 3t3 4t ==> 검사 시작
+[ default 2023-08-29 화요일 11:20:04 103 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 11:20:07 602 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 11:20:08 209 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:20:08 468 ] CameraControl -> open 
+[ default 2023-08-29 화요일 11:20:08 491 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 11:20:08 506 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 11:20:08 516 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 11:20:09 101 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:20:09 141 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:20:09 142 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 11:20:09 163 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 11:20:26 617 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 11:20:26 622 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 11:20:26 727 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:20:26 828 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:20:26 848 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:20:26 848 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:20:26 848 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 11:20:26 848 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:20:26 925 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:20:26 925 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:20:26 929 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:20:26 929 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 11:20:26 929 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 11:20:26 930 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:22:21 787 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:22:21 885 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:22:22 233 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:22:23 784 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:23 833 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:23 866 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:23 881 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:23 922 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:23 944 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:24 834 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:24 866 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:24 949 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:24 955 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:24 978 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:25 034 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:22:25 329 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:22:26 123 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:22:26 124 ] 검사자 : sjkfls & 검사장소 : fjdisf ==> 검사 시작
+[ default 2023-08-29 화요일 13:22:26 174 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:22:29 648 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:22:30 536 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:22:30 766 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:22:30 803 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:22:30 818 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:22:30 835 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:22:31 442 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:22:31 538 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:22:31 538 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:22:31 561 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:23:16 459 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:23:16 472 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:23:16 561 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:23:16 861 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:23:16 885 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:23:16 886 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:23:16 887 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:23:16 887 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:23:16 989 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:23:16 989 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:23:16 996 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:23:16 997 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:23:16 997 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:23:16 997 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:25:31 146 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:25:31 211 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:25:31 413 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:25:33 076 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:33 234 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:33 361 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:35 298 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:35 441 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:35 589 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:36 116 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:25:42 320 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:25:43 104 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:25:43 105 ] 검사자 : fff & 검사장소 : kkk  ==> 검사 시작
+[ default 2023-08-29 화요일 13:25:43 157 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:25:46 627 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:25:47 323 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:25:47 584 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:25:47 611 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:25:47 624 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:25:47 637 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:25:48 217 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:25:48 282 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:25:48 282 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:25:48 303 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:32:38 054 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:32:38 060 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:32:38 199 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:32:38 306 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:32:38 326 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:32:38 326 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:32:38 327 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:32:38 327 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:32:38 448 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:32:38 448 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:32:38 455 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:32:38 455 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:32:38 455 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:32:38 455 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:33:13 438 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:33:13 508 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:33:13 708 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:33:15 397 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:15 495 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:15 560 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:15 978 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:16 032 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:16 090 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:33:16 508 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:33:17 293 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:33:17 295 ] 검사자 : 432 & 검사장소 : 432 ==> 검사 시작
+[ default 2023-08-29 화요일 13:33:17 344 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:33:20 833 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:33:21 499 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:33:21 712 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:33:21 751 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:33:21 764 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:33:21 778 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:33:22 373 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:33:22 425 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:33:22 426 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:33:22 446 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:34:03 775 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:34:03 784 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:34:03 960 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:04 056 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:04 074 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:04 075 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:04 075 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:04 075 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:04 159 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:04 159 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:04 164 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:04 165 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:04 165 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:04 166 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:22 037 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:34:22 093 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:34:22 289 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:34:23 952 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:23 960 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:24 002 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:24 096 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:24 754 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:24 770 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:24 874 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:34:25 540 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:34:26 327 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:34:26 328 ] 검사자 : 5432 & 검사장소 : 123 ==> 검사 시작
+[ default 2023-08-29 화요일 13:34:26 387 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:34:29 850 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:34:30 435 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:34:30 661 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:34:30 686 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:34:30 698 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:34:30 710 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:34:31 293 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:34:31 359 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:34:31 359 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:34:31 384 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:34:41 622 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:34:41 627 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:34:41 793 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:41 895 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:41 912 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:41 913 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:41 913 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:34:41 913 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:41 988 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:41 988 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:41 991 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:41 992 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:34:42 000 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:34:42 000 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:35:40 775 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:35:40 848 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:35:41 029 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:35:42 302 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:35:42 418 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:35:44 156 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:35:44 284 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:35:44 299 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:35:49 587 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:35:50 376 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:35:50 377 ] 검사자 : jj & 검사장소 : dfd ==> 검사 시작
+[ default 2023-08-29 화요일 13:35:50 425 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:35:53 881 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:35:54 602 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:35:54 826 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:35:54 856 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:35:54 876 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:35:54 887 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:35:55 496 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:35:55 537 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:35:55 537 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:35:55 565 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:36:46 883 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:36:46 907 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:36:46 974 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:36:47 090 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:36:47 114 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:36:47 116 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:36:47 117 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:36:47 117 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:36:47 222 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:36:47 222 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:36:47 224 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:36:47 224 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:36:47 225 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:36:47 225 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:38:46 754 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:38:46 810 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:38:47 010 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:38:48 572 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:48 663 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:48 681 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:49 372 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:49 384 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:49 504 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:38:50 023 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:38:50 818 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:38:50 819 ] 검사자 : 543 & 검사장소 : fgh ==> 검사 시작
+[ default 2023-08-29 화요일 13:38:50 862 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:38:54 326 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:38:54 903 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:38:55 115 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:38:55 140 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:38:55 155 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:38:55 165 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:38:55 768 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:38:55 814 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:38:55 814 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:38:55 836 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:40:03 791 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:40:03 797 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:40:03 879 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:05 223 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:05 235 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:05 236 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:05 236 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:05 236 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:05 387 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:05 387 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:05 392 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:05 392 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:05 393 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:05 394 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:15 881 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:40:15 950 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:40:16 143 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:40:18 140 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:18 177 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:18 208 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:19 970 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:19 984 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:20 116 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:20 138 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:20 162 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:20 242 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:20 265 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:40:21 368 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:40:22 161 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:40:22 163 ] 검사자 : 456 & 검사장소 : jkjkhjk ==> 검사 시작
+[ default 2023-08-29 화요일 13:40:22 220 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:40:25 681 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:40:26 302 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:40:26 535 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:40:26 564 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:40:26 575 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:40:26 586 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:40:27 183 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:40:27 235 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:40:27 235 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:40:27 254 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:40:52 140 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:40:52 147 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:40:52 248 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:52 346 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:52 363 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:52 363 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:52 364 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:40:52 364 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:52 484 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:52 485 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:52 488 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:52 488 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:40:52 488 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:40:52 489 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:04 518 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:44:04 584 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:44:04 782 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:44:06 441 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:06 466 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:06 552 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:07 177 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:07 242 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:07 266 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:07 615 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:44:08 399 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:44:08 400 ] 검사자 : asd & 검사장소 : 321 ==> 검사 시작
+[ default 2023-08-29 화요일 13:44:08 444 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:44:11 917 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:44:14 188 ] CameraControl -> .ctor -1009 = GCReadPort(0x0000026CDDFCE550, 6440, 0x00000075DC8FC7E0, 0x00000075DC8FB7A0) One of the parameter given was not valid or out of range.
+[ default 2023-08-29 화요일 13:44:14 363 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:14 410 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:44:14 410 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:14 431 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:44:14 431 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:14 451 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:44:16 511 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:44:16 521 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:44:16 522 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:44:16 523 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:16 524 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:44:16 524 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:16 525 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:44:16 525 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:16 673 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:44:16 674 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:16 678 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:44:16 679 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:16 680 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:44:16 680 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:44:22 501 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:44:22 569 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:44:22 745 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:44:24 360 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:24 417 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:24 473 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:25 418 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:25 520 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:25 602 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:44:26 044 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:44:26 827 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:44:26 828 ] 검사자 : 321 & 검사장소 : asd ==> 검사 시작
+[ default 2023-08-29 화요일 13:44:26 885 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:44:30 364 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:44:30 957 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:31 188 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:44:31 214 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:44:31 226 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:44:31 241 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:44:31 821 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:31 857 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:44:31 857 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:44:31 878 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:45:28 941 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:45:28 947 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:45:29 044 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:45:30 293 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:45:30 305 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:45:30 305 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:45:30 305 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:45:30 305 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:45:30 376 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:45:30 376 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:45:30 381 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:45:30 382 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:45:30 383 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:45:30 384 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:46:30 842 ] 프로그램 시작
+[ default 2023-08-29 화요일 13:46:30 911 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:46:31 124 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 13:46:32 718 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:32 760 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:32 800 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:33 218 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:33 240 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:33 288 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:33 311 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 13:46:33 767 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 13:46:34 564 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 13:46:34 565 ] 검사자 : 321 & 검사장소 : asdf ==> 검사 시작
+[ default 2023-08-29 화요일 13:46:34 624 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 13:46:38 075 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 13:46:38 855 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:46:39 065 ] CameraControl -> open 
+[ default 2023-08-29 화요일 13:46:39 090 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 13:46:39 100 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 13:46:39 110 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 13:46:39 713 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:46:39 771 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:46:39 771 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 13:46:39 794 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 13:47:01 678 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 13:47:01 687 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 13:47:01 852 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:47:01 947 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:47:01 970 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:47:01 970 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:47:01 970 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 13:47:01 970 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:47:02 072 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:47:02 073 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:47:02 078 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:47:02 078 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 13:47:02 078 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 13:47:02 079 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:02:18 538 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:02:18 605 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:02:18 806 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:04:03 109 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:04:03 169 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:04:03 340 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:04:04 713 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:04 716 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:04 851 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:04 873 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:05 583 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:05 610 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:04:06 134 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:04:06 931 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:04:06 932 ] 검사자 : gfgf & 검사장소 : 32 ==> 검사 시작
+[ default 2023-08-29 화요일 14:04:06 991 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:04:10 466 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:04:11 222 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:04:11 483 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:04:11 511 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:04:11 535 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:04:11 554 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:04:12 149 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:04:12 205 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:04:12 206 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:04:12 229 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:06:40 382 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:06:40 389 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:06:40 396 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:06:41 950 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:06:41 966 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:06:41 966 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:06:41 966 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:06:41 966 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:06:42 068 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:06:42 069 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:06:42 075 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:06:42 075 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:06:42 075 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:06:42 075 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:07:57 089 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:07:57 171 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:07:57 369 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:07:58 378 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:07:59 372 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:07:59 862 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:08:00 645 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:08:00 646 ] 검사자 : f & 검사장소 : 3 ==> 검사 시작
+[ default 2023-08-29 화요일 14:08:00 707 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:08:04 182 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:08:04 864 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:08:05 091 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:08:05 133 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:08:05 150 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:08:05 166 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:08:05 742 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:08:05 787 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:08:05 787 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:08:05 808 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:09:09 955 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:09:09 964 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:09:10 144 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:09:10 459 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:09:10 472 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:09:10 472 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:09:10 472 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:09:10 473 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:09:10 544 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:09:10 545 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:09:10 549 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:09:10 549 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:09:10 562 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:09:10 563 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:16 304 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:10:16 370 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:10:16 570 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:10:18 280 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:10:18 427 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:10:19 783 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:10:19 927 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:10:20 219 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:10:21 003 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:10:21 004 ] 검사자 : 55 & 검사장소 : 44 ==> 검사 시작
+[ default 2023-08-29 화요일 14:10:21 063 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:10:24 483 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:10:25 260 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:10:25 475 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:10:25 505 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:10:25 522 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:10:25 535 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:10:26 128 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:10:26 186 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:10:26 187 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:10:26 220 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:10:47 481 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:10:47 487 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:10:47 599 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:10:47 697 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:47 721 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:10:47 721 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:47 721 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:10:47 721 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:47 799 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:10:47 799 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:47 802 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:10:47 802 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:10:47 809 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:10:47 809 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:15:26 380 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:15:26 440 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:15:26 746 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:15:28 562 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:28 573 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:28 599 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:28 616 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:28 719 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:28 818 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 239 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 265 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 299 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 398 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 416 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 496 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 561 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:29 582 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:30 194 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:30 363 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:30 521 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:30 698 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:30 857 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:31 016 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:15:31 336 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:15:32 121 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:15:32 122 ] 검사자 : 563453 & 검사장소 : 32423423333333 ==> 검사 시작
+[ default 2023-08-29 화요일 14:15:32 174 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:15:35 820 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:15:36 529 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:15:36 756 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:15:36 793 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:15:36 809 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:15:36 822 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:15:37 414 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:15:37 460 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:15:37 460 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:15:37 486 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:18:10 644 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:18:10 650 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:18:10 709 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:18:10 809 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:18:10 847 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:18:10 847 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:18:10 848 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:18:10 849 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:18:11 022 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:18:11 023 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:18:11 023 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:18:11 024 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:18:11 024 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:18:11 024 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:19:48 301 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:19:48 366 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:19:48 713 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:19:50 102 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:50 105 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:50 121 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:50 223 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:50 239 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 055 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 111 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 136 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 200 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 246 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:19:51 613 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:19:52 391 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:19:52 392 ] 검사자 : 43543 & 검사장소 : fsdfs ==> 검사 시작
+[ default 2023-08-29 화요일 14:19:52 438 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:19:55 949 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:19:56 588 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:19:56 802 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:19:56 830 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:19:56 840 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:19:56 853 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:19:57 437 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:19:57 500 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:19:57 501 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:19:57 521 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:21:22 899 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:21:22 904 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:21:22 962 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:21:23 269 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:21:23 285 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:21:23 285 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:21:23 285 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:21:23 285 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:21:23 355 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:21:23 356 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:21:23 358 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:21:23 358 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:21:23 359 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:21:23 359 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:26:17 298 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:26:17 363 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:26:17 534 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:26:19 471 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:19 474 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:19 534 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:20 035 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:20 041 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:20 071 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:26:20 678 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:26:21 457 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:26:21 458 ] 검사자 : 543 & 검사장소 : ngf ==> 검사 시작
+[ default 2023-08-29 화요일 14:26:21 515 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:26:24 967 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:26:25 549 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:26:25 776 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:26:25 801 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:26:25 817 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:26:25 826 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:26:26 418 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:26:26 460 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:26:26 461 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:26:26 487 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:28:08 303 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:28:08 321 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:28:08 387 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:28:08 495 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:08 512 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:28:08 512 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:08 514 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:28:08 514 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:08 593 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:28:08 594 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:08 597 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:28:08 597 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:08 598 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:28:08 598 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:28:24 385 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:28:24 450 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:28:24 621 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:28:26 227 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:28:26 231 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:28:26 286 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:28:26 778 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:28:26 926 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:28:27 366 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:28:28 152 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:28:28 153 ] 검사자 : 345 & 검사장소 : gd ==> 검사 시작
+[ default 2023-08-29 화요일 14:28:28 195 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:28:31 622 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:28:32 181 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:28:32 425 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:28:32 452 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:28:32 463 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:28:32 474 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:28:33 061 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:28:33 125 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:28:33 126 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:28:33 146 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:29:05 682 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:29:05 690 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:29:05 778 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:29:05 905 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:05 920 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:29:05 920 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:05 920 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:29:05 920 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:05 992 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:29:05 992 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:05 996 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:29:05 997 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:05 997 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:29:05 998 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:29:54 244 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:29:54 296 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:29:54 478 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:29:56 596 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:56 599 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:56 672 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:57 202 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:57 330 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:57 350 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:29:57 829 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:29:58 607 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:29:58 609 ] 검사자 : 435 & 검사장소 : her ==> 검사 시작
+[ default 2023-08-29 화요일 14:29:58 655 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:30:02 059 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:30:02 615 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:30:02 823 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:30:02 850 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:30:02 864 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:30:02 874 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:30:03 478 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:30:03 526 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:30:03 527 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:30:03 548 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:30:49 585 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:30:49 593 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:30:49 701 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:30:51 033 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:30:51 050 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:30:51 050 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:30:51 050 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:30:51 050 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:30:51 125 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:30:51 125 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:30:51 128 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:30:51 128 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:30:51 129 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:30:51 129 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:37:35 619 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:37:35 673 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:37:35 875 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:37:36 600 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:36 656 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:36 710 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:37 320 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:37 344 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:37 366 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:37 433 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:37:38 266 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:37:39 053 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:37:39 054 ] 검사자 : 432 & 검사장소 : fgre ==> 검사 시작
+[ default 2023-08-29 화요일 14:37:39 107 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:37:42 581 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:37:43 284 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:37:43 491 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:37:43 519 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:37:43 536 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:37:43 548 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:37:44 156 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:37:44 210 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:37:44 210 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:37:44 232 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:38:37 127 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:38:37 186 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:38:37 381 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:38:38 859 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:38 966 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:39 759 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:39 781 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:39 800 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:39 936 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:40 280 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:38:41 047 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:38:41 050 ] 검사자 : 54 & 검사장소 : fdxg ==> 검사 시작
+[ default 2023-08-29 화요일 14:38:41 101 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:38:44 534 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:38:45 162 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:38:45 207 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:38:45 207 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:38:45 238 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:38:45 238 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:38:45 260 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:38:47 924 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:38:47 943 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:38:47 943 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:38:47 944 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:47 944 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:38:47 944 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:47 945 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:38:47 945 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:48 062 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:38:48 062 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:48 078 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:38:48 078 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:48 078 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:38:48 079 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:38:54 553 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:38:54 617 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:38:54 786 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:38:56 334 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:56 406 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:56 453 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:57 246 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:38:57 662 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:38:58 432 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:38:58 434 ] 검사자 : 543 & 검사장소 : r ==> 검사 시작
+[ default 2023-08-29 화요일 14:38:58 489 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:39:01 897 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:39:02 480 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:02 521 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:39:02 521 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:02 551 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:39:02 551 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:02 575 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:39:04 989 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:39:05 003 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:39:05 005 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:05 005 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:05 006 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:05 006 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:05 006 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:05 006 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:05 165 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:05 166 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:05 174 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:05 174 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:05 183 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:05 183 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:25 907 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:39:25 964 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:39:26 140 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:39:27 865 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:39:27 926 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:39:27 951 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:39:28 483 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:39:28 548 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:39:28 888 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:39:29 671 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:39:29 672 ] 검사자 : 543 & 검사장소 : st ==> 검사 시작
+[ default 2023-08-29 화요일 14:39:29 723 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:39:33 175 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:39:33 744 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:33 999 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:39:34 028 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:39:34 044 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:39:34 057 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:39:34 671 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:34 718 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:39:34 718 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:39:34 746 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:39:48 422 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:39:48 431 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:39:48 533 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:48 640 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:48 658 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:48 658 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:48 658 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:39:48 658 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:48 758 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:48 759 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:48 765 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:48 765 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:39:48 765 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:39:48 766 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:43:23 829 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:43:23 901 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:43:24 090 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:43:25 537 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:25 625 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:25 646 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:26 088 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:26 143 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:26 202 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:43:26 552 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:43:27 344 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:43:27 345 ] 검사자 : 432 & 검사장소 : gfd ==> 검사 시작
+[ default 2023-08-29 화요일 14:43:27 398 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:43:30 837 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:43:31 455 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:43:31 661 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:43:31 686 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:43:31 700 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:43:31 713 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:43:32 304 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:43:32 361 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:43:32 361 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:43:32 384 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:44:52 414 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:44:52 420 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:44:52 568 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:44:52 675 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:44:52 692 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:44:52 692 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:44:52 693 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:44:52 693 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:44:52 768 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:44:52 768 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:44:52 773 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:44:52 773 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:44:52 774 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:44:52 774 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:49:40 699 ] 프로그램 시작
+[ default 2023-08-29 화요일 14:49:40 771 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:49:41 000 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 14:49:42 583 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:42 637 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:42 661 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:42 684 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:43 350 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:43 366 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:43 498 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:43 656 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 14:49:44 702 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 14:49:45 491 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 14:49:45 493 ] 검사자 : 4321 & 검사장소 : fdg  ==> 검사 시작
+[ default 2023-08-29 화요일 14:49:45 541 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 14:49:49 059 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 14:49:49 754 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:49:49 967 ] CameraControl -> open 
+[ default 2023-08-29 화요일 14:49:49 992 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 14:49:50 006 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 14:49:50 019 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 14:49:50 640 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:49:50 761 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:49:50 761 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 14:49:50 792 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 14:50:27 598 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 14:50:27 607 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 14:50:27 679 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:50:27 809 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:50:27 830 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:50:27 830 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:50:27 830 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 14:50:27 831 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:50:27 913 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:50:27 913 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:50:27 918 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:50:27 918 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 14:50:27 918 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 14:50:27 918 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:32 765 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:04:32 833 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:04:33 054 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:04:34 328 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:34 334 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:34 355 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:34 370 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:35 030 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:35 051 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:35 162 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:35 218 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:04:35 686 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:04:36 471 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:04:36 471 ] 검사자 : 4532 & 검사장소 : fdg  ==> 검사 시작
+[ default 2023-08-29 화요일 16:04:36 517 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:04:39 992 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:04:40 878 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:04:41 122 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:04:41 166 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:04:41 178 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:04:41 190 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:04:41 797 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:04:41 858 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:04:41 858 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:04:41 877 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:04:59 514 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:04:59 522 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:04:59 625 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:04:59 725 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:59 746 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:04:59 746 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:59 746 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:04:59 747 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:59 844 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:04:59 844 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:59 852 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:04:59 852 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:04:59 856 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:04:59 857 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:21:47 402 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:21:47 466 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:21:47 696 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:21:49 261 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 265 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 291 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 354 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 883 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 940 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 970 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:49 986 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:21:50 393 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:21:51 177 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:21:51 177 ] 검사자 : 5432 & 검사장소 : gfsd ==> 검사 시작
+[ default 2023-08-29 화요일 16:21:51 225 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:21:54 664 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:21:55 710 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:21:55 949 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:21:55 988 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:21:56 002 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:21:56 014 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:21:56 624 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:21:56 673 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:21:56 675 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:21:56 696 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:22:09 898 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:22:09 909 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:22:10 043 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:22:10 126 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:10 145 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:22:10 145 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:10 145 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:22:10 145 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:10 233 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:22:10 233 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:10 245 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:22:10 246 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:10 246 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:22:10 247 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:22:47 568 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:22:47 634 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:22:47 833 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:22:48 574 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 577 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 609 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 636 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 724 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 737 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:48 764 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:49 598 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:49 754 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:49 779 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:22:50 319 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:22:51 109 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:22:51 111 ] 검사자 : 5687756 & 검사장소 : egf ==> 검사 시작
+[ default 2023-08-29 화요일 16:22:51 160 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:22:54 613 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:22:55 329 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:22:55 543 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:22:55 568 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:22:55 579 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:22:55 590 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:22:56 202 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:22:56 258 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:22:56 258 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:22:56 283 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:23:43 543 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:23:43 557 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:23:43 601 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:23:43 679 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:23:43 704 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:23:43 704 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:23:43 704 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:23:43 705 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:23:43 826 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:23:43 827 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:23:43 840 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:23:43 841 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:23:43 850 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:23:43 851 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:26:56 657 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:26:56 722 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:26:56 954 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:26:57 691 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:26:57 851 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:26:59 550 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:26:59 765 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:27:00 515 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:27:01 297 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:27:01 298 ] 검사자 : dd & 검사장소 : 75 ==> 검사 시작
+[ default 2023-08-29 화요일 16:27:01 340 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:27:04 793 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:27:05 638 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:27:05 847 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:27:05 881 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:27:05 897 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:27:05 910 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:27:06 517 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:27:06 581 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:27:06 581 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:27:06 605 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:28:11 366 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:28:11 379 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:28:11 429 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:28:11 522 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:28:11 543 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:28:11 543 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:28:11 543 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:28:11 543 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:28:11 648 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:28:11 648 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:28:11 654 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:28:11 655 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:28:11 656 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:28:11 656 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:12 944 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:39:13 018 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:39:13 221 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:39:14 266 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:14 402 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:15 249 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:15 275 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:15 403 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:15 824 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:39:16 619 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:39:16 621 ] 검사자 : dd & 검사장소 : 234 ==> 검사 시작
+[ default 2023-08-29 화요일 16:39:16 672 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:39:20 131 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:39:21 080 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:39:21 327 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:39:21 364 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:39:21 378 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:39:21 393 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:39:21 987 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:39:22 064 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:39:22 065 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:39:22 083 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:39:34 148 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:39:34 162 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:39:34 251 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:39:34 329 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:34 363 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:39:34 365 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:34 366 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:39:34 366 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:34 463 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:39:34 463 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:34 470 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:39:34 470 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:34 477 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:39:34 477 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:39:56 393 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:39:56 445 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:39:56 638 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:39:57 734 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:57 897 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:58 402 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:58 551 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:39:58 918 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:39:59 699 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:39:59 700 ] 검사자 : dd & 검사장소 : 33 ==> 검사 시작
+[ default 2023-08-29 화요일 16:39:59 748 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:40:03 167 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:40:04 147 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:40:04 365 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:40:04 391 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:40:04 405 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:40:04 415 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:40:05 021 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:40:05 083 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:40:05 083 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:40:05 105 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:40:34 831 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:40:35 190 ] ViewPage -> VideoSaveAction 
+[ default 2023-08-29 화요일 16:40:35 191 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 16:40:35 629 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 16:40:35 772 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 16:40:40 100 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:40:42 393 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:40:43 730 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:40:43 736 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:40:43 865 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:40:44 269 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:40:44 294 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:40:44 294 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:40:44 294 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:40:44 294 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:40:44 548 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:40:44 549 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:40:44 556 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:40:44 557 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:40:44 557 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:40:44 557 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:02 845 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:42:02 924 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:42:03 111 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:42:04 474 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:04 585 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:04 642 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:04 995 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:05 147 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:05 162 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:42:05 579 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:42:06 370 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:42:06 370 ] 검사자 : 534 & 검사장소 : gfd ==> 검사 시작
+[ default 2023-08-29 화요일 16:42:06 420 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:42:09 884 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:42:10 919 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:42:11 141 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:42:11 174 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:42:11 185 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:42:11 196 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:42:11 787 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:42:11 841 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:42:11 841 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:42:11 862 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:42:13 400 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:42:16 157 ] ViewPage -> ViewPage_ButtonActions 'DevExpress.XtraEditors.SimpleButton' 형식 개체를 'DevExpress.XtraEditors.LabelControl' 형식으로 캐스팅할 수 없습니다.
+[ default 2023-08-29 화요일 16:42:21 653 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:42:36 910 ] ViewPage -> ViewPage_ButtonActions 'DevExpress.XtraEditors.SimpleButton' 형식 개체를 'DevExpress.XtraEditors.LabelControl' 형식으로 캐스팅할 수 없습니다.
+[ default 2023-08-29 화요일 16:42:38 968 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:42:38 976 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:42:39 036 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:42:39 136 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:39 198 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:42:39 199 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:39 201 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:42:39 201 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:39 308 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:42:39 309 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:39 318 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:42:39 318 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:42:39 319 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:42:39 319 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:46:07 341 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:46:07 344 ] XmlProcessing -> XMLFileCreate 
+[ default 2023-08-29 화요일 16:46:07 345 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:46:07 448 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:46:07 640 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:46:08 736 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:08 812 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:08 848 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:09 591 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:09 674 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:09 825 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:46:10 353 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:46:11 142 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:46:11 143 ] 검사자 : 432 & 검사장소 : fds ==> 검사 시작
+[ default 2023-08-29 화요일 16:46:11 197 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:46:14 678 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:46:15 518 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:46:15 752 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:46:15 784 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:46:15 796 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:46:15 809 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:46:16 433 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:46:16 486 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:46:16 487 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:46:16 506 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:46:19 062 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:46:38 549 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:47:10 862 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:47:12 451 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:47:12 458 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:47:12 557 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:47:12 669 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:47:12 705 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:47:12 705 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:47:12 706 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:47:12 706 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:47:12 808 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:47:12 808 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:47:12 819 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:47:12 820 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:47:12 821 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:47:12 821 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:49:33 336 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:49:33 389 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:49:33 575 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:49:35 254 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:35 331 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:35 346 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 211 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 234 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 305 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 499 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 513 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 562 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 584 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:36 683 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:37 291 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:37 834 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:49:38 284 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:49:39 075 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:49:39 076 ] 검사자 : fds & 검사장소 : 346fgbhf s ==> 검사 시작
+[ default 2023-08-29 화요일 16:49:39 131 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:49:42 592 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:49:43 447 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:49:43 667 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:49:43 694 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:49:43 708 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:49:43 723 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:49:44 324 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:49:44 378 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:49:44 379 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:49:44 402 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:49:48 197 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:49:48 579 ] ViewPage -> VideoSaveAction 
+[ default 2023-08-29 화요일 16:50:19 069 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:50:19 069 ] ViewPage -> VideoSaveAction 
+[ default 2023-08-29 화요일 16:50:27 248 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:50:27 254 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:50:27 334 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:50:28 606 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:28 624 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:50:28 624 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:28 624 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:50:28 624 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:28 736 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:50:28 737 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:28 738 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:50:28 738 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:28 738 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:50:28 739 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:50:44 570 ] 프로그램 시작
+[ default 2023-08-29 화요일 16:50:44 643 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:50:44 834 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 16:50:45 735 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:45 765 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:45 784 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:45 871 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:47 365 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:47 536 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:47 815 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:48 127 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:48 366 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:48 736 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 16:50:49 483 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 16:50:50 254 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 16:50:50 256 ] 검사자 : rewr & 검사장소 :  f f f ==> 검사 시작
+[ default 2023-08-29 화요일 16:50:50 310 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 16:50:53 800 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 16:50:54 657 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:50:54 876 ] CameraControl -> open 
+[ default 2023-08-29 화요일 16:50:54 903 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 16:50:54 915 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 16:50:54 926 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 16:50:55 514 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:50:55 556 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:50:55 556 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 16:50:55 576 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 16:50:58 200 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:50:58 417 ] ViewPage -> VideoSaveAction 
+[ default 2023-08-29 화요일 16:50:58 419 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 16:51:03 975 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:51:04 556 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 16:51:34 786 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 16:54:14 133 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 16:54:14 155 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 16:54:14 235 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:54:14 608 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:54:14 659 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:54:14 659 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:54:14 659 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 16:54:14 659 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:54:14 816 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:54:14 816 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:54:14 829 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:54:14 829 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 16:54:14 830 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 16:54:14 830 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:24:30 434 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:24:30 506 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:24:30 730 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:24:32 441 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:24:32 514 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:24:33 182 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:24:33 302 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:24:33 734 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 17:24:34 505 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:24:34 506 ] 검사자 : 43 & 검사장소 : fd ==> 검사 시작
+[ default 2023-08-29 화요일 17:24:34 551 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 17:24:38 010 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 17:24:38 920 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 17:24:39 141 ] CameraControl -> open 
+[ default 2023-08-29 화요일 17:24:39 176 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 17:24:39 196 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 17:24:39 209 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 17:24:39 800 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 17:24:39 884 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 17:24:39 885 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 17:24:39 906 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 17:24:53 383 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 17:24:53 386 ] ViewPage -> ImageSaveAction 
+[ default 2023-08-29 화요일 17:24:53 388 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 17:24:53 409 ] ViewPage -> FolderPath 
+[ default 2023-08-29 화요일 17:24:55 878 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 17:25:43 016 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 17:25:43 022 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 17:25:43 076 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 17:25:43 172 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:25:43 193 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 17:25:43 193 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:25:43 193 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 17:25:43 193 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:25:43 310 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 17:25:43 310 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:25:43 317 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 17:25:43 317 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:25:43 317 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 17:25:43 318 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 17:33:13 073 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:33:13 145 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:33:13 346 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:33:35 623 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:33:35 697 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:33:35 909 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:33:57 550 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:33:57 613 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:33:57 838 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:33:59 788 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:34:00 155 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:34:40 792 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:34:40 858 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:34:41 039 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:34:42 544 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:34:42 702 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:29 121 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:38:29 204 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:38:29 434 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:38:32 471 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:32 960 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:53 158 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:38:53 215 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:38:53 397 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:38:54 239 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:54 266 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:55 992 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:38:56 112 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:10 979 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:39:11 023 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:39:11 195 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:39:12 357 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:12 568 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:50 876 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:39:50 933 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:39:51 121 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:39:52 298 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:52 432 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:53 273 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:39:53 429 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:40:51 983 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:40:52 048 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:40:52 292 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:40:53 645 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:40:53 753 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:40:54 417 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:40:54 549 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:16 186 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:41:16 254 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:41:16 455 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:41:17 570 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:17 702 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:18 581 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:22 471 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 17:41:23 251 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:41:23 253 ] 검사자 : ff & 검사장소 : d ==> 검사 시작
+[ default 2023-08-29 화요일 17:41:23 300 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 17:41:58 011 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:41:58 071 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:41:58 261 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:41:59 015 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:59 017 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:59 075 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:41:59 661 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:04 082 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:43:04 148 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:43:04 340 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:43:05 282 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:05 751 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:38 553 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:43:38 621 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:43:38 805 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:43:40 351 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:40 729 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:52 366 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:43:52 418 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:43:52 649 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:43:54 000 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:43:54 485 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:44:19 597 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:44:19 655 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:44:19 870 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:44:21 701 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:44:22 882 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:44:41 973 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:44:42 032 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:44:42 216 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:44:43 207 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:44:43 715 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:45:10 177 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:45:10 245 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:45:10 429 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:45:11 518 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:45:11 953 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:45:29 720 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:45:29 775 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:45:29 955 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:45:58 534 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:45:58 599 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:45:58 786 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:45:59 703 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:46:00 481 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:46:34 429 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:46:34 483 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:46:34 668 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:46:35 516 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:46:36 230 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:47:13 352 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:47:13 424 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:47:13 604 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:47:15 142 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:47:15 503 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:47:35 430 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:47:35 487 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:47:35 677 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:47:38 476 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:47:38 672 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:49:32 973 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:49:33 045 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:49:33 241 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:49:35 342 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:49:35 768 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:51:00 970 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:51:01 028 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:51:01 210 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:51:05 378 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:51:06 233 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:51:10 073 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:51:13 641 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:51:27 595 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:53:21 915 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:53:21 976 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:53:22 172 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:53:23 619 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:53:26 333 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:53:55 085 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:53:55 157 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:53:55 333 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:53:56 757 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:53:57 503 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:54:00 302 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:10 201 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:55:10 259 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:55:10 455 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:55:11 608 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:14 037 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:16 640 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:50 094 ] 프로그램 시작
+[ default 2023-08-29 화요일 17:55:50 153 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 17:55:50 344 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 17:55:51 587 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:51 640 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:51 737 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:52 820 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:54 067 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:54 704 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 17:55:57 742 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 18:02:10 221 ] 프로그램 시작
+[ default 2023-08-29 화요일 18:02:10 299 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 18:02:10 540 ] LoginForm -> LoginForm_Load 
+[ default 2023-08-29 화요일 18:02:11 606 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 18:02:11 671 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 18:02:12 519 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 18:02:12 581 ] LoginForm -> InputCheck 
+[ default 2023-08-29 화요일 18:02:13 066 ] LoginForm -> Start_Click 
+[ default 2023-08-29 화요일 18:02:13 847 ] XmlProcessing -> XMLSave 
+[ default 2023-08-29 화요일 18:02:13 848 ] 검사자 : sd & 검사장소 : 21 ==> 검사 시작
+[ default 2023-08-29 화요일 18:02:13 901 ] MainForm -> MainForm_Load 
+[ default 2023-08-29 화요일 18:02:17 364 ] MainForm -> MainForm_Shown 
+[ default 2023-08-29 화요일 18:02:18 305 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 18:02:18 602 ] CameraControl -> open 
+[ default 2023-08-29 화요일 18:02:18 636 ] ViewPage -> CreateBitmap 
+[ default 2023-08-29 화요일 18:02:18 649 ] CameraControl -> SetEnableImageCallback 
+[ default 2023-08-29 화요일 18:02:18 664 ] CameraControl -> Start 
+[ default 2023-08-29 화요일 18:02:19 271 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 18:02:19 342 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 18:02:19 342 ] CameraControl -> CameraOpen 
+[ default 2023-08-29 화요일 18:02:19 368 ] CameraControl -> CameraOpen There is no available device.
+[ default 2023-08-29 화요일 18:02:37 668 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 18:02:41 180 ] ViewPage -> ViewPage_ButtonActions 
+[ default 2023-08-29 화요일 18:03:02 109 ] MainForm -> MainForm_FormClosing 
+[ default 2023-08-29 화요일 18:03:02 117 ] ViewPage -> CameraClose 
+[ default 2023-08-29 화요일 18:03:02 171 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 18:03:02 543 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 18:03:02 561 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 18:03:02 562 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 18:03:02 562 ] CameraControl -> Stop 
+[ default 2023-08-29 화요일 18:03:02 562 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 18:03:02 710 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 18:03:02 711 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 18:03:02 726 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 18:03:02 727 ] CameraControl -> Close 
+[ default 2023-08-29 화요일 18:03:02 730 ] CameraControl -> Finalize 
+[ default 2023-08-29 화요일 18:03:02 730 ] CameraControl -> Close 

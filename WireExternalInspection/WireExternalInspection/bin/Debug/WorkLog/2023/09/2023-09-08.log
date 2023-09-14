@@ -1,0 +1,366 @@
+[  2023-09-08 금요일 14:06:44 665 ] 파일 생성 성공
+[ NoName 2023-09-08 금요일 14:06:44 663 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 14:06:44 789 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 14:06:45 108 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 14:06:45 635 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 14:06:46 427 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:46 432 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:46 438 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:46 484 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:46 502 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 055 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 080 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 099 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 127 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 210 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 14:06:47 509 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 14:06:48 297 ] XmlProcessing -> XMLSave 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:48 298 ] 검사자 : uad98 & 검사장소 : fd0su ==> 검사 시작
+[ uad98 - fd0su 2023-09-08 금요일 14:06:48 365 ] MainForm -> MainForm_Load 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:51 869 ] MainForm -> MainForm_Shown 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:53 239 ] CameraControl -> CameraOpen 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:53 532 ] CameraControl -> open 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:53 558 ] ViewPage -> CreateBitmap 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:53 574 ] CameraControl -> SetEnableImageCallback 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:53 594 ] CameraControl -> Start 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:54 195 ] CameraControl -> CameraOpen 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:54 286 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ uad98 - fd0su 2023-09-08 금요일 14:06:54 287 ] CameraControl -> CameraOpen 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:54 311 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ uad98 - fd0su 2023-09-08 금요일 14:06:58 023 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:06:59 207 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:02 278 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:02 452 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:11 562 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:11 653 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:15 340 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:15 345 ] ViewPage -> VideoOpen 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:27 195 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:27 627 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:28 448 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:28 575 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:36 842 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:36 843 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:41 169 ] ViewPage -> ViewCamActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:42 841 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:42 842 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:43 731 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:45 431 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:45 432 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:46 773 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:46 773 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:48 208 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:48 954 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:49 075 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:54 269 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:54 624 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:55 373 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:07:55 515 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:02 829 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:02 829 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:08 381 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:08 382 ] ViewPage -> VideoPlay 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:09 759 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:10 243 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:10 787 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:10 885 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:13 678 ] ViewPage -> ViewPage_ButtonActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:13 680 ] ViewPage -> VideoClose 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:16 523 ] ViewPage -> ViewCamActions 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:57 627 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:57 850 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:58 173 ] ViewPage -> SelectedView_MouseDown 
+[ uad98 - fd0su 2023-09-08 금요일 14:08:58 303 ] ViewPage -> SelectedView_Click 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 487 ] MainForm -> MainForm_FormClosing 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 518 ] ViewPage -> CameraClose 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 526 ] CameraControl -> Stop 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 627 ] CameraControl -> Close 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 694 ] CameraControl -> Stop 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 694 ] CameraControl -> Close 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 694 ] CameraControl -> Stop 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 694 ] CameraControl -> Close 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 881 ] CameraControl -> Finalize 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 881 ] CameraControl -> Close 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 895 ] CameraControl -> Finalize 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 895 ] CameraControl -> Close 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 896 ] CameraControl -> Finalize 
+[ uad98 - fd0su 2023-09-08 금요일 14:09:23 896 ] CameraControl -> Close 
+[ NoName 2023-09-08 금요일 17:20:51 231 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 17:20:51 311 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 17:20:51 553 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 17:20:51 833 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 17:20:53 121 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 124 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 126 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 142 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 168 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 633 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 828 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:53 847 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:20:54 135 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 17:20:54 920 ] XmlProcessing -> XMLSave 
+[ d09sa - gdf 2023-09-08 금요일 17:20:54 921 ] 검사자 : d09sa & 검사장소 : gdf ==> 검사 시작
+[ d09sa - gdf 2023-09-08 금요일 17:20:54 972 ] MainForm -> MainForm_Load 
+[ d09sa - gdf 2023-09-08 금요일 17:20:58 472 ] MainForm -> MainForm_Shown 
+[ d09sa - gdf 2023-09-08 금요일 17:20:59 356 ] CameraControl -> CameraOpen 
+[ d09sa - gdf 2023-09-08 금요일 17:20:59 729 ] CameraControl -> open 
+[ d09sa - gdf 2023-09-08 금요일 17:20:59 765 ] ViewPage -> CreateBitmap 
+[ d09sa - gdf 2023-09-08 금요일 17:20:59 778 ] CameraControl -> SetEnableImageCallback 
+[ d09sa - gdf 2023-09-08 금요일 17:20:59 791 ] CameraControl -> Start 
+[ d09sa - gdf 2023-09-08 금요일 17:21:00 395 ] CameraControl -> CameraOpen 
+[ d09sa - gdf 2023-09-08 금요일 17:21:00 594 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ d09sa - gdf 2023-09-08 금요일 17:21:00 595 ] CameraControl -> CameraOpen 
+[ d09sa - gdf 2023-09-08 금요일 17:21:00 627 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ d09sa - gdf 2023-09-08 금요일 17:21:16 575 ] ViewPage -> SelectedView_MouseDown 
+[ d09sa - gdf 2023-09-08 금요일 17:21:16 788 ] ViewPage -> SelectedView_Click 
+[ d09sa - gdf 2023-09-08 금요일 17:21:17 139 ] ViewPage -> SelectedView_MouseDown 
+[ d09sa - gdf 2023-09-08 금요일 17:21:17 268 ] ViewPage -> SelectedView_Click 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 299 ] MainForm -> MainForm_FormClosing 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 306 ] ViewPage -> CameraClose 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 310 ] CameraControl -> Stop 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 457 ] CameraControl -> Close 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 495 ] CameraControl -> Stop 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 495 ] CameraControl -> Close 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 495 ] CameraControl -> Stop 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 496 ] CameraControl -> Close 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 599 ] CameraControl -> Finalize 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 599 ] CameraControl -> Close 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 606 ] CameraControl -> Finalize 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 606 ] CameraControl -> Close 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 606 ] CameraControl -> Finalize 
+[ d09sa - gdf 2023-09-08 금요일 17:21:48 606 ] CameraControl -> Close 
+[ NoName 2023-09-08 금요일 17:24:13 107 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 17:24:13 180 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 17:24:13 374 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 17:24:13 633 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 17:24:14 693 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:15 189 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 234 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 353 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 472 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 585 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 593 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 596 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 778 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 929 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 945 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:16 947 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 128 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 234 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 238 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 241 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 418 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:17 424 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:18 707 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:18 827 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:18 954 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 058 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 065 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 068 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 182 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 289 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 294 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 295 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 683 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 800 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 806 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 808 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:19 998 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 079 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 080 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 081 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 323 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 327 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:24:20 328 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 17:24:21 122 ] XmlProcessing -> XMLSave 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:21 123 ] 검사자 : 테에스트 & 검사장소 : 테에에스트 ==> 검사 시작
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:21 178 ] MainForm -> MainForm_Load 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:24 582 ] MainForm -> MainForm_Shown 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:25 407 ] CameraControl -> CameraOpen 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:25 719 ] CameraControl -> open 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:25 756 ] ViewPage -> CreateBitmap 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:25 776 ] CameraControl -> SetEnableImageCallback 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:25 790 ] CameraControl -> Start 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:26 386 ] CameraControl -> CameraOpen 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:26 449 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:26 449 ] CameraControl -> CameraOpen 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:26 473 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:28 011 ] ViewPage -> SelectedView_MouseDown 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:28 223 ] ViewPage -> SelectedView_Click 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:28 506 ] ViewPage -> SelectedView_MouseDown 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:28 615 ] ViewPage -> SelectedView_Click 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 608 ] MainForm -> MainForm_FormClosing 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 615 ] ViewPage -> CameraClose 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 617 ] CameraControl -> Stop 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 694 ] CameraControl -> Close 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 712 ] CameraControl -> Stop 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 712 ] CameraControl -> Close 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 712 ] CameraControl -> Stop 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 712 ] CameraControl -> Close 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 823 ] CameraControl -> Finalize 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 824 ] CameraControl -> Close 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 833 ] CameraControl -> Finalize 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 835 ] CameraControl -> Close 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 835 ] CameraControl -> Finalize 
+[ 테에스트 - 테에에스트 2023-09-08 금요일 17:24:44 836 ] CameraControl -> Close 
+[ NoName 2023-09-08 금요일 17:26:14 917 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 17:26:14 965 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 17:26:15 145 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 17:26:15 390 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 17:26:17 648 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:18 017 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:18 294 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:18 424 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 473 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 572 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 652 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 814 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 817 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 820 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:20 934 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 016 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 264 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 270 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 275 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 465 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 538 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 783 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:21 787 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 165 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 280 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 388 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 490 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 496 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 498 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 579 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 792 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 794 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 795 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:22 906 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 160 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 327 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 329 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 331 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 634 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 639 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:26:23 640 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 17:26:24 433 ] XmlProcessing -> XMLSave 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:24 434 ] 검사자 : 검은콩 & 검사장소 : 매일두유 ==> 검사 시작
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:24 483 ] MainForm -> MainForm_Load 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:27 890 ] MainForm -> MainForm_Shown 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:28 604 ] CameraControl -> CameraOpen 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:28 864 ] CameraControl -> open 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:28 891 ] ViewPage -> CreateBitmap 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:28 908 ] CameraControl -> SetEnableImageCallback 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:28 920 ] CameraControl -> Start 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:29 509 ] CameraControl -> CameraOpen 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:29 591 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:29 592 ] CameraControl -> CameraOpen 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:29 625 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:30 786 ] ViewPage -> SelectedView_MouseDown 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:30 820 ] ViewPage -> SelectedView_MouseDown 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:30 933 ] ViewPage -> SelectedView_Click 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:31 676 ] ViewPage -> SelectedView_MouseDown 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:31 761 ] ViewPage -> SelectedView_Click 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 550 ] MainForm -> MainForm_FormClosing 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 555 ] ViewPage -> CameraClose 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 565 ] CameraControl -> Stop 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 672 ] CameraControl -> Close 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 689 ] CameraControl -> Stop 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 689 ] CameraControl -> Close 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 689 ] CameraControl -> Stop 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 690 ] CameraControl -> Close 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 789 ] CameraControl -> Finalize 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 789 ] CameraControl -> Close 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 796 ] CameraControl -> Finalize 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 796 ] CameraControl -> Close 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 796 ] CameraControl -> Finalize 
+[ 검은콩 - 매일두유 2023-09-08 금요일 17:26:50 797 ] CameraControl -> Close 
+[ NoName 2023-09-08 금요일 17:27:11 685 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 17:27:11 758 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 17:27:11 953 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 17:27:12 219 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 17:27:13 004 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:13 066 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:13 105 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:13 724 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:13 736 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:13 761 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:27:14 224 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 17:27:15 020 ] XmlProcessing -> XMLSave 
+[ asd - 234 2023-09-08 금요일 17:27:15 022 ] 검사자 : asd & 검사장소 : 234 ==> 검사 시작
+[ asd - 234 2023-09-08 금요일 17:27:15 071 ] MainForm -> MainForm_Load 
+[ asd - 234 2023-09-08 금요일 17:27:18 457 ] MainForm -> MainForm_Shown 
+[ asd - 234 2023-09-08 금요일 17:27:19 205 ] CameraControl -> CameraOpen 
+[ asd - 234 2023-09-08 금요일 17:27:19 500 ] CameraControl -> open 
+[ asd - 234 2023-09-08 금요일 17:27:19 524 ] ViewPage -> CreateBitmap 
+[ asd - 234 2023-09-08 금요일 17:27:19 539 ] CameraControl -> SetEnableImageCallback 
+[ asd - 234 2023-09-08 금요일 17:27:19 553 ] CameraControl -> Start 
+[ asd - 234 2023-09-08 금요일 17:27:20 140 ] CameraControl -> CameraOpen 
+[ asd - 234 2023-09-08 금요일 17:27:20 203 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ asd - 234 2023-09-08 금요일 17:27:20 204 ] CameraControl -> CameraOpen 
+[ asd - 234 2023-09-08 금요일 17:27:20 228 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ asd - 234 2023-09-08 금요일 17:27:21 655 ] ViewPage -> SelectedView_MouseDown 
+[ asd - 234 2023-09-08 금요일 17:27:21 879 ] ViewPage -> SelectedView_Click 
+[ asd - 234 2023-09-08 금요일 17:27:22 196 ] ViewPage -> SelectedView_MouseDown 
+[ asd - 234 2023-09-08 금요일 17:27:22 306 ] ViewPage -> SelectedView_Click 
+[ asd - 234 2023-09-08 금요일 17:27:28 062 ] MainForm -> MainForm_FormClosing 
+[ asd - 234 2023-09-08 금요일 17:27:28 066 ] ViewPage -> CameraClose 
+[ asd - 234 2023-09-08 금요일 17:27:28 069 ] CameraControl -> Stop 
+[ asd - 234 2023-09-08 금요일 17:27:29 328 ] CameraControl -> Close 
+[ asd - 234 2023-09-08 금요일 17:27:29 337 ] CameraControl -> Stop 
+[ asd - 234 2023-09-08 금요일 17:27:29 337 ] CameraControl -> Close 
+[ asd - 234 2023-09-08 금요일 17:27:29 338 ] CameraControl -> Stop 
+[ asd - 234 2023-09-08 금요일 17:27:29 338 ] CameraControl -> Close 
+[ asd - 234 2023-09-08 금요일 17:27:29 406 ] CameraControl -> Finalize 
+[ asd - 234 2023-09-08 금요일 17:27:29 406 ] CameraControl -> Close 
+[ asd - 234 2023-09-08 금요일 17:27:29 412 ] CameraControl -> Finalize 
+[ asd - 234 2023-09-08 금요일 17:27:29 413 ] CameraControl -> Close 
+[ asd - 234 2023-09-08 금요일 17:27:29 413 ] CameraControl -> Finalize 
+[ asd - 234 2023-09-08 금요일 17:27:29 413 ] CameraControl -> Close 
+[ NoName 2023-09-08 금요일 17:28:11 302 ] 프로그램 시작
+[ NoName 2023-09-08 금요일 17:28:11 364 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-08 금요일 17:28:11 555 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-08 금요일 17:28:11 805 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-08 금요일 17:28:12 286 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:12 344 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:12 468 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:12 681 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:12 720 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:13 680 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:13 933 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:13 964 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:14 334 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:14 535 ] LoginForm -> InputCheck 
+[ NoName 2023-09-08 금요일 17:28:14 945 ] LoginForm -> Start_Click 
+[ NoName 2023-09-08 금요일 17:28:15 736 ] XmlProcessing -> XMLSave 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:15 737 ] 검사자 : sdsds & 검사장소 : wwwww ==> 검사 시작
+[ sdsds - wwwww 2023-09-08 금요일 17:28:15 785 ] MainForm -> MainForm_Load 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:19 175 ] MainForm -> MainForm_Shown 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:19 891 ] CameraControl -> CameraOpen 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 183 ] CameraControl -> open 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 217 ] ViewPage -> CreateBitmap 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 239 ] CameraControl -> SetEnableImageCallback 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 255 ] CameraControl -> Start 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 848 ] CameraControl -> CameraOpen 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 901 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 901 ] CameraControl -> CameraOpen 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:20 923 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdsds - wwwww 2023-09-08 금요일 17:28:22 494 ] ViewPage -> SelectedView_MouseDown 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:22 927 ] ViewPage -> SelectedView_Click 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:23 419 ] ViewPage -> SelectedView_MouseDown 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:23 523 ] ViewPage -> SelectedView_Click 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 617 ] MainForm -> MainForm_FormClosing 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 623 ] ViewPage -> CameraClose 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 625 ] CameraControl -> Stop 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 692 ] CameraControl -> Close 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 709 ] CameraControl -> Stop 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 709 ] CameraControl -> Close 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 709 ] CameraControl -> Stop 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 710 ] CameraControl -> Close 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 806 ] CameraControl -> Finalize 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 806 ] CameraControl -> Close 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 813 ] CameraControl -> Finalize 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 814 ] CameraControl -> Close 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 815 ] CameraControl -> Finalize 
+[ sdsds - wwwww 2023-09-08 금요일 17:28:31 815 ] CameraControl -> Close 

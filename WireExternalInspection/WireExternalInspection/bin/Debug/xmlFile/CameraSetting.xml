@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Camera_Setting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Camera1IPAddress />
+  <Camera2IPAddress />
+  <Camera3IPAddress />
+  <TextMark>날짜/시간</TextMark>
+  <UserText />
+  <CamWidth>0</CamWidth>
+  <CamHeight>0</CamHeight>
+  <Cam1pxLength>0.0264</Cam1pxLength>
+  <Cam2pxLength>0.0264</Cam2pxLength>
+  <Cam3pxLength>0.0264</Cam3pxLength>
+</Camera_Setting>

@@ -1,0 +1,1453 @@
+[  2023-09-13 수요일 10:42:31 448 ] 파일 생성 성공
+[ NoName 2023-09-13 수요일 10:42:31 446 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 10:42:31 744 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 10:42:32 198 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 10:42:32 516 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 10:42:33 537 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:33 542 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:33 544 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:33 567 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:33 583 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:33 680 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 153 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 175 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 190 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 214 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 246 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:42:34 544 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 10:42:35 330 ] XmlProcessing -> XMLSave 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:35 331 ] 검사자 : asjdkl & 검사장소 : df0su ==> 검사 시작
+[ asjdkl - df0su 2023-09-13 수요일 10:42:35 384 ] MainForm -> MainForm_Load 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:38 829 ] MainForm -> MainForm_Shown 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:40 161 ] CameraControl -> CameraOpen 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:40 478 ] CameraControl -> open 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:40 518 ] ViewPage -> CreateBitmap 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:40 532 ] CameraControl -> SetEnableImageCallback 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:40 545 ] CameraControl -> Start 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:41 138 ] CameraControl -> CameraOpen 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:41 202 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ asjdkl - df0su 2023-09-13 수요일 10:42:41 202 ] CameraControl -> CameraOpen 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:41 223 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ asjdkl - df0su 2023-09-13 수요일 10:42:43 798 ] ViewPage -> SelectedView_MouseDown 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:44 113 ] ViewPage -> SelectedView_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:44 484 ] ViewPage -> SelectedView_MouseDown 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:44 602 ] ViewPage -> SelectedView_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:45 117 ] MainForm -> PageChange 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:45 464 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:45 465 ] AnalysisPage -> ImageChange 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:48 650 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:48 658 ] AnalysisPage -> OptionTrackBarChanged 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:48 664 ] AnalysisPage -> OptionTrackBarChanged 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:52 966 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:53 895 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:54 920 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:56 179 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:57 195 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:58 105 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:42:58 114 ] AnalysisPage -> OptionTrackBarChanged 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:03 990 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:20 122 ] AnalysisPage -> ButtonFilter_Click 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 058 ] MainForm -> MainForm_FormClosing 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 071 ] ViewPage -> CameraClose 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 082 ] CameraControl -> Stop 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 458 ] CameraControl -> Close 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 472 ] CameraControl -> Stop 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 472 ] CameraControl -> Close 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 472 ] CameraControl -> Stop 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 472 ] CameraControl -> Close 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 571 ] CameraControl -> Finalize 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 571 ] CameraControl -> Close 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 575 ] CameraControl -> Finalize 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 576 ] CameraControl -> Close 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 576 ] CameraControl -> Finalize 
+[ asjdkl - df0su 2023-09-13 수요일 10:43:27 576 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 10:46:32 576 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 10:46:32 642 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 10:46:32 875 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 10:46:33 165 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 10:46:34 506 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:34 509 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:34 517 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:34 533 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:34 559 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:35 591 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:35 623 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:35 647 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:35 672 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:35 760 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:46:36 126 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 10:46:36 912 ] XmlProcessing -> XMLSave 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:36 913 ] 검사자 : sd09f & 검사장소 : n,2q3 ==> 검사 시작
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:36 960 ] MainForm -> MainForm_Load 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:40 450 ] MainForm -> MainForm_Shown 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:41 311 ] CameraControl -> CameraOpen 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:41 598 ] CameraControl -> open 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:41 638 ] ViewPage -> CreateBitmap 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:41 660 ] CameraControl -> SetEnableImageCallback 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:41 674 ] CameraControl -> Start 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:42 273 ] CameraControl -> CameraOpen 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:42 355 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:42 355 ] CameraControl -> CameraOpen 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:42 376 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:43 759 ] ViewPage -> SelectedView_MouseDown 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:44 013 ] ViewPage -> SelectedView_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:44 354 ] ViewPage -> SelectedView_MouseDown 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:44 466 ] ViewPage -> SelectedView_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:44 943 ] MainForm -> PageChange 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:45 157 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:45 157 ] AnalysisPage -> ImageChange 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:48 500 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:51 456 ] AnalysisPage -> OptionTrackBarChanged 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:51 473 ] AnalysisPage -> OptionTrackBarChanged 
+[ sd09f - n,2q3 2023-09-13 수요일 10:46:55 642 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:15 859 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:19 856 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:19 861 ] AnalysisPage -> OptionTrackBarChanged 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:37 828 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:38 373 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:38 869 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:40 140 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:40 868 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:48 416 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:52 132 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:53 408 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:47:56 675 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:48:39 308 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:49:38 742 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:50:05 194 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:50:49 990 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:51:00 430 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:51:20 351 ] AnalysisPage -> ButtonFilter_Click 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:36 588 ] MainForm -> MainForm_FormClosing 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:36 598 ] ViewPage -> CameraClose 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:36 602 ] CameraControl -> Stop 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:37 944 ] CameraControl -> Close 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:37 969 ] CameraControl -> Stop 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:37 969 ] CameraControl -> Close 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:37 969 ] CameraControl -> Stop 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:37 969 ] CameraControl -> Close 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 092 ] CameraControl -> Finalize 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 093 ] CameraControl -> Close 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 095 ] CameraControl -> Finalize 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 095 ] CameraControl -> Close 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 098 ] CameraControl -> Finalize 
+[ sd09f - n,2q3 2023-09-13 수요일 10:52:38 099 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 10:57:57 560 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 10:57:57 674 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 10:57:57 984 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 10:57:58 244 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 10:57:58 835 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:57:58 958 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:57:59 638 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:57:59 775 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 10:58:00 034 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 10:58:00 816 ] XmlProcessing -> XMLSave 
+[ dd - 44 2023-09-13 수요일 10:58:00 817 ] 검사자 : dd & 검사장소 : 44 ==> 검사 시작
+[ dd - 44 2023-09-13 수요일 10:58:00 864 ] MainForm -> MainForm_Load 
+[ dd - 44 2023-09-13 수요일 10:58:04 291 ] MainForm -> MainForm_Shown 
+[ dd - 44 2023-09-13 수요일 10:58:05 283 ] CameraControl -> CameraOpen 
+[ dd - 44 2023-09-13 수요일 10:58:05 614 ] CameraControl -> open 
+[ dd - 44 2023-09-13 수요일 10:58:05 654 ] ViewPage -> CreateBitmap 
+[ dd - 44 2023-09-13 수요일 10:58:05 676 ] CameraControl -> SetEnableImageCallback 
+[ dd - 44 2023-09-13 수요일 10:58:05 686 ] CameraControl -> Start 
+[ dd - 44 2023-09-13 수요일 10:58:06 296 ] CameraControl -> CameraOpen 
+[ dd - 44 2023-09-13 수요일 10:58:06 340 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 44 2023-09-13 수요일 10:58:06 340 ] CameraControl -> CameraOpen 
+[ dd - 44 2023-09-13 수요일 10:58:06 364 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 44 2023-09-13 수요일 10:58:08 956 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 44 2023-09-13 수요일 10:58:09 212 ] ViewPage -> SelectedView_Click 
+[ dd - 44 2023-09-13 수요일 10:58:09 800 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 44 2023-09-13 수요일 10:58:10 366 ] ViewPage -> SelectedView_Click 
+[ dd - 44 2023-09-13 수요일 10:58:10 703 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 44 2023-09-13 수요일 10:58:10 821 ] ViewPage -> SelectedView_Click 
+[ dd - 44 2023-09-13 수요일 10:58:11 597 ] MainForm -> PageChange 
+[ dd - 44 2023-09-13 수요일 10:58:11 822 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 44 2023-09-13 수요일 10:58:11 824 ] AnalysisPage -> ImageChange 
+[ dd - 44 2023-09-13 수요일 10:58:14 188 ] AnalysisPage -> ButtonFilter_Click 
+[ dd - 44 2023-09-13 수요일 10:58:16 795 ] AnalysisPage -> OptionTrackBarChanged 
+[ dd - 44 2023-09-13 수요일 10:58:16 808 ] AnalysisPage -> OptionTrackBarChanged 
+[ dd - 44 2023-09-13 수요일 10:58:21 484 ] AnalysisPage -> ButtonFilter_Click 
+[ dd - 44 2023-09-13 수요일 10:58:53 960 ] AnalysisPage -> ButtonFilter_Click 
+[ dd - 44 2023-09-13 수요일 10:59:13 811 ] AnalysisPage -> ViewBack_Click 
+[ dd - 44 2023-09-13 수요일 10:59:13 811 ] MainForm -> PageChange 
+[ dd - 44 2023-09-13 수요일 10:59:13 919 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 44 2023-09-13 수요일 10:59:15 740 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 44 2023-09-13 수요일 10:59:15 875 ] ViewPage -> SelectedView_Click 
+[ dd - 44 2023-09-13 수요일 10:59:16 516 ] MainForm -> PageChange 
+[ dd - 44 2023-09-13 수요일 10:59:16 636 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 44 2023-09-13 수요일 10:59:16 636 ] AnalysisPage -> ImageChange 
+[ dd - 44 2023-09-13 수요일 11:00:05 641 ] AnalysisPage -> ViewBack_Click 
+[ dd - 44 2023-09-13 수요일 11:00:05 643 ] MainForm -> PageChange 
+[ dd - 44 2023-09-13 수요일 11:00:05 750 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 44 2023-09-13 수요일 11:00:07 436 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 44 2023-09-13 수요일 11:00:07 554 ] ViewPage -> SelectedView_Click 
+[ dd - 44 2023-09-13 수요일 11:00:08 081 ] MainForm -> PageChange 
+[ dd - 44 2023-09-13 수요일 11:00:08 202 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 44 2023-09-13 수요일 11:00:08 202 ] AnalysisPage -> ImageChange 
+[ dd - 44 2023-09-13 수요일 11:00:37 622 ] MainForm -> MainForm_FormClosing 
+[ dd - 44 2023-09-13 수요일 11:00:37 633 ] ViewPage -> CameraClose 
+[ dd - 44 2023-09-13 수요일 11:00:37 635 ] CameraControl -> Stop 
+[ dd - 44 2023-09-13 수요일 11:00:39 018 ] CameraControl -> Close 
+[ dd - 44 2023-09-13 수요일 11:00:39 044 ] CameraControl -> Stop 
+[ dd - 44 2023-09-13 수요일 11:00:39 044 ] CameraControl -> Close 
+[ dd - 44 2023-09-13 수요일 11:00:39 044 ] CameraControl -> Stop 
+[ dd - 44 2023-09-13 수요일 11:00:39 044 ] CameraControl -> Close 
+[ dd - 44 2023-09-13 수요일 11:00:39 156 ] CameraControl -> Finalize 
+[ dd - 44 2023-09-13 수요일 11:00:39 157 ] CameraControl -> Close 
+[ dd - 44 2023-09-13 수요일 11:00:39 166 ] CameraControl -> Finalize 
+[ dd - 44 2023-09-13 수요일 11:00:39 167 ] CameraControl -> Close 
+[ dd - 44 2023-09-13 수요일 11:00:39 167 ] CameraControl -> Finalize 
+[ dd - 44 2023-09-13 수요일 11:00:39 167 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 11:00:46 712 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:00:46 776 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:00:47 002 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:00:47 280 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:01:15 841 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:01:15 901 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:01:16 087 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:01:16 355 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:01:17 327 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 331 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 340 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 367 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 383 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 454 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 478 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:17 928 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:18 032 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:18 045 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:01:18 310 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 11:01:19 099 ] XmlProcessing -> XMLSave 
+[ sdjflds - d90 2023-09-13 수요일 11:01:19 100 ] 검사자 : sdjflds & 검사장소 : d90 ==> 검사 시작
+[ sdjflds - d90 2023-09-13 수요일 11:01:19 165 ] MainForm -> MainForm_Load 
+[ sdjflds - d90 2023-09-13 수요일 11:01:22 621 ] MainForm -> MainForm_Shown 
+[ sdjflds - d90 2023-09-13 수요일 11:01:23 442 ] CameraControl -> CameraOpen 
+[ sdjflds - d90 2023-09-13 수요일 11:01:23 878 ] CameraControl -> open 
+[ sdjflds - d90 2023-09-13 수요일 11:01:23 916 ] ViewPage -> CreateBitmap 
+[ sdjflds - d90 2023-09-13 수요일 11:01:23 949 ] CameraControl -> SetEnableImageCallback 
+[ sdjflds - d90 2023-09-13 수요일 11:01:23 976 ] CameraControl -> Start 
+[ sdjflds - d90 2023-09-13 수요일 11:01:24 591 ] CameraControl -> CameraOpen 
+[ sdjflds - d90 2023-09-13 수요일 11:01:24 644 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdjflds - d90 2023-09-13 수요일 11:01:24 644 ] CameraControl -> CameraOpen 
+[ sdjflds - d90 2023-09-13 수요일 11:01:24 671 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdjflds - d90 2023-09-13 수요일 11:01:26 413 ] ViewPage -> SelectedView_MouseDown 
+[ sdjflds - d90 2023-09-13 수요일 11:01:26 762 ] ViewPage -> SelectedView_Click 
+[ sdjflds - d90 2023-09-13 수요일 11:01:27 116 ] ViewPage -> SelectedView_MouseDown 
+[ sdjflds - d90 2023-09-13 수요일 11:01:27 209 ] ViewPage -> SelectedView_Click 
+[ sdjflds - d90 2023-09-13 수요일 11:01:27 727 ] MainForm -> PageChange 
+[ sdjflds - d90 2023-09-13 수요일 11:01:28 002 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sdjflds - d90 2023-09-13 수요일 11:01:36 759 ] AnalysisPage -> ImageChange 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 046 ] MainForm -> MainForm_FormClosing 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 054 ] ViewPage -> CameraClose 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 056 ] CameraControl -> Stop 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 364 ] CameraControl -> Close 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 378 ] CameraControl -> Stop 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 378 ] CameraControl -> Close 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 378 ] CameraControl -> Stop 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 378 ] CameraControl -> Close 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 466 ] CameraControl -> Finalize 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 467 ] CameraControl -> Close 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 472 ] CameraControl -> Finalize 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 473 ] CameraControl -> Close 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 473 ] CameraControl -> Finalize 
+[ sdjflds - d90 2023-09-13 수요일 11:02:01 473 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 11:26:33 759 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:26:33 861 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:26:34 136 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:26:34 427 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:26:35 470 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:35 473 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:35 493 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:35 517 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:35 644 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:36 028 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:36 069 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:36 085 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:36 109 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:26:36 407 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 11:26:37 196 ] XmlProcessing -> XMLSave 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:37 198 ] 검사자 : sdiof & 검사장소 : f0sd ==> 검사 시작
+[ sdiof - f0sd 2023-09-13 수요일 11:26:37 246 ] MainForm -> MainForm_Load 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:40 731 ] MainForm -> MainForm_Shown 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:42 096 ] CameraControl -> CameraOpen 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:42 420 ] CameraControl -> open 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:42 464 ] ViewPage -> CreateBitmap 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:42 477 ] CameraControl -> SetEnableImageCallback 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:42 490 ] CameraControl -> Start 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:43 092 ] CameraControl -> CameraOpen 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:43 153 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdiof - f0sd 2023-09-13 수요일 11:26:43 153 ] CameraControl -> CameraOpen 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:43 175 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdiof - f0sd 2023-09-13 수요일 11:26:45 054 ] ViewPage -> SelectedView_MouseDown 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:45 411 ] ViewPage -> SelectedView_Click 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:45 729 ] ViewPage -> SelectedView_MouseDown 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:45 837 ] ViewPage -> SelectedView_Click 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:46 448 ] MainForm -> PageChange 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:46 701 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sdiof - f0sd 2023-09-13 수요일 11:26:48 979 ] AnalysisPage -> ImageChange 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:19 345 ] AnalysisPage -> ButtonFilter_Click 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:22 902 ] AnalysisPage -> ButtonFilter_Click 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:23 465 ] AnalysisPage -> ButtonFilter_Click 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:30 880 ] MainForm -> MainForm_FormClosing 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:30 889 ] ViewPage -> CameraClose 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:30 893 ] CameraControl -> Stop 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 274 ] CameraControl -> Close 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 289 ] CameraControl -> Stop 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 289 ] CameraControl -> Close 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 290 ] CameraControl -> Stop 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 290 ] CameraControl -> Close 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 385 ] CameraControl -> Finalize 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 386 ] CameraControl -> Close 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 396 ] CameraControl -> Finalize 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 396 ] CameraControl -> Close 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 396 ] CameraControl -> Finalize 
+[ sdiof - f0sd 2023-09-13 수요일 11:28:32 396 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 11:28:57 834 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:28:57 897 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:28:58 121 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:28:58 414 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:28:58 826 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:28:58 944 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:28:59 702 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:28:59 838 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:28:59 964 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:28:59 992 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:29:00 508 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 11:29:01 285 ] XmlProcessing -> XMLSave 
+[ ds - 43tr 2023-09-13 수요일 11:29:01 286 ] 검사자 : ds & 검사장소 : 43tr ==> 검사 시작
+[ ds - 43tr 2023-09-13 수요일 11:29:01 339 ] MainForm -> MainForm_Load 
+[ ds - 43tr 2023-09-13 수요일 11:29:04 850 ] MainForm -> MainForm_Shown 
+[ ds - 43tr 2023-09-13 수요일 11:29:05 681 ] CameraControl -> CameraOpen 
+[ ds - 43tr 2023-09-13 수요일 11:29:05 996 ] CameraControl -> open 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 034 ] ViewPage -> CreateBitmap 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 049 ] CameraControl -> SetEnableImageCallback 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 063 ] CameraControl -> Start 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 655 ] CameraControl -> CameraOpen 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 713 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ds - 43tr 2023-09-13 수요일 11:29:06 713 ] CameraControl -> CameraOpen 
+[ ds - 43tr 2023-09-13 수요일 11:29:06 742 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ds - 43tr 2023-09-13 수요일 11:29:08 250 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 43tr 2023-09-13 수요일 11:29:08 570 ] ViewPage -> SelectedView_Click 
+[ ds - 43tr 2023-09-13 수요일 11:29:08 855 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 43tr 2023-09-13 수요일 11:29:08 976 ] ViewPage -> SelectedView_Click 
+[ ds - 43tr 2023-09-13 수요일 11:29:09 544 ] MainForm -> PageChange 
+[ ds - 43tr 2023-09-13 수요일 11:29:09 784 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ds - 43tr 2023-09-13 수요일 11:29:09 785 ] AnalysisPage -> ImageChange 
+[ ds - 43tr 2023-09-13 수요일 11:29:11 632 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 43tr 2023-09-13 수요일 11:29:15 346 ] AnalysisPage -> OptionTrackBarChanged 
+[ ds - 43tr 2023-09-13 수요일 11:29:16 595 ] AnalysisPage -> OptionTrackBarChanged 
+[ ds - 43tr 2023-09-13 수요일 11:31:46 150 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 43tr 2023-09-13 수요일 11:32:03 285 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 43tr 2023-09-13 수요일 11:32:04 071 ] AnalysisPage -> ButtonFilter_Click 
+[ NoName 2023-09-13 수요일 11:36:39 689 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:36:39 748 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:36:40 008 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:36:40 281 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:36:41 322 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 326 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 332 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 351 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 374 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 745 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 871 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 887 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:41 934 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:36:42 237 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 11:36:43 037 ] XmlProcessing -> XMLSave 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:43 038 ] 검사자 : sjdkl & 검사장소 : 0dfs ==> 검사 시작
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:43 102 ] MainForm -> MainForm_Load 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:46 609 ] MainForm -> MainForm_Shown 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:47 553 ] CameraControl -> CameraOpen 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:47 856 ] CameraControl -> open 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:47 887 ] ViewPage -> CreateBitmap 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:47 917 ] CameraControl -> SetEnableImageCallback 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:47 944 ] CameraControl -> Start 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:48 567 ] CameraControl -> CameraOpen 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:48 668 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:48 669 ] CameraControl -> CameraOpen 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:48 701 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:51 212 ] ViewPage -> SelectedView_MouseDown 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:51 480 ] ViewPage -> SelectedView_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:51 903 ] ViewPage -> SelectedView_MouseDown 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:52 029 ] ViewPage -> SelectedView_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:53 275 ] MainForm -> PageChange 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:53 567 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:36:53 568 ] AnalysisPage -> ImageChange 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:10 405 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:11 903 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:13 347 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:16 139 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:16 141 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:16 154 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:20 206 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:21 069 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:21 665 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:21 670 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:21 680 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:24 129 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:32 391 ] AnalysisPage -> ButtonFilter_Click 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 411 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 427 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 465 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 501 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 529 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 551 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 571 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 591 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 601 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 611 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 620 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 634 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 646 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 657 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 667 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 681 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 692 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 703 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 716 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 727 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 738 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 751 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 765 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 777 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 793 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 809 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 871 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 883 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 895 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 905 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 917 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 931 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 944 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 953 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 965 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 976 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:38 992 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 003 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 019 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 041 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 971 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 982 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:39 992 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 010 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 022 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 038 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 051 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 061 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 072 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 084 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 096 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 107 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 117 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 128 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 137 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 148 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 159 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 173 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 185 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 196 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 207 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 220 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 232 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 294 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 307 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 318 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 328 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 341 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:40 354 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 377 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 388 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 399 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 410 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 425 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 435 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 445 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 456 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 466 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 476 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 487 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 506 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 524 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:41 537 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 450 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 499 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 510 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 524 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 534 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 545 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 556 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 566 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 580 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 597 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 617 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 629 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 644 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 658 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 674 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 686 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 709 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:42 718 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:37:53 516 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:15 994 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 661 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 673 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 686 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 701 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 716 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 729 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 746 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 761 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 771 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 785 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 799 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 813 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 826 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 840 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 859 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 872 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 889 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 903 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 918 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 928 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 942 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 957 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 968 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 979 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:30 990 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 001 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 013 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 031 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 047 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 063 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 076 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 087 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 102 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 113 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 130 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 146 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 159 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 174 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 187 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 202 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 216 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 226 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 237 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 254 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 266 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 278 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 289 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 302 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 315 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 327 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:31 362 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 183 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 197 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 211 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 221 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 237 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 249 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 259 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 274 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 285 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 296 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 308 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 318 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 329 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 343 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 353 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 374 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 393 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 406 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 418 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 427 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 440 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 460 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 474 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 491 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 502 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 515 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 526 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 536 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 550 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 565 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 631 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 647 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 661 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 672 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 685 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 700 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 712 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:32 725 ] AnalysisPage -> OptionTrackBarChanged 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:56 866 ] MainForm -> MainForm_FormClosing 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:56 880 ] ViewPage -> CameraClose 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:56 886 ] CameraControl -> Stop 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 018 ] CameraControl -> Close 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 051 ] CameraControl -> Stop 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 052 ] CameraControl -> Close 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 052 ] CameraControl -> Stop 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 053 ] CameraControl -> Close 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 196 ] CameraControl -> Finalize 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 196 ] CameraControl -> Close 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 197 ] CameraControl -> Finalize 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 197 ] CameraControl -> Close 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 197 ] CameraControl -> Finalize 
+[ sjdkl - 0dfs 2023-09-13 수요일 11:38:57 197 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 11:41:36 938 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 11:41:36 991 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 11:41:37 237 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 11:41:37 478 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 11:41:39 001 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 007 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 044 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 150 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 165 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 726 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:39 909 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:40 172 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 11:41:40 383 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 11:41:41 165 ] XmlProcessing -> XMLSave 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:41 166 ] 검사자 : sdfsd4 & 검사장소 : 33 ==> 검사 시작
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:41 225 ] MainForm -> MainForm_Load 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:44 690 ] MainForm -> MainForm_Shown 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:45 585 ] CameraControl -> CameraOpen 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:45 927 ] CameraControl -> open 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:45 961 ] ViewPage -> CreateBitmap 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:45 974 ] CameraControl -> SetEnableImageCallback 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:45 986 ] CameraControl -> Start 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:46 567 ] CameraControl -> CameraOpen 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:46 627 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:46 627 ] CameraControl -> CameraOpen 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:46 671 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:50 165 ] ViewPage -> SelectedView_MouseDown 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:50 478 ] ViewPage -> SelectedView_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:50 858 ] ViewPage -> SelectedView_MouseDown 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:50 958 ] ViewPage -> SelectedView_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:51 429 ] MainForm -> PageChange 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:51 681 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:51 683 ] AnalysisPage -> ImageChange 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:57 728 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:57 731 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:41:57 750 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 591 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 611 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 624 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 635 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 647 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 659 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 671 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 683 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 696 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 707 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 717 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 729 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 745 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 761 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 777 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 796 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 810 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 824 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 835 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 851 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 863 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 874 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 884 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 900 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 917 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 932 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 947 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 960 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 975 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:01 988 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:02 002 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:02 014 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:02 028 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:02 044 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 423 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 434 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 446 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 460 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 478 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 495 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 511 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 523 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 535 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 547 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 563 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 577 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 594 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 611 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:03 629 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 581 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 594 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 603 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 616 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 627 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 637 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 649 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 667 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 677 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 689 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 704 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 723 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 735 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 751 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 766 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 778 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 791 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 861 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:13 884 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:20 399 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:46 935 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 068 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 080 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 093 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 108 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 121 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 132 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 145 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 158 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 175 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 193 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 207 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 218 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 273 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 284 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 297 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 313 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 369 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 380 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 391 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 402 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 414 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 462 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 477 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 488 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 506 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 517 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 528 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 563 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 574 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 613 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:50 625 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 493 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 509 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 521 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 535 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 548 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 561 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 575 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 587 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 603 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 620 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 633 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 645 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 657 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 671 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 687 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 704 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 716 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 731 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 745 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 755 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 775 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 785 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 797 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 809 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 826 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 837 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 849 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 863 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 951 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 962 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:51 979 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 267 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 314 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 331 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 342 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 359 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 375 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 455 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 476 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 539 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 568 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:53 728 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:42:58 799 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 603 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 624 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 635 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 647 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 659 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 676 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 687 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 759 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 770 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 782 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 796 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 813 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 825 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 837 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 849 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 861 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 876 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 888 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 902 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 913 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 926 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 937 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 950 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:16 964 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 047 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 063 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 079 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 093 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 137 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 149 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 163 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 181 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 197 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 211 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 226 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 243 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 255 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 270 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 288 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 304 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 323 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 351 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 397 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 408 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 421 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 439 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 457 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 470 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 615 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 629 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 642 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 659 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 677 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 693 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 709 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:17 720 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 643 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 657 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 668 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 687 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 709 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 727 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 738 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 753 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 802 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 827 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 842 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 855 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 873 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 885 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:18 997 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 013 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 087 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 103 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 117 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 131 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 146 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 176 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 194 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 209 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 219 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 232 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 250 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 263 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 275 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 325 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 341 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 354 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 367 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 379 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 391 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 407 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 418 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 435 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 450 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 467 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 479 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 495 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 509 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 525 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 540 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 554 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 567 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 579 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 592 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 610 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 627 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 640 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 655 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 667 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 685 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 696 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 709 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 726 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 743 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 764 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:19 778 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:20 935 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:20 983 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:20 996 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 111 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 129 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 140 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 280 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 293 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 305 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 324 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 336 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 348 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 364 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 377 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 469 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 482 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 495 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 506 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 518 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 550 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 568 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 583 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 594 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 613 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 675 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 689 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 707 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 720 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 734 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 753 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 777 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 789 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 801 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 818 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 836 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 881 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 893 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 909 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 921 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 937 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 952 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 964 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 980 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:21 994 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 057 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 069 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 081 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 095 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 109 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 127 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 141 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 154 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 168 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 185 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 198 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 210 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 221 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 237 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 254 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 269 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 282 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 294 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 306 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 321 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 340 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 936 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 953 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 968 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 985 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:22 999 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 017 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 031 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 045 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 059 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 070 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 089 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 101 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 116 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 963 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 975 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:23 987 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 002 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 021 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 035 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 054 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 071 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 126 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 155 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 167 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 186 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 205 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 223 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 238 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 258 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 274 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 286 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 309 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 325 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 338 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 356 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 369 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 384 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 402 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 415 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 429 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 443 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 458 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:24 477 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 228 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 241 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 257 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 269 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 283 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 299 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 312 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 331 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 343 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 360 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 371 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 388 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 404 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 421 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 436 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 451 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 464 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 480 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 496 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 508 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 522 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 536 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 558 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 574 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 588 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 602 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 616 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 630 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 649 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 668 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 683 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 696 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 712 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 725 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 740 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 759 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 773 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 787 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 802 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 819 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 845 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 862 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 898 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 913 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:26 928 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 032 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 048 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 062 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 194 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 206 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 224 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 244 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 259 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 275 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 291 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 309 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 325 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 339 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 355 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 369 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 388 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 402 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 417 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 429 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 447 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 467 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 484 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 503 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 517 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 535 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 556 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 574 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 594 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 608 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 621 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 635 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 649 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 663 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 685 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 707 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 721 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 738 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 753 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 773 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 793 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:27 957 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 019 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 055 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 068 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 085 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 097 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 110 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 129 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 143 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 187 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 207 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 229 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 252 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 268 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 286 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 306 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 352 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 368 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 382 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 398 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 425 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 437 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 451 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 470 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 532 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 545 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 560 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 574 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 591 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 618 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 631 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 668 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 688 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 709 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 726 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 743 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 758 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 777 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 795 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 821 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 870 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 945 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:28 985 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 018 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 040 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 059 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 073 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 092 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 136 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 163 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 249 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 264 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 311 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 335 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 356 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 425 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 443 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 483 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 497 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 509 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 525 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 541 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 559 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 577 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 696 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:29 714 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 082 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 100 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 113 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 127 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 146 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 160 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 177 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 196 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 209 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 221 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 235 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 251 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 269 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 285 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 303 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 319 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 338 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 361 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 378 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 394 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 409 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 428 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 446 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 461 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 474 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 488 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 504 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 519 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 534 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 548 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 563 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 577 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 590 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 639 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 689 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 711 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 743 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 915 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 931 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 946 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 965 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 979 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:30 992 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 009 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 029 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 056 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 069 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 082 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 094 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 109 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:31 124 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:33 251 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:34 265 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 917 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 934 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 946 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 959 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 969 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:35 987 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 004 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 016 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 030 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 043 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 061 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 080 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 096 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 111 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 125 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 144 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 157 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 173 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 194 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 208 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 226 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 245 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 260 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 277 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:36 294 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:37 222 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:37 696 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:57 187 ] AnalysisPage -> ButtonFilter_Click 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:57 193 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:44:57 203 ] AnalysisPage -> OptionTrackBarChanged 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:04 881 ] MainForm -> MainForm_FormClosing 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:04 887 ] ViewPage -> CameraClose 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:04 890 ] CameraControl -> Stop 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 003 ] CameraControl -> Close 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 023 ] CameraControl -> Stop 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 023 ] CameraControl -> Close 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 023 ] CameraControl -> Stop 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 023 ] CameraControl -> Close 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 145 ] CameraControl -> Finalize 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 146 ] CameraControl -> Close 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 152 ] CameraControl -> Finalize 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 153 ] CameraControl -> Close 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 153 ] CameraControl -> Finalize 
+[ sdfsd4 - 33 2023-09-13 수요일 11:45:05 153 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 17:07:25 328 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 17:07:25 442 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 17:07:25 737 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 17:07:26 049 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 17:08:07 320 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:07 536 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:07 859 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:07 993 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 318 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 507 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 817 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 987 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 989 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:08 992 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 152 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 272 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 274 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 277 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 471 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 570 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 583 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 585 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 657 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 832 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 833 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:09 835 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 025 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 134 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 227 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 228 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 232 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 384 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 389 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:10 897 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 099 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 266 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 384 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 391 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 395 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 537 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 625 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 628 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 629 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 836 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 894 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 895 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:11 896 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 017 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 136 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 141 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 143 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 330 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 503 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 623 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 627 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 630 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 724 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 970 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 972 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:12 973 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:13 074 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:14 486 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:08:14 488 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:17 884 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 17:09:18 672 ] XmlProcessing -> XMLSave 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:18 673 ] 검사자 : 테스트검사자 & 검사장소 : 테스트검사장소 ==> 검사 시작
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:18 709 ] MainForm -> MainForm_Load 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:22 356 ] MainForm -> MainForm_Shown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:24 001 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:24 401 ] CameraControl -> open 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:24 443 ] ViewPage -> CreateBitmap 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:24 453 ] CameraControl -> SetEnableImageCallback 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:24 465 ] CameraControl -> Start 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:25 082 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:25 153 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:25 153 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:25 181 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 229 ] MainForm -> MainForm_FormClosing 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 234 ] ViewPage -> CameraClose 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 317 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 422 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 465 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 465 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 465 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 465 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 621 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 621 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 628 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 628 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 628 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:09:33 629 ] CameraControl -> Close 
+[ NoName 2023-09-13 수요일 17:09:54 273 ] 프로그램 시작
+[ NoName 2023-09-13 수요일 17:09:54 351 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-13 수요일 17:09:54 564 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-13 수요일 17:09:54 835 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-13 수요일 17:09:55 973 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:56 886 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 303 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 490 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 617 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 742 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 744 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 745 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:57 885 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 014 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 015 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 016 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 528 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 598 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 599 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 601 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 704 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 802 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 803 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 804 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 958 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:58 987 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 134 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 136 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 137 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 295 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 297 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 687 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:09:59 926 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 080 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 209 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 211 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 215 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 390 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 527 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 531 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 532 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 809 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 905 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 907 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 907 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:00 950 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 082 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 084 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 085 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 230 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 394 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 490 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 492 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 492 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 585 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 806 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 808 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 809 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:01 902 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:03 428 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:03 430 ] LoginForm -> InputCheck 
+[ NoName 2023-09-13 수요일 17:10:03 531 ] LoginForm -> Start_Click 
+[ NoName 2023-09-13 수요일 17:10:04 326 ] XmlProcessing -> XMLSave 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:04 327 ] 검사자 : 테스트검사자 & 검사장소 : 테스트검사장소 ==> 검사 시작
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:04 378 ] MainForm -> MainForm_Load 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:25 894 ] MainForm -> MainForm_Shown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:26 731 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 021 ] CameraControl -> open 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 065 ] ViewPage -> CreateBitmap 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 088 ] CameraControl -> SetEnableImageCallback 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 102 ] CameraControl -> Start 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 711 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 773 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 773 ] CameraControl -> CameraOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:10:27 793 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:19 581 ] ViewPage -> ViewPage_ButtonActions 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:19 587 ] ViewPage -> VideoOpen 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:47 717 ] ViewPage -> ViewCamActions 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:48 715 ] ViewPage -> ViewCamActions 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:51 242 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:52 760 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:53 189 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:11:53 375 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:09 838 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:09 953 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:16 266 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:16 413 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:17 984 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:18 135 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:22 168 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:22 291 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:53 664 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:12:53 805 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:13:23 582 ] ViewPage -> SelectedView_MouseDown 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:13:23 692 ] ViewPage -> SelectedView_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:13:24 547 ] MainForm -> PageChange 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:13:24 891 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:13:24 895 ] AnalysisPage -> ImageChange 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:05 445 ] AnalysisPage -> ButtonFilter_Click 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:05 456 ] AnalysisPage -> OptionTrackBarChanged 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:05 476 ] AnalysisPage -> OptionTrackBarChanged 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:41 630 ] MainForm -> MainForm_FormClosing 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:41 646 ] ViewPage -> CameraClose 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:41 663 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 085 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 155 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 156 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 156 ] CameraControl -> Stop 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 156 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 365 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 367 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 367 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 367 ] CameraControl -> Close 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 368 ] CameraControl -> Finalize 
+[ 테스트검사자 - 테스트검사장소 2023-09-13 수요일 17:14:42 368 ] CameraControl -> Close 
