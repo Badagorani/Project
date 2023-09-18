@@ -1158,10 +1158,17 @@ namespace WireExternalInspection
 					istartY = e.Y;
 					iendY = imouseDownY;
 				}
+				// 시작점 또는 끝점이 0보다 작은가?
 				istartX = istartX < 0 ? 0 : istartX;
 				istartY = istartY < 0 ? 0 : istartY;
 				iendX = iendX < 0 ? 0 : iendX;
 				iendY = iendY < 0 ? 0 : iendY;
+
+				// 시작점 또는 끝점이 픽쳐박스의 최대값보다 큰가?
+				istartX = istartX > pb_SelectedView.Width ? pb_SelectedView.Width : istartX;
+				istartY = istartY > pb_SelectedView.Height ? pb_SelectedView.Height : istartY;
+				iendX = iendX > pb_SelectedView.Width ? pb_SelectedView.Width : iendX;
+				iendY = iendY > pb_SelectedView.Height ? pb_SelectedView.Height : iendY;
 
 				rect = new Rectangle(istartX, istartY, iendX - istartX, iendY - istartY);
 				iRectangleArea = (iendX - istartX) * (iendY - istartY);

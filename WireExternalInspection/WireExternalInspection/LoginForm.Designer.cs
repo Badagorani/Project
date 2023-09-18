@@ -95,7 +95,7 @@
 			this.pictureBox1.BackColor = System.Drawing.Color.Black;
 			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-			this.pictureBox1.Image = global::WireExternalInspection.Properties.Resources.LoginFormImage1;
+			this.pictureBox1.Image = global::WireExternalInspection.Properties.Resources.LogoImage1;
 			this.pictureBox1.Location = new System.Drawing.Point(85, 69);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.pictureBox1.Name = "pictureBox1";

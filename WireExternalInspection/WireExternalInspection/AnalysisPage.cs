@@ -39,6 +39,7 @@ namespace WireExternalInspection
 		public LogRecordProcessing Log;
 		public Bitmap analysisbitmap;
 		private Mat analysismat = new Mat();
+		public PDFSave pdf;
 
 		public CannyEdgeFigure cannyfigure;
 		public BinaryFigure binaryfigure;
@@ -180,34 +181,15 @@ namespace WireExternalInspection
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			// 미완성
-			/*try
+			try
 			{
-				string pdfSaveFolderPath = mainform.Xml.ProgramSetting.SaveFilePath + @"\Report\";
-				DirectoryInfo di = new DirectoryInfo(pdfSaveFolderPath);
-				if (di.Exists == false) di.Create();
-				FileStream fs = new FileStream(pdfSaveFolderPath + "테스트용.pdf", 
-					FileMode.Create, FileAccess.Write, FileShare.None);
-				Document document = new Document(PageSize.A4, 50, 50, 50, 50);
-				BaseFont.AddToResourceSearch("iTextAsian.dll");
-				PdfWriter writer = PdfWriter.GetInstance(document, fs);
-				document.Open();
-
-				string BatangFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\batang.ttc";
-				string GulimFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\gulim.ttc";
-				FontFactory.Register(BatangFont); FontFactory.Register(GulimFont);
-				iTextSharp.text.Font HeaderFont = FontFactory.GetFont("바탕체", BaseFont.IDENTITY_H, 16);
-				iTextSharp.text.Font TitleFont = FontFactory.GetFont("굴림체", BaseFont.IDENTITY_H, 12);
-				iTextSharp.text.Font DataFont = FontFactory.GetFont("굴림체", BaseFont.IDENTITY_H, 10);
-
-				//BaseFont objBaseFont = BaseFont.CreateFont("font/MALGUN.TTF", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-				//iTextSharp.text.Font objFont = new iTextSharp.text.Font(objBaseFont, 12);
-				document.Add(new Paragraph("a배b고c프e당d!"));
-				document.Close();
+				pdf = new PDFSave(mainform, pb_OriginalImg.Image, pb_AnalysisImage.Image);
+				pdf.ShowDialog();
 			}
 			catch(Exception ex)
 			{
-				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			}*/
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 	}
 }

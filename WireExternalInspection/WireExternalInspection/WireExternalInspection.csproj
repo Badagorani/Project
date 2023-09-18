@@ -121,11 +121,11 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="PDFSave.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="PDFSave.Designer.cs">
+      <DependentUpon>PDFSave.cs</DependentUpon>
     </Compile>
     <Compile Include="LogRecordProcessing.cs" />
     <Compile Include="Program.cs" />
@@ -158,8 +158,8 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="PDFSave.resx">
+      <DependentUpon>PDFSave.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -199,6 +199,8 @@
     <None Include="Resources\Logo_Img.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\LogoImage1.jpg" />
+    <None Include="Resources\LogoImage.jpg" />
     <None Include="Resources\LoginFormImage.png" />
     <None Include="Resources\preview.svg" />
     <None Include="Resources\loadimage.svg" />
@@ -220,6 +222,7 @@
     <None Include="Resources\bo_security_permission_object.svg" />
     <None Include="Resources\actions_arrow4left.svg" />
     <None Include="Resources\bo_report.svg" />
+    <None Include="Resources\KISRI_CI.svg" />
     <Content Include="Resources\lensico.ico" />
     <None Include="Resources\임시.png" />
     <None Include="Resources\와이어 외선 검사 로고.png" />

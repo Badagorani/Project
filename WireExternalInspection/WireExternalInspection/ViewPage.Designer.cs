@@ -37,8 +37,6 @@
 			this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
 			this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
 			this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-			this.txt_DefectSearch = new DevExpress.XtraEditors.TextEdit();
-			this.txt_DefectInformation = new DevExpress.XtraEditors.TextEdit();
 			this.lst_DefectList = new DevExpress.XtraEditors.ListBoxControl();
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -46,32 +44,34 @@
 			this.btn_VideoSave = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_ImageSave = new DevExpress.XtraEditors.SimpleButton();
 			this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-			this.pb_SelectedView = new System.Windows.Forms.PictureBox();
 			this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-			this.pb_ViewCam3 = new System.Windows.Forms.PictureBox();
-			this.pb_ViewCam2 = new System.Windows.Forms.PictureBox();
-			this.pb_ViewCam1 = new System.Windows.Forms.PictureBox();
 			this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-			this.tb_VideoTrack = new DevExpress.XtraEditors.TrackBarControl();
 			this.btn_VideoClose = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_VideoStop = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_VideoPlay = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_VideoOpen = new DevExpress.XtraEditors.SimpleButton();
 			this.button3 = new System.Windows.Forms.Button();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.txt_DefectSearch = new DevExpress.XtraEditors.TextEdit();
+			this.txt_DefectInformation = new DevExpress.XtraEditors.TextEdit();
+			this.pb_SelectedView = new System.Windows.Forms.PictureBox();
+			this.pb_ViewCam3 = new System.Windows.Forms.PictureBox();
+			this.pb_ViewCam2 = new System.Windows.Forms.PictureBox();
+			this.pb_ViewCam1 = new System.Windows.Forms.PictureBox();
+			this.tb_VideoTrack = new DevExpress.XtraEditors.TrackBarControl();
 			this.tableLayoutPanel1.SuspendLayout();
 			this.tableLayoutPanel2.SuspendLayout();
 			this.tableLayoutPanel6.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.txt_DefectSearch.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txt_DefectInformation.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lst_DefectList)).BeginInit();
 			this.tableLayoutPanel3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pb_SelectedView)).BeginInit();
 			this.tableLayoutPanel5.SuspendLayout();
+			this.tableLayoutPanel4.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txt_DefectSearch.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txt_DefectInformation.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pb_SelectedView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam1)).BeginInit();
-			this.tableLayoutPanel4.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.tb_VideoTrack)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.tb_VideoTrack.Properties)).BeginInit();
 			this.SuspendLayout();
@@ -225,34 +225,6 @@
 			this.simpleButton1.TabIndex = 89;
 			this.simpleButton1.Text = "전 체";
 			// 
-			// txt_DefectSearch
-			// 
-			this.tableLayoutPanel6.SetColumnSpan(this.txt_DefectSearch, 3);
-			this.txt_DefectSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txt_DefectSearch.Location = new System.Drawing.Point(135, 138);
-			this.txt_DefectSearch.Name = "txt_DefectSearch";
-			this.txt_DefectSearch.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F);
-			this.txt_DefectSearch.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txt_DefectSearch.Properties.Appearance.Options.UseFont = true;
-			this.txt_DefectSearch.Properties.Appearance.Options.UseForeColor = true;
-			this.txt_DefectSearch.Properties.AutoHeight = false;
-			this.txt_DefectSearch.Size = new System.Drawing.Size(225, 39);
-			this.txt_DefectSearch.TabIndex = 88;
-			// 
-			// txt_DefectInformation
-			// 
-			this.tableLayoutPanel6.SetColumnSpan(this.txt_DefectInformation, 5);
-			this.txt_DefectInformation.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.txt_DefectInformation.Location = new System.Drawing.Point(3, 636);
-			this.txt_DefectInformation.Name = "txt_DefectInformation";
-			this.txt_DefectInformation.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F);
-			this.txt_DefectInformation.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txt_DefectInformation.Properties.Appearance.Options.UseFont = true;
-			this.txt_DefectInformation.Properties.Appearance.Options.UseForeColor = true;
-			this.txt_DefectInformation.Properties.AutoHeight = false;
-			this.txt_DefectInformation.Size = new System.Drawing.Size(437, 269);
-			this.txt_DefectInformation.TabIndex = 87;
-			// 
 			// lst_DefectList
 			// 
 			this.lst_DefectList.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F);
@@ -373,23 +345,6 @@
 			this.tableLayoutPanel3.Size = new System.Drawing.Size(1339, 908);
 			this.tableLayoutPanel3.TabIndex = 73;
 			// 
-			// pb_SelectedView
-			// 
-			this.pb_SelectedView.BackColor = System.Drawing.Color.Black;
-			this.pb_SelectedView.Cursor = System.Windows.Forms.Cursors.Cross;
-			this.pb_SelectedView.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pb_SelectedView.Location = new System.Drawing.Point(3, 3);
-			this.pb_SelectedView.Name = "pb_SelectedView";
-			this.pb_SelectedView.Size = new System.Drawing.Size(1333, 538);
-			this.pb_SelectedView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pb_SelectedView.TabIndex = 75;
-			this.pb_SelectedView.TabStop = false;
-			this.pb_SelectedView.Click += new System.EventHandler(this.SelectedView_Click);
-			this.pb_SelectedView.Paint += new System.Windows.Forms.PaintEventHandler(this.SelectedView_Paint);
-			this.pb_SelectedView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseDown);
-			this.pb_SelectedView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseMove);
-			this.pb_SelectedView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseUp);
-			// 
 			// tableLayoutPanel5
 			// 
 			this.tableLayoutPanel5.ColumnCount = 3;
@@ -406,45 +361,6 @@
 			this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
 			this.tableLayoutPanel5.Size = new System.Drawing.Size(1333, 313);
 			this.tableLayoutPanel5.TabIndex = 74;
-			// 
-			// pb_ViewCam3
-			// 
-			this.pb_ViewCam3.BackColor = System.Drawing.Color.Black;
-			this.pb_ViewCam3.Cursor = System.Windows.Forms.Cursors.Default;
-			this.pb_ViewCam3.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pb_ViewCam3.Location = new System.Drawing.Point(891, 3);
-			this.pb_ViewCam3.Name = "pb_ViewCam3";
-			this.pb_ViewCam3.Size = new System.Drawing.Size(439, 307);
-			this.pb_ViewCam3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pb_ViewCam3.TabIndex = 56;
-			this.pb_ViewCam3.TabStop = false;
-			this.pb_ViewCam3.Click += new System.EventHandler(this.ViewCamActions);
-			// 
-			// pb_ViewCam2
-			// 
-			this.pb_ViewCam2.BackColor = System.Drawing.Color.Black;
-			this.pb_ViewCam2.Cursor = System.Windows.Forms.Cursors.Default;
-			this.pb_ViewCam2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pb_ViewCam2.Location = new System.Drawing.Point(447, 3);
-			this.pb_ViewCam2.Name = "pb_ViewCam2";
-			this.pb_ViewCam2.Size = new System.Drawing.Size(438, 307);
-			this.pb_ViewCam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pb_ViewCam2.TabIndex = 55;
-			this.pb_ViewCam2.TabStop = false;
-			this.pb_ViewCam2.Click += new System.EventHandler(this.ViewCamActions);
-			// 
-			// pb_ViewCam1
-			// 
-			this.pb_ViewCam1.BackColor = System.Drawing.Color.Black;
-			this.pb_ViewCam1.Cursor = System.Windows.Forms.Cursors.Default;
-			this.pb_ViewCam1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pb_ViewCam1.Location = new System.Drawing.Point(3, 3);
-			this.pb_ViewCam1.Name = "pb_ViewCam1";
-			this.pb_ViewCam1.Size = new System.Drawing.Size(438, 307);
-			this.pb_ViewCam1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pb_ViewCam1.TabIndex = 54;
-			this.pb_ViewCam1.TabStop = false;
-			this.pb_ViewCam1.Click += new System.EventHandler(this.ViewCamActions);
 			// 
 			// tableLayoutPanel4
 			// 
@@ -467,25 +383,6 @@
 			this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
 			this.tableLayoutPanel4.Size = new System.Drawing.Size(1333, 39);
 			this.tableLayoutPanel4.TabIndex = 73;
-			// 
-			// tb_VideoTrack
-			// 
-			this.tb_VideoTrack.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.tb_VideoTrack.EditValue = null;
-			this.tb_VideoTrack.Enabled = false;
-			this.tb_VideoTrack.Location = new System.Drawing.Point(201, 4);
-			this.tb_VideoTrack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.tb_VideoTrack.Name = "tb_VideoTrack";
-			this.tb_VideoTrack.Properties.LabelAppearance.Options.UseTextOptions = true;
-			this.tb_VideoTrack.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-			this.tb_VideoTrack.Properties.LookAndFeel.SkinName = "WXI";
-			this.tb_VideoTrack.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-			this.tb_VideoTrack.Properties.Maximum = 1000;
-			this.tb_VideoTrack.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
-			this.tb_VideoTrack.Size = new System.Drawing.Size(1060, 31);
-			this.tb_VideoTrack.TabIndex = 63;
-			this.tb_VideoTrack.Scroll += new System.EventHandler(this.Track_Scroll);
-			this.tb_VideoTrack.ValueChanged += new System.EventHandler(this.TrackBar_ValueChanged);
 			// 
 			// btn_VideoClose
 			// 
@@ -570,6 +467,109 @@
 			this.timer1.Interval = 1000;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 			// 
+			// txt_DefectSearch
+			// 
+			this.tableLayoutPanel6.SetColumnSpan(this.txt_DefectSearch, 3);
+			this.txt_DefectSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txt_DefectSearch.Location = new System.Drawing.Point(135, 138);
+			this.txt_DefectSearch.Name = "txt_DefectSearch";
+			this.txt_DefectSearch.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 15F);
+			this.txt_DefectSearch.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.txt_DefectSearch.Properties.Appearance.Options.UseFont = true;
+			this.txt_DefectSearch.Properties.Appearance.Options.UseForeColor = true;
+			this.txt_DefectSearch.Properties.AutoHeight = false;
+			this.txt_DefectSearch.Size = new System.Drawing.Size(225, 39);
+			this.txt_DefectSearch.TabIndex = 88;
+			// 
+			// txt_DefectInformation
+			// 
+			this.tableLayoutPanel6.SetColumnSpan(this.txt_DefectInformation, 5);
+			this.txt_DefectInformation.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txt_DefectInformation.Location = new System.Drawing.Point(3, 636);
+			this.txt_DefectInformation.Name = "txt_DefectInformation";
+			this.txt_DefectInformation.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 10F);
+			this.txt_DefectInformation.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.txt_DefectInformation.Properties.Appearance.Options.UseFont = true;
+			this.txt_DefectInformation.Properties.Appearance.Options.UseForeColor = true;
+			this.txt_DefectInformation.Properties.AutoHeight = false;
+			this.txt_DefectInformation.Size = new System.Drawing.Size(437, 269);
+			this.txt_DefectInformation.TabIndex = 87;
+			// 
+			// pb_SelectedView
+			// 
+			this.pb_SelectedView.BackColor = System.Drawing.Color.Black;
+			this.pb_SelectedView.Cursor = System.Windows.Forms.Cursors.Cross;
+			this.pb_SelectedView.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pb_SelectedView.Location = new System.Drawing.Point(3, 3);
+			this.pb_SelectedView.Name = "pb_SelectedView";
+			this.pb_SelectedView.Size = new System.Drawing.Size(1333, 538);
+			this.pb_SelectedView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pb_SelectedView.TabIndex = 75;
+			this.pb_SelectedView.TabStop = false;
+			this.pb_SelectedView.Click += new System.EventHandler(this.SelectedView_Click);
+			this.pb_SelectedView.Paint += new System.Windows.Forms.PaintEventHandler(this.SelectedView_Paint);
+			this.pb_SelectedView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseDown);
+			this.pb_SelectedView.MouseMove += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseMove);
+			this.pb_SelectedView.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SelectedView_MouseUp);
+			// 
+			// pb_ViewCam3
+			// 
+			this.pb_ViewCam3.BackColor = System.Drawing.Color.Black;
+			this.pb_ViewCam3.Cursor = System.Windows.Forms.Cursors.Default;
+			this.pb_ViewCam3.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pb_ViewCam3.Location = new System.Drawing.Point(891, 3);
+			this.pb_ViewCam3.Name = "pb_ViewCam3";
+			this.pb_ViewCam3.Size = new System.Drawing.Size(439, 307);
+			this.pb_ViewCam3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pb_ViewCam3.TabIndex = 56;
+			this.pb_ViewCam3.TabStop = false;
+			this.pb_ViewCam3.Click += new System.EventHandler(this.ViewCamActions);
+			// 
+			// pb_ViewCam2
+			// 
+			this.pb_ViewCam2.BackColor = System.Drawing.Color.Black;
+			this.pb_ViewCam2.Cursor = System.Windows.Forms.Cursors.Default;
+			this.pb_ViewCam2.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pb_ViewCam2.Location = new System.Drawing.Point(447, 3);
+			this.pb_ViewCam2.Name = "pb_ViewCam2";
+			this.pb_ViewCam2.Size = new System.Drawing.Size(438, 307);
+			this.pb_ViewCam2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pb_ViewCam2.TabIndex = 55;
+			this.pb_ViewCam2.TabStop = false;
+			this.pb_ViewCam2.Click += new System.EventHandler(this.ViewCamActions);
+			// 
+			// pb_ViewCam1
+			// 
+			this.pb_ViewCam1.BackColor = System.Drawing.Color.Black;
+			this.pb_ViewCam1.Cursor = System.Windows.Forms.Cursors.Default;
+			this.pb_ViewCam1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pb_ViewCam1.Location = new System.Drawing.Point(3, 3);
+			this.pb_ViewCam1.Name = "pb_ViewCam1";
+			this.pb_ViewCam1.Size = new System.Drawing.Size(438, 307);
+			this.pb_ViewCam1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pb_ViewCam1.TabIndex = 54;
+			this.pb_ViewCam1.TabStop = false;
+			this.pb_ViewCam1.Click += new System.EventHandler(this.ViewCamActions);
+			// 
+			// tb_VideoTrack
+			// 
+			this.tb_VideoTrack.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tb_VideoTrack.EditValue = null;
+			this.tb_VideoTrack.Enabled = false;
+			this.tb_VideoTrack.Location = new System.Drawing.Point(201, 4);
+			this.tb_VideoTrack.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+			this.tb_VideoTrack.Name = "tb_VideoTrack";
+			this.tb_VideoTrack.Properties.LabelAppearance.Options.UseTextOptions = true;
+			this.tb_VideoTrack.Properties.LabelAppearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+			this.tb_VideoTrack.Properties.LookAndFeel.SkinName = "WXI";
+			this.tb_VideoTrack.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.tb_VideoTrack.Properties.Maximum = 1000;
+			this.tb_VideoTrack.Properties.TickStyle = System.Windows.Forms.TickStyle.None;
+			this.tb_VideoTrack.Size = new System.Drawing.Size(1060, 31);
+			this.tb_VideoTrack.TabIndex = 63;
+			this.tb_VideoTrack.Scroll += new System.EventHandler(this.Track_Scroll);
+			this.tb_VideoTrack.ValueChanged += new System.EventHandler(this.TrackBar_ValueChanged);
+			// 
 			// ViewPage
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -582,17 +582,17 @@
 			this.tableLayoutPanel2.ResumeLayout(false);
 			this.tableLayoutPanel6.ResumeLayout(false);
 			this.tableLayoutPanel6.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.txt_DefectSearch.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txt_DefectInformation.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.lst_DefectList)).EndInit();
 			this.tableLayoutPanel3.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pb_SelectedView)).EndInit();
 			this.tableLayoutPanel5.ResumeLayout(false);
+			this.tableLayoutPanel4.ResumeLayout(false);
+			this.tableLayoutPanel4.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.txt_DefectSearch.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txt_DefectInformation.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pb_SelectedView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam3)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_ViewCam1)).EndInit();
-			this.tableLayoutPanel4.ResumeLayout(false);
-			this.tableLayoutPanel4.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.tb_VideoTrack.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.tb_VideoTrack)).EndInit();
 			this.ResumeLayout(false);

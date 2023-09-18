@@ -1,0 +1,975 @@
+[  2023-09-18 월요일 08:59:19 126 ] 파일 생성 성공
+[ NoName 2023-09-18 월요일 08:59:19 125 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 08:59:19 224 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 08:59:19 536 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 08:59:19 915 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 08:59:20 875 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 08:59:21 014 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 08:59:21 574 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 08:59:21 725 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 08:59:22 030 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 08:59:22 812 ] XmlProcessing -> XMLSave 
+[ ff - dd 2023-09-18 월요일 08:59:22 813 ] 검사자 : ff & 검사장소 : dd ==> 검사 시작
+[ ff - dd 2023-09-18 월요일 08:59:22 868 ] MainForm -> MainForm_Load 
+[ ff - dd 2023-09-18 월요일 08:59:27 029 ] MainForm -> MainForm_Shown 
+[ ff - dd 2023-09-18 월요일 08:59:29 019 ] CameraControl -> CameraOpen 
+[ ff - dd 2023-09-18 월요일 08:59:29 451 ] CameraControl -> open 
+[ ff - dd 2023-09-18 월요일 08:59:29 502 ] ViewPage -> CreateBitmap 
+[ ff - dd 2023-09-18 월요일 08:59:29 530 ] CameraControl -> SetEnableImageCallback 
+[ ff - dd 2023-09-18 월요일 08:59:29 560 ] CameraControl -> Start 
+[ ff - dd 2023-09-18 월요일 08:59:30 199 ] CameraControl -> CameraOpen 
+[ ff - dd 2023-09-18 월요일 08:59:30 304 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - dd 2023-09-18 월요일 08:59:30 304 ] CameraControl -> CameraOpen 
+[ ff - dd 2023-09-18 월요일 08:59:30 343 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - dd 2023-09-18 월요일 08:59:33 767 ] ViewPage -> SelectedView_MouseDown 
+[ ff - dd 2023-09-18 월요일 08:59:33 948 ] ViewPage -> SelectedView_Click 
+[ ff - dd 2023-09-18 월요일 08:59:34 266 ] ViewPage -> SelectedView_MouseDown 
+[ ff - dd 2023-09-18 월요일 08:59:34 361 ] ViewPage -> SelectedView_Click 
+[ ff - dd 2023-09-18 월요일 08:59:34 888 ] MainForm -> PageChange 
+[ ff - dd 2023-09-18 월요일 08:59:35 333 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - dd 2023-09-18 월요일 08:59:35 335 ] AnalysisPage -> ImageChange 
+[ ff - dd 2023-09-18 월요일 08:59:38 413 ] AnalysisPage -> ButtonFilter_Click 
+[ ff - dd 2023-09-18 월요일 08:59:38 422 ] AnalysisPage -> OptionTrackBarChanged 
+[ ff - dd 2023-09-18 월요일 08:59:38 436 ] AnalysisPage -> OptionTrackBarChanged 
+[ ff - dd 2023-09-18 월요일 08:59:40 790 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 08:59:44 821 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 08:59:48 928 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 09:00:19 856 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 09:00:43 125 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 09:00:44 744 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 09:01:00 098 ] AnalysisPage -> Report_Export_Click 
+[ ff - dd 2023-09-18 월요일 09:01:06 732 ] MainForm -> MainForm_FormClosing 
+[ ff - dd 2023-09-18 월요일 09:01:06 742 ] ViewPage -> CameraClose 
+[ ff - dd 2023-09-18 월요일 09:01:06 745 ] CameraControl -> Stop 
+[ ff - dd 2023-09-18 월요일 09:01:08 012 ] CameraControl -> Close 
+[ ff - dd 2023-09-18 월요일 09:01:08 041 ] CameraControl -> Stop 
+[ ff - dd 2023-09-18 월요일 09:01:08 041 ] CameraControl -> Close 
+[ ff - dd 2023-09-18 월요일 09:01:08 042 ] CameraControl -> Stop 
+[ ff - dd 2023-09-18 월요일 09:01:08 042 ] CameraControl -> Close 
+[ ff - dd 2023-09-18 월요일 09:01:08 205 ] CameraControl -> Finalize 
+[ ff - dd 2023-09-18 월요일 09:01:08 205 ] CameraControl -> Close 
+[ ff - dd 2023-09-18 월요일 09:01:08 216 ] CameraControl -> Finalize 
+[ ff - dd 2023-09-18 월요일 09:01:08 216 ] CameraControl -> Close 
+[ ff - dd 2023-09-18 월요일 09:01:08 217 ] CameraControl -> Finalize 
+[ ff - dd 2023-09-18 월요일 09:01:08 217 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:37:59 883 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:37:59 978 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:38:00 187 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:38:00 446 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:38:01 272 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:38:01 428 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:38:01 922 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:38:02 213 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:38:02 539 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:38:03 327 ] XmlProcessing -> XMLSave 
+[ hh - 55 2023-09-18 월요일 09:38:03 328 ] 검사자 : hh & 검사장소 : 55 ==> 검사 시작
+[ hh - 55 2023-09-18 월요일 09:38:03 391 ] MainForm -> MainForm_Load 
+[ hh - 55 2023-09-18 월요일 09:38:06 834 ] MainForm -> MainForm_Shown 
+[ hh - 55 2023-09-18 월요일 09:38:07 943 ] CameraControl -> CameraOpen 
+[ hh - 55 2023-09-18 월요일 09:38:08 226 ] CameraControl -> open 
+[ hh - 55 2023-09-18 월요일 09:38:08 264 ] ViewPage -> CreateBitmap 
+[ hh - 55 2023-09-18 월요일 09:38:08 279 ] CameraControl -> SetEnableImageCallback 
+[ hh - 55 2023-09-18 월요일 09:38:08 296 ] CameraControl -> Start 
+[ hh - 55 2023-09-18 월요일 09:38:08 904 ] CameraControl -> CameraOpen 
+[ hh - 55 2023-09-18 월요일 09:38:08 968 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ hh - 55 2023-09-18 월요일 09:38:08 968 ] CameraControl -> CameraOpen 
+[ hh - 55 2023-09-18 월요일 09:38:08 989 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ hh - 55 2023-09-18 월요일 09:38:11 831 ] ViewPage -> SelectedView_MouseDown 
+[ hh - 55 2023-09-18 월요일 09:38:12 123 ] ViewPage -> SelectedView_Click 
+[ hh - 55 2023-09-18 월요일 09:38:12 407 ] ViewPage -> SelectedView_MouseDown 
+[ hh - 55 2023-09-18 월요일 09:38:12 527 ] ViewPage -> SelectedView_Click 
+[ hh - 55 2023-09-18 월요일 09:38:13 022 ] MainForm -> PageChange 
+[ hh - 55 2023-09-18 월요일 09:38:13 234 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ hh - 55 2023-09-18 월요일 09:38:13 236 ] AnalysisPage -> ImageChange 
+[ hh - 55 2023-09-18 월요일 09:38:15 224 ] AnalysisPage -> Report_Export_Click 
+[ hh - 55 2023-09-18 월요일 09:38:23 323 ] AnalysisPage -> Report_Export_Click 
+[ hh - 55 2023-09-18 월요일 09:39:02 129 ] MainForm -> MainForm_FormClosing 
+[ hh - 55 2023-09-18 월요일 09:39:02 137 ] ViewPage -> CameraClose 
+[ hh - 55 2023-09-18 월요일 09:39:02 141 ] CameraControl -> Stop 
+[ hh - 55 2023-09-18 월요일 09:39:03 489 ] CameraControl -> Close 
+[ hh - 55 2023-09-18 월요일 09:39:03 500 ] CameraControl -> Stop 
+[ hh - 55 2023-09-18 월요일 09:39:03 500 ] CameraControl -> Close 
+[ hh - 55 2023-09-18 월요일 09:39:03 500 ] CameraControl -> Stop 
+[ hh - 55 2023-09-18 월요일 09:39:03 500 ] CameraControl -> Close 
+[ hh - 55 2023-09-18 월요일 09:39:03 581 ] CameraControl -> Finalize 
+[ hh - 55 2023-09-18 월요일 09:39:03 582 ] CameraControl -> Close 
+[ hh - 55 2023-09-18 월요일 09:39:03 586 ] CameraControl -> Finalize 
+[ hh - 55 2023-09-18 월요일 09:39:03 587 ] CameraControl -> Close 
+[ hh - 55 2023-09-18 월요일 09:39:03 590 ] CameraControl -> Finalize 
+[ hh - 55 2023-09-18 월요일 09:39:03 591 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:43:23 459 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:43:23 520 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:43:23 723 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:43:24 003 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:43:25 230 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:43:25 375 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:43:26 203 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:43:26 338 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:43:26 659 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:43:27 446 ] XmlProcessing -> XMLSave 
+[ ff - 44 2023-09-18 월요일 09:43:27 448 ] 검사자 : ff & 검사장소 : 44 ==> 검사 시작
+[ ff - 44 2023-09-18 월요일 09:43:27 514 ] MainForm -> MainForm_Load 
+[ ff - 44 2023-09-18 월요일 09:43:30 969 ] MainForm -> MainForm_Shown 
+[ ff - 44 2023-09-18 월요일 09:43:31 852 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:43:32 142 ] CameraControl -> open 
+[ ff - 44 2023-09-18 월요일 09:43:32 171 ] ViewPage -> CreateBitmap 
+[ ff - 44 2023-09-18 월요일 09:43:32 204 ] CameraControl -> SetEnableImageCallback 
+[ ff - 44 2023-09-18 월요일 09:43:32 226 ] CameraControl -> Start 
+[ ff - 44 2023-09-18 월요일 09:43:32 987 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:43:33 064 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-18 월요일 09:43:33 064 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:43:33 083 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-18 월요일 09:43:35 233 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 44 2023-09-18 월요일 09:43:35 481 ] ViewPage -> SelectedView_Click 
+[ ff - 44 2023-09-18 월요일 09:43:35 760 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 44 2023-09-18 월요일 09:43:35 896 ] ViewPage -> SelectedView_Click 
+[ ff - 44 2023-09-18 월요일 09:43:36 415 ] MainForm -> PageChange 
+[ ff - 44 2023-09-18 월요일 09:43:36 658 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 44 2023-09-18 월요일 09:43:36 659 ] AnalysisPage -> ImageChange 
+[ ff - 44 2023-09-18 월요일 09:43:39 250 ] AnalysisPage -> Report_Export_Click 
+[ ff - 44 2023-09-18 월요일 09:43:50 712 ] AnalysisPage -> Report_Export_Click 
+[ ff - 44 2023-09-18 월요일 09:44:04 315 ] MainForm -> MainForm_FormClosing 
+[ ff - 44 2023-09-18 월요일 09:44:04 322 ] ViewPage -> CameraClose 
+[ ff - 44 2023-09-18 월요일 09:44:04 324 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:44:04 669 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:44:04 680 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:44:04 680 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:44:04 680 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:44:04 680 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:44:04 789 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:44:04 790 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:44:04 794 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:44:04 794 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:44:04 794 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:44:04 794 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:45:22 477 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:45:22 559 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:45:22 757 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:45:23 026 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:45:23 523 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:45:23 657 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:45:24 316 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:45:24 468 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:45:24 667 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:45:25 454 ] XmlProcessing -> XMLSave 
+[ dd - 33 2023-09-18 월요일 09:45:25 455 ] 검사자 : dd & 검사장소 : 33 ==> 검사 시작
+[ dd - 33 2023-09-18 월요일 09:45:25 517 ] MainForm -> MainForm_Load 
+[ dd - 33 2023-09-18 월요일 09:45:28 956 ] MainForm -> MainForm_Shown 
+[ dd - 33 2023-09-18 월요일 09:45:29 720 ] CameraControl -> CameraOpen 
+[ dd - 33 2023-09-18 월요일 09:45:29 994 ] CameraControl -> open 
+[ dd - 33 2023-09-18 월요일 09:45:30 025 ] ViewPage -> CreateBitmap 
+[ dd - 33 2023-09-18 월요일 09:45:30 044 ] CameraControl -> SetEnableImageCallback 
+[ dd - 33 2023-09-18 월요일 09:45:30 061 ] CameraControl -> Start 
+[ dd - 33 2023-09-18 월요일 09:45:30 686 ] CameraControl -> CameraOpen 
+[ dd - 33 2023-09-18 월요일 09:45:30 730 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 33 2023-09-18 월요일 09:45:30 730 ] CameraControl -> CameraOpen 
+[ dd - 33 2023-09-18 월요일 09:45:30 751 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 33 2023-09-18 월요일 09:45:32 209 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 33 2023-09-18 월요일 09:45:32 482 ] ViewPage -> SelectedView_Click 
+[ dd - 33 2023-09-18 월요일 09:45:32 699 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 33 2023-09-18 월요일 09:45:32 807 ] ViewPage -> SelectedView_Click 
+[ dd - 33 2023-09-18 월요일 09:45:33 480 ] MainForm -> PageChange 
+[ dd - 33 2023-09-18 월요일 09:45:33 711 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 33 2023-09-18 월요일 09:45:33 716 ] AnalysisPage -> ImageChange 
+[ dd - 33 2023-09-18 월요일 09:45:35 660 ] AnalysisPage -> Report_Export_Click 
+[ dd - 33 2023-09-18 월요일 09:45:39 499 ] PDFSave -> Report_Export 
+[ dd - 33 2023-09-18 월요일 09:45:43 400 ] AnalysisPage -> Report_Export_Click 
+[ dd - 33 2023-09-18 월요일 09:45:52 102 ] MainForm -> MainForm_FormClosing 
+[ dd - 33 2023-09-18 월요일 09:45:52 109 ] ViewPage -> CameraClose 
+[ dd - 33 2023-09-18 월요일 09:45:52 112 ] CameraControl -> Stop 
+[ dd - 33 2023-09-18 월요일 09:45:53 373 ] CameraControl -> Close 
+[ dd - 33 2023-09-18 월요일 09:45:53 387 ] CameraControl -> Stop 
+[ dd - 33 2023-09-18 월요일 09:45:53 387 ] CameraControl -> Close 
+[ dd - 33 2023-09-18 월요일 09:45:53 388 ] CameraControl -> Stop 
+[ dd - 33 2023-09-18 월요일 09:45:53 388 ] CameraControl -> Close 
+[ dd - 33 2023-09-18 월요일 09:45:53 469 ] CameraControl -> Finalize 
+[ dd - 33 2023-09-18 월요일 09:45:53 469 ] CameraControl -> Close 
+[ dd - 33 2023-09-18 월요일 09:45:53 476 ] CameraControl -> Finalize 
+[ dd - 33 2023-09-18 월요일 09:45:53 477 ] CameraControl -> Close 
+[ dd - 33 2023-09-18 월요일 09:45:53 477 ] CameraControl -> Finalize 
+[ dd - 33 2023-09-18 월요일 09:45:53 477 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:46:21 521 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:46:21 597 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:46:21 797 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:46:22 065 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:46:22 428 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:46:22 450 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:46:22 499 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:46:23 116 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:46:23 435 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:46:24 218 ] XmlProcessing -> XMLSave 
+[ sdf - 4 2023-09-18 월요일 09:46:24 219 ] 검사자 : sdf & 검사장소 : 4 ==> 검사 시작
+[ sdf - 4 2023-09-18 월요일 09:46:24 285 ] MainForm -> MainForm_Load 
+[ sdf - 4 2023-09-18 월요일 09:46:27 702 ] MainForm -> MainForm_Shown 
+[ sdf - 4 2023-09-18 월요일 09:46:28 488 ] CameraControl -> CameraOpen 
+[ sdf - 4 2023-09-18 월요일 09:46:28 919 ] CameraControl -> open 
+[ sdf - 4 2023-09-18 월요일 09:46:28 949 ] ViewPage -> CreateBitmap 
+[ sdf - 4 2023-09-18 월요일 09:46:28 967 ] CameraControl -> SetEnableImageCallback 
+[ sdf - 4 2023-09-18 월요일 09:46:29 035 ] CameraControl -> Start 
+[ sdf - 4 2023-09-18 월요일 09:46:29 631 ] CameraControl -> CameraOpen 
+[ sdf - 4 2023-09-18 월요일 09:46:29 670 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdf - 4 2023-09-18 월요일 09:46:29 670 ] CameraControl -> CameraOpen 
+[ sdf - 4 2023-09-18 월요일 09:46:29 695 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdf - 4 2023-09-18 월요일 09:46:31 422 ] ViewPage -> ViewPage_ButtonActions 
+[ sdf - 4 2023-09-18 월요일 09:46:33 724 ] ViewPage -> SelectedView_MouseDown 
+[ sdf - 4 2023-09-18 월요일 09:46:33 932 ] ViewPage -> SelectedView_Click 
+[ sdf - 4 2023-09-18 월요일 09:46:34 148 ] ViewPage -> SelectedView_MouseDown 
+[ sdf - 4 2023-09-18 월요일 09:46:34 268 ] ViewPage -> SelectedView_Click 
+[ sdf - 4 2023-09-18 월요일 09:46:34 780 ] MainForm -> PageChange 
+[ sdf - 4 2023-09-18 월요일 09:46:35 060 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ sdf - 4 2023-09-18 월요일 09:46:35 062 ] AnalysisPage -> ImageChange 
+[ sdf - 4 2023-09-18 월요일 09:46:36 981 ] AnalysisPage -> Report_Export_Click 
+[ sdf - 4 2023-09-18 월요일 09:46:44 318 ] AnalysisPage -> Report_Export_Click 
+[ sdf - 4 2023-09-18 월요일 09:46:53 619 ] MainForm -> MainForm_FormClosing 
+[ sdf - 4 2023-09-18 월요일 09:46:53 625 ] ViewPage -> CameraClose 
+[ sdf - 4 2023-09-18 월요일 09:46:53 627 ] CameraControl -> Stop 
+[ sdf - 4 2023-09-18 월요일 09:46:54 021 ] CameraControl -> Close 
+[ sdf - 4 2023-09-18 월요일 09:46:54 036 ] CameraControl -> Stop 
+[ sdf - 4 2023-09-18 월요일 09:46:54 036 ] CameraControl -> Close 
+[ sdf - 4 2023-09-18 월요일 09:46:54 037 ] CameraControl -> Stop 
+[ sdf - 4 2023-09-18 월요일 09:46:54 038 ] CameraControl -> Close 
+[ sdf - 4 2023-09-18 월요일 09:46:54 131 ] CameraControl -> Finalize 
+[ sdf - 4 2023-09-18 월요일 09:46:54 132 ] CameraControl -> Close 
+[ sdf - 4 2023-09-18 월요일 09:46:54 143 ] CameraControl -> Finalize 
+[ sdf - 4 2023-09-18 월요일 09:46:54 143 ] CameraControl -> Close 
+[ sdf - 4 2023-09-18 월요일 09:46:54 144 ] CameraControl -> Finalize 
+[ sdf - 4 2023-09-18 월요일 09:46:54 144 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:47:19 516 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:47:19 592 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:47:19 798 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:47:20 087 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:47:20 931 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:21 074 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:21 363 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:21 387 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:21 484 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:22 195 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:47:22 974 ] XmlProcessing -> XMLSave 
+[ dd - 343 2023-09-18 월요일 09:47:22 976 ] 검사자 : dd & 검사장소 : 343 ==> 검사 시작
+[ dd - 343 2023-09-18 월요일 09:47:23 019 ] MainForm -> MainForm_Load 
+[ dd - 343 2023-09-18 월요일 09:47:26 490 ] MainForm -> MainForm_Shown 
+[ dd - 343 2023-09-18 월요일 09:47:27 315 ] CameraControl -> CameraOpen 
+[ dd - 343 2023-09-18 월요일 09:47:27 626 ] CameraControl -> open 
+[ dd - 343 2023-09-18 월요일 09:47:27 680 ] ViewPage -> CreateBitmap 
+[ dd - 343 2023-09-18 월요일 09:47:27 698 ] CameraControl -> SetEnableImageCallback 
+[ dd - 343 2023-09-18 월요일 09:47:27 719 ] CameraControl -> Start 
+[ dd - 343 2023-09-18 월요일 09:47:28 324 ] CameraControl -> CameraOpen 
+[ dd - 343 2023-09-18 월요일 09:47:28 386 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 343 2023-09-18 월요일 09:47:28 387 ] CameraControl -> CameraOpen 
+[ dd - 343 2023-09-18 월요일 09:47:28 410 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ dd - 343 2023-09-18 월요일 09:47:37 211 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 343 2023-09-18 월요일 09:47:37 407 ] ViewPage -> SelectedView_Click 
+[ dd - 343 2023-09-18 월요일 09:47:37 593 ] ViewPage -> SelectedView_MouseDown 
+[ dd - 343 2023-09-18 월요일 09:47:37 736 ] ViewPage -> SelectedView_Click 
+[ dd - 343 2023-09-18 월요일 09:47:38 182 ] MainForm -> PageChange 
+[ dd - 343 2023-09-18 월요일 09:47:38 434 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ dd - 343 2023-09-18 월요일 09:47:38 436 ] AnalysisPage -> ImageChange 
+[ dd - 343 2023-09-18 월요일 09:47:40 574 ] AnalysisPage -> Report_Export_Click 
+[ dd - 343 2023-09-18 월요일 09:47:44 729 ] MainForm -> MainForm_FormClosing 
+[ dd - 343 2023-09-18 월요일 09:47:44 736 ] ViewPage -> CameraClose 
+[ dd - 343 2023-09-18 월요일 09:47:44 750 ] CameraControl -> Stop 
+[ dd - 343 2023-09-18 월요일 09:47:45 081 ] CameraControl -> Close 
+[ dd - 343 2023-09-18 월요일 09:47:45 115 ] CameraControl -> Stop 
+[ dd - 343 2023-09-18 월요일 09:47:45 115 ] CameraControl -> Close 
+[ dd - 343 2023-09-18 월요일 09:47:45 115 ] CameraControl -> Stop 
+[ dd - 343 2023-09-18 월요일 09:47:45 115 ] CameraControl -> Close 
+[ dd - 343 2023-09-18 월요일 09:47:45 224 ] CameraControl -> Finalize 
+[ dd - 343 2023-09-18 월요일 09:47:45 225 ] CameraControl -> Close 
+[ dd - 343 2023-09-18 월요일 09:47:45 233 ] CameraControl -> Finalize 
+[ dd - 343 2023-09-18 월요일 09:47:45 233 ] CameraControl -> Close 
+[ dd - 343 2023-09-18 월요일 09:47:45 233 ] CameraControl -> Finalize 
+[ dd - 343 2023-09-18 월요일 09:47:45 234 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:47:55 007 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:47:55 071 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:47:55 273 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:47:55 568 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:47:55 909 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:56 025 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:56 501 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:56 795 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:47:57 091 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:47:57 875 ] XmlProcessing -> XMLSave 
+[ ff - 44 2023-09-18 월요일 09:47:57 877 ] 검사자 : ff & 검사장소 : 44 ==> 검사 시작
+[ ff - 44 2023-09-18 월요일 09:47:57 937 ] MainForm -> MainForm_Load 
+[ ff - 44 2023-09-18 월요일 09:48:01 366 ] MainForm -> MainForm_Shown 
+[ ff - 44 2023-09-18 월요일 09:48:02 153 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:48:02 441 ] CameraControl -> open 
+[ ff - 44 2023-09-18 월요일 09:48:02 474 ] ViewPage -> CreateBitmap 
+[ ff - 44 2023-09-18 월요일 09:48:02 500 ] CameraControl -> SetEnableImageCallback 
+[ ff - 44 2023-09-18 월요일 09:48:02 514 ] CameraControl -> Start 
+[ ff - 44 2023-09-18 월요일 09:48:03 100 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:48:03 145 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-18 월요일 09:48:03 145 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-18 월요일 09:48:03 170 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-18 월요일 09:48:04 691 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 44 2023-09-18 월요일 09:48:04 914 ] ViewPage -> SelectedView_Click 
+[ ff - 44 2023-09-18 월요일 09:48:05 196 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 44 2023-09-18 월요일 09:48:05 302 ] ViewPage -> SelectedView_Click 
+[ ff - 44 2023-09-18 월요일 09:48:05 727 ] MainForm -> PageChange 
+[ ff - 44 2023-09-18 월요일 09:48:05 955 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 44 2023-09-18 월요일 09:48:05 956 ] AnalysisPage -> ImageChange 
+[ ff - 44 2023-09-18 월요일 09:48:07 741 ] AnalysisPage -> Report_Export_Click 
+[ ff - 44 2023-09-18 월요일 09:48:22 813 ] AnalysisPage -> Report_Export_Click 
+[ ff - 44 2023-09-18 월요일 09:48:27 295 ] MainForm -> MainForm_FormClosing 
+[ ff - 44 2023-09-18 월요일 09:48:27 304 ] ViewPage -> CameraClose 
+[ ff - 44 2023-09-18 월요일 09:48:27 306 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:48:27 434 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:48:27 464 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:48:27 464 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:48:27 464 ] CameraControl -> Stop 
+[ ff - 44 2023-09-18 월요일 09:48:27 465 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:48:27 560 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:48:27 560 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:48:27 564 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:48:27 564 ] CameraControl -> Close 
+[ ff - 44 2023-09-18 월요일 09:48:27 569 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-18 월요일 09:48:27 569 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 09:56:30 761 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 09:56:30 823 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 09:56:31 069 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 09:56:31 362 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 09:56:31 981 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:56:32 017 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:56:32 499 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 09:56:32 880 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 09:56:33 676 ] XmlProcessing -> XMLSave 
+[ fd - 3 2023-09-18 월요일 09:56:33 677 ] 검사자 : fd & 검사장소 : 3 ==> 검사 시작
+[ fd - 3 2023-09-18 월요일 09:56:33 736 ] MainForm -> MainForm_Load 
+[ fd - 3 2023-09-18 월요일 09:56:37 174 ] MainForm -> MainForm_Shown 
+[ fd - 3 2023-09-18 월요일 09:56:38 032 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 09:56:38 310 ] CameraControl -> open 
+[ fd - 3 2023-09-18 월요일 09:56:38 348 ] ViewPage -> CreateBitmap 
+[ fd - 3 2023-09-18 월요일 09:56:38 378 ] CameraControl -> SetEnableImageCallback 
+[ fd - 3 2023-09-18 월요일 09:56:38 397 ] CameraControl -> Start 
+[ fd - 3 2023-09-18 월요일 09:56:38 989 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 09:56:39 039 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fd - 3 2023-09-18 월요일 09:56:39 040 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 09:56:39 060 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fd - 3 2023-09-18 월요일 09:56:40 619 ] ViewPage -> SelectedView_MouseDown 
+[ fd - 3 2023-09-18 월요일 09:56:40 904 ] ViewPage -> SelectedView_Click 
+[ fd - 3 2023-09-18 월요일 09:56:41 203 ] ViewPage -> SelectedView_MouseDown 
+[ fd - 3 2023-09-18 월요일 09:56:41 315 ] ViewPage -> SelectedView_Click 
+[ fd - 3 2023-09-18 월요일 09:56:41 789 ] MainForm -> PageChange 
+[ fd - 3 2023-09-18 월요일 09:56:42 040 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ fd - 3 2023-09-18 월요일 09:56:42 042 ] AnalysisPage -> ImageChange 
+[ fd - 3 2023-09-18 월요일 09:56:44 224 ] AnalysisPage -> ButtonFilter_Click 
+[ fd - 3 2023-09-18 월요일 09:56:44 231 ] AnalysisPage -> OptionTrackBarChanged 
+[ fd - 3 2023-09-18 월요일 09:56:44 252 ] AnalysisPage -> OptionTrackBarChanged 
+[ fd - 3 2023-09-18 월요일 09:56:45 989 ] AnalysisPage -> ButtonFilter_Click 
+[ fd - 3 2023-09-18 월요일 09:56:47 274 ] AnalysisPage -> Report_Export_Click 
+[ fd - 3 2023-09-18 월요일 09:57:01 960 ] PDFSave -> Report_Export 
+[ fd - 3 2023-09-18 월요일 10:00:09 158 ] AnalysisPage -> Report_Export_Click 
+[ fd - 3 2023-09-18 월요일 10:00:16 095 ] MainForm -> MainForm_FormClosing 
+[ fd - 3 2023-09-18 월요일 10:00:16 111 ] ViewPage -> CameraClose 
+[ fd - 3 2023-09-18 월요일 10:00:16 120 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 10:00:16 243 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 10:00:16 254 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 10:00:16 256 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 10:00:16 256 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 10:00:16 256 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 10:00:16 368 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 10:00:16 369 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 10:00:16 373 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 10:00:16 374 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 10:00:16 378 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 10:00:16 378 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 10:00:51 779 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 10:00:51 847 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 10:00:52 042 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 10:00:52 309 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 10:00:53 596 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:00:53 715 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:00:54 476 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:00:54 634 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:00:54 888 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 10:00:55 673 ] XmlProcessing -> XMLSave 
+[ gg - 55 2023-09-18 월요일 10:00:55 674 ] 검사자 : gg & 검사장소 : 55 ==> 검사 시작
+[ gg - 55 2023-09-18 월요일 10:00:55 736 ] MainForm -> MainForm_Load 
+[ gg - 55 2023-09-18 월요일 10:00:59 168 ] MainForm -> MainForm_Shown 
+[ gg - 55 2023-09-18 월요일 10:00:59 914 ] CameraControl -> CameraOpen 
+[ gg - 55 2023-09-18 월요일 10:01:00 201 ] CameraControl -> open 
+[ gg - 55 2023-09-18 월요일 10:01:00 227 ] ViewPage -> CreateBitmap 
+[ gg - 55 2023-09-18 월요일 10:01:00 241 ] CameraControl -> SetEnableImageCallback 
+[ gg - 55 2023-09-18 월요일 10:01:00 260 ] CameraControl -> Start 
+[ gg - 55 2023-09-18 월요일 10:01:00 850 ] CameraControl -> CameraOpen 
+[ gg - 55 2023-09-18 월요일 10:01:00 902 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 55 2023-09-18 월요일 10:01:00 902 ] CameraControl -> CameraOpen 
+[ gg - 55 2023-09-18 월요일 10:01:00 928 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 55 2023-09-18 월요일 10:01:02 797 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 55 2023-09-18 월요일 10:01:03 099 ] ViewPage -> SelectedView_Click 
+[ gg - 55 2023-09-18 월요일 10:01:03 406 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 55 2023-09-18 월요일 10:01:03 516 ] ViewPage -> SelectedView_Click 
+[ gg - 55 2023-09-18 월요일 10:01:04 073 ] MainForm -> PageChange 
+[ gg - 55 2023-09-18 월요일 10:01:04 288 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ gg - 55 2023-09-18 월요일 10:01:04 289 ] AnalysisPage -> ImageChange 
+[ gg - 55 2023-09-18 월요일 10:01:06 464 ] AnalysisPage -> ButtonFilter_Click 
+[ gg - 55 2023-09-18 월요일 10:01:07 480 ] AnalysisPage -> Report_Export_Click 
+[ gg - 55 2023-09-18 월요일 10:01:14 120 ] PDFSave -> Report_Export 
+[ gg - 55 2023-09-18 월요일 10:01:41 661 ] AnalysisPage -> Report_Export_Click 
+[ gg - 55 2023-09-18 월요일 10:07:01 649 ] MainForm -> MainForm_FormClosing 
+[ gg - 55 2023-09-18 월요일 10:07:01 658 ] ViewPage -> CameraClose 
+[ gg - 55 2023-09-18 월요일 10:07:01 661 ] CameraControl -> Stop 
+[ gg - 55 2023-09-18 월요일 10:07:01 762 ] CameraControl -> Close 
+[ gg - 55 2023-09-18 월요일 10:07:01 780 ] CameraControl -> Stop 
+[ gg - 55 2023-09-18 월요일 10:07:01 781 ] CameraControl -> Close 
+[ gg - 55 2023-09-18 월요일 10:07:01 781 ] CameraControl -> Stop 
+[ gg - 55 2023-09-18 월요일 10:07:01 781 ] CameraControl -> Close 
+[ gg - 55 2023-09-18 월요일 10:07:01 901 ] CameraControl -> Finalize 
+[ gg - 55 2023-09-18 월요일 10:07:01 903 ] CameraControl -> Close 
+[ gg - 55 2023-09-18 월요일 10:07:01 908 ] CameraControl -> Finalize 
+[ gg - 55 2023-09-18 월요일 10:07:01 908 ] CameraControl -> Close 
+[ gg - 55 2023-09-18 월요일 10:07:01 908 ] CameraControl -> Finalize 
+[ gg - 55 2023-09-18 월요일 10:07:01 908 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 10:12:17 655 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 10:12:18 073 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 10:12:18 283 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 10:12:18 563 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 10:12:19 422 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:12:19 999 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:12:20 460 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 10:12:21 248 ] XmlProcessing -> XMLSave 
+[ f - 5 2023-09-18 월요일 10:12:21 251 ] 검사자 : f & 검사장소 : 5 ==> 검사 시작
+[ f - 5 2023-09-18 월요일 10:12:21 314 ] MainForm -> MainForm_Load 
+[ f - 5 2023-09-18 월요일 10:12:24 744 ] MainForm -> MainForm_Shown 
+[ f - 5 2023-09-18 월요일 10:12:25 625 ] CameraControl -> CameraOpen 
+[ f - 5 2023-09-18 월요일 10:12:25 906 ] CameraControl -> open 
+[ f - 5 2023-09-18 월요일 10:12:25 943 ] ViewPage -> CreateBitmap 
+[ f - 5 2023-09-18 월요일 10:12:25 957 ] CameraControl -> SetEnableImageCallback 
+[ f - 5 2023-09-18 월요일 10:12:25 972 ] CameraControl -> Start 
+[ f - 5 2023-09-18 월요일 10:12:26 574 ] CameraControl -> CameraOpen 
+[ f - 5 2023-09-18 월요일 10:12:26 646 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ f - 5 2023-09-18 월요일 10:12:26 646 ] CameraControl -> CameraOpen 
+[ f - 5 2023-09-18 월요일 10:12:26 676 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ f - 5 2023-09-18 월요일 10:12:28 174 ] ViewPage -> SelectedView_MouseDown 
+[ f - 5 2023-09-18 월요일 10:12:28 447 ] ViewPage -> SelectedView_Click 
+[ f - 5 2023-09-18 월요일 10:12:28 830 ] ViewPage -> SelectedView_MouseDown 
+[ f - 5 2023-09-18 월요일 10:12:28 938 ] ViewPage -> SelectedView_Click 
+[ f - 5 2023-09-18 월요일 10:12:29 490 ] MainForm -> PageChange 
+[ f - 5 2023-09-18 월요일 10:12:29 719 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ f - 5 2023-09-18 월요일 10:12:29 721 ] AnalysisPage -> ImageChange 
+[ f - 5 2023-09-18 월요일 10:12:32 671 ] AnalysisPage -> ViewBack_Click 
+[ f - 5 2023-09-18 월요일 10:12:32 672 ] MainForm -> PageChange 
+[ f - 5 2023-09-18 월요일 10:12:32 795 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ f - 5 2023-09-18 월요일 10:12:34 312 ] ViewPage -> SelectedView_MouseDown 
+[ f - 5 2023-09-18 월요일 10:12:34 932 ] ViewPage -> SelectedView_Click 
+[ f - 5 2023-09-18 월요일 10:12:35 316 ] ViewPage -> SelectedView_MouseDown 
+[ f - 5 2023-09-18 월요일 10:12:35 439 ] ViewPage -> SelectedView_Click 
+[ f - 5 2023-09-18 월요일 10:12:35 989 ] MainForm -> PageChange 
+[ f - 5 2023-09-18 월요일 10:12:36 108 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ f - 5 2023-09-18 월요일 10:12:36 108 ] AnalysisPage -> ImageChange 
+[ f - 5 2023-09-18 월요일 10:12:38 021 ] AnalysisPage -> ButtonFilter_Click 
+[ f - 5 2023-09-18 월요일 10:12:39 489 ] AnalysisPage -> Report_Export_Click 
+[ f - 5 2023-09-18 월요일 10:12:42 302 ] PDFSave -> Report_Export 
+[ f - 5 2023-09-18 월요일 10:13:22 788 ] MainForm -> MainForm_FormClosing 
+[ f - 5 2023-09-18 월요일 10:13:22 795 ] ViewPage -> CameraClose 
+[ f - 5 2023-09-18 월요일 10:13:22 798 ] CameraControl -> Stop 
+[ f - 5 2023-09-18 월요일 10:13:23 171 ] CameraControl -> Close 
+[ f - 5 2023-09-18 월요일 10:13:23 187 ] CameraControl -> Stop 
+[ f - 5 2023-09-18 월요일 10:13:23 187 ] CameraControl -> Close 
+[ f - 5 2023-09-18 월요일 10:13:23 187 ] CameraControl -> Stop 
+[ f - 5 2023-09-18 월요일 10:13:23 187 ] CameraControl -> Close 
+[ f - 5 2023-09-18 월요일 10:13:23 296 ] CameraControl -> Finalize 
+[ f - 5 2023-09-18 월요일 10:13:23 296 ] CameraControl -> Close 
+[ f - 5 2023-09-18 월요일 10:13:23 305 ] CameraControl -> Finalize 
+[ f - 5 2023-09-18 월요일 10:13:23 305 ] CameraControl -> Close 
+[ f - 5 2023-09-18 월요일 10:13:23 312 ] CameraControl -> Finalize 
+[ f - 5 2023-09-18 월요일 10:13:23 312 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 10:47:32 239 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 10:47:32 321 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 10:47:32 552 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 10:47:32 841 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 10:47:34 050 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:47:34 138 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:47:34 447 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:47:34 625 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:47:34 932 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 10:47:35 716 ] XmlProcessing -> XMLSave 
+[ ff - 33 2023-09-18 월요일 10:47:35 717 ] 검사자 : ff & 검사장소 : 33 ==> 검사 시작
+[ ff - 33 2023-09-18 월요일 10:47:35 785 ] MainForm -> MainForm_Load 
+[ ff - 33 2023-09-18 월요일 10:47:39 246 ] MainForm -> MainForm_Shown 
+[ ff - 33 2023-09-18 월요일 10:47:40 145 ] CameraControl -> CameraOpen 
+[ ff - 33 2023-09-18 월요일 10:47:40 438 ] CameraControl -> open 
+[ ff - 33 2023-09-18 월요일 10:47:40 467 ] ViewPage -> CreateBitmap 
+[ ff - 33 2023-09-18 월요일 10:47:40 480 ] CameraControl -> SetEnableImageCallback 
+[ ff - 33 2023-09-18 월요일 10:47:40 501 ] CameraControl -> Start 
+[ ff - 33 2023-09-18 월요일 10:47:41 105 ] CameraControl -> CameraOpen 
+[ ff - 33 2023-09-18 월요일 10:47:41 164 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 33 2023-09-18 월요일 10:47:41 164 ] CameraControl -> CameraOpen 
+[ ff - 33 2023-09-18 월요일 10:47:41 189 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 33 2023-09-18 월요일 10:47:43 646 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:47:44 193 ] ViewPage -> SelectedView_Click 
+[ ff - 33 2023-09-18 월요일 10:47:44 757 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:47:44 877 ] ViewPage -> SelectedView_Click 
+[ ff - 33 2023-09-18 월요일 10:47:45 398 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:47:45 618 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:47:45 619 ] AnalysisPage -> ImageChange 
+[ ff - 33 2023-09-18 월요일 10:47:48 129 ] AnalysisPage -> Report_Export_Click 
+[ ff - 33 2023-09-18 월요일 10:47:50 244 ] AnalysisPage -> ButtonFilter_Click 
+[ ff - 33 2023-09-18 월요일 10:47:51 383 ] AnalysisPage -> ButtonFilter_Click 
+[ ff - 33 2023-09-18 월요일 10:47:51 390 ] AnalysisPage -> OptionTrackBarChanged 
+[ ff - 33 2023-09-18 월요일 10:47:51 414 ] AnalysisPage -> OptionTrackBarChanged 
+[ ff - 33 2023-09-18 월요일 10:47:52 497 ] AnalysisPage -> Report_Export_Click 
+[ ff - 33 2023-09-18 월요일 10:48:07 975 ] PDFSave -> Report_Export 
+[ ff - 33 2023-09-18 월요일 10:48:33 906 ] AnalysisPage -> ViewBack_Click 
+[ ff - 33 2023-09-18 월요일 10:48:33 907 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:48:34 040 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:48:37 036 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:48:38 147 ] ViewPage -> SelectedView_Click 
+[ ff - 33 2023-09-18 월요일 10:48:38 555 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:48:38 673 ] ViewPage -> SelectedView_Click 
+[ ff - 33 2023-09-18 월요일 10:48:39 160 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:48:39 293 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:48:39 296 ] AnalysisPage -> ImageChange 
+[ ff - 33 2023-09-18 월요일 10:48:41 549 ] AnalysisPage -> Report_Export_Click 
+[ ff - 33 2023-09-18 월요일 10:48:44 387 ] PDFSave -> Report_Export 
+[ ff - 33 2023-09-18 월요일 10:49:03 808 ] AnalysisPage -> ViewBack_Click 
+[ ff - 33 2023-09-18 월요일 10:49:03 809 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:49:03 917 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:49:06 628 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:49:09 877 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:49:10 019 ] ViewPage -> SelectedView_Click 
+[ ff - 33 2023-09-18 월요일 10:49:10 490 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:49:10 611 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:49:10 614 ] AnalysisPage -> ImageChange 
+[ ff - 33 2023-09-18 월요일 10:49:17 850 ] AnalysisPage -> ViewBack_Click 
+[ ff - 33 2023-09-18 월요일 10:49:17 851 ] MainForm -> PageChange 
+[ ff - 33 2023-09-18 월요일 10:49:17 971 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ff - 33 2023-09-18 월요일 10:49:40 500 ] ViewPage -> SelectedView_MouseDown 
+[ ff - 33 2023-09-18 월요일 10:50:34 401 ] MainForm -> MainForm_FormClosing 
+[ ff - 33 2023-09-18 월요일 10:50:34 408 ] ViewPage -> CameraClose 
+[ ff - 33 2023-09-18 월요일 10:50:34 414 ] CameraControl -> Stop 
+[ ff - 33 2023-09-18 월요일 10:50:34 523 ] CameraControl -> Close 
+[ ff - 33 2023-09-18 월요일 10:50:34 544 ] CameraControl -> Stop 
+[ ff - 33 2023-09-18 월요일 10:50:34 545 ] CameraControl -> Close 
+[ ff - 33 2023-09-18 월요일 10:50:34 546 ] CameraControl -> Stop 
+[ ff - 33 2023-09-18 월요일 10:50:34 546 ] CameraControl -> Close 
+[ ff - 33 2023-09-18 월요일 10:50:34 670 ] CameraControl -> Finalize 
+[ ff - 33 2023-09-18 월요일 10:50:34 670 ] CameraControl -> Close 
+[ ff - 33 2023-09-18 월요일 10:50:34 672 ] CameraControl -> Finalize 
+[ ff - 33 2023-09-18 월요일 10:50:34 673 ] CameraControl -> Close 
+[ ff - 33 2023-09-18 월요일 10:50:34 674 ] CameraControl -> Finalize 
+[ ff - 33 2023-09-18 월요일 10:50:34 674 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 10:54:13 610 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 10:54:13 679 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 10:54:13 883 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 10:54:14 183 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 10:54:15 123 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:54:15 240 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:54:15 394 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:54:15 681 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:54:15 834 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:54:16 136 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 10:54:16 929 ] XmlProcessing -> XMLSave 
+[ fff - 33 2023-09-18 월요일 10:54:16 929 ] 검사자 : fff & 검사장소 : 33 ==> 검사 시작
+[ fff - 33 2023-09-18 월요일 10:54:16 994 ] MainForm -> MainForm_Load 
+[ fff - 33 2023-09-18 월요일 10:54:20 415 ] MainForm -> MainForm_Shown 
+[ fff - 33 2023-09-18 월요일 10:54:21 265 ] CameraControl -> CameraOpen 
+[ fff - 33 2023-09-18 월요일 10:54:21 593 ] CameraControl -> open 
+[ fff - 33 2023-09-18 월요일 10:54:21 626 ] ViewPage -> CreateBitmap 
+[ fff - 33 2023-09-18 월요일 10:54:21 644 ] CameraControl -> SetEnableImageCallback 
+[ fff - 33 2023-09-18 월요일 10:54:21 658 ] CameraControl -> Start 
+[ fff - 33 2023-09-18 월요일 10:54:22 258 ] CameraControl -> CameraOpen 
+[ fff - 33 2023-09-18 월요일 10:54:22 310 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fff - 33 2023-09-18 월요일 10:54:22 311 ] CameraControl -> CameraOpen 
+[ fff - 33 2023-09-18 월요일 10:54:22 332 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fff - 33 2023-09-18 월요일 10:54:24 007 ] ViewPage -> SelectedView_MouseDown 
+[ fff - 33 2023-09-18 월요일 10:54:27 075 ] ViewPage -> SelectedView_MouseDown 
+[ fff - 33 2023-09-18 월요일 10:54:27 192 ] ViewPage -> SelectedView_Click 
+[ fff - 33 2023-09-18 월요일 10:54:28 343 ] ViewPage -> SelectedView_MouseDown 
+[ fff - 33 2023-09-18 월요일 10:54:28 491 ] ViewPage -> SelectedView_Click 
+[ fff - 33 2023-09-18 월요일 10:54:28 946 ] MainForm -> PageChange 
+[ fff - 33 2023-09-18 월요일 10:54:29 148 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ fff - 33 2023-09-18 월요일 10:54:29 149 ] AnalysisPage -> ImageChange 
+[ fff - 33 2023-09-18 월요일 10:54:34 049 ] AnalysisPage -> Report_Export_Click 
+[ fff - 33 2023-09-18 월요일 10:54:41 526 ] AnalysisPage -> Report_Export_Click 
+[ fff - 33 2023-09-18 월요일 10:54:43 983 ] AnalysisPage -> ButtonFilter_Click 
+[ fff - 33 2023-09-18 월요일 10:54:45 544 ] AnalysisPage -> Report_Export_Click 
+[ fff - 33 2023-09-18 월요일 10:54:57 323 ] PDFSave -> Report_Export 
+[ fff - 33 2023-09-18 월요일 10:55:07 028 ] AnalysisPage -> Report_Export_Click 
+[ fff - 33 2023-09-18 월요일 10:55:11 774 ] PDFSave -> Report_Export 
+[ fff - 33 2023-09-18 월요일 10:55:39 297 ] MainForm -> MainForm_FormClosing 
+[ fff - 33 2023-09-18 월요일 10:55:39 303 ] ViewPage -> CameraClose 
+[ fff - 33 2023-09-18 월요일 10:55:39 305 ] CameraControl -> Stop 
+[ fff - 33 2023-09-18 월요일 10:55:40 653 ] CameraControl -> Close 
+[ fff - 33 2023-09-18 월요일 10:55:40 666 ] CameraControl -> Stop 
+[ fff - 33 2023-09-18 월요일 10:55:40 667 ] CameraControl -> Close 
+[ fff - 33 2023-09-18 월요일 10:55:40 667 ] CameraControl -> Stop 
+[ fff - 33 2023-09-18 월요일 10:55:40 667 ] CameraControl -> Close 
+[ fff - 33 2023-09-18 월요일 10:55:40 772 ] CameraControl -> Finalize 
+[ fff - 33 2023-09-18 월요일 10:55:40 772 ] CameraControl -> Close 
+[ fff - 33 2023-09-18 월요일 10:55:40 780 ] CameraControl -> Finalize 
+[ fff - 33 2023-09-18 월요일 10:55:40 780 ] CameraControl -> Close 
+[ fff - 33 2023-09-18 월요일 10:55:40 780 ] CameraControl -> Finalize 
+[ fff - 33 2023-09-18 월요일 10:55:40 780 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 10:56:00 127 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 10:56:00 211 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 10:56:00 420 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 10:56:00 716 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 10:56:01 045 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:56:01 192 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:56:01 537 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:56:01 695 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 10:56:01 961 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 10:56:02 735 ] XmlProcessing -> XMLSave 
+[ gg - 44 2023-09-18 월요일 10:56:02 736 ] 검사자 : gg & 검사장소 : 44 ==> 검사 시작
+[ gg - 44 2023-09-18 월요일 10:56:02 803 ] MainForm -> MainForm_Load 
+[ gg - 44 2023-09-18 월요일 10:56:06 234 ] MainForm -> MainForm_Shown 
+[ gg - 44 2023-09-18 월요일 10:56:07 037 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-18 월요일 10:56:07 351 ] CameraControl -> open 
+[ gg - 44 2023-09-18 월요일 10:56:07 382 ] ViewPage -> CreateBitmap 
+[ gg - 44 2023-09-18 월요일 10:56:07 394 ] CameraControl -> SetEnableImageCallback 
+[ gg - 44 2023-09-18 월요일 10:56:07 407 ] CameraControl -> Start 
+[ gg - 44 2023-09-18 월요일 10:56:07 995 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-18 월요일 10:56:08 062 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 44 2023-09-18 월요일 10:56:08 063 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-18 월요일 10:56:08 090 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 44 2023-09-18 월요일 10:56:10 832 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 44 2023-09-18 월요일 10:56:11 741 ] ViewPage -> SelectedView_Click 
+[ gg - 44 2023-09-18 월요일 10:56:12 143 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 44 2023-09-18 월요일 10:56:12 273 ] ViewPage -> SelectedView_Click 
+[ gg - 44 2023-09-18 월요일 10:56:12 815 ] MainForm -> PageChange 
+[ gg - 44 2023-09-18 월요일 10:56:13 045 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ gg - 44 2023-09-18 월요일 10:56:13 046 ] AnalysisPage -> ImageChange 
+[ gg - 44 2023-09-18 월요일 10:56:15 649 ] AnalysisPage -> Report_Export_Click 
+[ gg - 44 2023-09-18 월요일 10:56:18 041 ] PDFSave -> Report_Export 
+[ gg - 44 2023-09-18 월요일 10:56:33 678 ] AnalysisPage -> Report_Export_Click 
+[ gg - 44 2023-09-18 월요일 10:56:38 106 ] AnalysisPage -> Report_Export_Click 
+[ gg - 44 2023-09-18 월요일 10:56:40 410 ] AnalysisPage -> Report_Export_Click 
+[ gg - 44 2023-09-18 월요일 10:57:28 951 ] MainForm -> MainForm_FormClosing 
+[ gg - 44 2023-09-18 월요일 10:57:28 963 ] ViewPage -> CameraClose 
+[ gg - 44 2023-09-18 월요일 10:57:28 966 ] CameraControl -> Stop 
+[ gg - 44 2023-09-18 월요일 10:57:29 072 ] CameraControl -> Close 
+[ gg - 44 2023-09-18 월요일 10:57:29 099 ] CameraControl -> Stop 
+[ gg - 44 2023-09-18 월요일 10:57:29 103 ] CameraControl -> Close 
+[ gg - 44 2023-09-18 월요일 10:57:29 104 ] CameraControl -> Stop 
+[ gg - 44 2023-09-18 월요일 10:57:29 104 ] CameraControl -> Close 
+[ gg - 44 2023-09-18 월요일 10:57:29 222 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-18 월요일 10:57:29 222 ] CameraControl -> Close 
+[ gg - 44 2023-09-18 월요일 10:57:29 227 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-18 월요일 10:57:29 227 ] CameraControl -> Close 
+[ gg - 44 2023-09-18 월요일 10:57:29 232 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-18 월요일 10:57:29 233 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 11:25:57 311 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 11:25:57 638 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 11:25:58 009 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 11:25:58 373 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 11:26:03 113 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 11:26:03 240 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 11:26:03 631 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 11:26:03 750 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 11:26:06 360 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 11:26:07 133 ] XmlProcessing -> XMLSave 
+[ rr - 33 2023-09-18 월요일 11:26:07 134 ] 검사자 : rr & 검사장소 : 33 ==> 검사 시작
+[ rr - 33 2023-09-18 월요일 11:26:07 196 ] MainForm -> MainForm_Load 
+[ rr - 33 2023-09-18 월요일 11:26:10 704 ] MainForm -> MainForm_Shown 
+[ rr - 33 2023-09-18 월요일 11:26:11 613 ] CameraControl -> CameraOpen 
+[ rr - 33 2023-09-18 월요일 11:26:11 936 ] CameraControl -> open 
+[ rr - 33 2023-09-18 월요일 11:26:11 971 ] ViewPage -> CreateBitmap 
+[ rr - 33 2023-09-18 월요일 11:26:11 982 ] CameraControl -> SetEnableImageCallback 
+[ rr - 33 2023-09-18 월요일 11:26:11 996 ] CameraControl -> Start 
+[ rr - 33 2023-09-18 월요일 11:26:12 585 ] CameraControl -> CameraOpen 
+[ rr - 33 2023-09-18 월요일 11:26:12 897 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ rr - 33 2023-09-18 월요일 11:26:12 897 ] CameraControl -> CameraOpen 
+[ rr - 33 2023-09-18 월요일 11:26:12 932 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ rr - 33 2023-09-18 월요일 11:26:15 832 ] MainForm -> MainForm_FormClosing 
+[ rr - 33 2023-09-18 월요일 11:26:15 840 ] ViewPage -> CameraClose 
+[ rr - 33 2023-09-18 월요일 11:26:15 910 ] CameraControl -> Stop 
+[ rr - 33 2023-09-18 월요일 11:26:17 185 ] CameraControl -> Close 
+[ rr - 33 2023-09-18 월요일 11:26:17 201 ] CameraControl -> Stop 
+[ rr - 33 2023-09-18 월요일 11:26:17 201 ] CameraControl -> Close 
+[ rr - 33 2023-09-18 월요일 11:26:17 202 ] CameraControl -> Stop 
+[ rr - 33 2023-09-18 월요일 11:26:17 202 ] CameraControl -> Close 
+[ rr - 33 2023-09-18 월요일 11:26:17 316 ] CameraControl -> Finalize 
+[ rr - 33 2023-09-18 월요일 11:26:17 317 ] CameraControl -> Close 
+[ rr - 33 2023-09-18 월요일 11:26:17 326 ] CameraControl -> Finalize 
+[ rr - 33 2023-09-18 월요일 11:26:17 327 ] CameraControl -> Close 
+[ rr - 33 2023-09-18 월요일 11:26:17 327 ] CameraControl -> Finalize 
+[ rr - 33 2023-09-18 월요일 11:26:17 327 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:47:57 004 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:47:57 103 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:47:57 333 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:47:57 662 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:47:58 506 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:47:58 509 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:47:59 090 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:48:00 571 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:48:01 377 ] XmlProcessing -> XMLSave 
+[ bh - 5 2023-09-18 월요일 12:48:01 378 ] 검사자 : bh & 검사장소 : 5 ==> 검사 시작
+[ bh - 5 2023-09-18 월요일 12:48:01 444 ] MainForm -> MainForm_Load 
+[ bh - 5 2023-09-18 월요일 12:48:04 890 ] MainForm -> MainForm_Shown 
+[ bh - 5 2023-09-18 월요일 12:48:06 068 ] CameraControl -> CameraOpen 
+[ bh - 5 2023-09-18 월요일 12:48:06 415 ] CameraControl -> open 
+[ bh - 5 2023-09-18 월요일 12:48:06 451 ] ViewPage -> CreateBitmap 
+[ bh - 5 2023-09-18 월요일 12:48:06 464 ] CameraControl -> SetEnableImageCallback 
+[ bh - 5 2023-09-18 월요일 12:48:06 482 ] CameraControl -> Start 
+[ bh - 5 2023-09-18 월요일 12:48:07 084 ] CameraControl -> CameraOpen 
+[ bh - 5 2023-09-18 월요일 12:48:07 155 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ bh - 5 2023-09-18 월요일 12:48:07 158 ] CameraControl -> CameraOpen 
+[ bh - 5 2023-09-18 월요일 12:48:07 181 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ bh - 5 2023-09-18 월요일 12:48:09 030 ] MainForm -> MainForm_FormClosing 
+[ bh - 5 2023-09-18 월요일 12:48:09 054 ] ViewPage -> CameraClose 
+[ bh - 5 2023-09-18 월요일 12:48:09 354 ] CameraControl -> Stop 
+[ bh - 5 2023-09-18 월요일 12:48:09 461 ] CameraControl -> Close 
+[ bh - 5 2023-09-18 월요일 12:48:09 478 ] CameraControl -> Stop 
+[ bh - 5 2023-09-18 월요일 12:48:09 479 ] CameraControl -> Close 
+[ bh - 5 2023-09-18 월요일 12:48:09 479 ] CameraControl -> Stop 
+[ bh - 5 2023-09-18 월요일 12:48:09 479 ] CameraControl -> Close 
+[ bh - 5 2023-09-18 월요일 12:48:09 709 ] CameraControl -> Finalize 
+[ bh - 5 2023-09-18 월요일 12:48:09 709 ] CameraControl -> Close 
+[ bh - 5 2023-09-18 월요일 12:48:09 710 ] CameraControl -> Finalize 
+[ bh - 5 2023-09-18 월요일 12:48:09 710 ] CameraControl -> Close 
+[ bh - 5 2023-09-18 월요일 12:48:09 710 ] CameraControl -> Finalize 
+[ bh - 5 2023-09-18 월요일 12:48:09 710 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:49:29 541 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:49:29 608 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:49:29 787 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:49:30 083 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:49:30 717 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:49:30 810 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:49:31 264 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:49:31 615 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:49:32 399 ] XmlProcessing -> XMLSave 
+[ fd - 3 2023-09-18 월요일 12:49:32 400 ] 검사자 : fd & 검사장소 : 3 ==> 검사 시작
+[ fd - 3 2023-09-18 월요일 12:49:32 459 ] MainForm -> MainForm_Load 
+[ fd - 3 2023-09-18 월요일 12:49:35 898 ] MainForm -> MainForm_Shown 
+[ fd - 3 2023-09-18 월요일 12:49:36 635 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 12:49:36 939 ] CameraControl -> open 
+[ fd - 3 2023-09-18 월요일 12:49:36 981 ] ViewPage -> CreateBitmap 
+[ fd - 3 2023-09-18 월요일 12:49:36 999 ] CameraControl -> SetEnableImageCallback 
+[ fd - 3 2023-09-18 월요일 12:49:37 011 ] CameraControl -> Start 
+[ fd - 3 2023-09-18 월요일 12:49:37 590 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 12:49:37 644 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fd - 3 2023-09-18 월요일 12:49:37 644 ] CameraControl -> CameraOpen 
+[ fd - 3 2023-09-18 월요일 12:49:37 664 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ fd - 3 2023-09-18 월요일 12:49:39 676 ] MainForm -> MainForm_FormClosing 
+[ fd - 3 2023-09-18 월요일 12:49:39 684 ] ViewPage -> CameraClose 
+[ fd - 3 2023-09-18 월요일 12:49:39 882 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 12:49:39 969 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 12:49:39 981 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 12:49:39 981 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 12:49:39 982 ] CameraControl -> Stop 
+[ fd - 3 2023-09-18 월요일 12:49:39 982 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 12:49:40 076 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 12:49:40 077 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 12:49:40 080 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 12:49:40 080 ] CameraControl -> Close 
+[ fd - 3 2023-09-18 월요일 12:49:40 087 ] CameraControl -> Finalize 
+[ fd - 3 2023-09-18 월요일 12:49:40 087 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:53:09 193 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:53:09 293 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:53:09 493 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:53:09 791 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:53:10 499 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:53:10 928 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:53:11 492 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:53:12 275 ] XmlProcessing -> XMLSave 
+[ y - 4 2023-09-18 월요일 12:53:12 276 ] 검사자 : y & 검사장소 : 4 ==> 검사 시작
+[ y - 4 2023-09-18 월요일 12:53:12 350 ] MainForm -> MainForm_Load 
+[ y - 4 2023-09-18 월요일 12:53:15 821 ] MainForm -> MainForm_Shown 
+[ y - 4 2023-09-18 월요일 12:53:16 660 ] CameraControl -> CameraOpen 
+[ y - 4 2023-09-18 월요일 12:53:16 937 ] CameraControl -> open 
+[ y - 4 2023-09-18 월요일 12:53:16 973 ] ViewPage -> CreateBitmap 
+[ y - 4 2023-09-18 월요일 12:53:16 991 ] CameraControl -> SetEnableImageCallback 
+[ y - 4 2023-09-18 월요일 12:53:17 012 ] CameraControl -> Start 
+[ y - 4 2023-09-18 월요일 12:53:17 694 ] CameraControl -> CameraOpen 
+[ y - 4 2023-09-18 월요일 12:53:17 757 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ y - 4 2023-09-18 월요일 12:53:17 757 ] CameraControl -> CameraOpen 
+[ y - 4 2023-09-18 월요일 12:53:17 776 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ y - 4 2023-09-18 월요일 12:53:25 703 ] MainForm -> MainForm_FormClosing 
+[ y - 4 2023-09-18 월요일 12:53:25 712 ] ViewPage -> CameraClose 
+[ y - 4 2023-09-18 월요일 12:53:25 831 ] CameraControl -> Stop 
+[ y - 4 2023-09-18 월요일 12:53:26 230 ] CameraControl -> Close 
+[ y - 4 2023-09-18 월요일 12:53:26 243 ] CameraControl -> Stop 
+[ y - 4 2023-09-18 월요일 12:53:26 243 ] CameraControl -> Close 
+[ y - 4 2023-09-18 월요일 12:53:26 243 ] CameraControl -> Stop 
+[ y - 4 2023-09-18 월요일 12:53:26 244 ] CameraControl -> Close 
+[ y - 4 2023-09-18 월요일 12:53:26 453 ] CameraControl -> Finalize 
+[ y - 4 2023-09-18 월요일 12:53:26 453 ] CameraControl -> Close 
+[ y - 4 2023-09-18 월요일 12:53:26 462 ] CameraControl -> Finalize 
+[ y - 4 2023-09-18 월요일 12:53:26 462 ] CameraControl -> Close 
+[ y - 4 2023-09-18 월요일 12:53:26 463 ] CameraControl -> Finalize 
+[ y - 4 2023-09-18 월요일 12:53:26 463 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:53:57 273 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:53:57 342 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:53:57 538 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:53:57 829 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:53:58 244 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:53:58 577 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:53:59 085 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:53:59 887 ] XmlProcessing -> XMLSave 
+[ f - 3 2023-09-18 월요일 12:53:59 888 ] 검사자 : f & 검사장소 : 3 ==> 검사 시작
+[ f - 3 2023-09-18 월요일 12:53:59 941 ] MainForm -> MainForm_Load 
+[ f - 3 2023-09-18 월요일 12:54:03 409 ] MainForm -> MainForm_Shown 
+[ f - 3 2023-09-18 월요일 12:54:04 255 ] CameraControl -> CameraOpen 
+[ f - 3 2023-09-18 월요일 12:54:04 545 ] CameraControl -> open 
+[ f - 3 2023-09-18 월요일 12:54:04 578 ] ViewPage -> CreateBitmap 
+[ f - 3 2023-09-18 월요일 12:54:04 601 ] CameraControl -> SetEnableImageCallback 
+[ f - 3 2023-09-18 월요일 12:54:04 621 ] CameraControl -> Start 
+[ f - 3 2023-09-18 월요일 12:54:05 250 ] CameraControl -> CameraOpen 
+[ f - 3 2023-09-18 월요일 12:54:05 309 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ f - 3 2023-09-18 월요일 12:54:05 310 ] CameraControl -> CameraOpen 
+[ f - 3 2023-09-18 월요일 12:54:05 333 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ f - 3 2023-09-18 월요일 12:54:06 802 ] MainForm -> MainForm_FormClosing 
+[ f - 3 2023-09-18 월요일 12:54:06 815 ] ViewPage -> CameraClose 
+[ f - 3 2023-09-18 월요일 12:54:06 881 ] CameraControl -> Stop 
+[ f - 3 2023-09-18 월요일 12:54:08 220 ] CameraControl -> Close 
+[ f - 3 2023-09-18 월요일 12:54:08 237 ] CameraControl -> Stop 
+[ f - 3 2023-09-18 월요일 12:54:08 238 ] CameraControl -> Close 
+[ f - 3 2023-09-18 월요일 12:54:08 238 ] CameraControl -> Stop 
+[ f - 3 2023-09-18 월요일 12:54:08 238 ] CameraControl -> Close 
+[ f - 3 2023-09-18 월요일 12:54:08 337 ] CameraControl -> Finalize 
+[ f - 3 2023-09-18 월요일 12:54:08 338 ] CameraControl -> Close 
+[ f - 3 2023-09-18 월요일 12:54:08 344 ] CameraControl -> Finalize 
+[ f - 3 2023-09-18 월요일 12:54:08 345 ] CameraControl -> Close 
+[ f - 3 2023-09-18 월요일 12:54:08 345 ] CameraControl -> Finalize 
+[ f - 3 2023-09-18 월요일 12:54:08 345 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:54:15 762 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:54:15 842 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:54:16 028 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:54:16 343 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:54:16 761 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:54:16 798 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:54:16 824 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:54:17 366 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:54:17 505 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:54:17 841 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:54:18 629 ] XmlProcessing -> XMLSave 
+[ ewq - 34 2023-09-18 월요일 12:54:18 630 ] 검사자 : ewq & 검사장소 : 34 ==> 검사 시작
+[ ewq - 34 2023-09-18 월요일 12:54:18 706 ] MainForm -> MainForm_Load 
+[ ewq - 34 2023-09-18 월요일 12:54:22 174 ] MainForm -> MainForm_Shown 
+[ ewq - 34 2023-09-18 월요일 12:54:22 943 ] CameraControl -> CameraOpen 
+[ ewq - 34 2023-09-18 월요일 12:54:23 230 ] CameraControl -> open 
+[ ewq - 34 2023-09-18 월요일 12:54:23 261 ] ViewPage -> CreateBitmap 
+[ ewq - 34 2023-09-18 월요일 12:54:23 277 ] CameraControl -> SetEnableImageCallback 
+[ ewq - 34 2023-09-18 월요일 12:54:23 294 ] CameraControl -> Start 
+[ ewq - 34 2023-09-18 월요일 12:54:23 880 ] CameraControl -> CameraOpen 
+[ ewq - 34 2023-09-18 월요일 12:54:23 929 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ewq - 34 2023-09-18 월요일 12:54:23 930 ] CameraControl -> CameraOpen 
+[ ewq - 34 2023-09-18 월요일 12:54:23 963 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ewq - 34 2023-09-18 월요일 12:54:25 956 ] MainForm -> MainForm_FormClosing 
+[ ewq - 34 2023-09-18 월요일 12:54:25 967 ] ViewPage -> CameraClose 
+[ ewq - 34 2023-09-18 월요일 12:54:26 345 ] CameraControl -> Stop 
+[ ewq - 34 2023-09-18 월요일 12:54:26 457 ] CameraControl -> Close 
+[ ewq - 34 2023-09-18 월요일 12:54:26 469 ] CameraControl -> Stop 
+[ ewq - 34 2023-09-18 월요일 12:54:26 471 ] CameraControl -> Close 
+[ ewq - 34 2023-09-18 월요일 12:54:26 471 ] CameraControl -> Stop 
+[ ewq - 34 2023-09-18 월요일 12:54:26 471 ] CameraControl -> Close 
+[ ewq - 34 2023-09-18 월요일 12:54:26 688 ] CameraControl -> Finalize 
+[ ewq - 34 2023-09-18 월요일 12:54:26 691 ] CameraControl -> Close 
+[ ewq - 34 2023-09-18 월요일 12:54:26 706 ] CameraControl -> Finalize 
+[ ewq - 34 2023-09-18 월요일 12:54:26 708 ] CameraControl -> Close 
+[ ewq - 34 2023-09-18 월요일 12:54:26 708 ] CameraControl -> Finalize 
+[ ewq - 34 2023-09-18 월요일 12:54:26 709 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:56:27 372 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:56:27 451 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:56:27 627 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:56:27 943 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:56:28 514 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:28 517 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:28 534 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:29 057 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:29 079 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:29 473 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:56:30 265 ] XmlProcessing -> XMLSave 
+[ gyh - 54 2023-09-18 월요일 12:56:30 266 ] 검사자 : gyh & 검사장소 : 54 ==> 검사 시작
+[ gyh - 54 2023-09-18 월요일 12:56:30 334 ] MainForm -> MainForm_Load 
+[ gyh - 54 2023-09-18 월요일 12:56:33 842 ] MainForm -> MainForm_Shown 
+[ gyh - 54 2023-09-18 월요일 12:56:34 658 ] CameraControl -> CameraOpen 
+[ gyh - 54 2023-09-18 월요일 12:56:34 963 ] CameraControl -> open 
+[ gyh - 54 2023-09-18 월요일 12:56:35 004 ] ViewPage -> CreateBitmap 
+[ gyh - 54 2023-09-18 월요일 12:56:35 025 ] CameraControl -> SetEnableImageCallback 
+[ gyh - 54 2023-09-18 월요일 12:56:35 041 ] CameraControl -> Start 
+[ gyh - 54 2023-09-18 월요일 12:56:35 629 ] CameraControl -> CameraOpen 
+[ gyh - 54 2023-09-18 월요일 12:56:35 700 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gyh - 54 2023-09-18 월요일 12:56:35 700 ] CameraControl -> CameraOpen 
+[ gyh - 54 2023-09-18 월요일 12:56:35 723 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gyh - 54 2023-09-18 월요일 12:56:38 761 ] MainForm -> MainForm_FormClosing 
+[ gyh - 54 2023-09-18 월요일 12:56:38 771 ] ViewPage -> CameraClose 
+[ gyh - 54 2023-09-18 월요일 12:56:38 834 ] CameraControl -> Stop 
+[ gyh - 54 2023-09-18 월요일 12:56:38 906 ] CameraControl -> Close 
+[ gyh - 54 2023-09-18 월요일 12:56:38 933 ] CameraControl -> Stop 
+[ gyh - 54 2023-09-18 월요일 12:56:38 934 ] CameraControl -> Close 
+[ gyh - 54 2023-09-18 월요일 12:56:38 934 ] CameraControl -> Stop 
+[ gyh - 54 2023-09-18 월요일 12:56:38 934 ] CameraControl -> Close 
+[ gyh - 54 2023-09-18 월요일 12:56:39 056 ] CameraControl -> Finalize 
+[ gyh - 54 2023-09-18 월요일 12:56:39 057 ] CameraControl -> Close 
+[ gyh - 54 2023-09-18 월요일 12:56:39 063 ] CameraControl -> Finalize 
+[ gyh - 54 2023-09-18 월요일 12:56:39 063 ] CameraControl -> Close 
+[ gyh - 54 2023-09-18 월요일 12:56:39 063 ] CameraControl -> Finalize 
+[ gyh - 54 2023-09-18 월요일 12:56:39 063 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:56:43 823 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:56:43 892 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:56:44 077 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:56:44 364 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:56:45 138 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:45 174 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:56 050 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:56:56 119 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:56:56 320 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:56:56 630 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:56:57 155 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:57 198 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:58 300 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:56:58 632 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:56:59 422 ] XmlProcessing -> XMLSave 
+[ ht - 4 2023-09-18 월요일 12:56:59 423 ] 검사자 : ht & 검사장소 : 4 ==> 검사 시작
+[ ht - 4 2023-09-18 월요일 12:56:59 493 ] MainForm -> MainForm_Load 
+[ ht - 4 2023-09-18 월요일 12:57:02 911 ] MainForm -> MainForm_Shown 
+[ ht - 4 2023-09-18 월요일 12:57:03 602 ] CameraControl -> CameraOpen 
+[ ht - 4 2023-09-18 월요일 12:57:03 910 ] CameraControl -> open 
+[ ht - 4 2023-09-18 월요일 12:57:03 935 ] ViewPage -> CreateBitmap 
+[ ht - 4 2023-09-18 월요일 12:57:03 954 ] CameraControl -> SetEnableImageCallback 
+[ ht - 4 2023-09-18 월요일 12:57:03 966 ] CameraControl -> Start 
+[ ht - 4 2023-09-18 월요일 12:57:04 553 ] CameraControl -> CameraOpen 
+[ ht - 4 2023-09-18 월요일 12:57:04 731 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ht - 4 2023-09-18 월요일 12:57:04 732 ] CameraControl -> CameraOpen 
+[ ht - 4 2023-09-18 월요일 12:57:04 764 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ht - 4 2023-09-18 월요일 12:57:07 663 ] MainForm -> MainForm_FormClosing 
+[ ht - 4 2023-09-18 월요일 12:57:07 674 ] ViewPage -> CameraClose 
+[ ht - 4 2023-09-18 월요일 12:57:07 743 ] CameraControl -> Stop 
+[ ht - 4 2023-09-18 월요일 12:57:09 038 ] CameraControl -> Close 
+[ ht - 4 2023-09-18 월요일 12:57:09 050 ] CameraControl -> Stop 
+[ ht - 4 2023-09-18 월요일 12:57:09 050 ] CameraControl -> Close 
+[ ht - 4 2023-09-18 월요일 12:57:09 050 ] CameraControl -> Stop 
+[ ht - 4 2023-09-18 월요일 12:57:09 050 ] CameraControl -> Close 
+[ ht - 4 2023-09-18 월요일 12:57:09 130 ] CameraControl -> Finalize 
+[ ht - 4 2023-09-18 월요일 12:57:09 131 ] CameraControl -> Close 
+[ ht - 4 2023-09-18 월요일 12:57:09 137 ] CameraControl -> Finalize 
+[ ht - 4 2023-09-18 월요일 12:57:09 137 ] CameraControl -> Close 
+[ ht - 4 2023-09-18 월요일 12:57:09 137 ] CameraControl -> Finalize 
+[ ht - 4 2023-09-18 월요일 12:57:09 137 ] CameraControl -> Close 
+[ NoName 2023-09-18 월요일 12:57:16 263 ] 프로그램 시작
+[ NoName 2023-09-18 월요일 12:57:16 316 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-18 월요일 12:57:16 492 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-18 월요일 12:57:16 780 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-18 월요일 12:57:17 292 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:57:17 330 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:57:17 672 ] LoginForm -> InputCheck 
+[ NoName 2023-09-18 월요일 12:57:18 221 ] LoginForm -> Start_Click 
+[ NoName 2023-09-18 월요일 12:57:19 014 ] XmlProcessing -> XMLSave 
+[ gr - 4 2023-09-18 월요일 12:57:19 015 ] 검사자 : gr & 검사장소 : 4 ==> 검사 시작
+[ gr - 4 2023-09-18 월요일 12:57:19 079 ] MainForm -> MainForm_Load 
+[ gr - 4 2023-09-18 월요일 12:57:22 493 ] MainForm -> MainForm_Shown 
+[ gr - 4 2023-09-18 월요일 12:57:23 204 ] CameraControl -> CameraOpen 
+[ gr - 4 2023-09-18 월요일 12:57:23 469 ] CameraControl -> open 
+[ gr - 4 2023-09-18 월요일 12:57:23 512 ] ViewPage -> CreateBitmap 
+[ gr - 4 2023-09-18 월요일 12:57:23 525 ] CameraControl -> SetEnableImageCallback 
+[ gr - 4 2023-09-18 월요일 12:57:23 539 ] CameraControl -> Start 
+[ gr - 4 2023-09-18 월요일 12:57:24 137 ] CameraControl -> CameraOpen 
+[ gr - 4 2023-09-18 월요일 12:57:24 181 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gr - 4 2023-09-18 월요일 12:57:24 182 ] CameraControl -> CameraOpen 
+[ gr - 4 2023-09-18 월요일 12:57:24 206 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gr - 4 2023-09-18 월요일 12:57:27 048 ] MainForm -> MainForm_FormClosing 
+[ gr - 4 2023-09-18 월요일 12:57:27 066 ] ViewPage -> CameraClose 
+[ gr - 4 2023-09-18 월요일 12:57:27 199 ] CameraControl -> Stop 
+[ gr - 4 2023-09-18 월요일 12:57:28 495 ] CameraControl -> Close 
+[ gr - 4 2023-09-18 월요일 12:57:28 509 ] CameraControl -> Stop 
+[ gr - 4 2023-09-18 월요일 12:57:28 509 ] CameraControl -> Close 
+[ gr - 4 2023-09-18 월요일 12:57:28 509 ] CameraControl -> Stop 
+[ gr - 4 2023-09-18 월요일 12:57:28 509 ] CameraControl -> Close 
+[ gr - 4 2023-09-18 월요일 12:57:28 591 ] CameraControl -> Finalize 
+[ gr - 4 2023-09-18 월요일 12:57:28 591 ] CameraControl -> Close 
+[ gr - 4 2023-09-18 월요일 12:57:28 597 ] CameraControl -> Finalize 
+[ gr - 4 2023-09-18 월요일 12:57:28 598 ] CameraControl -> Close 
+[ gr - 4 2023-09-18 월요일 12:57:28 598 ] CameraControl -> Finalize 
+[ gr - 4 2023-09-18 월요일 12:57:28 598 ] CameraControl -> Close 
