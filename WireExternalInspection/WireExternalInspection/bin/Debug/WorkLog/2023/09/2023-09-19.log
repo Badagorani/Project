@@ -216,3 +216,623 @@
 [ ds - 3 2023-09-19 화요일 13:05:39 633 ] CameraControl -> Close 
 [ ds - 3 2023-09-19 화요일 13:05:39 633 ] CameraControl -> Finalize 
 [ ds - 3 2023-09-19 화요일 13:05:39 634 ] CameraControl -> Close 
+[ NoName 2023-09-19 화요일 15:36:49 194 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:36:49 348 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:36:49 757 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:36:50 052 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:36:50 645 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:36:50 763 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:36:51 221 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:36:51 395 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:36:51 685 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:36:52 470 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:36:52 471 ] XmlProcessing -> XMLSave 
+[ gg - 44 2023-09-19 화요일 15:36:52 476 ] 검사자 : gg & 검사장소 : 44 ==> 검사 시작
+[ gg - 44 2023-09-19 화요일 15:36:52 541 ] MainForm -> MainForm_Load 
+[ gg - 44 2023-09-19 화요일 15:36:52 544 ] MainForm -> SplashAction 
+[ gg - 44 2023-09-19 화요일 15:36:56 051 ] MainForm -> MainForm_Shown 
+[ gg - 44 2023-09-19 화요일 15:36:57 293 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-19 화요일 15:36:57 608 ] CameraControl -> open 
+[ gg - 44 2023-09-19 화요일 15:36:57 636 ] ViewPage -> CreateBitmap 
+[ gg - 44 2023-09-19 화요일 15:36:57 653 ] CameraControl -> SetEnableImageCallback 
+[ gg - 44 2023-09-19 화요일 15:36:57 665 ] CameraControl -> Start 
+[ gg - 44 2023-09-19 화요일 15:36:58 268 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-19 화요일 15:36:58 339 ] LogRecordProcessing -> CameraErrorCode 
+[ gg - 44 2023-09-19 화요일 15:36:58 340 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 44 2023-09-19 화요일 15:36:58 341 ] CameraControl -> CameraOpen 
+[ gg - 44 2023-09-19 화요일 15:36:58 365 ] LogRecordProcessing -> CameraErrorCode 
+[ gg - 44 2023-09-19 화요일 15:36:58 366 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ gg - 44 2023-09-19 화요일 15:37:00 958 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 44 2023-09-19 화요일 15:37:01 288 ] ViewPage -> SelectedView_Click 
+[ gg - 44 2023-09-19 화요일 15:37:01 290 ] ViewPage -> SelectedView_MouseUp 
+[ gg - 44 2023-09-19 화요일 15:37:01 944 ] ViewPage -> SelectedView_MouseDown 
+[ gg - 44 2023-09-19 화요일 15:37:02 076 ] ViewPage -> SelectedView_Click 
+[ gg - 44 2023-09-19 화요일 15:37:02 548 ] ViewPage -> SelectedView_MouseUp 
+[ gg - 44 2023-09-19 화요일 15:37:02 549 ] ViewPage -> RealPointDetecter 
+[ gg - 44 2023-09-19 화요일 15:37:02 550 ] ViewPage -> RealPointDetecter 
+[ gg - 44 2023-09-19 화요일 15:37:02 563 ] MainForm -> PageChange 
+[ gg - 44 2023-09-19 화요일 15:37:02 801 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ gg - 44 2023-09-19 화요일 15:37:02 817 ] AnalysisPage -> ImageChange 
+[ gg - 44 2023-09-19 화요일 15:37:02 836 ] AnalysisPage -> GaussianBlur 
+[ gg - 44 2023-09-19 화요일 15:37:09 464 ] AnalysisPage -> ViewBack_Click 
+[ gg - 44 2023-09-19 화요일 15:37:09 465 ] MainForm -> PageChange 
+[ gg - 44 2023-09-19 화요일 15:37:09 598 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ gg - 44 2023-09-19 화요일 15:37:25 331 ] MainForm -> MainForm_FormClosing 
+[ gg - 44 2023-09-19 화요일 15:37:25 347 ] ViewPage -> CameraClose 
+[ gg - 44 2023-09-19 화요일 15:37:25 351 ] CameraControl -> Stop 
+[ gg - 44 2023-09-19 화요일 15:37:26 622 ] CameraControl -> Close 
+[ gg - 44 2023-09-19 화요일 15:37:26 636 ] CameraControl -> Stop 
+[ gg - 44 2023-09-19 화요일 15:37:26 636 ] CameraControl -> Close 
+[ gg - 44 2023-09-19 화요일 15:37:26 636 ] CameraControl -> Stop 
+[ gg - 44 2023-09-19 화요일 15:37:26 636 ] CameraControl -> Close 
+[ gg - 44 2023-09-19 화요일 15:37:26 723 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-19 화요일 15:37:26 724 ] CameraControl -> Close 
+[ gg - 44 2023-09-19 화요일 15:37:26 733 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-19 화요일 15:37:26 733 ] CameraControl -> Close 
+[ gg - 44 2023-09-19 화요일 15:37:26 734 ] CameraControl -> Finalize 
+[ gg - 44 2023-09-19 화요일 15:37:26 734 ] CameraControl -> Close 
+[ NoName 2023-09-19 화요일 15:46:44 972 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:46:45 076 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:46:45 378 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:46:45 723 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:46:46 295 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:46:46 411 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:46:47 027 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:46:47 171 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:46:47 573 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:46:48 359 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:46:48 360 ] XmlProcessing -> XMLSave 
+[ ff - 44 2023-09-19 화요일 15:46:48 362 ] 검사자 : ff & 검사장소 : 44 ==> 검사 시작
+[ ff - 44 2023-09-19 화요일 15:46:48 462 ] MainForm -> MainForm_Load 
+[ ff - 44 2023-09-19 화요일 15:46:48 465 ] MainForm -> SplashAction 
+[ ff - 44 2023-09-19 화요일 15:46:51 995 ] MainForm -> MainForm_Shown 
+[ ff - 44 2023-09-19 화요일 15:46:52 949 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-19 화요일 15:46:53 230 ] CameraControl -> open 
+[ ff - 44 2023-09-19 화요일 15:46:53 267 ] ViewPage -> CreateBitmap 
+[ ff - 44 2023-09-19 화요일 15:46:53 283 ] CameraControl -> SetEnableImageCallback 
+[ ff - 44 2023-09-19 화요일 15:46:53 300 ] CameraControl -> Start 
+[ ff - 44 2023-09-19 화요일 15:46:53 901 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-19 화요일 15:46:53 983 ] LogRecordProcessing -> CameraErrorCode 
+[ ff - 44 2023-09-19 화요일 15:46:53 984 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-19 화요일 15:46:53 984 ] CameraControl -> CameraOpen 
+[ ff - 44 2023-09-19 화요일 15:46:54 009 ] LogRecordProcessing -> CameraErrorCode 
+[ ff - 44 2023-09-19 화요일 15:46:54 010 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 44 2023-09-19 화요일 15:46:59 176 ] MainForm -> MainForm_FormClosing 
+[ ff - 44 2023-09-19 화요일 15:46:59 195 ] ViewPage -> CameraClose 
+[ ff - 44 2023-09-19 화요일 15:46:59 440 ] CameraControl -> Stop 
+[ ff - 44 2023-09-19 화요일 15:46:59 498 ] CameraControl -> Close 
+[ ff - 44 2023-09-19 화요일 15:46:59 512 ] CameraControl -> Stop 
+[ ff - 44 2023-09-19 화요일 15:46:59 512 ] CameraControl -> Close 
+[ ff - 44 2023-09-19 화요일 15:46:59 512 ] CameraControl -> Stop 
+[ ff - 44 2023-09-19 화요일 15:46:59 513 ] CameraControl -> Close 
+[ ff - 44 2023-09-19 화요일 15:46:59 633 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-19 화요일 15:46:59 633 ] CameraControl -> Close 
+[ ff - 44 2023-09-19 화요일 15:46:59 640 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-19 화요일 15:46:59 640 ] CameraControl -> Close 
+[ ff - 44 2023-09-19 화요일 15:46:59 641 ] CameraControl -> Finalize 
+[ ff - 44 2023-09-19 화요일 15:46:59 641 ] CameraControl -> Close 
+[ NoName 2023-09-19 화요일 15:47:33 699 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:47:33 757 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:47:33 975 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:47:34 247 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:47:34 666 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:47:34 693 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:47:34 716 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:47:35 099 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:47:35 540 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:47:36 324 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:47:36 325 ] XmlProcessing -> XMLSave 
+[ fds - 3 2023-09-19 화요일 15:47:36 326 ] 검사자 : fds & 검사장소 : 3 ==> 검사 시작
+[ fds - 3 2023-09-19 화요일 15:47:36 383 ] MainForm -> MainForm_Load 
+[ fds - 3 2023-09-19 화요일 15:47:36 386 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 15:55:59 443 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:55:59 518 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:55:59 740 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:56:00 003 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:56:00 446 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:00 562 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:00 876 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:01 303 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:56:02 108 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:56:02 109 ] XmlProcessing -> XMLSave 
+[ ff - 3 2023-09-19 화요일 15:56:02 110 ] 검사자 : ff & 검사장소 : 3 ==> 검사 시작
+[ ff - 3 2023-09-19 화요일 15:56:02 174 ] MainForm -> MainForm_Load 
+[ ff - 3 2023-09-19 화요일 15:56:02 179 ] MainForm -> SplashAction 
+[ ff - 3 2023-09-19 화요일 15:56:23 858 ] MainForm -> MainForm_Shown 
+[ ff - 3 2023-09-19 화요일 15:56:25 098 ] CameraControl -> CameraOpen 
+[ ff - 3 2023-09-19 화요일 15:56:25 371 ] CameraControl -> open 
+[ ff - 3 2023-09-19 화요일 15:56:25 414 ] ViewPage -> CreateBitmap 
+[ ff - 3 2023-09-19 화요일 15:56:25 438 ] CameraControl -> SetEnableImageCallback 
+[ ff - 3 2023-09-19 화요일 15:56:25 454 ] CameraControl -> Start 
+[ ff - 3 2023-09-19 화요일 15:56:26 063 ] CameraControl -> CameraOpen 
+[ ff - 3 2023-09-19 화요일 15:56:26 135 ] LogRecordProcessing -> CameraErrorCode 
+[ ff - 3 2023-09-19 화요일 15:56:26 136 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 3 2023-09-19 화요일 15:56:26 136 ] CameraControl -> CameraOpen 
+[ ff - 3 2023-09-19 화요일 15:56:26 157 ] LogRecordProcessing -> CameraErrorCode 
+[ ff - 3 2023-09-19 화요일 15:56:26 158 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ff - 3 2023-09-19 화요일 15:56:28 492 ] MainForm -> MainForm_FormClosing 
+[ ff - 3 2023-09-19 화요일 15:56:28 502 ] ViewPage -> CameraClose 
+[ ff - 3 2023-09-19 화요일 15:56:28 648 ] CameraControl -> Stop 
+[ ff - 3 2023-09-19 화요일 15:56:28 772 ] CameraControl -> Close 
+[ ff - 3 2023-09-19 화요일 15:56:28 799 ] CameraControl -> Stop 
+[ ff - 3 2023-09-19 화요일 15:56:28 799 ] CameraControl -> Close 
+[ ff - 3 2023-09-19 화요일 15:56:28 799 ] CameraControl -> Stop 
+[ ff - 3 2023-09-19 화요일 15:56:28 799 ] CameraControl -> Close 
+[ ff - 3 2023-09-19 화요일 15:56:28 919 ] CameraControl -> Finalize 
+[ ff - 3 2023-09-19 화요일 15:56:28 920 ] CameraControl -> Close 
+[ ff - 3 2023-09-19 화요일 15:56:28 933 ] CameraControl -> Finalize 
+[ ff - 3 2023-09-19 화요일 15:56:28 933 ] CameraControl -> Close 
+[ ff - 3 2023-09-19 화요일 15:56:28 934 ] CameraControl -> Finalize 
+[ ff - 3 2023-09-19 화요일 15:56:28 934 ] CameraControl -> Close 
+[ NoName 2023-09-19 화요일 15:56:35 069 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:56:35 151 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:56:35 370 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:56:35 628 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:56:36 117 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:36 123 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:36 125 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:36 501 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:36 563 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:37 299 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:37 451 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:37 961 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:56:38 756 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:56:38 757 ] XmlProcessing -> XMLSave 
+[ 987.m - kj 2023-09-19 화요일 15:56:38 758 ] 검사자 : 987.m & 검사장소 : kj ==> 검사 시작
+[ 987.m - kj 2023-09-19 화요일 15:56:38 841 ] MainForm -> MainForm_Load 
+[ 987.m - kj 2023-09-19 화요일 15:56:38 845 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 15:56:58 811 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:56:58 882 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:56:59 067 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:56:59 316 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:56:59 829 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:59 868 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:56:59 899 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:57:00 425 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:57:00 759 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:57:01 543 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:57:01 544 ] XmlProcessing -> XMLSave 
+[ fds - 3 2023-09-19 화요일 15:57:01 545 ] 검사자 : fds & 검사장소 : 3 ==> 검사 시작
+[ fds - 3 2023-09-19 화요일 15:57:01 607 ] MainForm -> MainForm_Load 
+[ fds - 3 2023-09-19 화요일 15:57:01 612 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 15:57:15 219 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:57:15 292 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:57:15 489 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:57:15 754 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:57:16 653 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:57:16 990 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:57:17 442 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:57:18 225 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:57:18 226 ] XmlProcessing -> XMLSave 
+[ d - 3 2023-09-19 화요일 15:57:18 227 ] 검사자 : d & 검사장소 : 3 ==> 검사 시작
+[ d - 3 2023-09-19 화요일 15:57:18 287 ] MainForm -> MainForm_Load 
+[ d - 3 2023-09-19 화요일 15:57:18 291 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 15:59:38 991 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:59:39 077 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:59:39 372 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:59:39 583 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:59:40 094 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:40 229 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:40 538 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:40 892 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:59:41 675 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:59:41 676 ] XmlProcessing -> XMLSave 
+[ ff - 3 2023-09-19 화요일 15:59:41 677 ] 검사자 : ff & 검사장소 : 3 ==> 검사 시작
+[ ff - 3 2023-09-19 화요일 15:59:41 742 ] MainForm -> MainForm_Load 
+[ ff - 3 2023-09-19 화요일 15:59:41 744 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 15:59:53 095 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 15:59:53 177 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 15:59:53 406 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 15:59:53 666 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 15:59:54 135 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:54 274 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:54 691 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 15:59:55 288 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 15:59:56 081 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 15:59:56 081 ] XmlProcessing -> XMLSave 
+[ ff - , 2023-09-19 화요일 15:59:56 083 ] 검사자 : ff & 검사장소 : , ==> 검사 시작
+[ ff - , 2023-09-19 화요일 15:59:56 150 ] MainForm -> MainForm_Load 
+[ ff - , 2023-09-19 화요일 15:59:56 157 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:04:01 080 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:04:01 156 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:04:01 384 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:04:01 684 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:04:02 161 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:04:02 289 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:04:02 642 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:04:03 091 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:04:03 895 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:04:03 897 ] XmlProcessing -> XMLSave 
+[ dd - 2 2023-09-19 화요일 16:04:03 899 ] 검사자 : dd & 검사장소 : 2 ==> 검사 시작
+[ dd - 2 2023-09-19 화요일 16:04:03 963 ] MainForm -> MainForm_Load 
+[ dd - 2 2023-09-19 화요일 16:04:03 967 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:05:41 828 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:05:41 908 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:05:42 142 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:05:42 430 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:05:43 172 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:05:43 177 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:05:43 219 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:05:43 706 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:05:44 281 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:05:45 075 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:05:45 075 ] XmlProcessing -> XMLSave 
+[ zxc - t 2023-09-19 화요일 16:05:45 076 ] 검사자 : zxc & 검사장소 : t ==> 검사 시작
+[ zxc - t 2023-09-19 화요일 16:05:45 145 ] MainForm -> MainForm_Load 
+[ zxc - t 2023-09-19 화요일 16:05:45 148 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:06:04 522 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:06:04 598 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:06:04 814 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:06:05 105 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:06:05 724 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:05 772 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:06 193 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:06 563 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:06:07 346 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:06:07 347 ] XmlProcessing -> XMLSave 
+[ ds - 2 2023-09-19 화요일 16:06:07 353 ] 검사자 : ds & 검사장소 : 2 ==> 검사 시작
+[ ds - 2 2023-09-19 화요일 16:06:07 412 ] MainForm -> MainForm_Load 
+[ ds - 2 2023-09-19 화요일 16:06:07 415 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:06:36 461 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:06:36 545 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:06:36 803 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:06:37 118 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:06:37 828 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:37 833 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:37 837 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:38 394 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:06:39 169 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:06:39 966 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:06:39 967 ] XmlProcessing -> XMLSave 
+[ ,mn - 6 2023-09-19 화요일 16:06:39 968 ] 검사자 : ,mn & 검사장소 : 6 ==> 검사 시작
+[ ,mn - 6 2023-09-19 화요일 16:06:40 042 ] MainForm -> MainForm_Load 
+[ ,mn - 6 2023-09-19 화요일 16:06:40 045 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:07:00 782 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:07:00 858 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:07:01 086 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:07:01 360 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:07:01 854 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:07:01 873 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:07:01 899 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:07:02 257 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:07:02 660 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:07:03 440 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:07:03 441 ] XmlProcessing -> XMLSave 
+[ fds - 5 2023-09-19 화요일 16:07:03 442 ] 검사자 : fds & 검사장소 : 5 ==> 검사 시작
+[ fds - 5 2023-09-19 화요일 16:07:03 515 ] MainForm -> MainForm_Load 
+[ fds - 5 2023-09-19 화요일 16:07:03 519 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:08:01 408 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:08:01 494 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:08:01 737 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:08:02 063 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:08:02 552 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:02 578 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:02 601 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:03 003 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:03 359 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:08:04 157 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:08:04 157 ] XmlProcessing -> XMLSave 
+[ fds - 3 2023-09-19 화요일 16:08:04 159 ] 검사자 : fds & 검사장소 : 3 ==> 검사 시작
+[ fds - 3 2023-09-19 화요일 16:08:04 222 ] MainForm -> MainForm_Load 
+[ fds - 3 2023-09-19 화요일 16:08:04 225 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:08:37 382 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:08:37 455 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:08:37 655 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:08:37 907 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:08:38 803 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:38 908 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:39 002 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:39 225 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:40 074 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:40 096 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:08:40 460 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:08:41 246 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:08:41 247 ] XmlProcessing -> XMLSave 
+[ m.mj - 65 2023-09-19 화요일 16:08:41 248 ] 검사자 : m.mj & 검사장소 : 65 ==> 검사 시작
+[ m.mj - 65 2023-09-19 화요일 16:08:41 328 ] MainForm -> MainForm_Load 
+[ m.mj - 65 2023-09-19 화요일 16:08:41 331 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:09:51 986 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:09:52 059 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:09:52 253 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:09:52 510 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:09:53 041 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:09:53 730 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:09:54 192 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:09:54 975 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:09:54 976 ] XmlProcessing -> XMLSave 
+[ d - 3 2023-09-19 화요일 16:09:54 977 ] 검사자 : d & 검사장소 : 3 ==> 검사 시작
+[ d - 3 2023-09-19 화요일 16:09:55 045 ] MainForm -> MainForm_Load 
+[ d - 3 2023-09-19 화요일 16:09:55 048 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:10:08 962 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:10:09 038 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:10:09 219 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:10:09 489 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:12:28 364 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:12:28 447 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:12:28 653 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:12:28 942 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:12:29 345 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:12:29 354 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:12:29 360 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:12:29 915 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:12:30 317 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:12:31 124 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:12:31 124 ] XmlProcessing -> XMLSave 
+[ cvb - r 2023-09-19 화요일 16:12:31 125 ] 검사자 : cvb & 검사장소 : r ==> 검사 시작
+[ cvb - r 2023-09-19 화요일 16:12:31 187 ] MainForm -> MainForm_Load 
+[ cvb - r 2023-09-19 화요일 16:12:31 194 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:13:03 164 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:13:03 219 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:13:03 433 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:13:03 701 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:13:04 076 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:04 105 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:04 467 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:04 794 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:13:05 580 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:13:05 581 ] XmlProcessing -> XMLSave 
+[ fe - 3 2023-09-19 화요일 16:13:05 582 ] 검사자 : fe & 검사장소 : 3 ==> 검사 시작
+[ fe - 3 2023-09-19 화요일 16:13:05 649 ] MainForm -> MainForm_Load 
+[ fe - 3 2023-09-19 화요일 16:13:05 651 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:13:31 363 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:13:31 433 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:13:31 628 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:13:31 879 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:13:32 549 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:32 552 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:32 568 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:33 142 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:33 152 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:33 328 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:13:33 767 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:13:34 561 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:13:34 561 ] XmlProcessing -> XMLSave 
+[ cvb - 434 2023-09-19 화요일 16:13:34 563 ] 검사자 : cvb & 검사장소 : 434 ==> 검사 시작
+[ cvb - 434 2023-09-19 화요일 16:13:34 628 ] MainForm -> MainForm_Load 
+[ cvb - 434 2023-09-19 화요일 16:13:34 633 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:20:46 994 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:20:47 071 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:20:47 299 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:20:47 582 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:20:47 793 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:20:47 947 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:20:48 577 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:20:48 738 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:20:48 920 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:20:49 713 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:20:49 715 ] XmlProcessing -> XMLSave 
+[ dd - 44 2023-09-19 화요일 16:20:49 716 ] 검사자 : dd & 검사장소 : 44 ==> 검사 시작
+[ dd - 44 2023-09-19 화요일 16:20:49 794 ] MainForm -> MainForm_Load 
+[ dd - 44 2023-09-19 화요일 16:20:49 800 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:21:12 409 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:21:12 480 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:21:12 697 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:21:12 962 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:21:13 679 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:13 683 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:13 738 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:13 827 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:14 405 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:14 425 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:14 555 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:14 568 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:14 878 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:21:15 660 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:21:15 661 ] XmlProcessing -> XMLSave 
+[ fdsf - 4343 2023-09-19 화요일 16:21:15 662 ] 검사자 : fdsf & 검사장소 : 4343 ==> 검사 시작
+[ fdsf - 4343 2023-09-19 화요일 16:21:15 736 ] MainForm -> MainForm_Load 
+[ fdsf - 4343 2023-09-19 화요일 16:21:15 741 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:21:37 055 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:21:37 134 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:21:37 357 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:21:37 642 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:21:38 060 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:38 098 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:38 122 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:38 521 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:38 537 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:21:38 892 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:21:39 681 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:21:39 682 ] XmlProcessing -> XMLSave 
+[ fds - 43 2023-09-19 화요일 16:21:39 683 ] 검사자 : fds & 검사장소 : 43 ==> 검사 시작
+[ fds - 43 2023-09-19 화요일 16:21:39 755 ] MainForm -> MainForm_Load 
+[ fds - 43 2023-09-19 화요일 16:21:39 758 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:22:11 814 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:22:11 888 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:22:12 122 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:22:12 410 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:22:12 855 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:22:13 002 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:22:13 425 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:22:13 759 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:22:14 532 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:22:14 533 ] XmlProcessing -> XMLSave 
+[ dd - 3 2023-09-19 화요일 16:22:14 534 ] 검사자 : dd & 검사장소 : 3 ==> 검사 시작
+[ dd - 3 2023-09-19 화요일 16:22:14 605 ] MainForm -> MainForm_Load 
+[ dd - 3 2023-09-19 화요일 16:22:14 608 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:24:05 482 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:24:05 571 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:24:05 820 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:24:06 106 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:24:06 473 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:06 607 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:06 889 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:07 348 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:24:08 131 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:24:08 133 ] XmlProcessing -> XMLSave 
+[ gg - 4 2023-09-19 화요일 16:24:08 133 ] 검사자 : gg & 검사장소 : 4 ==> 검사 시작
+[ gg - 4 2023-09-19 화요일 16:24:08 202 ] MainForm -> MainForm_Load 
+[ gg - 4 2023-09-19 화요일 16:24:08 205 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:24:17 874 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:24:17 946 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:24:18 135 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:24:18 400 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:24:18 843 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:18 978 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:19 288 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:20 299 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:20 583 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:24:20 982 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:24:21 769 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:24:21 770 ] XmlProcessing -> XMLSave 
+[ ff3 - 33 2023-09-19 화요일 16:24:21 771 ] 검사자 : ff3 & 검사장소 : 33 ==> 검사 시작
+[ ff3 - 33 2023-09-19 화요일 16:24:21 835 ] MainForm -> MainForm_Load 
+[ ff3 - 33 2023-09-19 화요일 16:24:21 838 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:26:00 588 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:26:00 650 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:26:00 860 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:26:01 117 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:26:02 003 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 122 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 144 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 161 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 257 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 828 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 857 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:02 952 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:03 016 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:03 079 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:03 388 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:26:04 160 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:26:04 161 ] XmlProcessing -> XMLSave 
+[ dsada - 54t54 2023-09-19 화요일 16:26:04 162 ] 검사자 : dsada & 검사장소 : 54t54 ==> 검사 시작
+[ dsada - 54t54 2023-09-19 화요일 16:26:04 234 ] MainForm -> MainForm_Load 
+[ dsada - 54t54 2023-09-19 화요일 16:26:04 238 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:26:19 441 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:26:19 505 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:26:19 746 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:26:19 992 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:26:20 460 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:20 531 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:20 561 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:20 647 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:20 703 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:20 720 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:21 315 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:21 329 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:21 355 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:21 936 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:26:22 722 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:26:22 724 ] XmlProcessing -> XMLSave 
+[ fewfew - gfd 2023-09-19 화요일 16:26:22 724 ] 검사자 : fewfew & 검사장소 : gfd ==> 검사 시작
+[ fewfew - gfd 2023-09-19 화요일 16:26:22 792 ] MainForm -> MainForm_Load 
+[ fewfew - gfd 2023-09-19 화요일 16:26:22 796 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:26:35 933 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:26:36 005 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:26:36 201 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:26:36 442 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:26:36 868 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:36 871 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:36 906 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:37 626 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:37 640 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:37 739 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:38 144 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:26:38 936 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:26:38 937 ] XmlProcessing -> XMLSave 
+[ gfd - 564 2023-09-19 화요일 16:26:38 938 ] 검사자 : gfd & 검사장소 : 564 ==> 검사 시작
+[ gfd - 564 2023-09-19 화요일 16:26:39 007 ] MainForm -> MainForm_Load 
+[ gfd - 564 2023-09-19 화요일 16:26:39 010 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:26:51 702 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:26:51 779 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:26:51 988 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:26:52 217 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:26:52 666 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:52 671 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:52 706 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:53 240 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:53 307 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:53 351 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:26:53 816 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:26:54 602 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:26:54 603 ] XmlProcessing -> XMLSave 
+[ sdf - f50 2023-09-19 화요일 16:26:54 604 ] 검사자 : sdf & 검사장소 : f50 ==> 검사 시작
+[ sdf - f50 2023-09-19 화요일 16:26:54 671 ] MainForm -> MainForm_Load 
+[ sdf - f50 2023-09-19 화요일 16:26:54 673 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:27:17 292 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:27:17 354 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:27:17 584 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:27:17 846 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:27:18 283 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:18 353 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:18 375 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:18 825 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:18 841 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:18 986 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:19 391 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:27:20 174 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:27:20 175 ] XmlProcessing -> XMLSave 
+[ fds - 432 2023-09-19 화요일 16:27:20 175 ] 검사자 : fds & 검사장소 : 432 ==> 검사 시작
+[ fds - 432 2023-09-19 화요일 16:27:20 241 ] MainForm -> MainForm_Load 
+[ fds - 432 2023-09-19 화요일 16:27:20 246 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:27:40 464 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:27:40 674 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:27:40 924 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:27:41 155 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:27:41 573 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:41 576 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:41 593 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:42 138 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:42 151 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:27:42 542 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:27:43 323 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:27:43 324 ] XmlProcessing -> XMLSave 
+[ fsd - 05 2023-09-19 화요일 16:27:43 325 ] 검사자 : fsd & 검사장소 : 05 ==> 검사 시작
+[ fsd - 05 2023-09-19 화요일 16:27:43 418 ] MainForm -> MainForm_Load 
+[ fsd - 05 2023-09-19 화요일 16:27:43 421 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:28:04 495 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:28:04 580 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:28:04 787 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:28:05 007 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:28:05 586 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:28:05 593 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:28:05 608 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:28:06 022 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:28:06 421 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:28:07 197 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:28:07 198 ] XmlProcessing -> XMLSave 
+[ fds - 4 2023-09-19 화요일 16:28:07 198 ] 검사자 : fds & 검사장소 : 4 ==> 검사 시작
+[ fds - 4 2023-09-19 화요일 16:28:07 271 ] MainForm -> MainForm_Load 
+[ fds - 4 2023-09-19 화요일 16:28:07 276 ] MainForm -> SplashAction 
+[ NoName 2023-09-19 화요일 16:30:04 454 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 16:30:04 533 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 16:30:04 747 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 16:30:05 005 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 16:30:05 674 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:05 680 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:05 744 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:06 239 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:06 264 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:06 384 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 16:30:06 841 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 16:30:07 623 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 16:30:07 624 ] XmlProcessing -> XMLSave 
+[ sdf - 32r 2023-09-19 화요일 16:30:07 625 ] 검사자 : sdf & 검사장소 : 32r ==> 검사 시작
+[ sdf - 32r 2023-09-19 화요일 16:30:07 691 ] MainForm -> MainForm_Load 
+[ sdf - 32r 2023-09-19 화요일 16:30:07 693 ] MainForm -> SplashAction 
+[ sdf - 32r 2023-09-19 화요일 16:30:11 118 ] MainForm -> MainForm_Shown 
+[ sdf - 32r 2023-09-19 화요일 16:30:12 574 ] CameraControl -> CameraOpen 
+[ sdf - 32r 2023-09-19 화요일 16:30:12 893 ] CameraControl -> open 
+[ sdf - 32r 2023-09-19 화요일 16:30:12 944 ] ViewPage -> CreateBitmap 
+[ sdf - 32r 2023-09-19 화요일 16:30:12 956 ] CameraControl -> SetEnableImageCallback 
+[ sdf - 32r 2023-09-19 화요일 16:30:12 967 ] CameraControl -> Start 
+[ sdf - 32r 2023-09-19 화요일 16:30:13 574 ] CameraControl -> CameraOpen 
+[ sdf - 32r 2023-09-19 화요일 16:30:13 636 ] LogRecordProcessing -> CameraErrorCode 
+[ sdf - 32r 2023-09-19 화요일 16:30:13 637 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdf - 32r 2023-09-19 화요일 16:30:13 637 ] CameraControl -> CameraOpen 
+[ sdf - 32r 2023-09-19 화요일 16:30:13 659 ] LogRecordProcessing -> CameraErrorCode 
+[ sdf - 32r 2023-09-19 화요일 16:30:13 660 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ sdf - 32r 2023-09-19 화요일 16:30:19 699 ] MainForm -> MainForm_FormClosing 
+[ sdf - 32r 2023-09-19 화요일 16:30:19 714 ] ViewPage -> CameraClose 
+[ sdf - 32r 2023-09-19 화요일 16:30:19 937 ] CameraControl -> Stop 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 261 ] CameraControl -> Close 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 273 ] CameraControl -> Stop 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 273 ] CameraControl -> Close 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 273 ] CameraControl -> Stop 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 273 ] CameraControl -> Close 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 350 ] CameraControl -> Finalize 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 351 ] CameraControl -> Close 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 359 ] CameraControl -> Finalize 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 360 ] CameraControl -> Close 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 364 ] CameraControl -> Finalize 
+[ sdf - 32r 2023-09-19 화요일 16:30:20 364 ] CameraControl -> Close 

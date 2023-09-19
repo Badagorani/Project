@@ -1171,8 +1171,8 @@ namespace WireExternalInspection
 			{
 				if (e.Button == MouseButtons.Left)
 				{
-					tooltip.SetToolTip(pb_SelectedView, "시작좌표X : " + istartX + "\n시작좌표Y : " + istartY
-					+ "\n끝 좌 표 X : " + iendX + "\n끝 좌 표 Y : " + iendY + "\n너비 : " + iRectangleArea);
+					//tooltip.SetToolTip(pb_SelectedView, "시작좌표X : " + istartX + "\n시작좌표Y : " + istartY
+					//+ "\n끝 좌 표 X : " + iendX + "\n끝 좌 표 Y : " + iendY + "\n넓이 : " + iRectangleArea);
 					if (iRectangleArea > 0)
 					{
 						//pb_SelectedView.AddControl(film);

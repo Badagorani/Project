@@ -112,9 +112,7 @@ C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\Wir
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.MainForm.resources
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.LoginForm.resources
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.Properties.Resources.resources
-C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.SettingsPage.resources
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.ViewPage.resources
-C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.XtraUserControl1.resources
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.csproj.GenerateResource.cache
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.exe.licenses
 C:\Users\김태현\Documents\최동규_세인\Project\WireExternalInspection\WireExternalInspection\obj\Debug\WireExternalInspection.csproj.CoreCompileInputs.cache

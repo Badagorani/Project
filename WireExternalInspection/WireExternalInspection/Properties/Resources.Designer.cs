@@ -181,6 +181,36 @@ namespace WireExternalInspection.Properties {
         }
         
         /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage KISRI_CI_BLACK {
+            get {
+                object obj = ResourceManager.GetObject("KISRI_CI_BLACK", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage KISRI_CI_WHITE_Transparent {
+            get {
+                object obj = ResourceManager.GetObject("KISRI_CI_WHITE_Transparent", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   DevExpress.Utils.Svg.SvgImage 형식의 지역화된 리소스를 찾습니다.
+        /// </summary>
+        internal static DevExpress.Utils.Svg.SvgImage KISRI_CI2 {
+            get {
+                object obj = ResourceManager.GetObject("KISRI_CI2", resourceCulture);
+                return ((DevExpress.Utils.Svg.SvgImage)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
         internal static System.Drawing.Bitmap Lens {

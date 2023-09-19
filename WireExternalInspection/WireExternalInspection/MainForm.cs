@@ -28,7 +28,6 @@ namespace WireExternalInspection
 		public ViewPage viewpage;
 		public AnalysisPage analysispage;
 		public Bitmap analysisbitmap;
-		public SettingsPage settingspage;
 		public int NowPageNo = 0;
 		public int PastPageNo = 0;
 
@@ -38,22 +37,23 @@ namespace WireExternalInspection
 			FluentSplashScreenOptions op = new FluentSplashScreenOptions();
 			if (message.Equals(""))
 			{
-				op.AppearanceTitle.ForeColor = Color.Black;
+				//op.AppearanceTitle.ForeColor = Color.Black;
 				op.AppearanceTitle.Font = new Font("맑은 고딕", 30);
-				op.AppearanceSubtitle.ForeColor = Color.Black;
+				//op.AppearanceSubtitle.ForeColor = Color.Black;
 				op.AppearanceSubtitle.Font = new Font("맑은 고딕", 18);
-				op.AppearanceRightFooter.ForeColor = Color.Black;
+				//op.AppearanceRightFooter.ForeColor = Color.Black;
 				op.AppearanceRightFooter.Font = new Font("맑은 고딕", 10);
-				op.AppearanceLeftFooter.ForeColor = Color.Black;
+				//op.AppearanceLeftFooter.ForeColor = Color.Black;
 				op.AppearanceLeftFooter.Font = new Font("맑은 고딕", 10);
 				op.Title = "와이어 외선 검사";
 				op.Subtitle = "Wire External Inspection";
 				op.RightFooter = "준비";
 				op.LeftFooter = "Copyrightⓒ 2023. Seinens Co.,Ltd.\nAll Rights reserved.";/*Copyright© 올바른 표기법은?*/
 				op.LoadingIndicatorType = FluentLoadingIndicatorType.Dots;
-				op.OpacityColor = Color.White;
-				op.Opacity = 255;
-				op.LogoImageOptions.SvgImage = Resources.KISRI_CI;
+				op.OpacityColor = Color.Black;
+				op.Opacity = 100;
+				op.LogoImageOptions.SvgImage = Resources.KISRI_CI_WHITE_Transparent;
+				op.LogoImageOptions.SvgImageSize = new Size(420, 90);
 				SplashScreenManager.ShowFluentSplashScreen(
 					op,
 					parentForm: this,
@@ -92,6 +92,7 @@ namespace WireExternalInspection
 			try
 			{
 				SplashShow();
+				Thread.Sleep(1000);
 				SplashShow("설정을 불러오는 중...");
 				Thread.Sleep(2000);
 				SplashShow("완료");

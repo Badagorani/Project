@@ -34,7 +34,6 @@
 			this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
 			this.ViewPage = new DevExpress.XtraBars.Navigation.NavigationPage();
 			this.AnalysisPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-			this.SettingsPage = new DevExpress.XtraBars.Navigation.NavigationPage();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
 			this.navigationFrame1.SuspendLayout();
@@ -83,14 +82,12 @@
 			// 
 			this.navigationFrame1.Controls.Add(this.ViewPage);
 			this.navigationFrame1.Controls.Add(this.AnalysisPage);
-			this.navigationFrame1.Controls.Add(this.SettingsPage);
 			this.navigationFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.navigationFrame1.Location = new System.Drawing.Point(0, 37);
 			this.navigationFrame1.Name = "navigationFrame1";
 			this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.ViewPage,
-            this.AnalysisPage,
-            this.SettingsPage});
+            this.AnalysisPage});
 			this.navigationFrame1.SelectedPage = this.ViewPage;
 			this.navigationFrame1.Size = new System.Drawing.Size(1798, 962);
 			this.navigationFrame1.TabIndex = 21;
@@ -106,11 +103,6 @@
 			// 
 			this.AnalysisPage.Name = "AnalysisPage";
 			this.AnalysisPage.Size = new System.Drawing.Size(1798, 962);
-			// 
-			// SettingsPage
-			// 
-			this.SettingsPage.Name = "SettingsPage";
-			this.SettingsPage.Size = new System.Drawing.Size(1798, 962);
 			// 
 			// MainForm
 			// 
@@ -145,7 +137,6 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
 		private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
 		private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-		private DevExpress.XtraBars.Navigation.NavigationPage SettingsPage;
 		public DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
 		public DevExpress.XtraBars.Navigation.NavigationPage ViewPage;
 		public DevExpress.XtraBars.Navigation.NavigationPage AnalysisPage;

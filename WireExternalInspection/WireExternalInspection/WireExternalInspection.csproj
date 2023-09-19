@@ -130,12 +130,6 @@
     <Compile Include="LogRecordProcessing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SettingsPage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SettingsPage.designer.cs">
-      <DependentUpon>SettingsPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewPage.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,12 +137,6 @@
       <DependentUpon>ViewPage.cs</DependentUpon>
     </Compile>
     <Compile Include="XmlProcessing.cs" />
-    <Compile Include="XtraUserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="XtraUserControl1.Designer.cs">
-      <DependentUpon>XtraUserControl1.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AnalysisPage.resx">
       <DependentUpon>AnalysisPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,14 +160,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SettingsPage.resx">
-      <DependentUpon>SettingsPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ViewPage.resx">
       <DependentUpon>ViewPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="XtraUserControl1.resx">
-      <DependentUpon>XtraUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -223,6 +205,9 @@
     <None Include="Resources\actions_arrow4left.svg" />
     <None Include="Resources\bo_report.svg" />
     <None Include="Resources\KISRI_CI.svg" />
+    <None Include="Resources\KISRI_CI_BLACK.svg" />
+    <None Include="Resources\KISRI_CI_WHITE_Transparent.svg" />
+    <None Include="Resources\KISRI_CI2.svg" />
     <Content Include="Resources\lensico.ico" />
     <None Include="Resources\임시.png" />
     <None Include="Resources\와이어 외선 검사 로고.png" />
