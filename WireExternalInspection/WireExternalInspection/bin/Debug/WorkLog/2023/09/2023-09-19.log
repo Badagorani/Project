@@ -136,3 +136,83 @@
 [ dd - 3 2023-09-19 화요일 11:15:53 311 ] CameraControl -> Close 
 [ dd - 3 2023-09-19 화요일 11:15:53 311 ] CameraControl -> Finalize 
 [ dd - 3 2023-09-19 화요일 11:15:53 311 ] CameraControl -> Close 
+[ NoName 2023-09-19 화요일 13:04:33 782 ] 프로그램 시작
+[ NoName 2023-09-19 화요일 13:04:33 865 ] XmlProcessing -> XMLSave 
+[ NoName 2023-09-19 화요일 13:04:34 099 ] LoginForm -> LoginForm_Load 
+[ NoName 2023-09-19 화요일 13:04:34 385 ] LoginForm -> LoginForm_Shown 
+[ NoName 2023-09-19 화요일 13:04:38 137 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 13:04:38 141 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 13:04:38 691 ] LoginForm -> InputCheck 
+[ NoName 2023-09-19 화요일 13:04:39 136 ] LoginForm -> Start_Click 
+[ NoName 2023-09-19 화요일 13:04:39 923 ] LoginForm -> WorkSet 
+[ NoName 2023-09-19 화요일 13:04:39 924 ] XmlProcessing -> XMLSave 
+[ ds - 3 2023-09-19 화요일 13:04:39 925 ] 검사자 : ds & 검사장소 : 3 ==> 검사 시작
+[ ds - 3 2023-09-19 화요일 13:04:39 987 ] MainForm -> MainForm_Load 
+[ ds - 3 2023-09-19 화요일 13:04:39 990 ] MainForm -> SplashAction 
+[ ds - 3 2023-09-19 화요일 13:04:43 481 ] MainForm -> MainForm_Shown 
+[ ds - 3 2023-09-19 화요일 13:04:44 321 ] CameraControl -> CameraOpen 
+[ ds - 3 2023-09-19 화요일 13:04:44 621 ] CameraControl -> open 
+[ ds - 3 2023-09-19 화요일 13:04:44 650 ] ViewPage -> CreateBitmap 
+[ ds - 3 2023-09-19 화요일 13:04:44 667 ] CameraControl -> SetEnableImageCallback 
+[ ds - 3 2023-09-19 화요일 13:04:44 681 ] CameraControl -> Start 
+[ ds - 3 2023-09-19 화요일 13:04:45 264 ] CameraControl -> CameraOpen 
+[ ds - 3 2023-09-19 화요일 13:04:45 340 ] LogRecordProcessing -> CameraErrorCode 
+[ ds - 3 2023-09-19 화요일 13:04:45 340 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ds - 3 2023-09-19 화요일 13:04:45 341 ] CameraControl -> CameraOpen 
+[ ds - 3 2023-09-19 화요일 13:04:45 364 ] LogRecordProcessing -> CameraErrorCode 
+[ ds - 3 2023-09-19 화요일 13:04:45 365 ] CameraControl -> CameraOpen 원인을 알 수 없는 에러!
+[ ds - 3 2023-09-19 화요일 13:04:47 212 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:04:47 460 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:04:47 461 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:04:47 824 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:04:47 938 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:04:48 446 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:04:48 448 ] ViewPage -> RealPointDetecter 
+[ ds - 3 2023-09-19 화요일 13:04:48 449 ] ViewPage -> RealPointDetecter 
+[ ds - 3 2023-09-19 화요일 13:04:48 457 ] MainForm -> PageChange 
+[ ds - 3 2023-09-19 화요일 13:04:48 664 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ds - 3 2023-09-19 화요일 13:04:48 665 ] AnalysisPage -> ImageChange 
+[ ds - 3 2023-09-19 화요일 13:04:48 682 ] AnalysisPage -> GaussianBlur 
+[ ds - 3 2023-09-19 화요일 13:04:51 120 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 3 2023-09-19 화요일 13:04:55 063 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 3 2023-09-19 화요일 13:04:57 123 ] AnalysisPage -> ViewBack_Click 
+[ ds - 3 2023-09-19 화요일 13:04:57 123 ] MainForm -> PageChange 
+[ ds - 3 2023-09-19 화요일 13:04:57 233 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ds - 3 2023-09-19 화요일 13:05:19 676 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:05:20 427 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:05:20 427 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:05:21 612 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:05:21 707 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:05:21 707 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:05:22 727 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:05:23 457 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:05:23 458 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:05:23 862 ] ViewPage -> SelectedView_MouseDown 
+[ ds - 3 2023-09-19 화요일 13:05:23 993 ] ViewPage -> SelectedView_Click 
+[ ds - 3 2023-09-19 화요일 13:05:24 465 ] ViewPage -> SelectedView_MouseUp 
+[ ds - 3 2023-09-19 화요일 13:05:24 466 ] ViewPage -> RealPointDetecter 
+[ ds - 3 2023-09-19 화요일 13:05:24 466 ] ViewPage -> RealPointDetecter 
+[ ds - 3 2023-09-19 화요일 13:05:24 485 ] MainForm -> PageChange 
+[ ds - 3 2023-09-19 화요일 13:05:24 586 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ds - 3 2023-09-19 화요일 13:05:24 586 ] AnalysisPage -> ImageChange 
+[ ds - 3 2023-09-19 화요일 13:05:24 606 ] AnalysisPage -> GaussianBlur 
+[ ds - 3 2023-09-19 화요일 13:05:26 465 ] AnalysisPage -> ButtonFilter_Click 
+[ ds - 3 2023-09-19 화요일 13:05:26 472 ] AnalysisPage -> OptionTrackBarChanged 
+[ ds - 3 2023-09-19 화요일 13:05:26 494 ] AnalysisPage -> OptionTrackBarChanged 
+[ ds - 3 2023-09-19 화요일 13:05:31 537 ] AnalysisPage -> ViewBack_Click 
+[ ds - 3 2023-09-19 화요일 13:05:31 538 ] MainForm -> PageChange 
+[ ds - 3 2023-09-19 화요일 13:05:31 650 ] MainForm -> navigationFrame1_SelectedPageChanged 
+[ ds - 3 2023-09-19 화요일 13:05:38 257 ] MainForm -> MainForm_FormClosing 
+[ ds - 3 2023-09-19 화요일 13:05:38 267 ] ViewPage -> CameraClose 
+[ ds - 3 2023-09-19 화요일 13:05:38 269 ] CameraControl -> Stop 
+[ ds - 3 2023-09-19 화요일 13:05:39 536 ] CameraControl -> Close 
+[ ds - 3 2023-09-19 화요일 13:05:39 547 ] CameraControl -> Stop 
+[ ds - 3 2023-09-19 화요일 13:05:39 547 ] CameraControl -> Close 
+[ ds - 3 2023-09-19 화요일 13:05:39 547 ] CameraControl -> Stop 
+[ ds - 3 2023-09-19 화요일 13:05:39 547 ] CameraControl -> Close 
+[ ds - 3 2023-09-19 화요일 13:05:39 626 ] CameraControl -> Finalize 
+[ ds - 3 2023-09-19 화요일 13:05:39 626 ] CameraControl -> Close 
+[ ds - 3 2023-09-19 화요일 13:05:39 633 ] CameraControl -> Finalize 
+[ ds - 3 2023-09-19 화요일 13:05:39 633 ] CameraControl -> Close 
+[ ds - 3 2023-09-19 화요일 13:05:39 633 ] CameraControl -> Finalize 
+[ ds - 3 2023-09-19 화요일 13:05:39 634 ] CameraControl -> Close 

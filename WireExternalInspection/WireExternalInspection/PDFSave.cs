@@ -81,6 +81,7 @@ namespace WireExternalInspection
 				document.Close();
 				mainform.ShowMessage("저장 중...", pdfSaveFolderPath + "\n저장되었습니다!", "알림");
 				#endregion
+
 				#region XtraReport 사용 PDF 저장 - 사용하지 않음
 				//XtraReport1 report = new XtraReport1();
 				//PdfExportOptions pdfOptions = report.ExportOptions.Pdf;
