@@ -34,9 +34,9 @@
 			this.pb_Image1 = new System.Windows.Forms.PictureBox();
 			this.pb_Image2 = new System.Windows.Forms.PictureBox();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-			this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
 			this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
 			this.rtb_AnalysisContent = new System.Windows.Forms.RichTextBox();
+			this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Image1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pb_Image2)).BeginInit();
@@ -112,32 +112,17 @@
 			this.labelControl1.TabIndex = 11;
 			this.labelControl1.Text = "분석 내용  :";
 			// 
-			// btn_Save
-			// 
-			this.btn_Save.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20F, System.Drawing.FontStyle.Bold);
-			this.btn_Save.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.btn_Save.Appearance.Options.UseFont = true;
-			this.btn_Save.Appearance.Options.UseForeColor = true;
-			this.btn_Save.Location = new System.Drawing.Point(5, 786);
-			this.btn_Save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-			this.btn_Save.Name = "btn_Save";
-			this.btn_Save.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-			this.btn_Save.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
-			this.btn_Save.Size = new System.Drawing.Size(501, 72);
-			this.btn_Save.TabIndex = 85;
-			this.btn_Save.Text = "저   장";
-			this.btn_Save.Click += new System.EventHandler(this.PDF_Save_Button_Action);
-			// 
 			// btn_Cancel
 			// 
-			this.btn_Cancel.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20F, System.Drawing.FontStyle.Bold);
+			this.btn_Cancel.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+			this.btn_Cancel.Appearance.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold);
 			this.btn_Cancel.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.btn_Cancel.Appearance.Options.UseBackColor = true;
 			this.btn_Cancel.Appearance.Options.UseFont = true;
 			this.btn_Cancel.Appearance.Options.UseForeColor = true;
 			this.btn_Cancel.Location = new System.Drawing.Point(512, 786);
 			this.btn_Cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.btn_Cancel.Name = "btn_Cancel";
-			this.btn_Cancel.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
 			this.btn_Cancel.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
 			this.btn_Cancel.Size = new System.Drawing.Size(501, 72);
 			this.btn_Cancel.TabIndex = 86;
@@ -154,6 +139,23 @@
 			this.rtb_AnalysisContent.TabIndex = 87;
 			this.rtb_AnalysisContent.Text = "분석 내용을 입력하십시오";
 			// 
+			// btn_Save
+			// 
+			this.btn_Save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(115)))), ((int)(((byte)(70)))));
+			this.btn_Save.Appearance.Font = new System.Drawing.Font("맑은 고딕", 30F, System.Drawing.FontStyle.Bold);
+			this.btn_Save.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.btn_Save.Appearance.Options.UseBackColor = true;
+			this.btn_Save.Appearance.Options.UseFont = true;
+			this.btn_Save.Appearance.Options.UseForeColor = true;
+			this.btn_Save.Location = new System.Drawing.Point(5, 786);
+			this.btn_Save.LookAndFeel.UseDefaultLookAndFeel = false;
+			this.btn_Save.Name = "btn_Save";
+			this.btn_Save.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
+			this.btn_Save.Size = new System.Drawing.Size(501, 72);
+			this.btn_Save.TabIndex = 89;
+			this.btn_Save.Text = "저   장";
+			this.btn_Save.Click += new System.EventHandler(this.PDF_Save_Button_Action);
+			// 
 			// PDFSave
 			// 
 			this.Appearance.BackColor = System.Drawing.Color.White;
@@ -163,9 +165,9 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1019, 863);
+			this.Controls.Add(this.btn_Save);
 			this.Controls.Add(this.rtb_AnalysisContent);
 			this.Controls.Add(this.btn_Cancel);
-			this.Controls.Add(this.btn_Save);
 			this.Controls.Add(this.labelControl1);
 			this.Controls.Add(this.pb_Image2);
 			this.Controls.Add(this.pb_Image1);
@@ -198,8 +200,8 @@
 		private System.Windows.Forms.PictureBox pb_Image1;
 		private System.Windows.Forms.PictureBox pb_Image2;
 		private DevExpress.XtraEditors.LabelControl labelControl1;
-		public DevExpress.XtraEditors.SimpleButton btn_Save;
 		public DevExpress.XtraEditors.SimpleButton btn_Cancel;
 		private System.Windows.Forms.RichTextBox rtb_AnalysisContent;
+		private DevExpress.XtraEditors.SimpleButton btn_Save;
 	}
 }

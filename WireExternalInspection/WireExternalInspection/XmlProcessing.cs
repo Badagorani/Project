@@ -130,7 +130,7 @@ namespace WireExternalInspection
 			}
 			catch (Exception ex)
 			{
-				mainform.ShowMessage("오류", $"XML 문서 로드 중 예외가 발생하였습니다!\n" + ex, "주의");
+				mainform.ShowMessage("오류", $"XML 문서 로드 중 예외가 발생하였습니다!\n" + ex.Message, "주의");
 			}
 		}
 		public void XMLSave(object obj, Type type, string XMLFile)
@@ -156,7 +156,7 @@ namespace WireExternalInspection
 			}
 			catch (Exception ex)
 			{
-				mainform.ShowMessage("오류", $"XML 문서 저장 중 예외가 발생하였습니다!" + ex, "주의");
+				mainform.ShowMessage("오류", $"XML 문서 저장 중 예외가 발생하였습니다!" + ex.Message, "주의");
 				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
@@ -205,7 +205,7 @@ namespace WireExternalInspection
 			}
 			catch (Exception ex)
 			{
-				mainform.ShowMessage("오류", $"XML 문서 생성 중 예외가 발생하였습니다!" + ex, "주의");
+				mainform.ShowMessage("오류", $"XML 문서 생성 중 예외가 발생하였습니다!" + ex.Message, "주의");
 				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}

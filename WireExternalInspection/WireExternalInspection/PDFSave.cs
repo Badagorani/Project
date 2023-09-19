@@ -33,12 +33,21 @@ namespace WireExternalInspection
 		}
 		private void PDFSave_Shown(object sender, EventArgs e)
 		{
-			rtb_AnalysisContent.Focus();
-			rtb_AnalysisContent.SelectAll();
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
+			{
+				rtb_AnalysisContent.Focus();
+				rtb_AnalysisContent.SelectAll();
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 		private void Report_Export()
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			mainform.LoadingAnimationStart();
 			try
 			{
 				#region iTextSharp 사용 PDF 저장
@@ -72,7 +81,7 @@ namespace WireExternalInspection
 				document.Close();
 				mainform.ShowMessage("저장 중...", pdfSaveFolderPath + "\n저장되었습니다!", "알림");
 				#endregion
-				#region XtraReport 사용 PDF 저장
+				#region XtraReport 사용 PDF 저장 - 사용하지 않음
 				//XtraReport1 report = new XtraReport1();
 				//PdfExportOptions pdfOptions = report.ExportOptions.Pdf;
 
@@ -127,27 +136,46 @@ namespace WireExternalInspection
 			}
 			catch (Exception ex)
 			{
-				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
+			mainform.LoadingAnimationEnd();
 		}
 		private iTextSharp.text.Font SetCustomFont()
 		{
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			iTextSharp.text.Font returnFont;
-			string BatangFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\batang.ttc";
-			string MalgunGothicFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\malgun.ttf";
-			FontFactory.Register(BatangFont);
-			FontFactory.Register(MalgunGothicFont);
-			//returnFont = FontFactory.GetFont("바탕체", BaseFont.IDENTITY_H, 10);
-			returnFont = FontFactory.GetFont("맑은 고딕", BaseFont.IDENTITY_H, 12);
+			try
+			{
+				string BatangFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\batang.ttc";
+				string MalgunGothicFont = Environment.GetFolderPath(Environment.SpecialFolder.System) + @"\..\Fonts\malgun.ttf";
+				FontFactory.Register(BatangFont);
+				FontFactory.Register(MalgunGothicFont);
+				//returnFont = FontFactory.GetFont("바탕체", BaseFont.IDENTITY_H, 10);
+				returnFont = FontFactory.GetFont("맑은 고딕", BaseFont.IDENTITY_H, 12);
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+				mainform.ShowMessage("오류", $"폰트를 설정하던 중 예외가 발생하였습니다!\n" + ex.Message, "주의");
+				returnFont = null;
+			}
 			return returnFont;
 		}
 		private void PDF_Save_Button_Action(object sender, EventArgs e)
 		{
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			string ButtonName = ((SimpleButton)sender).Name.Substring("btn_".Length);
-			switch (ButtonName)
+			try
 			{
-				case "Save"		: Report_Export();	break;
-				case "Cancel"	:					break;
+				switch (ButtonName)
+				{
+					case "Save": Report_Export(); break;
+					case "Cancel": break;
+				}
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 			this.Close();
 		}

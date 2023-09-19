@@ -146,6 +146,7 @@
 			this.btn_Start.Location = new System.Drawing.Point(245, 655);
 			this.btn_Start.LookAndFeel.UseDefaultLookAndFeel = false;
 			this.btn_Start.Name = "btn_Start";
+			this.btn_Start.ShowFocusRectangle = DevExpress.Utils.DefaultBoolean.False;
 			this.btn_Start.Size = new System.Drawing.Size(209, 77);
 			this.btn_Start.TabIndex = 19;
 			this.btn_Start.Text = "시   작";

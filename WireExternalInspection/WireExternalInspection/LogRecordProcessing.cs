@@ -108,6 +108,7 @@ namespace WireExternalInspection
 		}
 		public string CameraErrorCode(string ErrorMessage)
 		{
+			LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			string sOutMessage = "";
 			try
 			{

@@ -756,17 +756,26 @@ namespace WireExternalInspection
 		}
 		private void ThumbnailCreate()
 		{
-			for (int i = 0; i < Videos.Length; i++)
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
 			{
-				if(Videos[i] != null)
+				for (int i = 0; i < Videos.Length; i++)
 				{
-					Videos[i].PosFrames = 1;
-					Mat thumbnail = new Mat();
-					Videos[i].Read(thumbnail);
-					ViewCams[i].Image = null;
-					ViewCams[i].Image = BitmapConverter.ToBitmap(thumbnail);
-					Videos[i].PosFrames = 0;
+					if (Videos[i] != null)
+					{
+						Videos[i].PosFrames = 1;
+						Mat thumbnail = new Mat();
+						Videos[i].Read(thumbnail);
+						ViewCams[i].Image = null;
+						ViewCams[i].Image = BitmapConverter.ToBitmap(thumbnail);
+						Videos[i].PosFrames = 0;
+					}
 				}
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+				mainform.ShowMessage("오류", $"썸네일 생성 중 예외가 발생하였습니다!\n" + ex.Message, "주의");
 			}
 		}
 		private void VideoPlayProcessing(Mat image, PictureBox viewcam)
@@ -988,35 +997,45 @@ namespace WireExternalInspection
 		}
 		private void Track_Scroll(object sender, EventArgs e)
 		{
-			//MainForm.LoadingAnimationStart();
-			if (IsPaused)
+			//mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
 			{
-				for (int i = 0; i < Videos.Length; i++)
+				if (IsPaused)
 				{
-					Mat image = new Mat();
-					Videos[i].PosFrames = tb_VideoTrack.Value;
-					//Videos[i].Read(image);
-					//Bitmap bmp = BitmapConverter.ToBitmap(image);
-					//ViewCams[i].Image = bmp;
+					for (int i = 0; i < Videos.Length; i++)
+					{
+						Mat image = new Mat();
+						Videos[i].PosFrames = tb_VideoTrack.Value;
+						//Videos[i].Read(image);
+						//Bitmap bmp = BitmapConverter.ToBitmap(image);
+						//ViewCams[i].Image = bmp;
+					}
 				}
+				else
+				{
+					IsPaused = true;
+					for (int i = 0; i < Videos.Length; i++)
+					{
+						Videos[i].PosFrames = tb_VideoTrack.Value;
+					}
+					IsPaused = false;
+				}
+				pb_SelectedView.Image = ViewCams[NowSelectedCamNo - 1].Image;
 			}
-			else
+			catch (Exception ex)
 			{
-				IsPaused = true;
-				for (int i = 0; i < Videos.Length; i++)
-				{
-					Videos[i].PosFrames = tb_VideoTrack.Value;
-				}
-				IsPaused = false;
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
-			pb_SelectedView.Image = ViewCams[NowSelectedCamNo - 1].Image;
-			//MainForm.LoadingAnimationEnd();
 		}
 		private void TrackBar_ValueChanged(object sender, EventArgs e)
 		{
-			if (tb_VideoTrack.Value >= Videos[0].FrameCount - 1) VideoStop();
-			if (tb_VideoTrack.Value >= Videos[0].FrameCount - 1)
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
 			{
+				if (tb_VideoTrack.Value >= Videos[0].FrameCount - 1) VideoStop();
+				#region 사용하지 않음
+				//if (tb_VideoTrack.Value >= Videos[0].FrameCount - 1)
+				//{
 				//for (int i = 0; i < Videos.Length; i++)
 				//{
 				//	Videos[i].Open(FilesPath[i]);
@@ -1030,6 +1049,12 @@ namespace WireExternalInspection
 				//Videos[2].PosFrames = 0;
 				//btn_VideoPlay.ImageOptions.SvgImage = Resources.next;
 				//Play = null;
+				//}
+				#endregion
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
 
@@ -1043,144 +1068,186 @@ namespace WireExternalInspection
 		private void SelectedView_Click(object sender, EventArgs e)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			MouseEventArgs mouseEvent = (MouseEventArgs)e;
-			if (mouseEvent.Button == MouseButtons.Right)
+			try
 			{
-				if (iRectangleArea > 0)
+				MouseEventArgs mouseEvent = (MouseEventArgs)e;
+				if (mouseEvent.Button == MouseButtons.Right)
 				{
-					ContextMenu contextmenu = new ContextMenu();
-					MenuItem item1 = new MenuItem();
-					item1.Text = "분석";
-					item1.Click += (senders, es) => 
+					if (iRectangleArea > 0)
 					{
-						// 마우스 드레그로 만든 영역의 이미지
-						RealPointDetecter(pb_SelectedView, out iRealStartPointX, out iRealStartPointY, istartX, istartY);
-						RealPointDetecter(pb_SelectedView, out iRealEndPointX, out iRealEndPointY, iendX, iendY);
-						Rectangle rectangle = new Rectangle(iRealStartPointX, iRealStartPointY, iRealEndPointX - iRealStartPointX, iRealEndPointY - iRealStartPointY);
-						Bitmap bitmap = new Bitmap(rectangle.Width, rectangle.Height);
-						using (Graphics graphics = Graphics.FromImage(bitmap))
+						ContextMenu contextmenu = new ContextMenu();
+						MenuItem item1 = new MenuItem();
+						item1.Text = "분석";
+						item1.Click += (senders, es) =>
 						{
-							graphics.DrawImage(pb_SelectedView.Image, 0, 0, rectangle, GraphicsUnit.Pixel);
-						}
-						mainform.analysisbitmap = bitmap;
-						mainform.PageChange(2);
-						//mainform.analysispage.iRealStartPointX = iRealStartPointX;
-						//mainform.analysispage.iRealStartPointY = iRealStartPointY;
-						//mainform.analysispage.iRealEndPointX   = iRealEndPointX;
-						//mainform.analysispage.iRealEndPointY   = iRealEndPointY;
-					};
-					contextmenu.MenuItems.Add(item1);
-					contextmenu.Show(pb_SelectedView, new System.Drawing.Point(mouseEvent.X, mouseEvent.Y));
+							// 마우스 드레그로 만든 영역의 이미지
+							RealPointDetecter(pb_SelectedView, out iRealStartPointX, out iRealStartPointY, istartX, istartY);
+							RealPointDetecter(pb_SelectedView, out iRealEndPointX, out iRealEndPointY, iendX, iendY);
+							Rectangle rectangle = new Rectangle(iRealStartPointX, iRealStartPointY, iRealEndPointX - iRealStartPointX, iRealEndPointY - iRealStartPointY);
+							Bitmap bitmap = new Bitmap(rectangle.Width, rectangle.Height);
+							using (Graphics graphics = Graphics.FromImage(bitmap))
+							{
+								graphics.DrawImage(pb_SelectedView.Image, 0, 0, rectangle, GraphicsUnit.Pixel);
+							}
+							mainform.analysisbitmap = bitmap;
+							mainform.PageChange(2);
+							//mainform.analysispage.iRealStartPointX = iRealStartPointX;
+							//mainform.analysispage.iRealStartPointY = iRealStartPointY;
+							//mainform.analysispage.iRealEndPointX   = iRealEndPointX;
+							//mainform.analysispage.iRealEndPointY   = iRealEndPointY;
+						};
+						contextmenu.MenuItems.Add(item1);
+						contextmenu.Show(pb_SelectedView, new System.Drawing.Point(mouseEvent.X, mouseEvent.Y));
+					}
 				}
+				iRectangleArea = (iendX - istartX) * (iendY - istartY);
 			}
-			iRectangleArea = (iendX - istartX) * (iendY - istartY);
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 		private void RealPointDetecter(PictureBox picturebox, out int targetX, out int targetY, int sourceX, int sourceY)
 		{
-			int pictureboxWidth		= picturebox.Width;
-			int pictureboxHeight	= picturebox.Height;
-			int imageWidth			= picturebox.Image.Width;
-			int imageHeight			= picturebox.Image.Height;
-
-			float pictureBoxAspectRatio = pictureboxWidth / (float)pictureboxHeight;
-			float imageAspectRatio = imageWidth / (float)imageHeight;
-
-			if(pictureBoxAspectRatio > imageAspectRatio)
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
 			{
-				targetY = (int)(imageHeight * sourceY / (float)pictureboxHeight);
-				float scaledWidth = imageWidth * pictureboxHeight / imageHeight;
-				float deltaX = (pictureboxWidth - scaledWidth) / 2;
-				targetX = (int)((sourceX - deltaX) * imageHeight / (float)pictureboxHeight);
+				int pictureboxWidth = picturebox.Width;
+				int pictureboxHeight = picturebox.Height;
+				int imageWidth = picturebox.Image.Width;
+				int imageHeight = picturebox.Image.Height;
+
+				float pictureBoxAspectRatio = pictureboxWidth / (float)pictureboxHeight;
+				float imageAspectRatio = imageWidth / (float)imageHeight;
+
+				if (pictureBoxAspectRatio > imageAspectRatio)
+				{
+					targetY = (int)(imageHeight * sourceY / (float)pictureboxHeight);
+					float scaledWidth = imageWidth * pictureboxHeight / imageHeight;
+					float deltaX = (pictureboxWidth - scaledWidth) / 2;
+					targetX = (int)((sourceX - deltaX) * imageHeight / (float)pictureboxHeight);
+				}
+				else
+				{
+					targetX = (int)(imageWidth * sourceX / (float)pictureboxWidth);
+					float scaledHeight = imageHeight * pictureboxWidth / imageWidth;
+					float deltaY = (pictureboxHeight - scaledHeight) / 2;
+					targetY = (int)((sourceY - deltaY) * imageWidth / pictureboxWidth);
+				}
 			}
-			else
+			catch (Exception ex)
 			{
-				targetX = (int)(imageWidth * sourceX / (float)pictureboxWidth);
-				float scaledHeight = imageHeight * pictureboxWidth / imageWidth;
-				float deltaY = (pictureboxHeight - scaledHeight) / 2;
-				targetY = (int)((sourceY - deltaY) * imageWidth / pictureboxWidth);
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+				mainform.ShowMessage("오류", $"좌표 계산 중 예외가 발생하였습니다!\n" + ex.Message, "주의");
+				targetX = 0;
+				targetY = 0;
 			}
 		}
 		private void SelectedView_MouseDown(object sender, MouseEventArgs e)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			if(e.Button == MouseButtons.Left)
+			try
 			{
-				IsSelecting = true;
-				if (IsPlaying && !IsPaused) VideoPlay();
-				imouseDownX = istartX = iendX = e.X;
-				imouseDownY = istartY = iendY = e.Y;
-				rect = new Rectangle(imouseDownX, imouseDownY, 0, 0);
-				pb_SelectedView.Refresh();
+				if (e.Button == MouseButtons.Left)
+				{
+					IsSelecting = true;
+					if (IsPlaying && !IsPaused) VideoPlay();
+					imouseDownX = istartX = iendX = e.X;
+					imouseDownY = istartY = iendY = e.Y;
+					rect = new Rectangle(imouseDownX, imouseDownY, 0, 0);
+					pb_SelectedView.Refresh();
+				}
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
 
 		private void SelectedView_MouseUp(object sender, MouseEventArgs e)
 		{
-			if (e.Button == MouseButtons.Left)
+			mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
 			{
-				tooltip.SetToolTip(pb_SelectedView, "시작좌표X : " + istartX + "\n시작좌표Y : " + istartY
-				+ "\n끝 좌 표 X : " + iendX + "\n끝 좌 표 Y : " + iendY + "\n너비 : " + iRectangleArea);
-				if (iRectangleArea > 0)
+				if (e.Button == MouseButtons.Left)
 				{
-					//pb_SelectedView.AddControl(film);
+					tooltip.SetToolTip(pb_SelectedView, "시작좌표X : " + istartX + "\n시작좌표Y : " + istartY
+					+ "\n끝 좌 표 X : " + iendX + "\n끝 좌 표 Y : " + iendY + "\n너비 : " + iRectangleArea);
+					if (iRectangleArea > 0)
+					{
+						//pb_SelectedView.AddControl(film);
+					}
+					else
+					{
+						IsSelecting = false;
+						if (IsPlaying && !IsPaused) VideoPlay();
+					}
+					pb_SelectedView.Refresh();
 				}
-				else
-				{
-					IsSelecting = false;
-					if (IsPlaying && !IsPaused) VideoPlay();
-				}
-				pb_SelectedView.Refresh();
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
 
 		private void SelectedView_MouseMove(object sender, MouseEventArgs e)
 		{
 			//Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			if (e.Button == MouseButtons.Left)
+			try
 			{
-				if (imouseDownX < e.X)
+				if (e.Button == MouseButtons.Left)
 				{
-					istartX = imouseDownX;
-					iendX = e.X;
-				}
-				else
-				{
-					istartX = e.X;
-					iendX = imouseDownX;
-				}
-				if (imouseDownY < e.Y)
-				{
-					istartY = imouseDownY;
-					iendY = e.Y;
-				}
-				else
-				{
-					istartY = e.Y;
-					iendY = imouseDownY;
-				}
-				// 시작점 또는 끝점이 0보다 작은가?
-				istartX = istartX < 0 ? 0 : istartX;
-				istartY = istartY < 0 ? 0 : istartY;
-				iendX = iendX < 0 ? 0 : iendX;
-				iendY = iendY < 0 ? 0 : iendY;
+					if (imouseDownX < e.X)
+					{
+						istartX = imouseDownX;
+						iendX = e.X;
+					}
+					else
+					{
+						istartX = e.X;
+						iendX = imouseDownX;
+					}
+					if (imouseDownY < e.Y)
+					{
+						istartY = imouseDownY;
+						iendY = e.Y;
+					}
+					else
+					{
+						istartY = e.Y;
+						iendY = imouseDownY;
+					}
+					// 시작점 또는 끝점이 0보다 작은가?
+					istartX = istartX < 0 ? 0 : istartX;
+					istartY = istartY < 0 ? 0 : istartY;
+					iendX = iendX < 0 ? 0 : iendX;
+					iendY = iendY < 0 ? 0 : iendY;
 
-				// 시작점 또는 끝점이 픽쳐박스의 최대값보다 큰가?
-				istartX = istartX > pb_SelectedView.Width ? pb_SelectedView.Width : istartX;
-				istartY = istartY > pb_SelectedView.Height ? pb_SelectedView.Height : istartY;
-				iendX = iendX > pb_SelectedView.Width ? pb_SelectedView.Width : iendX;
-				iendY = iendY > pb_SelectedView.Height ? pb_SelectedView.Height : iendY;
+					// 시작점 또는 끝점이 픽쳐박스의 최대값보다 큰가?
+					istartX = istartX > pb_SelectedView.Width ? pb_SelectedView.Width : istartX;
+					istartY = istartY > pb_SelectedView.Height ? pb_SelectedView.Height : istartY;
+					iendX = iendX > pb_SelectedView.Width ? pb_SelectedView.Width : iendX;
+					iendY = iendY > pb_SelectedView.Height ? pb_SelectedView.Height : iendY;
 
-				rect = new Rectangle(istartX, istartY, iendX - istartX, iendY - istartY);
-				iRectangleArea = (iendX - istartX) * (iendY - istartY);
-				pb_SelectedView.Refresh();
+					rect = new Rectangle(istartX, istartY, iendX - istartX, iendY - istartY);
+					iRectangleArea = (iendX - istartX) * (iendY - istartY);
+					pb_SelectedView.Refresh();
+				}
+			}
+			catch (Exception ex)
+			{
+				mainform.Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
-		private void SelectedView_MouseLeave(object sender, EventArgs e)
-		{
-			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			MouseEventArgs mouseEvent = (MouseEventArgs)e;
-			if (mouseEvent.Button != MouseButtons.Left) istartX = istartY = iendX = iendY = iRectangleArea = 0;
-		}
+		#region 사용하지 않음
+		//private void SelectedView_MouseLeave(object sender, EventArgs e)
+		//{
+		//	Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+		//	MouseEventArgs mouseEvent = (MouseEventArgs)e;
+		//	if (mouseEvent.Button != MouseButtons.Left) istartX = istartY = iendX = iendY = iRectangleArea = 0;
+		//}
+		#endregion
 		private void SelectedView_Paint(object sender, PaintEventArgs e)
 		{
 			using (Pen pen = new Pen(Color.Red, 3))

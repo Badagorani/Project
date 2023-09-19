@@ -88,12 +88,20 @@ namespace WireExternalInspection
 		#endregion
 		private void SplashAction()
 		{
-			SplashShow();
-			SplashShow("설정을 불러오는 중...");
-			Thread.Sleep(2000);
-			SplashShow("완료");
-			SplashScreenManager.CloseForm();
-			Thread.Sleep(1000);
+			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
+			try
+			{
+				SplashShow();
+				SplashShow("설정을 불러오는 중...");
+				Thread.Sleep(2000);
+				SplashShow("완료");
+				SplashScreenManager.CloseForm();
+				Thread.Sleep(1000);
+			}
+			catch (Exception ex)
+			{
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 		public MainForm()
 		{
@@ -106,53 +114,73 @@ namespace WireExternalInspection
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
 			SplashAction();
-			//Image img = Image.FromFile(@"C:\Users\김태현\Documents\최동규_세인\와이어 외선 사용자 검사 프로그램 프로젝트\찍은 사진\바다사진.jfif");
 		}
 		private void MainForm_Shown(object sender, EventArgs e)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			viewpage = new ViewPage(this);
-			viewpage.Parent = ViewPage;
-			viewpage.BringToFront();
-			viewpage.Dock = DockStyle.Fill;
-			viewpage.Show();
-			analysispage = new AnalysisPage(this);
-			analysispage.Parent = AnalysisPage;
-			analysispage.BringToFront();
-			analysispage.Dock = DockStyle.Fill;
-			analysispage.Show();
+			try
+			{
+				viewpage = new ViewPage(this);
+				viewpage.Parent = ViewPage;
+				viewpage.BringToFront();
+				viewpage.Dock = DockStyle.Fill;
+				viewpage.Show();
+				analysispage = new AnalysisPage(this);
+				analysispage.Parent = AnalysisPage;
+				analysispage.BringToFront();
+				analysispage.Dock = DockStyle.Fill;
+				analysispage.Show();
+			}
+			catch (Exception ex)
+			{
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 		public void PageChange(int PageNo)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			switch (PageNo)
+			try
 			{
-				case 1: navigationFrame1.SelectedPage = ViewPage;		break;
-				case 2: navigationFrame1.SelectedPage = AnalysisPage;	break;
+				switch (PageNo)
+				{
+					case 1: navigationFrame1.SelectedPage = ViewPage; break;
+					case 2: navigationFrame1.SelectedPage = AnalysisPage; break;
+				}
+			}
+			catch (Exception ex)
+			{
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
 		private void navigationFrame1_SelectedPageChanged(object sender, DevExpress.XtraBars.Navigation.SelectedPageChangedEventArgs e)
 		{
 			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			if (navigationFrame1.SelectedPage == ViewPage)
+			try
 			{
-				PastPageNo = 2;
-				NowPageNo = 1;
+				if (navigationFrame1.SelectedPage == ViewPage)
+				{
+					PastPageNo = 2;
+					NowPageNo = 1;
+				}
+				else
+				{
+					PastPageNo = 1;
+					NowPageNo = 2;
+					analysispage.ImageChange(analysisbitmap);
+				}
 			}
-			else
+			catch (Exception ex)
 			{
-				PastPageNo = 1;
-				NowPageNo = 2;
-				analysispage.ImageChange(analysisbitmap);
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
 			}
 		}
 		#region 팝업
 		/// <summary>
-		/// 메세지 박스를 표시한다
+		/// 메시지 박스를 표시한다
 		/// </summary>
-		/// <param name="Content">내용</param>
 		/// <param name="Title">제목</param>
-		/// <param name="UseIcon">아이콘 알림❕, 주의❗, 경고❌, 질문❔</param>
+		/// <param name="Content">내용</param>
+		/// <param name="UseIcon">아이콘 알림💬, 주의❗, 경고❌, 질문❔</param>
 		public void ShowMessage(string Title, string Content, string UseIcon = "")
 		{
 			//Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
@@ -160,21 +188,11 @@ namespace WireExternalInspection
 			#region 아이콘 선택 (없음이 기본)
 			switch (UseIcon)
 			{
-				case "알림":
-					messageBoxIcon = MessageBoxIcon.Information;
-					break;
-				case "주의":
-					messageBoxIcon = MessageBoxIcon.Warning;
-					break;
-				case "경고":
-					messageBoxIcon = MessageBoxIcon.Error;
-					break;
-				case "질문":
-					messageBoxIcon = MessageBoxIcon.Question;
-					break;
-				default:
-					messageBoxIcon = MessageBoxIcon.None;
-					break;
+				case "알림": messageBoxIcon = MessageBoxIcon.Information;	break;
+				case "주의": messageBoxIcon = MessageBoxIcon.Warning;		break;
+				case "경고": messageBoxIcon = MessageBoxIcon.Error;			break;
+				case "질문": messageBoxIcon = MessageBoxIcon.Question;		break;
+				default:	 messageBoxIcon = MessageBoxIcon.None;			break;
 			}
 			#endregion
 			MessageBox.Show(Content, Title, MessageBoxButtons.OK, messageBoxIcon);
@@ -184,13 +202,19 @@ namespace WireExternalInspection
 		#region 폼 닫기
 		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
 		{
-			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} ");
-			this.Hide();
-			if (viewpage != null) viewpage.CameraClose();
-			//if (VideoCheck != null) VideoCheck.VideoClose();
-			//if (VideoAnalysis != null) VideoAnalysis.VideoClose();
-			//Viewer_Thread.ViewSetting(NowSelectedCamNo, IsViewing);
-			//Camera_Setting.DestroyCamera();
+			Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} "); try
+			{
+				this.Hide();
+				if (viewpage != null) viewpage.CameraClose();
+				//if (VideoCheck != null) VideoCheck.VideoClose();
+				//if (VideoAnalysis != null) VideoAnalysis.VideoClose();
+				//Viewer_Thread.ViewSetting(NowSelectedCamNo, IsViewing);
+				//Camera_Setting.DestroyCamera();
+			}
+			catch (Exception ex)
+			{
+				Log.LogWrite($"{this.GetType().Name} -> {MethodBase.GetCurrentMethod().Name} " + ex.Message);
+			}
 		}
 		#endregion
 	}
